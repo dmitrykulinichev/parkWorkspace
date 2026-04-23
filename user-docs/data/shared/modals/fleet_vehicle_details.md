@@ -38,3 +38,11 @@
 - **Оновити пробіг:** Перехід до форми {{MODAL:fleet_mileage_update}}.
 - **Видалити:** Викликає підтвердження видалення {{MODAL:fleet_vehicle_delete}}.
 - **Закрити:** Повернення до загального списку.
+
+## Технічна інформація
+
+| Файл | Роль |
+| :--- | :--- |
+| `resources/js/components/modals/VehicleDetailsModal.jsx` | Презентаційний компонент картки авто. |
+| `resources/js/services/vehicleService.js` | Використовує метод `formatMileage` та `getStatusLabel`. |
+| `resources/js/components/UI/StatusBadge.jsx` | Візуалізація операційних статусів. |

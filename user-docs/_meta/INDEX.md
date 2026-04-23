@@ -7,11 +7,11 @@
 | **Головна** | `/` | [01-home.md](../data/01-home.md) | 📝 Draft | - |
 | **Автопарк (Fleet)** | | | | |
 | - Список автомобілів | `/vehicles` | [02-vehicles/01-list.md](../data/02-vehicles/01-list.md) | ✅ Completed | 2026-04-23 |
-| - Тех. обслуговування | `/vehicle-maintenance` | [02-vehicles/02-maintenance.md](../data/02-vehicles/02-maintenance.md) | 📝 Draft | - |
-| - Недоступності | `/vehicle-unavailabilities` | [02-vehicles/03-unavailabilities.md](../data/02-vehicles/03-unavailabilities.md) | 📝 Draft | - |
-| - Документи | `/documents` | [02-vehicles/04-documents.md](../data/02-vehicles/04-documents.md) | 📝 Draft | - |
-| - Звіти | `/reports` | [02-vehicles/05-reports.md](../data/02-vehicles/05-reports.md) | 📝 Draft | - |
-| - Налаштування | `/fleet-settings` | [02-vehicles/06-settings.md](../data/02-vehicles/06-settings.md) | 📝 Draft | - |
+| - Тех. обслуговування | `/vehicle-maintenance` | [02-vehicles/02-maintenance.md](../data/02-vehicles/02-maintenance.md) | ✅ Completed | 2026-04-23 |
+| - Недоступності | `/vehicle-unavailabilities` | [02-vehicles/03-unavailabilities.md](../data/02-vehicles/03-unavailabilities.md) | ✅ Completed | 2026-04-23 |
+| - Документи | `/documents` | [02-vehicles/04-documents.md](../data/02-vehicles/04-documents.md) | ✅ Completed | 2026-04-23 |
+| - Звіти | `/reports` | [02-vehicles/05-reports.md](../data/02-vehicles/05-reports.md) | ✅ Completed | 2026-04-23 |
+| - Налаштування | `/fleet-settings` | [02-vehicles/06-settings.md](../data/02-vehicles/06-settings.md) | ✅ Completed | 2026-04-23 |
 | **Водії (Drivers Group)** | | | | |
 | - Список водіїв | `/drivers` | [03-drivers/01-list.md](../data/03-drivers/01-list.md) | 📝 Todo | - |
 | - Призначення | `/assignments` | [03-drivers/02-assignments.md](../data/03-drivers/02-assignments.md) | 📝 Todo | - |

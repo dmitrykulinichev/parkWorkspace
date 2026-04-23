@@ -34,3 +34,13 @@
 2.  **Розумний парсинг:** Підтримка різних назв колонок (напр., "Марка", "Make", "Brand").
 3.  **Безпека:** Записи з помилками або дублікатами автоматично відфільтровуються, дозволяючи імпортувати тільки чисті дані.
 4.  **Аудит:** Всі імпортовані автомобілі отримують мітку про джерело походження (Batch ID).
+
+## Технічна інформація
+
+| Файл | Роль |
+| :--- | :--- |
+| `resources/js/components/modals/VehicleImportModal.jsx` | Компонент процесу імпорту (Upload + Preview + History). |
+| `resources/js/services/vehicleService.js` | Методи `validateImport` та `executeImport`. |
+| `resources/js/components/modals/ImportBatchDetailsModal.jsx` | Модалка перегляду результатів конкретного пакету імпорту. |
+| `resources/js/services/api.js` | Використовується для завантаження шаблонів (`blob` response). |
+| `resources/js/queries/vehicles.js` | Ендпоінт `/vehicles/import/history` для вкладки історії. |
