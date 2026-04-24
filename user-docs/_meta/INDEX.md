@@ -41,4 +41,4 @@
 | - Telegram | `/telegram` | [08-integrations/02-telegram.md](../data/08-integrations/02-telegram.md) | 📝 Todo | - |
 | **Налаштування (Settings)** | | | | |
 | - Профіль | `/profile` | [09-settings/01-profile.md](../data/09-settings/01-profile.md) | ✅ Completed | 2026-04-24 |
-| - Глобальні налаштування | `/settings` | [09-settings/02-global.md](../data/09-settings/02-global.md) | 📝 Todo | - |
+| - Глобальні налаштування | `/settings` | [09-settings/02-global.md](../data/09-settings/02-global.md) | ✅ Completed | 2026-04-24 |

@@ -73,6 +73,8 @@
 | `tab_profile_password` | Вкладка | Вкладка "Зміна паролю" | 📝 Planned | 2026-04-24 |
 | `tab_profile_telegram` | Вкладка | Вкладка "Telegram" | 📝 Planned | 2026-04-24 |
 | `tab_profile_notifications` | Вкладка | Вкладка "Розсилки" | 📝 Planned | 2026-04-24 |
+| `page_settings_main` | Сторінка | Основний вигляд налаштувань | 📝 Planned | 2026-04-24 |
+| `tab_settings_appearance` | Вкладка | Вкладка "Зовнішній вигляд" | 📝 Planned | 2026-04-24 |
 | `tab_profile_access` | Вкладка | Вкладка "Доступ та Безпека" | 📝 Planned | 2026-04-24 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
