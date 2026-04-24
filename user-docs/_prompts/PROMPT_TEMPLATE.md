@@ -8,6 +8,6 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/vehicle-earnings` 
+Задача: задокументувати сторінку `/park-statistics` 
 
 додатково звертаю увагу на правильну вставку даних, ти задовбав обрізати файли

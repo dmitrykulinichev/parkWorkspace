@@ -29,6 +29,8 @@
 | `page_debt_plans_main` | Сторінка | Таблиця боргів водіїв (Desktop) | 📝 Planned | 2026-04-24 |
 | `page_debt_plans_empty` | Сторінка | Порожній стан боргів | 📝 Planned | 2026-04-24 |
 | `page_debt_plans_mobile` | Сторінка | Мобільна версія боргів | 📝 Planned | 2026-04-24 |
+| `page_park_stats_main` | Сторінка | Сторінка статистики парку (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_park_stats_mobile` | Сторінка | Мобільна версія статистики парку | 📝 Planned | 2026-04-24 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
