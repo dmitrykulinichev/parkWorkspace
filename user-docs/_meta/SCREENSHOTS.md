@@ -78,6 +78,10 @@
 | `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-24 |
 | `modal_task_form` | Модалка | Форма створення/редагування задачі | 📝 Planned | 2026-04-24 |
 | `modal_task_details` | Модалка | Деталі задачі | 📝 Planned | 2026-04-24 |
+| `page_manual_trips_main` | Сторінка | Таблиця ручних поїздок | 📝 Planned | 2026-04-24 |
+| `page_manual_trips_empty` | Сторінка | Порожній стан списку поїздок | 📝 Planned | 2026-04-24 |
+| `modal_manual_trip_form` | Модалка | Форма створення/редагування поїздки | 📝 Planned | 2026-04-24 |
+| `modal_manual_trip_details` | Модалка | Деталі поїздки | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |

@@ -8,4 +8,4 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/transactions` (фінанси/транзакції)
+Задача: задокументувати сторінку `/manual-trips` 

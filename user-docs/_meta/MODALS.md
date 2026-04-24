@@ -42,6 +42,8 @@
 | `drv_simple_driver_details` | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-24 |
 | `task_form` | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks` | 2026-04-24 |
 | `task_details` | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-24 |
+| `manual_trip_form` | Форма ручної поїздки | [manual_trip_form.md](../data/shared/modals/manual_trip_form.md) | `/manual-trips` | 2026-04-24 |
+| `manual_trip_details` | Деталі ручної поїздки | [manual_trip_details.md](../data/shared/modals/manual_trip_details.md) | `/manual-trips` | 2026-04-24 |
 | `txn_form` | Форма транзакції | [txn_form.md](../data/shared/modals/txn_form.md) | `/transactions` | 2026-04-24 |
 | `txn_details` | Деталі транзакції | [txn_details.md](../data/shared/modals/txn_details.md) | `/transactions` | 2026-04-24 |
 
