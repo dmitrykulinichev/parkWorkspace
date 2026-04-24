@@ -8,6 +8,6 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/` (головна сторінка користувача) 
+Задача: задокументувати сторінку `/bonuses-penalties` 
 
 
