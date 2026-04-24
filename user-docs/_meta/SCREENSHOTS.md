@@ -26,6 +26,9 @@
 | `page_bonuses_penalties_main` | Сторінка | Таблиця премій та штрафів (Desktop) | 📝 Planned | 2026-04-24 |
 | `page_bonuses_penalties_empty` | Сторінка | Порожній стан премій та штрафів | 📝 Planned | 2026-04-24 |
 | `page_bonuses_penalties_mobile` | Сторінка | Мобільна версія премій та штрафів | 📝 Planned | 2026-04-24 |
+| `page_debt_plans_main` | Сторінка | Таблиця боргів водіїв (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_debt_plans_empty` | Сторінка | Порожній стан боргів | 📝 Planned | 2026-04-24 |
+| `page_debt_plans_mobile` | Сторінка | Мобільна версія боргів | 📝 Planned | 2026-04-24 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
@@ -93,6 +96,9 @@
 | `modal_drv_exp_filters` | Модалка | Фільтри витрат | 📝 Planned | 2026-04-24 |
 | `modal_bonus_penalty_form` | Модалка | Форма премій/штрафів | 📝 Planned | 2026-04-24 |
 | `modal_bonus_penalty_details` | Модалка | Деталі премії/штрафу | 📝 Planned | 2026-04-24 |
+| `modal_driver_debt_plan_form` | Модалка | Форма плану боргу | 📝 Planned | 2026-04-24 |
+| `modal_driver_debt_plan_details` | Модалка | Деталі плану боргу | 📝 Planned | 2026-04-24 |
+| `modal_manual_debt_payment_form` | Модалка | Форма погашення боргу | 📝 Planned | 2026-04-24 |
 | `modal_intg_uklon_vehicle_details` | Модалка | Деталі авто в системі Uklon | 📝 Planned | 2026-04-24 |
 | `page_dash_main` | Сторінка | Головна панель з усіма увімкненими віджетами | 📝 Planned | 2026-04-24 |
 | `page_dash_empty` | Сторінка | Дашборд з онбордінгом (новий парк без даних) | 📝 Planned | 2026-04-24 |

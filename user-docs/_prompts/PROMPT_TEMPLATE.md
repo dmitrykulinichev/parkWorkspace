@@ -8,6 +8,6 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/bonuses-penalties` 
+Задача: задокументувати сторінку `/driver-debt-plans` 
 
 

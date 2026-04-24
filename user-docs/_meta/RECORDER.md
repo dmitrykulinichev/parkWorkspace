@@ -94,10 +94,69 @@
 - **URL:** `/`
 - **Кроки:** Встановити viewport < 768px, дочекатися завантаження мобільної версії.
 
-## modal_dash_settings_form
+## page_bonuses_penalties_main
 
-- **URL:** `/`
+- **URL:** `/bonuses-penalties`
+- **Кроки:** Дочекатися завантаження таблиці премій/штрафів.
+
+## page_bonuses_penalties_empty
+
+- **URL:** `/bonuses-penalties`
+- **Кроки:** Використати фільтр, що повертає порожній результат.
+
+## page_bonuses_penalties_mobile
+
+- **URL:** `/bonuses-penalties`
+- **Кроки:** Встановити viewport < 768px.
+
+## modal_bonus_penalty_form
+
+- **URL:** `/bonuses-penalties`
 - **Кроки:**
-  1. Дочекатися завантаження сторінки
-  2. Клікнути на іконку шестерінки у правій частині хедера
-- **Тригер:** кнопка `title="Налаштування дашборду"` (іконка `Settings` з lucide-react)
+  1. Натиснути кнопку "Додати премію/штраф" у хедері
+- **Тригер:** кнопка з текстом "Додати премію/штраф"
+
+## modal_bonus_penalty_details
+
+- **URL:** `/bonuses-penalties`
+- **Кроки:**
+  1. Клікнути на кнопку з іконкою "Eye" (Перегляд) у рядку запису
+- **Тригер:** клік по іконці `Eye`
+
+## page_debt_plans_main
+
+- **URL:** `/driver-debt-plans`
+- **Кроки:** Дочекатися завантаження таблиці планів боргів.
+
+## page_debt_plans_empty
+
+- **URL:** `/driver-debt-plans`
+- **Кроки:** Використати фільтр, що повертає порожній результат.
+
+## page_debt_plans_mobile
+
+- **URL:** `/driver-debt-plans`
+- **Кроки:** Встановити viewport < 768px.
+
+## modal_driver_debt_plan_form
+
+- **URL:** `/driver-debt-plans`
+- **Кроки:**
+  1. Натиснути кнопку "Створити план" у хедері
+- **Тригер:** кнопка з текстом "Створити план"
+
+## modal_driver_debt_plan_details
+
+- **URL:** `/driver-debt-plans`
+- **Кроки:**
+  1. Клікнути по рядку (double click) або іконці "Eye" у рядку плану
+- **Тригер:** клік по іконці `Eye`
+
+## modal_manual_debt_payment_form
+
+- **URL:** `/driver-debt-plans`
+- **Кроки:**
+  1. Знайти активний план
+  2. Натиснути іконку "Wallet" (Списати вручну) у рядку
+- **Тригер:** клік по іконці `Wallet`
+
