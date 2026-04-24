@@ -37,9 +37,9 @@
 | - Журнал розсилок | `/subscription-logs` | [07-park/08-subscription-logs.md](../data/07-park/08-subscription-logs.md) | ✅ Completed | 2026-04-24 |
 | - Налаштування фінансів | `/finance-settings` | [07-park/09-finance-settings.md](../data/07-park/09-finance-settings.md) | ✅ Completed | 2026-04-24 |
 | **Інтеграції** | | | | |
-| - Uklon | `/uklon` | [08-integrations/01-uklon.md](../data/08-integrations/01-uklon.md) | 📝 Todo | - |
-| - Telegram | `/telegram` | [08-integrations/02-telegram.md](../data/08-integrations/02-telegram.md) | 📝 Todo | - |
-| - Налаштування Telegram | `/telegram-settings` | [08-integrations/03-telegram.md](../data/08-integrations/03-telegram.md) | ✅ Completed | 2026-04-25 |
+| - Uklon | `/uklon` | [08-integrations/uklon/list.md](../data/08-integrations/uklon/list.md) | 📝 Todo | - |
+| - Telegram (Налаштування) | `/telegram-settings` | [08-integrations/telegram/settings.md](../data/08-integrations/telegram/settings.md) | ✅ Completed | 2026-04-25 |
+| - Telegram (Логи) | `/telegram-logs` | [08-integrations/telegram/logs.md](../data/08-integrations/telegram/logs.md) | 📝 Todo | - |
 | **Налаштування (Settings)** | | | | |
-| - Профіль | `/profile` | [09-settings/01-profile.md](../data/09-settings/01-profile.md) | ✅ Completed | 2026-04-24 |
-| - Глобальні налаштування | `/settings` | [09-settings/02-global.md](../data/09-settings/02-global.md) | ✅ Completed | 2026-04-24 |
+| - Профіль | `/profile` | [10-settings/01-profile.md](../data/10-settings/01-profile.md) | ✅ Completed | 2026-04-24 |
+| - Глобальні налаштування | `/settings` | [10-settings/02-global.md](../data/10-settings/02-global.md) | ✅ Completed | 2026-04-24 |

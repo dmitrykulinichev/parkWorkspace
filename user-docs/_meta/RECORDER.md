@@ -219,8 +219,14 @@
 - **Кроки:**
   1. Відкрити розділ "Налаштування фінансів" у системному меню.
 
-## page_intg_telegram_main
+## page_intg_tele_settings_main
 
 - **URL:** `/telegram-settings`
 - **Кроки:**
   1. Відкрити розділ "Налаштування Telegram" у навігаційному меню.
+
+## page_intg_tele_logs_main
+
+- **URL:** `/telegram-logs`
+- **Кроки:**
+  1. Відкрити розділ "Логи Telegram" у навігаційному меню.
