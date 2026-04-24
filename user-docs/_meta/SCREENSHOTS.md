@@ -66,9 +66,14 @@
 | `page_earnings_mobile` | Сторінка | Мобільна версія заробітку | 📝 Planned | 2026-04-24 |
 | `page_vehicle_earnings_main` | Сторінка | Таблиця заробітку авто (Desktop) | 📝 Planned | 2026-04-24 |
 | `page_vehicle_earnings_mobile` | Сторінка | Мобільна версія заробітку авто | 📝 Planned | 2026-04-24 |
+| `page_profile_main` | Сторінка | Основний вигляд профілю (General Tab) | 📝 Planned | 2026-04-24 |
 | `page_park_activity_logs_main` | Сторінка | Основний вигляд сторінки журналів | 📝 Planned | 2026-04-24 |
 | `tab_park_activity_logs_system` | Вкладка | Вкладка "Журнал подій" | 📝 Planned | 2026-04-24 |
-
+| `tab_profile_general` | Вкладка | Вкладка "Загальні дані" | 📝 Planned | 2026-04-24 |
+| `tab_profile_password` | Вкладка | Вкладка "Зміна паролю" | 📝 Planned | 2026-04-24 |
+| `tab_profile_telegram` | Вкладка | Вкладка "Telegram" | 📝 Planned | 2026-04-24 |
+| `tab_profile_notifications` | Вкладка | Вкладка "Розсилки" | 📝 Planned | 2026-04-24 |
+| `tab_profile_access` | Вкладка | Вкладка "Доступ та Безпека" | 📝 Planned | 2026-04-24 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
