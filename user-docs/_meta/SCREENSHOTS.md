@@ -54,6 +54,18 @@
 | `modal_drv_driver_copy` | Модалка | Форма копіювання водія в інший парк | 📝 Planned | 2026-04-24 |
 | `modal_drv_comments` | Модалка | Модалка коментарів водія | 📝 Planned | 2026-04-24 |
 | `modal_drv_telegram` | Модалка | Вікно підключення Telegram | 📝 Planned | 2026-04-24 |
+| `modal_ops_assignment_form` | Модалка | Форма створення/редагування призначення | 📝 Planned | 2026-04-24 |
+| `modal_ops_assignment_details` | Модалка | Картка деталей призначення | 📝 Planned | 2026-04-24 |
+| `modal_issue_report_form` | Модалка | Форма звіту про проблему | 📝 Planned | 2026-04-24 |
+| `modal_issue_report_actions` | Модалка | Вікно прийняття рішення по звіту | 📝 Planned | 2026-04-24 |
+| `modal_issue_report_details` | Модалка | Деталі звіту | 📝 Planned | 2026-04-24 |
+| `modal_issue_task_info` | Модалка | Вікно інформації про задачу | 📝 Planned | 2026-04-24 |
+| `page_ops_assignments_main` | Сторінка | Таблиця журналу призначень | 📝 Planned | 2026-04-24 |
+| `page_ops_assignments_empty` | Сторінка | Порожній стан журналу призначень | 📝 Planned | 2026-04-24 |
+| `page_ops_assignments_mobile` | Сторінка | Мобільна версія журналу призначень | 📝 Planned | 2026-04-24 |
+| `page_drv_issue_reports_main` | Сторінка | Таблиця звітів про проблеми | 📝 Planned | 2026-04-24 |
+| `page_drv_issue_reports_empty` | Сторінка | Порожній стан звітів | 📝 Planned | 2026-04-24 |
+| `page_drv_issue_reports_mobile` | Сторінка | Мобільна версія звітів | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |

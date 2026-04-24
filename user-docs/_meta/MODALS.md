@@ -17,7 +17,12 @@
 | **maint_record_details** | Деталі заїзду на сервіс | [maint_record_details.md](../data/shared/modals/maint_record_details.md) | `02-vehicles/02-maintenance.md` | 2026-04-23 |
 | **maint_filters** | Фільтри журналу ТО | [maint_filters.md](../data/shared/modals/maint_filters.md) | `02-vehicles/02-maintenance.md` | 2026-04-23 |
 | **maint_issue_report_form** | Повідомити про проблему | [maint_issue_report_form.md](../data/shared/modals/maint_issue_report_form.md) | `02-vehicles/01-list.md`, `08-integrations/02-telegram.md` | 2026-04-23 |
-| **ops_assignment_form** | Призначити водія | [ops_assignment_form.md](../data/shared/modals/ops_assignment_form.md) | `02-vehicles/01-list.md`, `03-drivers/01-list.md`, `03-drivers/02-assignments.md` | 2026-04-24 |
+| **ops_assignment_form** | Створити/Редагувати призначення | [ops_assignment_form.md](../data/shared/modals/ops_assignment_form.md) | `02-vehicles/01-list.md`, `03-drivers/01-list.md`, `03-drivers/02-assignments.md` | 2026-04-24 |
+| **ops_assignment_details** | Деталі призначення | [ops_assignment_details.md](../data/shared/modals/ops_assignment_details.md) | `03-drivers/02-assignments.md` | 2026-04-24 |
+| **issue_report_form** | Створити/Редагувати звіт | [issue_report_form.md](../data/shared/modals/issue_report_form.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
+| **issue_report_actions** | Прийняти рішення по звіту | [issue_report_actions.md](../data/shared/modals/issue_report_actions.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
+| **issue_report_details** | Деталі звіту про проблему | [issue_report_details.md](../data/shared/modals/issue_report_details.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
+| **issue_task_info** | Деталі задачі (звіт) | [issue_task_info.md](../data/shared/modals/issue_task_info.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
 | **ops_unassign_form** | Зняти водія | [ops_unassign_form.md](../data/shared/modals/ops_unassign_form.md) | `02-vehicles/01-list.md`, `03-drivers/02-assignments.md` | 2026-04-23 |
 | **fleet_unavailability_form** | Фіксація простою (Недоступність) | [fleet_unavailability_form.md](../data/shared/modals/fleet_unavailability_form.md) | `02-vehicles/01-list.md`, `02-vehicles/03-unavailabilities.md` | 2026-04-23 |
 | **fleet_unavailability_close** | Повернення в роботу | [fleet_unavailability_close.md](../data/shared/modals/fleet_unavailability_close.md) | `02-vehicles/01-list.md`, `02-vehicles/03-unavailabilities.md` | 2026-04-23 |
