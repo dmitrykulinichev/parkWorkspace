@@ -23,13 +23,16 @@
 
 ```
 screenshots/
-  pages/      ← page_*  (повні сторінки)
-  tabs/       ← tab_*   (вкладки)
+  pages/      ← page_*  (повні сторінки, десктопна версія)
+  tabs/       ← tab_*   (вкладки, десктопна версія)
   modals/     ← modal_* (модальні вікна)
   sections/   ← sec_*   (секції та віджети)
+  mobile/     ← page_*_mobile, tab_*_mobile  (мобільні скріншоти)
 ```
 
 Темна тема лежить **в тій самій папці** що й світла — суфікс `_dark` їх розрізняє.
+
+Мобільна версія лежить в окремій папці `mobile/` — назва файлу та сам суфікс `_mobile` зберігаються.
 
 **Формула назви файлу:** `[тип]_[модуль]_[об'єкт]_[стан][_dark].png`
 
@@ -77,7 +80,6 @@ screenshots/pages/
   page_fleet_list_main.png          ← список авто, світла тема
   page_fleet_list_main_dark.png     ← список авто, темна тема (опціонально)
   page_fleet_list_empty.png         ← список авто, порожній стан
-  page_fleet_list_mobile.png        ← список авто, мобільна версія
 
 screenshots/tabs/
   tab_rep_reports_maint.png         ← вкладка ТО на сторінці Звітів
@@ -90,6 +92,10 @@ screenshots/modals/
 
 screenshots/sections/
   sec_fleet_stats_header.png        ← секція метрик автопарку
+
+screenshots/mobile/
+  page_fleet_list_mobile.png        ← список авто, мобільна версія
+  tab_rep_reports_maint_mobile.png  ← вкладка ТО, мобільна версія (опціонально)
 ```
 
 ---
@@ -107,10 +113,11 @@ screenshots/sections/
 
 | Плейсхолдер | Що означає |
 | :--- | :--- |
-| `{{SCRN:page_fleet_list_main}}` | Скріншот повної сторінки |
-| `{{SCRN:tab_rep_reports_maint}}` | Скріншот вкладки |
-| `{{SCRN:sec_fleet_stats_header}}` | Скріншот секції або віджету |
-| `{{SCRN:modal_fleet_veh_form}}` | Скріншот модального вікна |
+| `{{SCRN:page_fleet_list_main}}` | Скріншот повної сторінки (папка `pages/`) |
+| `{{SCRN:page_fleet_list_mobile}}` | Скріншот мобільної версії (папка `mobile/`) |
+| `{{SCRN:tab_rep_reports_maint}}` | Скріншот вкладки (папка `tabs/`) |
+| `{{SCRN:sec_fleet_stats_header}}` | Скріншот секції або віджету (папка `sections/`) |
+| `{{SCRN:modal_fleet_veh_form}}` | Скріншот модального вікна (папка `modals/`) |
 | `{{MODAL:fleet_vehicle_form}}` | Посилання на документацію модалки |
 
 ---

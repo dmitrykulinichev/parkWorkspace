@@ -46,5 +46,7 @@
 | `manual_trip_details` | Деталі ручної поїздки | [manual_trip_details.md](../data/shared/modals/manual_trip_details.md) | `/manual-trips` | 2026-04-24 |
 | `txn_form` | Форма транзакції | [txn_form.md](../data/shared/modals/txn_form.md) | `/transactions` | 2026-04-24 |
 | `txn_details` | Деталі транзакції | [txn_details.md](../data/shared/modals/txn_details.md) | `/transactions` | 2026-04-24 |
+| `drv_exp_form` | Форма витрат водія | [drv_exp_form.md](../data/shared/modals/drv_exp_form.md) | `/driver-expenses` | 2026-04-24 |
+| `drv_exp_details` | Деталі витрати водія | [drv_exp_details.md](../data/shared/modals/drv_exp_details.md) | `/driver-expenses` | 2026-04-24 |
 
 > **Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.

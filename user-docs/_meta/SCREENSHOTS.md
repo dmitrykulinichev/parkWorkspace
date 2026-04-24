@@ -20,6 +20,9 @@
 | `page_reports_maint_tab` | Сторінка | Звіт по регламентних роботах | 📝 Planned | 2026-04-23 |
 | `page_reports_perf_tab` | Сторінка | Звіт продуктивності автопарку | 📝 Planned | 2026-04-23 |
 | `page_settings_fleet_main` | Сторінка | Налаштування автопарку (Регламенти) | 📝 Planned | 2026-04-23 |
+| `page_drv_expenses_main` | Сторінка | Список витрат водіїв | 📝 Planned | 2026-04-24 |
+| `page_drv_expenses_empty` | Сторінка | Порожній стан витрат водіїв | 📝 Planned | 2026-04-24 |
+| `page_drv_expenses_mobile` | Сторінка | Мобільна версія витрат водіїв | 📝 Planned | 2026-04-24 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
@@ -82,6 +85,9 @@
 | `page_manual_trips_empty` | Сторінка | Порожній стан списку поїздок | 📝 Planned | 2026-04-24 |
 | `modal_manual_trip_form` | Модалка | Форма створення/редагування поїздки | 📝 Planned | 2026-04-24 |
 | `modal_manual_trip_details` | Модалка | Деталі поїздки | 📝 Planned | 2026-04-24 |
+| `modal_drv_exp_form` | Модалка | Форма витрат водія | 📝 Planned | 2026-04-24 |
+| `modal_drv_exp_details` | Модалка | Деталі витрати водія | 📝 Planned | 2026-04-24 |
+| `modal_drv_exp_filters` | Модалка | Фільтри витрат | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |

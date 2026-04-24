@@ -21,7 +21,7 @@
 | **Фінанси (Finance)** | | | | |
 | - Транзакції | `/transactions` | [06-finance/01-transactions.md](../data/06-finance/01-transactions.md) | ✅ Completed | 2026-04-24 |
 | - Ручні поїздки | `/manual-trips` | [06-finance/02-manual-trips.md](../data/06-finance/02-manual-trips.md) | ✅ Completed | 2026-04-24 |
-| - Витрати водія | `/driver-expenses` | [06-finance/03-driver-expenses.md](../data/06-finance/03-driver-expenses.md) | 📝 Todo | - |
+| - Витрати водія | `/driver-expenses` | [06-finance/03-driver-expenses.md](../data/06-finance/03-driver-expenses.md) | ✅ Completed | 2026-04-24 |
 | - Премії та Штрафи | `/bonuses-penalties` | [06-finance/04-bonuses-penalties.md](../data/06-finance/04-bonuses-penalties.md) | 📝 Todo | - |
 | - Борги водіїв | `/driver-debt-plans` | [06-finance/05-debt-plans.md](../data/06-finance/05-debt-plans.md) | 📝 Todo | - |
 | - Заробіток водіїв | `/driver-earnings-new` | [06-finance/06-payroll.md](../data/06-finance/06-payroll.md) | 📝 Todo | - |
