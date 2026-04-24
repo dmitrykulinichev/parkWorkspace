@@ -39,7 +39,7 @@
 | **Інтеграції** | | | | |
 | - Uklon | `/uklon` | [08-integrations/uklon/list.md](../data/08-integrations/uklon/list.md) | 📝 Todo | - |
 | - Telegram (Налаштування) | `/telegram-settings` | [09-integration-telegram/settings.md](../data/09-integration-telegram/settings.md) | ✅ Completed | 2026-04-25 |
-| - Telegram (Логи) | `/telegram-logs` | [08-integrations/telegram/logs.md](../data/08-integrations/telegram/logs.md) | 📝 Todo | - |
+| - Telegram (Логи) | `/telegram-logs` | [09-integration-telegram/logs.md](../data/09-integration-telegram/logs.md) | ✅ Completed | 2026-04-25 |
 | **Налаштування (Settings)** | | | | |
 | - Профіль | `/profile` | [10-settings/01-profile.md](../data/10-settings/01-profile.md) | ✅ Completed | 2026-04-24 |
 | - Глобальні налаштування | `/settings` | [10-settings/02-global.md](../data/10-settings/02-global.md) | ✅ Completed | 2026-04-24 |
