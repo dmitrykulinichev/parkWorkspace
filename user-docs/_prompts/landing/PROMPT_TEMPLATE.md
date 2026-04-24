@@ -1,6 +1,4 @@
-# Заготовка промпту — Landing Docs
 
-```
 Прочитай інструкції:
 - `workspace/user-docs/_prompts/landing/LANDING_TASK.md`
 - `workspace/user-docs/_prompts/landing/LANDING_STYLE.md`
@@ -12,4 +10,4 @@
 `C:\Repository\park\landing\www\content\docs\park-users.md`
 
 Група в меню: "Парк"
-```
+
