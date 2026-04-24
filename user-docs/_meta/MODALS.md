@@ -33,5 +33,6 @@
 | **drv_driver_copy** | Копіювати водія в інший парк | [drv_driver_copy.md](../data/shared/modals/drv_driver_copy.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_comments** | Коментарі до водія | [drv_comments.md](../data/shared/modals/drv_comments.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_telegram** | Підключення Telegram | [drv_telegram.md](../data/shared/modals/drv_telegram.md) | `03-drivers/01-list.md` | 2026-04-24 |
+| **intg_uklon_driver_info** | Інформація про водія (Uklon) | [intg_uklon_driver_info.md](../data/shared/modals/intg_uklon_driver_info.md) | `03-drivers/01-list.md` | 2026-04-24 |
 
 > **Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.

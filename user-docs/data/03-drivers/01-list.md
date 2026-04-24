@@ -76,7 +76,7 @@ components:
 | **Клік на рядок** | Відкриває {{MODAL:drv_driver_details}} |
 | **Dropdown статусу** | Змінює статус водія без відкриття модалки |
 | **Клік на Telegram-значок** | Відкриває {{MODAL:drv_telegram}} |
-| **Клік на Uklon-іконку** (якщо зв'язано) | Відкриває UklonDriverInfoModal з даними акаунту Uklon |
+| **Клік на Uklon-іконку** (якщо зв'язано) | Відкриває {{MODAL:intg_uklon_driver_info}} з даними акаунту Uklon |
 | **Показати деталі** (меню) | Відкриває {{MODAL:drv_driver_details}} |
 | **Редагувати** (меню) | Відкриває {{MODAL:drv_driver_form}} у режимі редагування |
 | **Telegram** (меню) | Відкриває {{MODAL:drv_telegram}} |
