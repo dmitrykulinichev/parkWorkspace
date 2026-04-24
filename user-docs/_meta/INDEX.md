@@ -38,7 +38,7 @@
 | - Налаштування фінансів | `/finance-settings` | [07-park/09-finance-settings.md](../data/07-park/09-finance-settings.md) | ✅ Completed | 2026-04-24 |
 | **Інтеграції** | | | | |
 | - Uklon | `/uklon` | [08-integrations/uklon/list.md](../data/08-integrations/uklon/list.md) | 📝 Todo | - |
-| - Telegram (Налаштування) | `/telegram-settings` | [08-integrations/telegram/settings.md](../data/08-integrations/telegram/settings.md) | ✅ Completed | 2026-04-25 |
+| - Telegram (Налаштування) | `/telegram-settings` | [09-integration-telegram/settings.md](../data/09-integration-telegram/settings.md) | ✅ Completed | 2026-04-25 |
 | - Telegram (Логи) | `/telegram-logs` | [08-integrations/telegram/logs.md](../data/08-integrations/telegram/logs.md) | 📝 Todo | - |
 | **Налаштування (Settings)** | | | | |
 | - Профіль | `/profile` | [10-settings/01-profile.md](../data/10-settings/01-profile.md) | ✅ Completed | 2026-04-24 |
