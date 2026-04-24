@@ -109,6 +109,10 @@
 | `modal_driver_earnings_calc_info` | Модалка | Інформація про формулу нарахувань | 📝 Planned | 2026-04-24 |
 | `modal_driver_earnings_details` | Модалка | Деталі заробітку конкретного водія | 📝 Planned | 2026-04-24 |
 | `modal_driver_earnings_raw_data` | Модалка | Перегляд сирих даних (Raw Data) | 📝 Planned | 2026-04-24 |
+| `page_vehicle_earnings_main` | Сторінка | Таблиця заробітку авто (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_vehicle_earnings_mobile` | Сторінка | Мобільна версія заробітку авто | 📝 Planned | 2026-04-24 |
+| `modal_vehicle_earnings_details` | Модалка | Деталі заробітку конкретного авто | 📝 Planned | 2026-04-24 |
+| `modal_vehicle_earnings_calc_info` | Модалка | Інформація про формулу розрахунку | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |
