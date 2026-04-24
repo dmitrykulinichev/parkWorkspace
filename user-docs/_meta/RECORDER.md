@@ -173,3 +173,36 @@
 - **URL:** `/resources`
 - **Кроки:**
   1. Відкрити сторінку "Матеріали для друку".
+
+## page_park_activity_logs_main
+
+- **URL:** `/activity-logs`
+- **Кроки:**
+  1. Відкрити розділ "Журнал подій" у системному меню.
+
+## tab_park_activity_logs_system
+
+- **URL:** `/activity-logs`
+- **Кроки:**
+  1. Переконатись, що вибрано вкладку "Журнал подій" (активна за замовчуванням).
+
+## modal_activity_log_filters
+
+- **URL:** `/activity-logs`
+- **Кроки:**
+  1. Натиснути кнопку "Фільтри".
+- **Тригер:** `handleFiltersClick`
+
+## modal_activity_log_details
+
+- **URL:** `/activity-logs`
+- **Кроки:**
+  1. Натиснути на будь-який запис у таблиці журналу подій.
+- **Тригер:** `handleLogClick` (клік по рядку)
+
+## modal_activity_log_statistics
+
+- **URL:** `/activity-logs`
+- **Кроки:**
+  1. Натиснути кнопку "Статистика" в хедері.
+- **Тригер:** `handleStatisticsClick`

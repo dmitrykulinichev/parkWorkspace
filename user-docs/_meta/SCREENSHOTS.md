@@ -66,6 +66,8 @@
 | `page_earnings_mobile` | Сторінка | Мобільна версія заробітку | 📝 Planned | 2026-04-24 |
 | `page_vehicle_earnings_main` | Сторінка | Таблиця заробітку авто (Desktop) | 📝 Planned | 2026-04-24 |
 | `page_vehicle_earnings_mobile` | Сторінка | Мобільна версія заробітку авто | 📝 Planned | 2026-04-24 |
+| `page_park_activity_logs_main` | Сторінка | Основний вигляд сторінки журналів | 📝 Planned | 2026-04-24 |
+| `tab_park_activity_logs_system` | Вкладка | Вкладка "Журнал подій" | 📝 Planned | 2026-04-24 |
 
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
@@ -139,6 +141,9 @@
 | `modal_park_file_delete` | Модалка | Підтвердження видалення файлу | 📝 Planned | 2026-04-24 |
 | `modal_landing_news_form` | Модалка | Створити/Редагувати новину | 📝 Planned | 2026-04-24 |
 | `modal_landing_news_delete` | Модалка | Підтвердження видалення новини | 📝 Planned | 2026-04-24 |
+| `modal_activity_log_filters` | Модалка | Фільтри журналу подій | 📝 Planned | 2026-04-24 |
+| `modal_activity_log_details` | Модалка | Деталі активності | 📝 Planned | 2026-04-24 |
+| `modal_activity_log_statistics` | Модалка | Статистика журналу подій | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |

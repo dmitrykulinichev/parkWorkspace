@@ -73,3 +73,6 @@
 | **park_file_delete** | Підтвердження видалення документа | [park_file_delete.md](../data/shared/modals/park_file_delete.md) | `07-park/03-files.md` | 2026-04-24 |
 | **landing_news_form** | Створити/Редагувати новину | [landing_news_form.md](../data/shared/modals/landing_news_form.md) | `/landing-settings` | 2026-04-24 |
 | **landing_news_delete** | Підтвердження видалення новини | [landing_news_delete.md](../data/shared/modals/landing_news_delete.md) | `/landing-settings` | 2026-04-24 |
+| **activity_log_filters** | Фільтри журналу подій | [activity_log_filters.md](../data/shared/modals/activity_log_filters.md) | `/activity-logs` | 2026-04-24 |
+| **activity_log_details** | Деталі активності | [activity_log_details.md](../data/shared/modals/activity_log_details.md) | `/activity-logs` | 2026-04-24 |
+| **activity_log_statistics** | Статистика журналу подій | [activity_log_statistics.md](../data/shared/modals/activity_log_statistics.md) | `/activity-logs` | 2026-04-24 |

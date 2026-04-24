@@ -33,7 +33,7 @@
 | - Білінг | `/billing` | [07-park/04-billing.md](../data/07-park/04-billing.md) | ✅ Completed | 2026-04-24 |
 | - Лендінг | `/landing-settings` | [07-park/05-landing.md](../data/07-park/05-landing.md) | ✅ Completed | 2026-04-24 |
 | - Матеріали | `/resources` | [07-park/06-resources.md](../data/07-park/06-resources.md) | ✅ Completed | 2026-04-24 |
-| - Журнал подій | `/activity-logs` | [07-park/07-activity-logs.md](../data/07-park/07-activity-logs.md) | 📝 Todo | - |
+| - Журнал подій | `/activity-logs` | [07-park/07-activity-logs.md](../data/07-park/07-activity-logs.md) | ✅ Completed | 2026-04-24 |
 | - Журнал розсилок | `/subscription-logs` | [07-park/08-subscription-logs.md](../data/07-park/08-subscription-logs.md) | 📝 Todo | - |
 | - Налаштування фінансів | `/finance-settings` | [07-park/09-finance-settings.md](../data/07-park/09-finance-settings.md) | 📝 Todo | - |
 | **Інтеграції** | | | | |
