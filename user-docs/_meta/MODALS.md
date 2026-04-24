@@ -41,5 +41,7 @@
 | `drv_schedule_slot_form` | Форма графіку роботи | [drv_schedule_slot_form.md](../data/shared/modals/drv_schedule_slot_form.md) | `/driver-schedule` | 2026-04-24 |
 | `drv_actual_shift_details` | Деталі фактичної зміни | [drv_actual_shift_details.md](../data/shared/modals/drv_actual_shift_details.md) | `/driver-schedule` | 2026-04-24 |
 | `drv_simple_driver_details` | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-24 |
+| `task_form` | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks` | 2026-04-24 |
+| `task_details` | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-24 |
 
 > **Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.

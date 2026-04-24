@@ -70,6 +70,10 @@
 | `modal_drv_schedule_slot_form` | Модалка | Форма створення/редагування слоту | 📝 Planned | 2026-04-24 |
 | `modal_drv_actual_shift_details` | Модалка | Деталі фактичної зміни | 📝 Planned | 2026-04-24 |
 | `modal_drv_simple_driver_details` | Модалка | Деталі водія (проста картка) | 📝 Planned | 2026-04-24 |
+| `page_tasks_main` | Сторінка | Таблиця задач (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-24 |
+| `modal_task_form` | Модалка | Форма створення/редагування задачі | 📝 Planned | 2026-04-24 |
+| `modal_task_details` | Модалка | Деталі задачі | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |
