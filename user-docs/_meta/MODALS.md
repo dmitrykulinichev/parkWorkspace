@@ -2,6 +2,8 @@
 
 Цей файл описує всі модальні вікна системи, які використовуються на сторінках через плейсхолдер `{{MODAL:ім'я}}`.
 
+**Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.
+
 | ID Модалки | Назва (UI) | Файл опису | Використовується на сторінках | Дата оновлення |
 | :--- | :--- | :--- | :--- | :--- |
 | **fleet_vehicle_form** | Додати/Редагувати автомобіль | [fleet_vehicle_form.md](../data/shared/modals/fleet_vehicle_form.md) | `02-vehicles/01-list.md` | 2026-04-23 |
@@ -56,4 +58,6 @@
 | `intg_uklon_vehicle_details` | Деталі авто в Uklon | [intg_uklon_vehicle_details.md](../data/shared/modals/intg_uklon_vehicle_details.md) | `02-vehicles/01-list.md` | 2026-04-24 |
 | `dash_settings` | Налаштування дашборду | [dash_settings.md](../data/shared/modals/dash_settings.md) | `01-home.md` | 2026-04-24 |
 
-> **Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.
+| `driver_earnings_calc_info` | Інформація про нарахування | [driver_earnings_calc_info.md](../data/shared/modals/driver_earnings_calc_info.md) | `/driver-earnings-new` | 2026-04-24 |
+| `driver_earnings_details` | Деталі заробітку водія | [driver_earnings_details.md](../data/shared/modals/driver_earnings_details.md) | `/driver-earnings-new` | 2026-04-24 |
+| `driver_earnings_raw_data` | Сирі дані звіту | [driver_earnings_raw_data.md](../data/shared/modals/driver_earnings_raw_data.md) | `/driver-earnings-new` | 2026-04-24 |

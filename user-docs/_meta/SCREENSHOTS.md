@@ -104,6 +104,11 @@
 | `page_dash_empty` | Сторінка | Дашборд з онбордінгом (новий парк без даних) | 📝 Planned | 2026-04-24 |
 | `page_dash_mobile` | Сторінка | Мобільна версія головної панелі | 📝 Planned | 2026-04-24 |
 | `modal_dash_settings_form` | Модалка | Вікно налаштувань видимості віджетів | 📝 Planned | 2026-04-24 |
+| `page_earnings_main` | Сторінка | Таблиця заробітку (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_earnings_mobile` | Сторінка | Мобільна версія заробітку | 📝 Planned | 2026-04-24 |
+| `modal_driver_earnings_calc_info` | Модалка | Інформація про формулу нарахувань | 📝 Planned | 2026-04-24 |
+| `modal_driver_earnings_details` | Модалка | Деталі заробітку конкретного водія | 📝 Planned | 2026-04-24 |
+| `modal_driver_earnings_raw_data` | Модалка | Перегляд сирих даних (Raw Data) | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |

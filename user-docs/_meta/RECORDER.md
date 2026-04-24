@@ -152,11 +152,35 @@
   1. Клікнути по рядку (double click) або іконці "Eye" у рядку плану
 - **Тригер:** клік по іконці `Eye`
 
-## modal_manual_debt_payment_form
+## page_earnings_main
 
-- **URL:** `/driver-debt-plans`
+- **URL:** `/driver-earnings-new`
+- **Кроки:** Дочекатися завантаження таблиці заробітку.
+
+## page_earnings_mobile
+
+- **URL:** `/driver-earnings-new`
+- **Кроки:** Встановити viewport < 768px.
+
+## modal_driver_earnings_calc_info
+
+- **URL:** `/driver-earnings-new`
 - **Кроки:**
-  1. Знайти активний план
-  2. Натиснути іконку "Wallet" (Списати вручну) у рядку
-- **Тригер:** клік по іконці `Wallet`
+  1. Натиснути іконку інформації (або кнопку "Інфо") у хедері
+- **Тригер:** іконка `BarChart2` або аналогічна кнопка інфо
+
+## modal_driver_earnings_details
+
+- **URL:** `/driver-earnings-new`
+- **Кроки:**
+  1. Клікнути на будь-яке ім'я водія в таблиці
+- **Тригер:** клік по посиланню/імені водія
+
+## modal_driver_earnings_raw_data
+
+- **URL:** `/driver-earnings-new`
+- **Кроки:**
+  1. Знайти кнопку перегляду "сирих даних" (Raw Data) у рядку водія
+- **Тригер:** клік по кнопці з іконкою перегляду даних
+
 
