@@ -8,6 +8,6 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/activity-logs` 
+Задача: задокументувати сторінку `/subscription-logs` (парк)
 
 додатково звертаю увагу на правильну вставку даних, ти регулярно обрізаєш файли
