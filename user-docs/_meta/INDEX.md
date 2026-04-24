@@ -35,7 +35,7 @@
 | - Матеріали | `/resources` | [07-park/06-resources.md](../data/07-park/06-resources.md) | ✅ Completed | 2026-04-24 |
 | - Журнал подій | `/activity-logs` | [07-park/07-activity-logs.md](../data/07-park/07-activity-logs.md) | ✅ Completed | 2026-04-24 |
 | - Журнал розсилок | `/subscription-logs` | [07-park/08-subscription-logs.md](../data/07-park/08-subscription-logs.md) | ✅ Completed | 2026-04-24 |
-| - Налаштування фінансів | `/finance-settings` | [07-park/09-finance-settings.md](../data/07-park/09-finance-settings.md) | 📝 Todo | - |
+| - Налаштування фінансів | `/finance-settings` | [07-park/09-finance-settings.md](../data/07-park/09-finance-settings.md) | ✅ Completed | 2026-04-24 |
 | **Інтеграції** | | | | |
 | - Uklon | `/uklon` | [08-integrations/01-uklon.md](../data/08-integrations/01-uklon.md) | 📝 Todo | - |
 | - Telegram | `/telegram` | [08-integrations/02-telegram.md](../data/08-integrations/02-telegram.md) | 📝 Todo | - |
