@@ -39,29 +39,29 @@
 | **drv_driver_copy** | Копіювати водія в інший парк | [drv_driver_copy.md](../data/shared/modals/drv_driver_copy.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_comments** | Коментарі до водія | [drv_comments.md](../data/shared/modals/drv_comments.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_telegram** | Підключення Telegram | [drv_telegram.md](../data/shared/modals/drv_telegram.md) | `03-drivers/01-list.md` | 2026-04-24 |
-| `drv_schedule_slot_form` | Форма графіку роботи | [drv_schedule_slot_form.md](../data/shared/modals/drv_schedule_slot_form.md) | `/driver-schedule` | 2026-04-24 |
-| `drv_actual_shift_details` | Деталі фактичної зміни | [drv_actual_shift_details.md](../data/shared/modals/drv_actual_shift_details.md) | `/driver-schedule` | 2026-04-24 |
-| `drv_simple_driver_details` | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-24 |
-| `task_form` | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks`, `01-home.md` | 2026-04-24 |
-| `task_details` | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-24 |
-| `manual_trip_form` | Форма ручної поїздки | [manual_trip_form.md](../data/shared/modals/manual_trip_form.md) | `/manual-trips` | 2026-04-24 |
-| `manual_trip_details` | Деталі ручної поїздки | [manual_trip_details.md](../data/shared/modals/manual_trip_details.md) | `/manual-trips` | 2026-04-24 |
-| `txn_form` | Форма транзакції | [txn_form.md](../data/shared/modals/txn_form.md) | `/transactions` | 2026-04-24 |
-| `txn_details` | Деталі транзакції | [txn_details.md](../data/shared/modals/txn_details.md) | `/transactions` | 2026-04-24 |
-| `drv_exp_form` | Форма витрат водія | [drv_exp_form.md](../data/shared/modals/drv_exp_form.md) | `/driver-expenses` | 2026-04-24 |
-| `drv_exp_details` | Деталі витрати водія | [drv_exp_details.md](../data/shared/modals/drv_exp_details.md) | `/driver-expenses` | 2026-04-24 |
-| `bonus_penalty_form` | Форма премій/штрафів | [bonus_penalty_form.md](../data/shared/modals/bonus_penalty_form.md) | `/bonuses-penalties` | 2026-04-24 |
-| `bonus_penalty_details` | Деталі премії/штрафу | [bonus_penalty_details.md](../data/shared/modals/bonus_penalty_details.md) | `/bonuses-penalties` | 2026-04-24 |
-| `driver_debt_plan_form` | Форма плану боргу | [driver_debt_plan_form.md](../data/shared/modals/driver_debt_plan_form.md) | `/driver-debt-plans` | 2026-04-24 |
-| `driver_debt_plan_details` | Деталі плану боргу | [driver_debt_plan_details.md](../data/shared/modals/driver_debt_plan_details.md) | `/driver-debt-plans` | 2026-04-24 |
-| `manual_debt_payment_form` | Форма погашення боргу | [manual_debt_payment_form.md](../data/shared/modals/manual_debt_payment_form.md) | `/driver-debt-plans` | 2026-04-24 |
-| `intg_uklon_vehicle_details` | Деталі авто в Uklon | [intg_uklon_vehicle_details.md](../data/shared/modals/intg_uklon_vehicle_details.md) | `02-vehicles/01-list.md` | 2026-04-24 |
-| `dash_settings` | Налаштування дашборду | [dash_settings.md](../data/shared/modals/dash_settings.md) | `01-home.md` | 2026-04-24 |
-| `driver_earnings_raw_data` | Сирі дані звіту | [driver_earnings_raw_data.md](../data/shared/modals/driver_earnings_raw_data.md) | `/driver-earnings-new` | 2026-04-24 |
-| `driver_earnings_calc_info` | Інформація про нарахування | [driver_earnings_calc_info.md](../data/shared/modals/driver_earnings_calc_info.md) | `/driver-earnings-new` | 2026-04-24 |
-| `driver_earnings_details` | Деталі заробітку водія | [driver_earnings_details.md](../data/shared/modals/driver_earnings_details.md) | `/driver-earnings-new` | 2026-04-24 |
-| `vehicle_earnings_details` | Деталі заробітку авто | [vehicle_earnings_details.md](../data/shared/modals/vehicle_earnings_details.md) | `/vehicle-earnings` | 2026-04-24 |
-| `vehicle_earnings_calc_info` | Інформація про розрахунок | [vehicle_earnings_calc_info.md](../data/shared/modals/vehicle_earnings_calc_info.md) | `/vehicle-earnings` | 2026-04-24 |
+| **drv_schedule_slot_form** | Форма графіку роботи | [drv_schedule_slot_form.md](../data/shared/modals/drv_schedule_slot_form.md) | `/driver-schedule` | 2026-04-24 |
+| **drv_actual_shift_details** | Деталі фактичної зміни | [drv_actual_shift_details.md](../data/shared/modals/drv_actual_shift_details.md) | `/driver-schedule` | 2026-04-24 |
+| **drv_simple_driver_details** | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-24 |
+| **task_form** | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks`, `01-home.md` | 2026-04-24 |
+| **task_details** | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-24 |
+| **manual_trip_form** | Форма ручної поїздки | [manual_trip_form.md](../data/shared/modals/manual_trip_form.md) | `/manual-trips` | 2026-04-24 |
+| **manual_trip_details** | Деталі ручної поїздки | [manual_trip_details.md](../data/shared/modals/manual_trip_details.md) | `/manual-trips` | 2026-04-24 |
+| **txn_form** | Форма транзакції | [txn_form.md](../data/shared/modals/txn_form.md) | `/transactions` | 2026-04-24 |
+| **txn_details** | Деталі транзакції | [txn_details.md](../data/shared/modals/txn_details.md) | `/transactions` | 2026-04-24 |
+| **drv_exp_form** | Форма витрат водія | [drv_exp_form.md](../data/shared/modals/drv_exp_form.md) | `/driver-expenses` | 2026-04-24 |
+| **drv_exp_details** | Деталі витрати водія | [drv_exp_details.md](../data/shared/modals/drv_exp_details.md) | `/driver-expenses` | 2026-04-24 |
+| **bonus_penalty_form** | Форма премій/штрафів | [bonus_penalty_form.md](../data/shared/modals/bonus_penalty_form.md) | `/bonuses-penalties` | 2026-04-24 |
+| **bonus_penalty_details** | Деталі премії/штрафу | [bonus_penalty_details.md](../data/shared/modals/bonus_penalty_details.md) | `/bonuses-penalties` | 2026-04-24 |
+| **driver_debt_plan_form** | Форма плану боргу | [driver_debt_plan_form.md](../data/shared/modals/driver_debt_plan_form.md) | `/driver-debt-plans` | 2026-04-24 |
+| **driver_debt_plan_details** | Деталі плану боргу | [driver_debt_plan_details.md](../data/shared/modals/driver_debt_plan_details.md) | `/driver-debt-plans` | 2026-04-24 |
+| **manual_debt_payment_form** | Форма погашення боргу | [manual_debt_payment_form.md](../data/shared/modals/manual_debt_payment_form.md) | `/driver-debt-plans` | 2026-04-24 |
+| **intg_uklon_vehicle_details** | Деталі авто в Uklon | [intg_uklon_vehicle_details.md](../data/shared/modals/intg_uklon_vehicle_details.md) | `02-vehicles/01-list.md` | 2026-04-24 |
+| **dash_settings** | Налаштування дашборду | [dash_settings.md](../data/shared/modals/dash_settings.md) | `01-home.md` | 2026-04-24 |
+| **driver_earnings_raw_data** | Сирі дані звіту | [driver_earnings_raw_data.md](../data/shared/modals/driver_earnings_raw_data.md) | `/driver-earnings-new` | 2026-04-24 |
+| **driver_earnings_calc_info** | Інформація про нарахування | [driver_earnings_calc_info.md](../data/shared/modals/driver_earnings_calc_info.md) | `/driver-earnings-new` | 2026-04-24 |
+| **driver_earnings_details** | Деталі заробітку водія | [driver_earnings_details.md](../data/shared/modals/driver_earnings_details.md) | `/driver-earnings-new` | 2026-04-24 |
+| **vehicle_earnings_details** | Деталі заробітку авто | [vehicle_earnings_details.md](../data/shared/modals/vehicle_earnings_details.md) | `/vehicle-earnings` | 2026-04-24 |
+| **vehicle_earnings_calc_info** | Інформація про розрахунок | [vehicle_earnings_calc_info.md](../data/shared/modals/vehicle_earnings_calc_info.md) | `/vehicle-earnings` | 2026-04-24 |
 | **park_user_form** | Додати/Редагувати користувача | [park_user_form.md](../data/shared/modals/park_user_form.md) | `07-park/02-team.md` | 2026-04-24 |
 | **park_user_filters** | Фільтри команди | [park_user_filters.md](../data/shared/modals/park_user_filters.md) | `07-park/02-team.md` | 2026-04-24 |
 | **park_user_permissions** | Управління правами | [park_user_permissions.md](../data/shared/modals/park_user_permissions.md) | `07-park/02-team.md` | 2026-04-24 |
@@ -71,3 +71,5 @@
 | **park_file_form** | Додати/Редагувати файл парку | [park_file_form.md](../data/shared/modals/park_file_form.md) | `07-park/03-files.md` | 2026-04-24 |
 | **park_file_filters** | Фільтри файлів | [park_file_filters.md](../data/shared/modals/park_file_filters.md) | `07-park/03-files.md` | 2026-04-24 |
 | **park_file_delete** | Підтвердження видалення документа | [park_file_delete.md](../data/shared/modals/park_file_delete.md) | `07-park/03-files.md` | 2026-04-24 |
+| **landing_news_form** | Створити/Редагувати новину | [landing_news_form.md](../data/shared/modals/landing_news_form.md) | `/landing-settings` | 2026-04-24 |
+| **landing_news_delete** | Підтвердження видалення новини | [landing_news_delete.md](../data/shared/modals/landing_news_delete.md) | `/landing-settings` | 2026-04-24 |
