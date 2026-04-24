@@ -20,7 +20,7 @@
 | **ops_assignment_form** | Створити/Редагувати призначення | [ops_assignment_form.md](../data/shared/modals/ops_assignment_form.md) | `02-vehicles/01-list.md`, `03-drivers/01-list.md`, `03-drivers/02-assignments.md` | 2026-04-24 |
 | **ops_assignment_details** | Деталі призначення | [ops_assignment_details.md](../data/shared/modals/ops_assignment_details.md) | `03-drivers/02-assignments.md` | 2026-04-24 |
 | **issue_report_form** | Створити/Редагувати звіт | [issue_report_form.md](../data/shared/modals/issue_report_form.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
-| **issue_report_actions** | Прийняти рішення по звіту | [issue_report_actions.md](../data/shared/modals/issue_report_actions.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
+| **issue_report_actions** | Прийняти рішення по звіту | [issue_report_actions.md](../data/shared/modals/issue_report_actions.md) | `03-drivers/03-issue-reports.md`, `01-home.md` | 2026-04-24 |
 | **issue_report_details** | Деталі звіту про проблему | [issue_report_details.md](../data/shared/modals/issue_report_details.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
 | **issue_task_info** | Деталі задачі (звіт) | [issue_task_info.md](../data/shared/modals/issue_task_info.md) | `03-drivers/03-issue-reports.md` | 2026-04-24 |
 | **ops_unassign_form** | Зняти водія | [ops_unassign_form.md](../data/shared/modals/ops_unassign_form.md) | `02-vehicles/01-list.md`, `03-drivers/02-assignments.md` | 2026-04-23 |
@@ -40,7 +40,7 @@
 | `drv_schedule_slot_form` | Форма графіку роботи | [drv_schedule_slot_form.md](../data/shared/modals/drv_schedule_slot_form.md) | `/driver-schedule` | 2026-04-24 |
 | `drv_actual_shift_details` | Деталі фактичної зміни | [drv_actual_shift_details.md](../data/shared/modals/drv_actual_shift_details.md) | `/driver-schedule` | 2026-04-24 |
 | `drv_simple_driver_details` | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-24 |
-| `task_form` | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks` | 2026-04-24 |
+| `task_form` | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks`, `01-home.md` | 2026-04-24 |
 | `task_details` | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-24 |
 | `manual_trip_form` | Форма ручної поїздки | [manual_trip_form.md](../data/shared/modals/manual_trip_form.md) | `/manual-trips` | 2026-04-24 |
 | `manual_trip_details` | Деталі ручної поїздки | [manual_trip_details.md](../data/shared/modals/manual_trip_details.md) | `/manual-trips` | 2026-04-24 |
@@ -49,5 +49,7 @@
 | `drv_exp_form` | Форма витрат водія | [drv_exp_form.md](../data/shared/modals/drv_exp_form.md) | `/driver-expenses` | 2026-04-24 |
 | `drv_exp_details` | Деталі витрати водія | [drv_exp_details.md](../data/shared/modals/drv_exp_details.md) | `/driver-expenses` | 2026-04-24 |
 | `intg_uklon_vehicle_details` | Деталі авто в Uklon | [intg_uklon_vehicle_details.md](../data/shared/modals/intg_uklon_vehicle_details.md) | `02-vehicles/01-list.md` | 2026-04-24 |
+
+| `dash_settings` | Налаштування дашборду | [dash_settings.md](../data/shared/modals/dash_settings.md) | `01-home.md` | 2026-04-24 |
 
 > **Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.

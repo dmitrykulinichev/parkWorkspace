@@ -89,6 +89,10 @@
 | `modal_drv_exp_details` | Модалка | Деталі витрати водія | 📝 Planned | 2026-04-24 |
 | `modal_drv_exp_filters` | Модалка | Фільтри витрат | 📝 Planned | 2026-04-24 |
 | `modal_intg_uklon_vehicle_details` | Модалка | Деталі авто в системі Uklon | 📝 Planned | 2026-04-24 |
+| `page_dash_main` | Сторінка | Головна панель з усіма увімкненими віджетами | 📝 Planned | 2026-04-24 |
+| `page_dash_empty` | Сторінка | Дашборд з онбордінгом (новий парк без даних) | 📝 Planned | 2026-04-24 |
+| `page_dash_mobile` | Сторінка | Мобільна версія головної панелі | 📝 Planned | 2026-04-24 |
+| `modal_dash_settings_form` | Модалка | Вікно налаштувань видимості віджетів | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |
