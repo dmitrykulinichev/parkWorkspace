@@ -39,6 +39,33 @@
 | `page_park_billing_main` | Сторінка | Головний вигляд сторінки білінгу | 📝 Planned | 2026-04-24 |
 | `page_park_billing_empty` | Сторінка | Порожній стан історії білінгу | 📝 Planned | 2026-04-24 |
 | `page_park_billing_mobile` | Сторінка | Мобільна версія сторінки білінгу | 📝 Planned | 2026-04-24 |
+| `page_park_landing_main` | Сторінка | Головний вигляд налаштувань лендінгу | 📝 Planned | 2026-04-24 |
+| `tab_park_landing_general` | Вкладка | Вкладка "Загальні налаштування" | 📝 Planned | 2026-04-24 |
+| `tab_park_landing_news` | Вкладка | Вкладка "Новини та акції" | 📝 Planned | 2026-04-24 |
+| `page_drv_list_main` | Сторінка | Список водіїв з таблицею та статусами | 📝 Planned | 2026-04-24 |
+| `page_drv_list_empty` | Сторінка | Порожній стан "Команда ще не сформована" | 📝 Planned | 2026-04-24 |
+| `page_drv_list_mobile` | Сторінка | Мобільна версія списку водіїв | 📝 Planned | 2026-04-24 |
+| `page_ops_assignments_main` | Сторінка | Таблиця журналу призначень | 📝 Planned | 2026-04-24 |
+| `page_ops_assignments_empty` | Сторінка | Порожній стан журналу призначень | 📝 Planned | 2026-04-24 |
+| `page_ops_assignments_mobile` | Сторінка | Мобільна версія журналу призначень | 📝 Planned | 2026-04-24 |
+| `page_drv_issue_reports_main` | Сторінка | Таблиця звітів про проблеми | 📝 Planned | 2026-04-24 |
+| `page_drv_issue_reports_empty` | Сторінка | Порожній стан звітів | 📝 Planned | 2026-04-24 |
+| `page_drv_schedule_main` | Сторінка | Основний вигляд графіку (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_drv_schedule_mobile` | Сторінка | Мобільна версія графіку | 📝 Planned | 2026-04-24 |
+| `page_txn_main` | Сторінка | Таблиця транзакцій (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_txn_empty` | Сторінка | Порожній стан списку транзакцій | 📝 Planned | 2026-04-24 |
+| `page_tasks_main` | Сторінка | Таблиця задач (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-24 |
+| `page_manual_trips_main` | Сторінка | Таблиця ручних поїздок | 📝 Planned | 2026-04-24 |
+| `page_manual_trips_empty` | Сторінка | Порожній стан списку поїздок | 📝 Planned | 2026-04-24 |
+| `page_dash_main` | Сторінка | Головна панель з усіма увімкненими віджетами | 📝 Planned | 2026-04-24 |
+| `page_dash_empty` | Сторінка | Дашборд з онбордінгом (новий парк без даних) | 📝 Planned | 2026-04-24 |
+| `page_dash_mobile` | Сторінка | Мобільна версія головної панелі | 📝 Planned | 2026-04-24 |
+| `page_earnings_main` | Сторінка | Таблиця заробітку (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_earnings_mobile` | Сторінка | Мобільна версія заробітку | 📝 Planned | 2026-04-24 |
+| `page_vehicle_earnings_main` | Сторінка | Таблиця заробітку авто (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_vehicle_earnings_mobile` | Сторінка | Мобільна версія заробітку авто | 📝 Planned | 2026-04-24 |
+
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
@@ -63,9 +90,6 @@
 | `modal_rep_filters` | Модалка | Фільтрація та сортування у звітах | 📝 Planned | 2026-04-23 |
 | `modal_settings_maint_form` | Модалка | Створення/редагування регламенту ТО | 📝 Planned | 2026-04-23 |
 | `modal_settings_maint_pre` | Модалка | Попередній перегляд імпорту шаблонів | 📝 Planned | 2026-04-23 |
-| `page_drv_list_main` | Сторінка | Список водіїв з таблицею та статусами | 📝 Planned | 2026-04-24 |
-| `page_drv_list_empty` | Сторінка | Порожній стан "Команда ще не сформована" | 📝 Planned | 2026-04-24 |
-| `page_drv_list_mobile` | Сторінка | Мобільна версія списку водіїв | 📝 Planned | 2026-04-24 |
 | `modal_drv_driver_form` | Модалка | Форма додавання/редагування водія | 📝 Planned | 2026-04-24 |
 | `modal_drv_driver_valid` | Модалка | Форма водія з помилками валідації | 📝 Planned | 2026-04-24 |
 | `modal_drv_driver_details` | Модалка | Картка деталей водія | 📝 Planned | 2026-04-24 |
@@ -79,26 +103,13 @@
 | `modal_issue_report_actions` | Модалка | Вікно прийняття рішення по звіту | 📝 Planned | 2026-04-24 |
 | `modal_issue_report_details` | Модалка | Деталі звіту | 📝 Planned | 2026-04-24 |
 | `modal_issue_task_info` | Модалка | Вікно інформації про задачу | 📝 Planned | 2026-04-24 |
-| `page_ops_assignments_main` | Сторінка | Таблиця журналу призначень | 📝 Planned | 2026-04-24 |
-| `page_ops_assignments_empty` | Сторінка | Порожній стан журналу призначень | 📝 Planned | 2026-04-24 |
-| `page_ops_assignments_mobile` | Сторінка | Мобільна версія журналу призначень | 📝 Planned | 2026-04-24 |
-| `page_drv_issue_reports_main` | Сторінка | Таблиця звітів про проблеми | 📝 Planned | 2026-04-24 |
-| `page_drv_issue_reports_empty` | Сторінка | Порожній стан звітів | 📝 Planned | 2026-04-24 |
-| `page_drv_schedule_main` | Сторінка | Основний вигляд графіку (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_drv_schedule_mobile` | Сторінка | Мобільна версія графіку | 📝 Planned | 2026-04-24 |
 | `modal_drv_schedule_slot_form` | Модалка | Форма створення/редагування слоту | 📝 Planned | 2026-04-24 |
 | `modal_drv_actual_shift_details` | Модалка | Деталі фактичної зміни | 📝 Planned | 2026-04-24 |
 | `modal_drv_simple_driver_details` | Модалка | Деталі водія (проста картка) | 📝 Planned | 2026-04-24 |
-| `page_txn_main` | Сторінка | Таблиця транзакцій (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_txn_empty` | Сторінка | Порожній стан списку транзакцій | 📝 Planned | 2026-04-24 |
 | `modal_txn_form` | Модалка | Форма створення/редагування транзакції | 📝 Planned | 2026-04-24 |
 | `modal_txn_details` | Модалка | Деталі транзакції | 📝 Planned | 2026-04-24 |
-| `page_tasks_main` | Сторінка | Таблиця задач (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-24 |
 | `modal_task_form` | Модалка | Форма створення/редагування задачі | 📝 Planned | 2026-04-24 |
 | `modal_task_details` | Модалка | Деталі задачі | 📝 Planned | 2026-04-24 |
-| `page_manual_trips_main` | Сторінка | Таблиця ручних поїздок | 📝 Planned | 2026-04-24 |
-| `page_manual_trips_empty` | Сторінка | Порожній стан списку поїздок | 📝 Planned | 2026-04-24 |
 | `modal_manual_trip_form` | Модалка | Форма створення/редагування поїздки | 📝 Planned | 2026-04-24 |
 | `modal_manual_trip_details` | Модалка | Деталі поїздки | 📝 Planned | 2026-04-24 |
 | `modal_drv_exp_form` | Модалка | Форма витрат водія | 📝 Planned | 2026-04-24 |
@@ -110,17 +121,10 @@
 | `modal_driver_debt_plan_details` | Модалка | Деталі плану боргу | 📝 Planned | 2026-04-24 |
 | `modal_manual_debt_payment_form` | Модалка | Форма погашення боргу | 📝 Planned | 2026-04-24 |
 | `modal_intg_uklon_vehicle_details` | Модалка | Деталі авто в системі Uklon | 📝 Planned | 2026-04-24 |
-| `page_dash_main` | Сторінка | Головна панель з усіма увімкненими віджетами | 📝 Planned | 2026-04-24 |
-| `page_dash_empty` | Сторінка | Дашборд з онбордінгом (новий парк без даних) | 📝 Planned | 2026-04-24 |
-| `page_dash_mobile` | Сторінка | Мобільна версія головної панелі | 📝 Planned | 2026-04-24 |
 | `modal_dash_settings_form` | Модалка | Вікно налаштувань видимості віджетів | 📝 Planned | 2026-04-24 |
-| `page_earnings_main` | Сторінка | Таблиця заробітку (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_earnings_mobile` | Сторінка | Мобільна версія заробітку | 📝 Planned | 2026-04-24 |
 | `modal_driver_earnings_calc_info` | Модалка | Інформація про формулу нарахувань | 📝 Planned | 2026-04-24 |
 | `modal_driver_earnings_details` | Модалка | Деталі заробітку конкретного водія | 📝 Planned | 2026-04-24 |
 | `modal_driver_earnings_raw_data` | Модалка | Перегляд сирих даних (Raw Data) | 📝 Planned | 2026-04-24 |
-| `page_vehicle_earnings_main` | Сторінка | Таблиця заробітку авто (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_vehicle_earnings_mobile` | Сторінка | Мобільна версія заробітку авто | 📝 Planned | 2026-04-24 |
 | `modal_vehicle_earnings_details` | Модалка | Деталі заробітку конкретного авто | 📝 Planned | 2026-04-24 |
 | `modal_vehicle_earnings_calc_info` | Модалка | Інформація про формулу розрахунку | 📝 Planned | 2026-04-24 |
 | `modal_park_user_form` | Модалка | Форма додавання/редагування користувача | 📝 Planned | 2026-04-24 |
@@ -132,6 +136,8 @@
 | `modal_park_file_form` | Модалка | Форма додавання файлу парку | 📝 Planned | 2026-04-24 |
 | `modal_park_file_filters` | Модалка | Фільтри файлів парку | 📝 Planned | 2026-04-24 |
 | `modal_park_file_delete` | Модалка | Підтвердження видалення файлу | 📝 Planned | 2026-04-24 |
+| `modal_landing_news_form` | Модалка | Створити/Редагувати новину | 📝 Planned | 2026-04-24 |
+| `modal_landing_news_delete` | Модалка | Підтвердження видалення новини | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |
