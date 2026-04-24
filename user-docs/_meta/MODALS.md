@@ -48,5 +48,6 @@
 | `txn_details` | Деталі транзакції | [txn_details.md](../data/shared/modals/txn_details.md) | `/transactions` | 2026-04-24 |
 | `drv_exp_form` | Форма витрат водія | [drv_exp_form.md](../data/shared/modals/drv_exp_form.md) | `/driver-expenses` | 2026-04-24 |
 | `drv_exp_details` | Деталі витрати водія | [drv_exp_details.md](../data/shared/modals/drv_exp_details.md) | `/driver-expenses` | 2026-04-24 |
+| `intg_uklon_vehicle_details` | Деталі авто в Uklon | [intg_uklon_vehicle_details.md](../data/shared/modals/intg_uklon_vehicle_details.md) | `02-vehicles/01-list.md` | 2026-04-24 |
 
 > **Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.
