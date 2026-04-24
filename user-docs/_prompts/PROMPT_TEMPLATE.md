@@ -8,4 +8,4 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/issue-reports` (Водії/звернення)
+Задача: задокументувати сторінку `/driver-schedule` (Водії/звернення)

@@ -65,7 +65,11 @@
 | `page_ops_assignments_mobile` | Сторінка | Мобільна версія журналу призначень | 📝 Planned | 2026-04-24 |
 | `page_drv_issue_reports_main` | Сторінка | Таблиця звітів про проблеми | 📝 Planned | 2026-04-24 |
 | `page_drv_issue_reports_empty` | Сторінка | Порожній стан звітів | 📝 Planned | 2026-04-24 |
-| `page_drv_issue_reports_mobile` | Сторінка | Мобільна версія звітів | 📝 Planned | 2026-04-24 |
+| `page_drv_schedule_main` | Сторінка | Основний вигляд графіку (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_drv_schedule_mobile` | Сторінка | Мобільна версія графіку | 📝 Planned | 2026-04-24 |
+| `modal_drv_schedule_slot_form` | Модалка | Форма створення/редагування слоту | 📝 Planned | 2026-04-24 |
+| `modal_drv_actual_shift_details` | Модалка | Деталі фактичної зміни | 📝 Planned | 2026-04-24 |
+| `modal_drv_simple_driver_details` | Модалка | Деталі водія (проста картка) | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |

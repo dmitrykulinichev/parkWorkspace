@@ -16,7 +16,7 @@
 | - Список водіїв | `/drivers` | [03-drivers/01-list.md](../data/03-drivers/01-list.md) | ✅ Completed | 2026-04-24 |
 | - Призначення | `/assignments` | [03-drivers/02-assignments.md](../data/03-drivers/02-assignments.md) | ✅ Completed | 2026-04-24 |
 | - Звернення (Issue Reports) | `/issue-reports` | [03-drivers/03-issue-reports.md](../data/03-drivers/03-issue-reports.md) | ✅ Completed | 2026-04-24 |
-| **Графік роботи** | `/driver-schedule` | [04-schedule.md](../data/04-schedule.md) | 📝 Draft | - |
+| **Графік роботи** | `/driver-schedule` | [04-schedule.md](../data/04-schedule.md) | ✅ Completed | 2026-04-24 |
 | **Задачі** | `/tasks` | [05-tasks.md](../data/05-tasks.md) | 📝 Draft | - |
 | **Фінанси (Finance)** | | | | |
 | - Транзакції | `/transactions` | [06-finance/01-transactions.md](../data/06-finance/01-transactions.md) | 📝 Todo | - |
