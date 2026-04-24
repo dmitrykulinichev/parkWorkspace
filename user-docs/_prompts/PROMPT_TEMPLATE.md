@@ -8,4 +8,7 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/manual-trips` 
+Задача: задокументувати сторінку `/driver-expenses` 
+Fact: Редагування реєстрів _meta/*.md та й інших існуючих файлів проводити ТІЛЬКИ через повний перезапис (read_file -> модифікація в пам'яті -> write_file). 
+Ніколи не використовувати replace.
+
