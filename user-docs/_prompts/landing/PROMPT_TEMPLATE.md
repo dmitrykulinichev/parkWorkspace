@@ -6,10 +6,10 @@
 - `workspace/user-docs/_prompts/landing/LANDING_STYLE.md`
 
 Задача: згенерувати сторінку документації лендінгу на основі:
-`C:\Repository\park\workspace\user-docs\data\02-vehicles\01-list.md`
+`C:\Repository\park\workspace\user-docs\data\07-park\02-team.md`
 
 Записати результат у:
-`C:\Repository\park\landing\www\content\docs\vehicles-list.md`
+`C:\Repository\park\landing\www\content\docs\park-users.md`
 
-Група в меню: "Основний функціонал"
+Група в меню: "Парк"
 ```

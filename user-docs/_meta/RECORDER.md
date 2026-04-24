@@ -87,3 +87,35 @@
   1. Створити нового користувача.
   2. Модалка відкриється автоматично після успішного створення.
 - **Тригер:** `activationLinkModal.isOpen`
+
+## page_park_files_main
+
+- **URL:** `/park-files`
+- **Кроки:**
+  1. Відкрити сторінку "Файли парку".
+
+## page_park_files_empty
+
+- **URL:** `/park-files`
+- **Умова:** відсутність документів.
+
+## modal_park_file_form
+
+- **URL:** `/park-files`
+- **Кроки:**
+  1. Натиснути "Додати документ".
+- **Тригер:** `handleCreateClick`
+
+## modal_park_file_filters
+
+- **URL:** `/park-files`
+- **Кроки:**
+  1. Натиснути кнопку фільтрів.
+- **Тригер:** `handleFiltersClick`
+
+## modal_park_file_delete
+
+- **URL:** `/park-files`
+- **Кроки:**
+  1. Натиснути іконку кошика у рядку документа.
+- **Тригер:** `onDelete`

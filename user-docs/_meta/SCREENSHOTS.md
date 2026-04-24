@@ -34,6 +34,8 @@
 | `page_park_users_main` | Сторінка | Список користувачів парку | 📝 Planned | 2026-04-24 |
 | `page_park_users_empty` | Сторінка | Порожній стан команди | 📝 Planned | 2026-04-24 |
 | `page_park_users_mobile` | Сторінка | Мобільна версія команди | 📝 Planned | 2026-04-24 |
+| `page_park_files_main` | Сторінка | Реєстр файлів парку | 📝 Planned | 2026-04-24 |
+| `page_park_files_empty` | Сторінка | Порожній реєстр файлів | 📝 Planned | 2026-04-24 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
@@ -124,6 +126,9 @@
 | `modal_park_user_delete` | Модалка | Підтвердження видалення користувача | 📝 Planned | 2026-04-24 |
 | `modal_park_user_reset_password` | Модалка | Підтвердження скидання пароля | 📝 Planned | 2026-04-24 |
 | `modal_park_user_activation` | Модалка | Вікно з посиланням на активацію | 📝 Planned | 2026-04-24 |
+| `modal_park_file_form` | Модалка | Форма додавання файлу парку | 📝 Planned | 2026-04-24 |
+| `modal_park_file_filters` | Модалка | Фільтри файлів парку | 📝 Planned | 2026-04-24 |
+| `modal_park_file_delete` | Модалка | Підтвердження видалення файлу | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |

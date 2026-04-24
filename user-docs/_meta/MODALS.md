@@ -68,3 +68,6 @@
 | **park_user_delete** | Підтвердження видалення | [park_user_delete.md](../data/shared/modals/park_user_delete.md) | `07-park/02-team.md` | 2026-04-24 |
 | **park_user_reset_password** | Скидання пароля | [park_user_reset_password.md](../data/shared/modals/park_user_reset_password.md) | `07-park/02-team.md` | 2026-04-24 |
 | **park_user_activation** | Посилання на активацію | [park_user_activation.md](../data/shared/modals/park_user_activation.md) | `07-park/02-team.md` | 2026-04-24 |
+| **park_file_form** | Додати/Редагувати файл парку | [park_file_form.md](../data/shared/modals/park_file_form.md) | `07-park/03-files.md` | 2026-04-24 |
+| **park_file_filters** | Фільтри файлів | [park_file_filters.md](../data/shared/modals/park_file_filters.md) | `07-park/03-files.md` | 2026-04-24 |
+| **park_file_delete** | Підтвердження видалення документа | [park_file_delete.md](../data/shared/modals/park_file_delete.md) | `07-park/03-files.md` | 2026-04-24 |
