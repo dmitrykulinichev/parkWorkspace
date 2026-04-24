@@ -31,7 +31,6 @@
 | **fleet_document_filters** | Фільтри документів | [fleet_document_filters.md](../data/shared/modals/fleet_document_filters.md) | `02-vehicles/04-documents.md` | 2026-04-23 |
 | **maint_schedule_form** | Створити/Редагувати регламент | [maint_schedule_form.md](../data/shared/modals/maint_schedule_form.md) | `02-vehicles/06-settings.md` | 2026-04-23 |
 | **maint_schedule_import** | Імпорт шаблонів ТО | [maint_schedule_import.md](../data/shared/modals/maint_schedule_import.md) | `02-vehicles/06-settings.md` | 2026-04-23 |
-
 | **drv_driver_form** | Додати/Редагувати водія | [drv_driver_form.md](../data/shared/modals/drv_driver_form.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_driver_details** | Деталі водія | [drv_driver_details.md](../data/shared/modals/drv_driver_details.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_import** | Імпорт водіїв | [drv_import.md](../data/shared/modals/drv_import.md) | `03-drivers/01-list.md` | 2026-04-24 |
@@ -43,5 +42,7 @@
 | `drv_simple_driver_details` | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-24 |
 | `task_form` | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks` | 2026-04-24 |
 | `task_details` | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-24 |
+| `txn_form` | Форма транзакції | [txn_form.md](../data/shared/modals/txn_form.md) | `/transactions` | 2026-04-24 |
+| `txn_details` | Деталі транзакції | [txn_details.md](../data/shared/modals/txn_details.md) | `/transactions` | 2026-04-24 |
 
 > **Примітка:** При описі нової модалки спочатку додайте її в цей реєстр.

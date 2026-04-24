@@ -70,6 +70,10 @@
 | `modal_drv_schedule_slot_form` | Модалка | Форма створення/редагування слоту | 📝 Planned | 2026-04-24 |
 | `modal_drv_actual_shift_details` | Модалка | Деталі фактичної зміни | 📝 Planned | 2026-04-24 |
 | `modal_drv_simple_driver_details` | Модалка | Деталі водія (проста картка) | 📝 Planned | 2026-04-24 |
+| `page_txn_main` | Сторінка | Таблиця транзакцій (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_txn_empty` | Сторінка | Порожній стан списку транзакцій | 📝 Planned | 2026-04-24 |
+| `modal_txn_form` | Модалка | Форма створення/редагування транзакції | 📝 Planned | 2026-04-24 |
+| `modal_txn_details` | Модалка | Деталі транзакції | 📝 Planned | 2026-04-24 |
 | `page_tasks_main` | Сторінка | Таблиця задач (Desktop) | 📝 Planned | 2026-04-24 |
 | `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-24 |
 | `modal_task_form` | Модалка | Форма створення/редагування задачі | 📝 Planned | 2026-04-24 |
