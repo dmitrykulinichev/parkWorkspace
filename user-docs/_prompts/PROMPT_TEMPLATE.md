@@ -8,6 +8,6 @@
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 
-Задача: задокументувати сторінку `/billing` 
+Задача: задокументувати сторінку `/resources` 
 
 додатково звертаю увагу на правильну вставку даних, ти регулярно обрізаєш файли

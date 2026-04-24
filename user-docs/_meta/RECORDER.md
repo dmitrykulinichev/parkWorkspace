@@ -137,3 +137,33 @@
 - **URL:** `/billing`
 - **Кроки:**
   1. Відкрити сторінку "Білінг та Тарифи" при ширині вікна < 768px.
+
+## page_park_landing_main
+
+- **URL:** `/landing-settings`
+- **Кроки:**
+  1. Відкрити розділ "Налаштування Лендінгу".
+
+## tab_park_landing_general
+
+- **URL:** `/landing-settings`
+- **Вкладка:** Загальні налаштування (активна за замовчуванням).
+
+## tab_park_landing_news
+
+- **URL:** `/landing-settings`
+- **Вкладка:** Новини та акції.
+
+## modal_landing_news_form
+
+- **URL:** `/landing-settings`
+- **Кроки:**
+  1. Натиснути кнопку "Додати новину" або іконку редагування у рядку новини.
+- **Тригер:** `handleCreateClick` / `handleEditClick`
+
+## modal_landing_news_delete
+
+- **URL:** `/landing-settings`
+- **Кроки:**
+  1. Натиснути іконку кошика у рядку новини.
+- **Тригер:** `onDelete`
