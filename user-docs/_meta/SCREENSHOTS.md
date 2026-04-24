@@ -76,7 +76,8 @@
 | `page_settings_main` | Сторінка | Основний вигляд налаштувань | 📝 Planned | 2026-04-24 |
 | `tab_settings_appearance` | Вкладка | Вкладка "Зовнішній вигляд" | 📝 Planned | 2026-04-24 |
 | `tab_profile_access` | Вкладка | Вкладка "Доступ та Безпека" | 📝 Planned | 2026-04-24 |
-| `page_intg_telegram_main` | Сторінка | Головний вигляд налаштувань Telegram | 📝 Planned | 2026-04-25 |
+| `page_intg_tele_settings_main` | Сторінка | Головний вигляд налаштувань Telegram | 📝 Planned | 2026-04-25 |
+| `page_intg_tele_logs_main` | Сторінка | Головний вигляд логів Telegram | 📝 Planned | 2026-04-25 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
