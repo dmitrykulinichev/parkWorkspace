@@ -9,11 +9,11 @@
 
 **Джерело:** `C:\Repository\park\workspace\user-docs\data\`
 **Ціль:** `C:\Repository\park\landing\www\content\docs\`
-**Назва вихідного файлу:** та сама що й у джерела (без зміни)
+**Назва вихідного файлу:** вказується в промпті окремо (пласка структура, без числових префіксів)
 
 Приклад:
 - Джерело: `user-docs/data/03-drivers/01-list.md`
-- Результат: `landing/www/content/docs/03-drivers/01-list.md`
+- Результат: `landing/www/content/docs/drivers.md`
 
 ---
 
@@ -24,7 +24,7 @@
 3. Знайти всі `{{MODAL:doc_id}}` → прочитати відповідні файли з `user-docs/data/shared/modals/`
 4. Знайти всі `{{SCRN:id}}` → обробити скріншоти (див. нижче)
 5. Сформувати вихідний файл за структурою нижче
-6. Записати у `landing/www/content/docs/[той самий шлях]`
+6. Записати у `landing/www/content/docs/[ім'я вказане в промпті]`
 7. Якщо файл уже існує — прочитати його та доповнити, а не перезаписати
 
 ---
@@ -45,7 +45,8 @@
 
 | Префікс id | Папка в user-docs |
 | :--- | :--- |
-| `page_` | `user-docs/screenshots/pages/` |
+| `page_` (без `_mobile`) | `user-docs/screenshots/pages/` |
+| `page_*_mobile` | `user-docs/screenshots/mobile/` |
 | `tab_` | `user-docs/screenshots/tabs/` |
 | `modal_` | `user-docs/screenshots/modals/` |
 | `sec_` | `user-docs/screenshots/sections/` |
