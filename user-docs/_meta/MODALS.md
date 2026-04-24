@@ -62,3 +62,9 @@
 | `driver_earnings_details` | Деталі заробітку водія | [driver_earnings_details.md](../data/shared/modals/driver_earnings_details.md) | `/driver-earnings-new` | 2026-04-24 |
 | `vehicle_earnings_details` | Деталі заробітку авто | [vehicle_earnings_details.md](../data/shared/modals/vehicle_earnings_details.md) | `/vehicle-earnings` | 2026-04-24 |
 | `vehicle_earnings_calc_info` | Інформація про розрахунок | [vehicle_earnings_calc_info.md](../data/shared/modals/vehicle_earnings_calc_info.md) | `/vehicle-earnings` | 2026-04-24 |
+| **park_user_form** | Додати/Редагувати користувача | [park_user_form.md](../data/shared/modals/park_user_form.md) | `07-park/02-team.md` | 2026-04-24 |
+| **park_user_filters** | Фільтри команди | [park_user_filters.md](../data/shared/modals/park_user_filters.md) | `07-park/02-team.md` | 2026-04-24 |
+| **park_user_permissions** | Управління правами | [park_user_permissions.md](../data/shared/modals/park_user_permissions.md) | `07-park/02-team.md` | 2026-04-24 |
+| **park_user_delete** | Підтвердження видалення | [park_user_delete.md](../data/shared/modals/park_user_delete.md) | `07-park/02-team.md` | 2026-04-24 |
+| **park_user_reset_password** | Скидання пароля | [park_user_reset_password.md](../data/shared/modals/park_user_reset_password.md) | `07-park/02-team.md` | 2026-04-24 |
+| **park_user_activation** | Посилання на активацію | [park_user_activation.md](../data/shared/modals/park_user_activation.md) | `07-park/02-team.md` | 2026-04-24 |

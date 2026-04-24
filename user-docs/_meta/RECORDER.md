@@ -33,3 +33,57 @@
 - **Viewport:** < 768px
 - **Кроки:**
   1. Відкрити сторінку статистики парку на мобільному пристрої.
+
+## page_park_users_main
+
+- **URL:** `/park-users`
+- **Кроки:**
+  1. Відкрити сторінку "Команда".
+
+## page_park_users_mobile
+
+- **URL:** `/park-users`
+- **Viewport:** < 768px
+
+## modal_park_user_form
+
+- **URL:** `/park-users`
+- **Кроки:**
+  1. Натиснути кнопку "Додати користувача" (хедер).
+- **Тригер:** `handleCreateClick`
+
+## modal_park_user_filters
+
+- **URL:** `/park-users`
+- **Кроки:**
+  1. Натиснути кнопку фільтрів у хедері.
+- **Тригер:** `handleFiltersClick`
+
+## modal_park_user_permissions
+
+- **URL:** `/park-users`
+- **Кроки:**
+  1. Натиснути на іконку щита (Shield) у рядку користувача з роллю Admin.
+- **Тригер:** `onPermissions`
+
+## modal_park_user_delete
+
+- **URL:** `/park-users`
+- **Кроки:**
+  1. Натиснути кнопку з іконкою кошика у рядку користувача.
+- **Тригер:** `onDelete`
+
+## modal_park_user_reset_password
+
+- **URL:** `/park-users`
+- **Кроки:**
+  1. Натиснути кнопку з іконкою LockReset у рядку користувача.
+- **Тригер:** `onResetPassword`
+
+## modal_park_user_activation
+
+- **URL:** `/park-users`
+- **Кроки:**
+  1. Створити нового користувача.
+  2. Модалка відкриється автоматично після успішного створення.
+- **Тригер:** `activationLinkModal.isOpen`

@@ -28,7 +28,7 @@
 | - Заробіток автомобілів | `/vehicle-earnings` | [06-finance/07-vehicle-earnings.md](../data/06-finance/07-vehicle-earnings.md) | ✅ Completed | 2026-04-24 |
 | **Управління Парком (Park)** | | | | |
 | - Статистика | `/park-statistics` | [07-park/01-statistics.md](../data/07-park/01-statistics.md) | ✅ Completed | 2026-04-24 |
-| - Команда | `/park-users` | [07-park/02-team.md](../data/07-park/02-team.md) | 📝 Todo | - |
+| - Команда | `/park-users` | [07-park/02-team.md](../data/07-park/02-team.md) | ✅ Completed | 2026-04-24 |
 | - Файли | `/park-files` | [07-park/03-files.md](../data/07-park/03-files.md) | 📝 Todo | - |
 | - Білінг | `/billing` | [07-park/04-billing.md](../data/07-park/04-billing.md) | 📝 Todo | - |
 | - Лендінг | `/landing-settings` | [07-park/05-landing.md](../data/07-park/05-landing.md) | 📝 Todo | - |

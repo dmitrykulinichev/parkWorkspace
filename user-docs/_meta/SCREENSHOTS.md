@@ -31,6 +31,9 @@
 | `page_debt_plans_mobile` | Сторінка | Мобільна версія боргів | 📝 Planned | 2026-04-24 |
 | `page_park_stats_main` | Сторінка | Сторінка статистики парку (Desktop) | 📝 Planned | 2026-04-24 |
 | `page_park_stats_mobile` | Сторінка | Мобільна версія статистики парку | 📝 Planned | 2026-04-24 |
+| `page_park_users_main` | Сторінка | Список користувачів парку | 📝 Planned | 2026-04-24 |
+| `page_park_users_empty` | Сторінка | Порожній стан команди | 📝 Planned | 2026-04-24 |
+| `page_park_users_mobile` | Сторінка | Мобільна версія команди | 📝 Planned | 2026-04-24 |
 | **P2: МОДАЛЬНІ ВІКНА (Modals)** | | | | |
 | `modal_fleet_veh_form` | Модалка | Чиста форма додавання авто | 📝 Planned | 2026-04-23 |
 | `modal_fleet_veh_valid` | Модалка | Форма авто з помилками валідації | 📝 Planned | 2026-04-23 |
@@ -115,6 +118,12 @@
 | `page_vehicle_earnings_mobile` | Сторінка | Мобільна версія заробітку авто | 📝 Planned | 2026-04-24 |
 | `modal_vehicle_earnings_details` | Модалка | Деталі заробітку конкретного авто | 📝 Planned | 2026-04-24 |
 | `modal_vehicle_earnings_calc_info` | Модалка | Інформація про формулу розрахунку | 📝 Planned | 2026-04-24 |
+| `modal_park_user_form` | Модалка | Форма додавання/редагування користувача | 📝 Planned | 2026-04-24 |
+| `modal_park_user_filters` | Модалка | Вікно фільтрів команди | 📝 Planned | 2026-04-24 |
+| `modal_park_user_permissions` | Модалка | Управління правами користувача | 📝 Planned | 2026-04-24 |
+| `modal_park_user_delete` | Модалка | Підтвердження видалення користувача | 📝 Planned | 2026-04-24 |
+| `modal_park_user_reset_password` | Модалка | Підтвердження скидання пароля | 📝 Planned | 2026-04-24 |
+| `modal_park_user_activation` | Модалка | Вікно з посиланням на активацію | 📝 Planned | 2026-04-24 |
 | **P3: СЕКЦІЇ ТА ВІДЖЕТИ (Sections)** | | | | |
 | `sec_reports_maint_stats` | Секція | Зведена статистика стану автопарку | 📝 Planned | 2026-04-23 |
 | `sec_fleet_tags_cloud` | Секція | Панель обраних фільтрів (чіпи) | 📝 Planned | 2026-04-23 |
