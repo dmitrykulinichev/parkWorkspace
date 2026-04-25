@@ -7,9 +7,10 @@
 - `workspace/user-docs/_meta/INDEX.md`
 - `workspace/user-docs/_meta/MODALS.md`
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
+- `workspace/user-docs/_meta/RECORDER.md`
 
-Задача: задокументувати сторінку `/telegram-logs` 
+Задача: задокументувати сторінку `/vehicles`
 
-Результат клади сюди /Users/dmytronovikov/Repository/park/workspace/user-docs/data/09-integration-telegram/logs.md
+Результуючий файл: `workspace/user-docs/data/02-vehicles/01-list.md`
 
-додатково звертаю увагу на правильну вставку даних, ти регулярно обрізаєш файли
+⚠️ Редагування файлів: завжди read → modify → write. Replace заборонений.

@@ -92,35 +92,107 @@
 
 Плейсхолдер у тексті для всіх скріншотів: `{{SCRN:[id]}}`
 
-### Інструкції захоплення — RECORDER.md
+### Генерація Katalon-скриптів
 
-Для **кожного** запланованого скріншота записати блок у `_meta/RECORDER.md`.
+Для **кожного** запланованого скріншота — створити файл `user-docs/katalon/[id].side`.
 
-Цю інформацію можна отримати тільки під час аналізу коду — пізніше контекст буде втрачено.
+Робити під час аналізу коду: CSS-селектори видно у JSX, `onClick` обробниках, умовних рендерах — пізніше цього контексту не буде.
 
-**Що записувати:**
+**Що витягати з коду:**
 
-| Тип скріншота | Обов'язкові поля |
+| Що потрібно | Де шукати в коді |
 | :--- | :--- |
-| `page_*` | URL, умова стану (з даними / порожній) |
-| `page_*_mobile` | URL + ширина viewport < 768px |
-| `tab_*` | URL сторінки + назва вкладки яку клікнути |
-| `modal_*` | URL сторінки + кроки для відкриття (яку кнопку натиснути) |
-| `sec_*` | URL сторінки + прокрутка або інша умова |
+| Головний контейнер сторінки | кореневий `<div>` компонента або `data-testid` |
+| Кнопка відкриття модалки | `onClick` → `setOpen(true)` або аналог |
+| Контейнер модалки | `[role="dialog"]` або з `PROJECT.md` |
+| Кнопка вкладки | `<Tab>` або `[role="tab"]` |
+| Контент вкладки | `[role="tabpanel"]` або з `PROJECT.md` |
 
-**Формат блоку в RECORDER.md:**
+Якщо точний селектор невідомий — використовувати семантичні з `PROJECT.md` (розділ "Katalon — CSS-селектори рівня проєкту").
 
-```markdown
-## [id скріншота]
+**Шаблони команд по типах:**
 
-- **URL:** `/[маршрут]`
-- **Кроки:**
-  1. [Дія 1]
-  2. [Дія 2]
-- **Тригер:** [текст кнопки або CSS-селектор з коду — для модалок та вкладок]
+`page_*_main` / `page_*_empty`:
+```
+open                    → /[url]
+waitForElementPresent   → css=[main-container]   | 10000
+captureEntirePageScreenshot → [output-path]
 ```
 
-Для простих сторінок (`page_*_main`) де єдиний крок — відкрити URL — достатньо одного рядка без нумерованих кроків.
+`page_*_mobile`:
+```
+setWindowSize           → 375x812
+open                    → /[url]
+waitForElementPresent   → css=[main-container]   | 10000
+captureEntirePageScreenshot → [output-path]
+setWindowSize           → 1920x1080
+```
+
+`tab_*`:
+```
+open                    → /[url]
+waitForElementPresent   → css=[role="tablist"]   | 10000
+click                   → css=[tab-button]
+waitForElementPresent   → css=[role="tabpanel"]:not([hidden]) | 5000
+captureEntirePageScreenshot → [output-path]
+```
+
+`modal_*`:
+```
+open                    → /[url]
+waitForElementPresent   → css=[page-content]     | 10000
+click                   → css=[trigger-button]
+waitForElementPresent   → css=[role="dialog"]    | 5000
+captureEntirePageScreenshot → [output-path]
+```
+
+**Шляхи збереження (output-path):**
+
+| Тип | Шлях |
+| :--- | :--- |
+| `page_*` (не mobile) | `screenshots/pages/[id].png` |
+| `page_*_mobile` | `screenshots/mobile/[id].png` |
+| `tab_*` | `screenshots/tabs/[id].png` |
+| `modal_*` | `screenshots/modals/[id].png` |
+| `sec_*` | `screenshots/sections/[id].png` |
+
+**Повний формат `.side` файлу:**
+
+```json
+{
+  "id": "[id]",
+  "version": "2.0",
+  "name": "[id]",
+  "url": "[base_url з PROJECT.md]",
+  "tests": [{
+    "id": "[id]-test",
+    "name": "capture",
+    "commands": [
+      { "id": "1", "command": "open", "target": "/[url]", "value": "" },
+      { "id": "2", "command": "waitForElementPresent", "target": "css=[selector]", "value": "10000" },
+      { "id": "3", "command": "captureEntirePageScreenshot", "target": "[output-path]", "value": "" }
+    ]
+  }],
+  "suites": [{
+    "id": "[id]-suite",
+    "name": "default",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["[id]-test"]
+  }],
+  "urls": [],
+  "plugins": []
+}
+```
+
+**Після створення `.side` файлу** — додати рядок в індекс `_meta/RECORDER.md`:
+
+```
+| `[id]` | `katalon/[id].side` | [нотатка або —] |
+```
+
+Нотатка потрібна лише якщо є умова що не автоматизується (наприклад: "⚠️ потребує порожньої БД").
 
 ---
 
@@ -303,6 +375,8 @@
 
 ## Фаза 4: Документування модальних вікон
 
+> **Перед записом кожного файлу:** `read_file` → модифікація в пам'яті → `write_file`. Replace заборонений.
+
 **Ключовий принцип:** кожне модальне вікно, знайдене на сторінці, — це **окремий файл** у `data/shared/modals/`. Модалки є спільними між сторінками, тому зберігаються централізовано, а не всередині файлу сторінки.
 
 **Алгоритм для кожної модалки на сторінці:**
@@ -380,6 +454,8 @@
 
 Виконати **після завершення** кожного документа:
 
+> **Для кожного реєстру нижче:** `read_file` → модифікація в пам'яті → `write_file`. Replace заборонений — він мовчки обрізає існуючі записи.
+
 **`_meta/INDEX.md`**
 - Статус → `✅ Completed`, Дата → `YYYY-MM-DD`
 
@@ -395,7 +471,10 @@
 - Залишити статус `📝 Planned` (скріншоти ще не зроблені)
 
 **`_meta/RECORDER.md`**
-- Має бути заповнений ще на Фазі 2 — тут лише перевірити що кожен новий скріншот має свій блок
+- Має бути заповнений ще на Фазі 2 — тут лише перевірити що кожен новий скріншот має рядок в індексі
+
+**`katalon/`**
+- Перевірити що для кожного нового скріншота є файл `katalon/[id].side`
 
 ---
 
@@ -425,7 +504,7 @@
 **Консистентність реєстрів:**
 - [ ] Усі `{{MODAL:doc_id}}` є ключами в `_meta/MODALS.md`
 - [ ] Усі `{{SCRN:id}}` зареєстровані в `_meta/SCREENSHOTS.md`
-- [ ] Для кожного нового `{{SCRN:id}}` є блок в `_meta/RECORDER.md` з URL і кроками відтворення
+- [ ] Для кожного нового `{{SCRN:id}}` є файл `katalon/[id].side` і рядок в `_meta/RECORDER.md`
 - [ ] Кожна модалка сторінки має файл у `data/shared/modals/`
 - [ ] В `_meta/MODALS.md` для кожної модалки поточна сторінка вказана у колонці "Використовується на сторінках"
 - [ ] `_meta/INDEX.md` оновлений зі статусом `✅ Completed` і датою

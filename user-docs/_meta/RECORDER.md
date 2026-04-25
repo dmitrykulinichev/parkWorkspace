@@ -1,232 +1,48 @@
-## page_vehicle_earnings_main
-
-- **URL:** `/vehicle-earnings`
-
-## page_vehicle_earnings_mobile
-
-- **URL:** `/vehicle-earnings`
-- **Коментар:** ширина viewport < 768px.
-
-## modal_vehicle_earnings_details
-
-- **URL:** `/vehicle-earnings`
-- **Кроки:**
-  1. Натиснути на будь-який рядок у таблиці "Заробіток автомобілів".
-- **Тригер:** `onRowClick` (рядок таблиці)
-
-## modal_vehicle_earnings_calc_info
-
-- **URL:** `/vehicle-earnings`
-- **Кроки:**
-  1. Натиснути кнопку з іконкою інформації в хедері `DateRangeFilter`.
-- **Тригер:** `onInfoClick`
-
-## page_park_stats_main
-
-- **URL:** `/park-statistics`
-- **Кроки:**
-  1. Відкрити сторінку статистики парку.
-
-## page_park_stats_mobile
-
-- **URL:** `/park-statistics`
-- **Viewport:** < 768px
-- **Кроки:**
-  1. Відкрити сторінку статистики парку на мобільному пристрої.
-
-## page_park_users_main
-
-- **URL:** `/park-users`
-- **Кроки:**
-  1. Відкрити сторінку "Команда".
-
-## page_park_users_mobile
-
-- **URL:** `/park-users`
-- **Viewport:** < 768px
-
-## modal_park_user_form
-
-- **URL:** `/park-users`
-- **Кроки:**
-  1. Натиснути кнопку "Додати користувача" (хедер).
-- **Тригер:** `handleCreateClick`
-
-## modal_park_user_filters
-
-- **URL:** `/park-users`
-- **Кроки:**
-  1. Натиснути кнопку фільтрів у хедері.
-- **Тригер:** `handleFiltersClick`
-
-## modal_park_user_permissions
-
-- **URL:** `/park-users`
-- **Кроки:**
-  1. Натиснути на іконку щита (Shield) у рядку користувача з роллю Admin.
-- **Тригер:** `onPermissions`
-
-## modal_park_user_delete
-
-- **URL:** `/park-users`
-- **Кроки:**
-  1. Натиснути кнопку з іконкою кошика у рядку користувача.
-- **Тригер:** `onDelete`
-
-## modal_park_user_reset_password
-
-- **URL:** `/park-users`
-- **Кроки:**
-  1. Натиснути кнопку з іконкою LockReset у рядку користувача.
-- **Тригер:** `onResetPassword`
-
-## modal_park_user_activation
-
-- **URL:** `/park-users`
-- **Кроки:**
-  1. Створити нового користувача.
-  2. Модалка відкриється автоматично після успішного створення.
-- **Тригер:** `activationLinkModal.isOpen`
-
-## page_park_files_main
-
-- **URL:** `/park-files`
-- **Кроки:**
-  1. Відкрити сторінку "Файли парку".
-
-## page_park_files_empty
-
-- **URL:** `/park-files`
-- **Умова:** відсутність документів.
-
-## modal_park_file_form
-
-- **URL:** `/park-files`
-- **Кроки:**
-  1. Натиснути "Додати документ".
-- **Тригер:** `handleCreateClick`
-
-## modal_park_file_filters
-
-- **URL:** `/park-files`
-- **Кроки:**
-  1. Натиснути кнопку фільтрів.
-- **Тригер:** `handleFiltersClick`
-
-## modal_park_file_delete
-
-- **URL:** `/park-files`
-- **Кроки:**
-  1. Натиснути іконку кошика у рядку документа.
-- **Тригер:** `onDelete`
-
-## page_park_billing_main
-
-- **URL:** `/billing`
-- **Кроки:**
-  1. Відкрити сторінку "Білінг та Тарифи" через навігаційне меню.
-
-## page_park_billing_empty
-
-- **URL:** `/billing`
-- **Кроки:**
-  1. Відкрити сторінку білінгу для нового парку, де ще немає сформованих періодів.
-
-## page_park_billing_mobile
-
-- **URL:** `/billing`
-- **Кроки:**
-  1. Відкрити сторінку "Білінг та Тарифи" при ширині вікна < 768px.
-
-## page_park_landing_main
-
-- **URL:** `/landing-settings`
-- **Кроки:**
-  1. Відкрити розділ "Налаштування Лендінгу".
-
-## tab_park_landing_general
-
-- **URL:** `/landing-settings`
-- **Вкладка:** Загальні налаштування (активна за замовчуванням).
-
-## tab_park_landing_news
-
-- **URL:** `/landing-settings`
-- **Вкладка:** Новини та акції.
-
-## modal_landing_news_form
-
-- **URL:** `/landing-settings`
-- **Кроки:**
-  1. Натиснути кнопку "Додати новину" або іконку редагування у рядку новини.
-- **Тригер:** `handleCreateClick` / `handleEditClick`
-
-## modal_landing_news_delete
-
-- **URL:** `/landing-settings`
-- **Кроки:**
-  1. Натиснути іконку кошика у рядку новини.
-- **Тригер:** `onDelete`
-
-## page_park_materials_main
-
-- **URL:** `/resources`
-- **Кроки:**
-  1. Відкрити сторінку "Матеріали для друку".
-
-## page_park_activity_logs_main
-
-- **URL:** `/activity-logs`
-- **Кроки:**
-  1. Відкрити розділ "Журнал подій" у системному меню.
-
-## tab_park_activity_logs_system
-
-- **URL:** `/activity-logs`
-- **Кроки:**
-  1. Переконатись, що вибрано вкладку "Журнал подій" (активна за замовчуванням).
-
-## modal_activity_log_filters
-
-- **URL:** `/activity-logs`
-- **Кроки:**
-  1. Натиснути кнопку "Фільтри".
-- **Тригер:** `handleFiltersClick`
-
-## modal_activity_log_details
-
-- **URL:** `/activity-logs`
-- **Кроки:**
-  1. Натиснути на будь-який запис у таблиці журналу подій.
-- **Тригер:** `handleLogClick` (клік по рядку)
-
-## modal_activity_log_statistics
-
-- **URL:** `/activity-logs`
-- **Кроки:**
-  1. Натиснути кнопку "Статистика" в хедері.
-- **Тригер:** `handleStatisticsClick`
-
-## page_park_subscription_logs_main
-
-- **URL:** `/subscription-logs`
-- **Кроки:**
-  1. Відкрити розділ "Журнал розсилок" у системному меню.
-
-## page_park_finance_settings_main
-
-- **URL:** `/finance-settings`
-- **Кроки:**
-  1. Відкрити розділ "Налаштування фінансів" у системному меню.
-
-## page_intg_tele_settings_main
-
-- **URL:** `/telegram-settings`
-- **Кроки:**
-  1. Відкрити розділ "Налаштування Telegram" у навігаційному меню.
-
-## page_intg_tele_logs_main
-
-- **URL:** `/telegram-logs`
-- **Кроки:**
-  1. Відкрити розділ "Логи Telegram" у навігаційному меню.
+# Katalon Scripts Index
+
+> Індекс автоматизованих скриптів захоплення скріншотів.
+> Кожен рядок відповідає файлу у папці `katalon/`.
+> `.side` файли генеруються автоматично під час Фази 2 документування.
+> Нотатка потрібна лише якщо є умова що не автоматизується (наприклад: порожня БД, специфічні дані).
+
+---
+
+| ID | Katalon файл | Нотатка |
+| :--- | :--- | :--- |
+| `page_vehicle_earnings_main` | `katalon/page_vehicle_earnings_main.side` | ⚠️ .side не створено |
+| `page_vehicle_earnings_mobile` | `katalon/page_vehicle_earnings_mobile.side` | ⚠️ .side не створено |
+| `modal_vehicle_earnings_details` | `katalon/modal_vehicle_earnings_details.side` | ⚠️ .side не створено |
+| `modal_vehicle_earnings_calc_info` | `katalon/modal_vehicle_earnings_calc_info.side` | ⚠️ .side не створено |
+| `page_park_stats_main` | `katalon/page_park_stats_main.side` | ⚠️ .side не створено |
+| `page_park_stats_mobile` | `katalon/page_park_stats_mobile.side` | ⚠️ .side не створено |
+| `page_park_users_main` | `katalon/page_park_users_main.side` | ⚠️ .side не створено |
+| `page_park_users_mobile` | `katalon/page_park_users_mobile.side` | ⚠️ .side не створено |
+| `modal_park_user_form` | `katalon/modal_park_user_form.side` | ⚠️ .side не створено |
+| `modal_park_user_filters` | `katalon/modal_park_user_filters.side` | ⚠️ .side не створено |
+| `modal_park_user_permissions` | `katalon/modal_park_user_permissions.side` | ⚠️ .side не створено |
+| `modal_park_user_delete` | `katalon/modal_park_user_delete.side` | ⚠️ .side не створено |
+| `modal_park_user_reset_password` | `katalon/modal_park_user_reset_password.side` | ⚠️ .side не створено |
+| `modal_park_user_activation` | `katalon/modal_park_user_activation.side` | ⚠️ .side не створено — відкривається автоматично після створення користувача |
+| `page_park_files_main` | `katalon/page_park_files_main.side` | ⚠️ .side не створено |
+| `page_park_files_empty` | `katalon/page_park_files_empty.side` | ⚠️ .side не створено — ⚠️ потребує порожньої БД |
+| `modal_park_file_form` | `katalon/modal_park_file_form.side` | ⚠️ .side не створено |
+| `modal_park_file_filters` | `katalon/modal_park_file_filters.side` | ⚠️ .side не створено |
+| `modal_park_file_delete` | `katalon/modal_park_file_delete.side` | ⚠️ .side не створено |
+| `page_park_billing_main` | `katalon/page_park_billing_main.side` | ⚠️ .side не створено |
+| `page_park_billing_empty` | `katalon/page_park_billing_empty.side` | ⚠️ .side не створено — ⚠️ потребує нового парку без даних |
+| `page_park_billing_mobile` | `katalon/page_park_billing_mobile.side` | ⚠️ .side не створено |
+| `page_park_landing_main` | `katalon/page_park_landing_main.side` | ⚠️ .side не створено |
+| `tab_park_landing_general` | `katalon/tab_park_landing_general.side` | ⚠️ .side не створено |
+| `tab_park_landing_news` | `katalon/tab_park_landing_news.side` | ⚠️ .side не створено |
+| `modal_landing_news_form` | `katalon/modal_landing_news_form.side` | ⚠️ .side не створено |
+| `modal_landing_news_delete` | `katalon/modal_landing_news_delete.side` | ⚠️ .side не створено |
+| `page_park_materials_main` | `katalon/page_park_materials_main.side` | ⚠️ .side не створено |
+| `page_park_activity_logs_main` | `katalon/page_park_activity_logs_main.side` | ⚠️ .side не створено |
+| `tab_park_activity_logs_system` | `katalon/tab_park_activity_logs_system.side` | ⚠️ .side не створено |
+| `modal_activity_log_filters` | `katalon/modal_activity_log_filters.side` | ⚠️ .side не створено |
+| `modal_activity_log_details` | `katalon/modal_activity_log_details.side` | ⚠️ .side не створено |
+| `modal_activity_log_statistics` | `katalon/modal_activity_log_statistics.side` | ⚠️ .side не створено |
+| `page_park_subscription_logs_main` | `katalon/page_park_subscription_logs_main.side` | ⚠️ .side не створено |
+| `page_park_finance_settings_main` | `katalon/page_park_finance_settings_main.side` | ⚠️ .side не створено |
+| `page_intg_tele_settings_main` | `katalon/page_intg_tele_settings_main.side` | ⚠️ .side не створено |
+| `page_intg_tele_logs_main` | `katalon/page_intg_tele_logs_main.side` | ⚠️ .side не створено |
