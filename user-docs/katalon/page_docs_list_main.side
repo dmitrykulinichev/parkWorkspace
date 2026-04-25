@@ -2,13 +2,13 @@
   "id": "page_docs_list_main",
   "version": "2.0",
   "name": "page_docs_list_main",
-  "url": "http://localhost:8010",
+  "url": "",
   "tests": [{
     "id": "page_docs_list_main-test",
     "name": "capture",
     "commands": [
       { "id": "1", "command": "open", "target": "/documents", "value": "" },
-      { "id": "2", "command": "waitForElementPresent", "target": "css=[role=\"main\"]", "value": "10000" },
+      { "id": "2", "command": "waitForElementPresent", "target": "css=[data-page-ready=\"true\"]", "value": "10000" },
       { "id": "3", "command": "captureEntirePageScreenshot", "target": "screenshots/pages/page_docs_list_main.png", "value": "" }
     ]
   }],

@@ -2,7 +2,7 @@
   "id": "page_rep_reports_mobile",
   "version": "2.0",
   "name": "page_rep_reports_mobile",
-  "url": "http://localhost:8010",
+  "url": "",
   "tests": [{
     "id": "page_rep_reports_mobile-test",
     "name": "capture",
@@ -11,7 +11,7 @@
       { "id": "2", "command": "open", "target": "/reports", "value": "" },
       { "id": "3", "command": "waitForElementPresent", "target": "css=[data-tour=\"reports-tabs\"]", "value": "10000" },
       { "id": "4", "command": "captureEntirePageScreenshot", "target": "screenshots/mobile/page_rep_reports_mobile.png", "value": "" },
-      { "id": "5", "command": "setWindowSize", "target": "1920x1080", "value": "" }
+      { "id": "5", "command": "maximizeWindow", "target": "", "value": "" }
     ]
   }],
   "suites": [{
@@ -22,6 +22,6 @@
     "timeout": 300,
     "tests": ["page_rep_reports_mobile-test"]
   }],
-  "urls": ["http://localhost:8010"],
+  "urls": [],
   "plugins": []
 }

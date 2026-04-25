@@ -21,9 +21,11 @@
 **Шаблони команд по типах:**
 
 `page_*_main` / `page_*_empty`:
+
+> **Для `page_*_empty`:** не намагатись програмно відтворити порожній стан (не чекати на текст, не видаляти дані). Скрипт ідентичний `page_*_main` — просто відкрити сторінку і зробити скріншот. Порожній стан забезпечує користувач вручну перед запуском.
 ```
 open                    → /[url]
-waitForElementPresent   → css=[main-container]   | 10000
+waitForElementPresent   → css=[data-page-ready="true"]   | 10000
 captureEntirePageScreenshot → [output-path]
 ```
 
@@ -31,15 +33,15 @@ captureEntirePageScreenshot → [output-path]
 ```
 setWindowSize           → 375x812
 open                    → /[url]
-waitForElementPresent   → css=[main-container]   | 10000
+waitForElementPresent   → css=[data-page-ready="true"]   | 10000
 captureEntirePageScreenshot → [output-path]
-setWindowSize           → 1920x1080
+maximizeWindow
 ```
 
 `tab_*`:
 ```
 open                    → /[url]
-waitForElementPresent   → css=[role="tablist"]   | 10000
+waitForElementPresent   → css=[data-page-ready="true"]   | 10000
 click                   → css=[tab-button]
 waitForElementPresent   → css=[role="tabpanel"]:not([hidden]) | 5000
 captureEntirePageScreenshot → [output-path]
@@ -48,7 +50,7 @@ captureEntirePageScreenshot → [output-path]
 `modal_*`:
 ```
 open                    → /[url]
-waitForElementPresent   → css=[page-content]     | 10000
+waitForElementPresent   → css=[data-page-ready="true"]   | 10000
 click                   → css=[trigger-button]
 waitForElementPresent   → css=[role="dialog"]    | 5000
 captureEntirePageScreenshot → [output-path]
@@ -66,18 +68,20 @@ captureEntirePageScreenshot → [output-path]
 
 **Повний формат `.side` файлу:**
 
+> **Важливо — екранування лапок у `target`:** значення `target` — це рядок всередині JSON. Якщо CSS-селектор містить лапки (наприклад `[data-page-ready="true"]`), їх **обов'язково екранувати** як `\"`. Приклад: `"target": "css=[data-page-ready=\"true\"]"`. Неекрановані лапки ламають JSON.
+
 ```json
 {
   "id": "[id]",
   "version": "2.0",
   "name": "[id]",
-  "url": "[base_url з PROJECT.md]",
+  "url": "",
   "tests": [{
     "id": "[id]-test",
     "name": "capture",
     "commands": [
       { "id": "1", "command": "open", "target": "/[url]", "value": "" },
-      { "id": "2", "command": "waitForElementPresent", "target": "css=[selector]", "value": "10000" },
+      { "id": "2", "command": "waitForElementPresent", "target": "css=[data-page-ready=\"true\"]", "value": "10000" },
       { "id": "3", "command": "captureEntirePageScreenshot", "target": "[output-path]", "value": "" }
     ]
   }],

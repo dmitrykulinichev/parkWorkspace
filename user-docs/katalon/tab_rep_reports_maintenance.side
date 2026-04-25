@@ -2,13 +2,13 @@
   "id": "tab_rep_reports_maintenance",
   "version": "2.0",
   "name": "tab_rep_reports_maintenance",
-  "url": "http://localhost:8010",
+  "url": "",
   "tests": [{
     "id": "tab_rep_reports_maintenance-test",
     "name": "capture",
     "commands": [
       { "id": "1", "command": "open", "target": "/reports?tab=maintenance", "value": "" },
-      { "id": "2", "command": "waitForElementPresent", "target": "css=.space-y-4", "value": "10000" },
+      { "id": "2", "command": "waitForElementPresent", "target": "css=[data-page-ready=\"true\"]", "value": "10000" },
       { "id": "3", "command": "captureEntirePageScreenshot", "target": "screenshots/tabs/tab_rep_reports_maintenance.png", "value": "" }
     ]
   }],
@@ -20,6 +20,6 @@
     "timeout": 300,
     "tests": ["tab_rep_reports_maintenance-test"]
   }],
-  "urls": ["http://localhost:8010"],
+  "urls": [],
   "plugins": []
 }

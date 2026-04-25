@@ -2,7 +2,7 @@
   "id": "page_fleet_list_mobile",
   "version": "2.0",
   "name": "Vehicles List Mobile",
-  "url": "http://localhost:8010",
+  "url": "",
   "tests": [
     {
       "id": "test_page_fleet_list_mobile",
@@ -20,7 +20,7 @@
         },
         {
           "command": "waitForElementVisible",
-          "target": "css=.space-y-3",
+          "target": "css=[data-page-ready=\"true\"]",
           "value": "30000"
         }
       ]

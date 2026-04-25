@@ -1,10 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const { screenshot } = require('./config');
+const SCREENSHOTS_PREFIX = 'screenshots/';
 
 class SeleniumAdapter {
     constructor(page, baseUrl) {
         this.page = page;
         this.baseUrl = baseUrl;
+        this.isMobile = false;
     }
 
     /**
@@ -27,6 +30,9 @@ class SeleniumAdapter {
             case 'waitForElementPresent':
             case 'waitForElementVisible':
                 await this.waitFor(cleanTarget, value);
+                break;
+            case 'setWindowSize':
+                await this.setWindowSize(target);
                 break;
             case 'captureEntirePageScreenshot':
                 await this.captureScreenshot(target);
@@ -56,14 +62,23 @@ class SeleniumAdapter {
         });
     }
 
+    async setWindowSize(target) {
+        const [width, height] = target.split('x').map(Number);
+        await this.page.setViewport({ width, height });
+        this.isMobile = true;
+    }
+
     async captureScreenshot(targetPath) {
-        const fullPath = path.join(__dirname, targetPath);
+        const platform = this.isMobile ? 'mobile' : 'desktop';
+        const relativePath = targetPath.replace(SCREENSHOTS_PREFIX, `${platform}/`);
+        const fullPath = path.resolve(__dirname, screenshot.outputDir, relativePath);
         // Створюємо дерево папок, якщо воно відсутнє
         fs.mkdirSync(path.dirname(fullPath), { recursive: true });
 
         // Пауза для стабілізації UI перед знімком
         await new Promise(r => setTimeout(r, 800));
-        await this.page.screenshot({ path: fullPath, fullPage: true });
+        const fullPage = this.isMobile ? screenshot.fullPageMobile : screenshot.fullPageDesktop;
+        await this.page.screenshot({ path: fullPath, fullPage });
     }
 }
 

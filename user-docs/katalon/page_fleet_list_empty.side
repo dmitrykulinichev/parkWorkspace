@@ -1,30 +1,25 @@
 {
   "id": "page_fleet_list_empty",
   "version": "2.0",
-  "name": "Vehicles List Empty",
-  "url": "http://localhost:8010",
-  "tests": [
-    {
-      "id": "test_page_fleet_list_empty",
-      "name": "page_fleet_list_empty",
-      "commands": [
-        {
-          "command": "open",
-          "target": "/vehicles",
-          "value": ""
-        },
-        {
-          "command": "waitForElementVisible",
-          "target": "xpath=//h3[contains(.,'Ваш гараж порожній')]",
-          "value": "30000"
-        }
-      ]
-    }
-  ],
-  "suites": [
-    {
-      "name": "Default Suite",
-      "tests": ["test_page_fleet_list_empty"]
-    }
-  ]
+  "name": "page_fleet_list_empty",
+  "url": "",
+  "tests": [{
+    "id": "page_fleet_list_empty-test",
+    "name": "capture",
+    "commands": [
+      { "id": "1", "command": "open", "target": "/vehicles", "value": "" },
+      { "id": "2", "command": "waitForElementPresent", "target": "css=[data-page-ready=\"true\"]", "value": "10000" },
+      { "id": "3", "command": "captureEntirePageScreenshot", "target": "screenshots/pages/page_fleet_list_empty.png", "value": "" }
+    ]
+  }],
+  "suites": [{
+    "id": "page_fleet_list_empty-suite",
+    "name": "default",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["page_fleet_list_empty-test"]
+  }],
+  "urls": [],
+  "plugins": []
 }

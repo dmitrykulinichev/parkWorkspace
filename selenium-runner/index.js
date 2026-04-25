@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 const SeleniumAdapter = require('./seleniumAdapter'); // Імпорт нашого адаптера
+const { baseUrl } = require('./config');
 
 const SCRIPTS_DIR = path.join(__dirname, '..', 'user-docs', 'katalon');
 
@@ -11,7 +12,8 @@ async function run() {
     const browser = await puppeteer.launch({
         headless: false,
         defaultViewport: null,
-        args: ['--start-maximized']
+        args: ['--start-maximized'],
+        userDataDir: path.join(__dirname, 'chrome-profile'),
     });
 
     const page = await browser.newPage();
@@ -19,7 +21,7 @@ async function run() {
 
     try {
         // Перехід на початкову сторінку для логіну
-        await page.goto('http://localhost:8010', { waitUntil: 'networkidle2' });
+        await page.goto(baseUrl, { waitUntil: 'networkidle2' });
 
         await new Promise(resolve => rl.question('\n🔓 Залогіньтесь на сайті та натисніть [Enter] тут для запуску скриптів...', () => resolve()));
 
@@ -28,10 +30,11 @@ async function run() {
 
         for (const file of files) {
             console.log(`\n⏩ ОБРОБКА: ${file}`);
+            await page.setViewport(null); // Скидаємо viewport перед кожним файлом
             const project = JSON.parse(fs.readFileSync(path.join(SCRIPTS_DIR, file), 'utf8'));
 
             // Створюємо екземпляр адаптера для конкретного файлу
-            const adapter = new SeleniumAdapter(page, project.url);
+            const adapter = new SeleniumAdapter(page, project.url || baseUrl);
 
             for (const test of project.tests) {
                 for (const command of test.commands) {

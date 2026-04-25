@@ -2,7 +2,7 @@
   "id": "page_rep_reports_main",
   "version": "2.0",
   "name": "page_rep_reports_main",
-  "url": "http://localhost:8010",
+  "url": "",
   "tests": [{
     "id": "page_rep_reports_main-test",
     "name": "capture",
@@ -20,6 +20,6 @@
     "timeout": 300,
     "tests": ["page_rep_reports_main-test"]
   }],
-  "urls": ["http://localhost:8010"],
+  "urls": [],
   "plugins": []
 }

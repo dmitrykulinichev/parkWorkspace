@@ -30,16 +30,11 @@ C:\Repository\park\app\park-react-spa
 | `intg` | Інтеграції |
 | `sett` | Налаштування |
 
-### URL додатку (для Katalon-скриптів)
-
-```
-base_url: http://localhost
-```
-
 ### Katalon — CSS-селектори рівня проєкту
 
 | Що | CSS-селектор | Примітка |
 | :--- | :--- | :--- |
+| Сторінка завантажена (універсальний wait) | `[data-page-ready="true"]` | Атрибут на `NewPageHeader` — є на всіх сторінках |
 | Контейнер модального вікна | `[role="dialog"]` | Спільний для всіх модалок |
 | Список вкладок | `[role="tablist"]` | Спільний для всіх tabbed-сторінок |
 | Активна панель вкладки | `[role="tabpanel"]:not([hidden])` | |

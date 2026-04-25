@@ -2,7 +2,7 @@
   "id": "page_fleet_list_main",
   "version": "2.0",
   "name": "Vehicles List Main",
-  "url": "http://localhost:8010",
+  "url": "",
   "tests": [
     {
       "id": "test_page_fleet_list_main",
@@ -15,7 +15,7 @@
         },
         {
           "command": "waitForElementVisible",
-          "target": "css=table",
+          "target": "css=[data-page-ready=\"true\"]",
           "value": "30000"
         }
       ]
