@@ -1,0 +1,27 @@
+{
+  "id": "modal_maint_filters",
+  "version": "2.0",
+  "name": "modal_maint_filters",
+  "url": "",
+  "tests": [{
+    "id": "modal_maint_filters-test",
+    "name": "capture",
+    "commands": [
+      { "id": "1", "command": "open", "target": "/vehicle-maintenance", "value": "" },
+      { "id": "2", "command": "waitForElementPresent", "target": "css=[data-page-ready=\"true\"]", "value": "10000" },
+      { "id": "3", "command": "click", "target": "css=[aria-label=\"фільтри\"]", "value": "" },
+      { "id": "4", "command": "waitForElementPresent", "target": "css=[data-modal-ready=\"true\"]", "value": "5000" },
+      { "id": "5", "command": "captureEntirePageScreenshot", "target": "screenshots/modals/modal_maint_filters.png", "value": "" }
+    ]
+  }],
+  "suites": [{
+    "id": "modal_maint_filters-suite",
+    "name": "default",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["modal_maint_filters-test"]
+  }],
+  "urls": [],
+  "plugins": []
+}

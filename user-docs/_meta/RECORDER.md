@@ -9,8 +9,13 @@
 
 | ID | Katalon файл | Нотатка |
 | :--- | :--- | :--- |
-| `page_fleet_list_main` | `katalon/page_fleet_list_main.side` | ⚠️ .side не створено |
-| `page_fleet_list_empty` | `katalon/page_fleet_list_empty.side` | ⚠️ .side не створено |
+| `page_fleet_list_main` | `katalon/page_fleet_list_main.side` | — |
+| `page_fleet_list_empty` | `katalon/page_fleet_list_empty.side` | — |
+| `page_maint_list_main` | `katalon/page_maint_list_main.side` | — |
+| `page_maint_list_empty` | `katalon/page_maint_list_empty.side` | ⚠️ Потребує парку без записів ТО |
+| `modal_maint_form_main` | `katalon/modal_maint_form_main.side` | — |
+| `modal_maint_details` | `katalon/modal_maint_details.side` | — |
+| `modal_maint_filters` | `katalon/modal_maint_filters.side` | — |
 | `page_vehicle_earnings_main` | `katalon/page_vehicle_earnings_main.side` | ⚠️ .side не створено |
 | `modal_vehicle_earnings_details` | `katalon/modal_vehicle_earnings_details.side` | ⚠️ .side не створено |
 | `modal_vehicle_earnings_calc_info` | `katalon/modal_vehicle_earnings_calc_info.side` | ⚠️ .side не створено |
@@ -19,7 +24,7 @@
 | `modal_park_user_form` | `katalon/modal_park_user_form.side` | ⚠️ .side не створено |
 | `modal_park_user_filters` | `katalon/modal_park_user_filters.side` | ⚠️ .side не створено |
 | `modal_park_user_permissions` | `katalon/modal_park_user_permissions.side` | ⚠️ .side не створено |
-| `modal_park_user_delete` | `katalon/modal_park_user_delete.side` | ⚠️ .side не створено |
+| `modal_park_user_delete` | `katalon/modal_park_user_delete.side" | ⚠️ .side не створено |
 | `modal_park_user_reset_password` | `katalon/modal_park_user_reset_password.side` | ⚠️ .side не створено |
 | `modal_park_user_activation` | `katalon/modal_park_user_activation.side` | ⚠️ .side не створено — відкривається автоматично після створення користувача |
 | `page_park_files_main` | `katalon/page_park_files_main.side` | ⚠️ .side не створено |
@@ -45,7 +50,7 @@
 | `page_rep_reports_main` | `katalon/page_rep_reports_main.side` | — |
 | `page_rep_reports_empty` | `katalon/page_rep_reports_empty.side` | ⚠️ потребує парку без автомобілів |
 | `tab_rep_reports_operational` | `katalon/tab_rep_reports_operational.side` | — |
-| `tab_rep_reports_performance` | `katalon/tab_rep_reports_performance.side` | — |
+| `tab_rep_reports_performance` | `katalon/tab_rep_reports_performance.side" | — |
 | `tab_rep_reports_maintenance` | `katalon/tab_rep_reports_maintenance.side` | — |
 | `page_docs_list_main` | `katalon/page_docs_list_main.side` | — |
 | `page_docs_list_empty` | `katalon/page_docs_list_empty.side` | — |

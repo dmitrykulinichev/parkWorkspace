@@ -7,7 +7,7 @@
 | **Головна** | `/` | [01-home.md](../data/01-home.md) | page | — | ✅ Completed | 2026-04-24 |
 | **Автопарк (Fleet)** | | | | | | |
 | - Список автомобілів | `/vehicles` | [02-vehicles/01-list.md](../data/02-vehicles/01-list.md) | page | — | ✅ Completed | 2026-04-25 |
-| - Тех. обслуговування | `/vehicle-maintenance` | [02-vehicles/02-maintenance.md](../data/02-vehicles/02-maintenance.md) | page | — | ✅ Completed | 2026-04-23 |
+| - Тех. обслуговування | `/vehicle-maintenance` | [02-vehicles/02-maintenance.md](../data/02-vehicles/02-maintenance.md) | page | — | ✅ Completed | 2026-04-25 |
 | - Недоступності | `/vehicle-unavailabilities` | [02-vehicles/03-unavailabilities.md](../data/02-vehicles/03-unavailabilities.md) | page | — | ✅ Completed | 2026-04-23 |
 | - Документи | `/documents` | [02-vehicles/04-documents.md](../data/02-vehicles/04-documents.md) | page | — | ✅ Completed | 2026-04-25 |
 | - Звіти | `/reports` | [02-vehicles/05-reports.md](../data/02-vehicles/05-reports.md) | page | — | ✅ Completed | 2026-04-25 |

@@ -9,9 +9,9 @@
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 - `workspace/user-docs/_meta/RECORDER.md`
 
-Задача: задокументувати сторінку `/documents`
+Задача: задокументувати сторінку `/vehicle-maintenance`
 
-Результуючий файл: `C:\Repository\park\workspace\user-docs\data\02-vehicles\04-documents.md`
+Результуючий файл: `/Users/dmytronovikov/Repository/park/workspace/user-docs/data/02-vehicles/02-maintenance.md`
 
 Вкладки на сторінці: немає
 

@@ -6,7 +6,7 @@
 
 | ID Модалки | Назва (UI) | Файл опису | Використовується на сторінках | Дата оновлення |
 | :--- | :--- | :--- | :--- | :--- |
-| **fleet_vehicle_form** | Додати/Редагувати автомобіль | [fleet_vehicle_form.md](../data/shared/modals/fleet_vehicle_form.md) | `02-vehicles/01-list.md` | 2026-04-23 |
+| **fleet_vehicle_form** | Додати/Редагувати автомобить | [fleet_vehicle_form.md](../data/shared/modals/fleet_vehicle_form.md) | `02-vehicles/01-list.md` | 2026-04-23 |
 | **fleet_vehicle_details** | Деталі автомобіля | [fleet_vehicle_details.md](../data/shared/modals/fleet_vehicle_details.md) | `02-vehicles/01-list.md` | 2026-04-23 |
 | **fleet_vehicle_delete** | Видалення автомобіля | [fleet_vehicle_delete.md](../data/shared/modals/fleet_vehicle_delete.md) | `02-vehicles/01-list.md` | 2026-04-23 |
 | **fleet_mileage_update** | Оновлення пробігу | [fleet_mileage_update.md](../data/shared/modals/fleet_mileage_update.md) | `02-vehicles/01-list.md`, `01-home.md` | 2026-04-23 |
@@ -15,9 +15,9 @@
 | **fleet_tag_settings** | Налаштування тегів | [fleet_tag_settings.md](../data/shared/modals/fleet_tag_settings.md) | `02-vehicles/01-list.md` | 2026-04-23 |
 | **fleet_filters** | Розширена фільтрація авто | [fleet_filters.md](../data/shared/modals/fleet_filters.md) | `02-vehicles/01-list.md` | 2026-04-23 |
 | **fleet_vehicle_transfer** | Трансфер автомобіля (між парками) | [fleet_vehicle_transfer.md](../data/shared/modals/fleet_vehicle_transfer.md) | `02-vehicles/01-list.md` | 2026-04-23 |
-| **maint_record_form** | Запис про ТО/Ремонт | [maint_record_form.md](../data/shared/modals/maint_record_form.md) | `02-vehicles/01-list.md`, `02-vehicles/02-maintenance.md` | 2026-04-23 |
-| **maint_record_details** | Деталі заїзду на сервіс | [maint_record_details.md](../data/shared/modals/maint_record_details.md) | `02-vehicles/02-maintenance.md` | 2026-04-23 |
-| **maint_filters** | Фільтри журналу ТО | [maint_filters.md](../data/shared/modals/maint_filters.md) | `02-vehicles/02-maintenance.md` | 2026-04-23 |
+| **maint_record_form** | Запис про ТО/Ремонт | [maint_record_form.md](../data/shared/modals/maint_record_form.md) | `02-vehicles/01-list.md`, `02-vehicles/02-maintenance.md` | 2026-04-25 |
+| **maint_record_details** | Деталі заїзду на сервіс | [maint_record_details.md](../data/shared/modals/maint_record_details.md) | `02-vehicles/02-maintenance.md` | 2026-04-25 |
+| **maint_filters** | Фільтри журналу ТО | [maint_filters.md](../data/shared/modals/maint_filters.md) | `02-vehicles/02-maintenance.md` | 2026-04-25 |
 | **maint_issue_report_form** | Повідомити про проблему | [maint_issue_report_form.md](../data/shared/modals/maint_issue_report_form.md) | `02-vehicles/01-list.md`, `09-integration-telegram/settings.md` | 2026-04-25 |
 | **ops_assignment_form** | Створити/Редагувати призначення | [ops_assignment_form.md](../data/shared/modals/ops_assignment_form.md) | `02-vehicles/01-list.md`, `03-drivers/01-list.md`, `03-drivers/02-assignments.md` | 2026-04-24 |
 | **ops_assignment_details** | Деталі призначення | [ops_assignment_details.md](../data/shared/modals/ops_assignment_details.md) | `03-drivers/02-assignments.md` | 2026-04-24 |
