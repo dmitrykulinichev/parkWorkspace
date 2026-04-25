@@ -55,3 +55,7 @@
 | `tab_rep_reports_operational` | `katalon/tab_rep_reports_operational.side` | — |
 | `tab_rep_reports_performance` | `katalon/tab_rep_reports_performance.side` | — |
 | `tab_rep_reports_maintenance` | `katalon/tab_rep_reports_maintenance.side` | — |
+| `page_docs_list_main` | `katalon/page_docs_list_main.side` | — |
+| `page_docs_list_empty` | `katalon/page_docs_list_empty.side` | — |
+| `page_docs_list_mobile` | `katalon/page_docs_list_mobile.side` | — |
+| `page_docs_list_expired` | `katalon/page_docs_list_expired.side` | — |
