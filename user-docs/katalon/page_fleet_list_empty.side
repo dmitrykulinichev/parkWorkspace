@@ -2,7 +2,7 @@
   "id": "page_fleet_list_empty",
   "version": "2.0",
   "name": "Vehicles List Empty",
-  "url": "http://localhost:8000",
+  "url": "http://localhost:8010",
   "tests": [
     {
       "id": "test_page_fleet_list_empty",

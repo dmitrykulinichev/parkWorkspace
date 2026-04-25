@@ -2,7 +2,7 @@
   "id": "page_docs_list_main",
   "version": "2.0",
   "name": "page_docs_list_main",
-  "url": "http://localhost",
+  "url": "http://localhost:8010",
   "tests": [{
     "id": "page_docs_list_main-test",
     "name": "capture",
