@@ -9,8 +9,15 @@
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 - `workspace/user-docs/_meta/RECORDER.md`
 
-Задача: задокументувати сторінку `/vehicles`
+Задача: задокументувати сторінку `/reports`
 
-Результуючий файл: `workspace/user-docs/data/02-vehicles/01-list.md`
+Результуючий файл: `C:\Repository\park\workspace\user-docs\data\02-vehicles\05-reports.md`
+
+Вкладки на сторінці:
+- Оперативна статистика → `--operational.md`
+- Виконання нормативів → `--performance.md`
+- Технічне обслуговування → `--maintenance.md`
 
 ⚠️ Редагування файлів: завжди read → modify → write. Replace заборонений.
+
+

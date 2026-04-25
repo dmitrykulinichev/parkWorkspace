@@ -5,6 +5,7 @@ components:
   - "resources/js/pages/Vehicles/index.jsx"
   - "resources/js/pages/Vehicles/VehicleList/VehicleListDesktop.jsx"
   - "resources/js/pages/Vehicles/VehicleList/VehicleListMobile.jsx"
+  - "resources/js/hooks/vehicle/useVehiclesPage.js"
 ---
 
 # Автомобілі (Реєстр флоту)
@@ -52,7 +53,6 @@ components:
 - **Трансфер:** Передача авто в інший парк ({{MODAL:fleet_vehicle_transfer}}).
 - **QR-код:** Генерація публічного QR-коду авто ({{MODAL:fleet_vehicle_qr}}).
 - **Uklon-інтеграція:** Перегляд даних авто в системі Uklon ({{MODAL:intg_uklon_vehicle_details}}).
-- **Статистика:** Верхня панель метрик автопарку на десктопі ({{SCRN:sec_fleet_stats_header}}).
 - **Експорт:** Вивантаження бази у форматі .xlsx. Кнопка видима тільки якщо є авто.
 
 ## Управління (Actions)

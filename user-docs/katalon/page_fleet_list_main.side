@@ -1,0 +1,30 @@
+{
+  "id": "page_fleet_list_main",
+  "version": "2.0",
+  "name": "Vehicles List Main",
+  "url": "http://localhost:8000",
+  "tests": [
+    {
+      "id": "test_page_fleet_list_main",
+      "name": "page_fleet_list_main",
+      "commands": [
+        {
+          "command": "open",
+          "target": "/vehicles",
+          "value": ""
+        },
+        {
+          "command": "waitForElementVisible",
+          "target": "css=table",
+          "value": "30000"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "name": "Default Suite",
+      "tests": ["test_page_fleet_list_main"]
+    }
+  ]
+}

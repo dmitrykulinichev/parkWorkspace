@@ -9,13 +9,16 @@
 
 | ID | Katalon файл | Нотатка |
 | :--- | :--- | :--- |
+| `page_fleet_list_main` | `katalon/page_fleet_list_main.side` | ⚠️ .side не створено |
+| `page_fleet_list_empty` | `katalon/page_fleet_list_empty.side` | ⚠️ .side не створено |
+| `page_fleet_list_mobile` | `katalon/page_fleet_list_mobile.side` | ⚠️ .side не створено |
 | `page_vehicle_earnings_main` | `katalon/page_vehicle_earnings_main.side` | ⚠️ .side не створено |
 | `page_vehicle_earnings_mobile` | `katalon/page_vehicle_earnings_mobile.side` | ⚠️ .side не створено |
 | `modal_vehicle_earnings_details` | `katalon/modal_vehicle_earnings_details.side` | ⚠️ .side не створено |
 | `modal_vehicle_earnings_calc_info` | `katalon/modal_vehicle_earnings_calc_info.side` | ⚠️ .side не створено |
 | `page_park_stats_main` | `katalon/page_park_stats_main.side` | ⚠️ .side не створено |
 | `page_park_stats_mobile` | `katalon/page_park_stats_mobile.side` | ⚠️ .side не створено |
-| `page_park_users_main` | `katalon/page_park_users_main.side` | ⚠️ .side не створено |
+| `page_park_users_main` | `katalon/page_park_users_main.side" | ⚠️ .side не створено |
 | `page_park_users_mobile` | `katalon/page_park_users_mobile.side` | ⚠️ .side не створено |
 | `modal_park_user_form` | `katalon/modal_park_user_form.side` | ⚠️ .side не створено |
 | `modal_park_user_filters` | `katalon/modal_park_user_filters.side` | ⚠️ .side не створено |
@@ -33,7 +36,7 @@
 | `page_park_billing_mobile` | `katalon/page_park_billing_mobile.side` | ⚠️ .side не створено |
 | `page_park_landing_main` | `katalon/page_park_landing_main.side` | ⚠️ .side не створено |
 | `tab_park_landing_general` | `katalon/tab_park_landing_general.side` | ⚠️ .side не створено |
-| `tab_park_landing_news` | `katalon/tab_park_landing_news.side` | ⚠️ .side не створено |
+| `tab_park_landing_news` | `katalon/tab_park_landing_news.side" | ⚠️ .side не створено |
 | `modal_landing_news_form` | `katalon/modal_landing_news_form.side` | ⚠️ .side не створено |
 | `modal_landing_news_delete` | `katalon/modal_landing_news_delete.side` | ⚠️ .side не створено |
 | `page_park_materials_main` | `katalon/page_park_materials_main.side` | ⚠️ .side не створено |

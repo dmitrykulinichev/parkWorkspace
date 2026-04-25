@@ -1,0 +1,35 @@
+{
+  "id": "page_fleet_list_mobile",
+  "version": "2.0",
+  "name": "Vehicles List Mobile",
+  "url": "http://localhost:8000",
+  "tests": [
+    {
+      "id": "test_page_fleet_list_mobile",
+      "name": "page_fleet_list_mobile",
+      "commands": [
+        {
+          "command": "open",
+          "target": "/vehicles",
+          "value": ""
+        },
+        {
+          "command": "setWindowSize",
+          "target": "375x812",
+          "value": ""
+        },
+        {
+          "command": "waitForElementVisible",
+          "target": "css=.space-y-3",
+          "value": "30000"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "name": "Default Suite",
+      "tests": ["test_page_fleet_list_mobile"]
+    }
+  ]
+}
