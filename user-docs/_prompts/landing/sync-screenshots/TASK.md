@@ -7,14 +7,17 @@
 
 ## Правила визначення папки-джерела
 
-| Префікс ID              | Папка-джерело                                      |
-| :---------------------- | :------------------------------------------------- |
-| `page_` (без `_mobile`) | `workspace/user-docs/screenshots/pages/`           |
-| `page_*_mobile`         | `workspace/user-docs/screenshots/mobile/`          |
-| `tab_`                  | `workspace/user-docs/screenshots/tabs/`            |
-| `modal_`                | `workspace/user-docs/screenshots/modals/`          |
-| `sec_`                  | `workspace/user-docs/screenshots/sections/`        |
-| **інший префікс**       | перевірити всі 5 папок по черзі, взяти перший збіг |
+| Префікс ID              | Папка-джерело                                             |
+| :---------------------- | :-------------------------------------------------------- |
+| `page_` (без `_mobile`) | `workspace/user-docs/screenshots/desktop/pages/`          |
+| `page_*_mobile`         | `workspace/user-docs/screenshots/mobile/pages/`           |
+| `tab_` (без `_mobile`)  | `workspace/user-docs/screenshots/desktop/tabs/`           |
+| `tab_*_mobile`          | `workspace/user-docs/screenshots/mobile/tabs/`            |
+| `modal_` (без `_mobile`)| `workspace/user-docs/screenshots/desktop/modals/`         |
+| `modal_*_mobile`        | `workspace/user-docs/screenshots/mobile/modals/`          |
+| `sec_` (без `_mobile`)  | `workspace/user-docs/screenshots/desktop/sections/`       |
+| `sec_*_mobile`          | `workspace/user-docs/screenshots/mobile/sections/`        |
+| **інший префікс**       | перевірити по черзі всі папки з таблиці вище, взяти перший збіг |
 
 Копіювати лише світлу тему (без `_dark`). Цільова папка: `landing/www/assets/img/docs/`.
 Якщо файл вже є в цільовій папці — не перезаписувати.

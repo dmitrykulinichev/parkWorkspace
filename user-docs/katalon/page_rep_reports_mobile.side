@@ -10,7 +10,7 @@
       { "id": "1", "command": "setWindowSize", "target": "375x812", "value": "" },
       { "id": "2", "command": "open", "target": "/reports", "value": "" },
       { "id": "3", "command": "waitForElementPresent", "target": "css=[data-tour=\"reports-tabs\"]", "value": "10000" },
-      { "id": "4", "command": "captureEntirePageScreenshot", "target": "screenshots/mobile/page_rep_reports_mobile.png", "value": "" },
+      { "id": "4", "command": "captureEntirePageScreenshot", "target": "screenshots/pages/page_rep_reports_mobile.png", "value": "" },
       { "id": "5", "command": "maximizeWindow", "target": "", "value": "" }
     ]
   }],
