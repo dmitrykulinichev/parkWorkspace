@@ -19,7 +19,7 @@
 | `sec_*_mobile`          | `workspace/user-docs/screenshots/mobile/sections/`        |
 | **інший префікс**       | перевірити по черзі всі папки з таблиці вище, взяти перший збіг |
 
-Копіювати лише світлу тему (без `_dark`). Цільова папка: `landing/www/assets/img/docs/`.
+Цільова папка: `landing/www/assets/img/docs/`.
 Завжди перезаписувати — файл міг оновитись.
 
 ---

@@ -29,15 +29,6 @@ waitForElementPresent   → css=[data-page-ready="true"]   | 10000
 captureEntirePageScreenshot → [output-path]
 ```
 
-`page_*_mobile`:
-```
-setWindowSize           → 375x812
-open                    → /[url]
-waitForElementPresent   → css=[data-page-ready="true"]   | 10000
-captureEntirePageScreenshot → [output-path]
-maximizeWindow
-```
-
 `tab_*`:
 ```
 open                    → /[url]
@@ -60,8 +51,7 @@ captureEntirePageScreenshot → [output-path]
 
 | Тип | Шлях |
 | :--- | :--- |
-| `page_*` (не mobile) | `screenshots/pages/[id].png` |
-| `page_*_mobile` | `screenshots/mobile/[id].png` |
+| `page_*` | `screenshots/pages/[id].png` |
 | `tab_*` | `screenshots/tabs/[id].png` |
 | `modal_*` | `screenshots/modals/[id].png` |
 | `sec_*` | `screenshots/sections/[id].png` |

@@ -5,70 +5,53 @@
 | **P1: ПОВНІ СТОРІНКИ (Full Pages)** | | | | |
 | `page_fleet_list_main` | Сторінка | Головна таблиця списку автомобілів | 📝 Planned | 2026-04-23 |
 | `page_fleet_list_empty` | Сторінка | Стан "Порожній гараж" (placeholder) | 📝 Planned | 2026-04-23 |
-| `page_fleet_list_mobile` | Сторінка | Мобільна версія списку автомобілів | 📝 Planned | 2026-04-23 |
 | `page_maint_list_main` | Сторінка | Журнал технічного обслуговування | 📝 Planned | 2026-04-23 |
 | `page_maint_list_empty` | Сторінка | Порожній журнал ТО | 📝 Planned | 2026-04-23 |
-| `page_maint_list_mobile` | Сторінка | Мобільна версія журналу ТО | 📝 Planned | 2026-04-23 |
 | `page_unavail_list_main` | Сторінка | Реєстр простоїв (активні ремонти) | 📝 Planned | 2026-04-23 |
 | `page_unavail_list_empty` | Сторінка | Порожній реєстр недоступностей | 📝 Planned | 2026-04-23 |
-| `page_unavail_list_mobile` | Сторінка | Мобільна версія реєстру простоїв | 📝 Planned | 2026-04-23 |
 | `page_docs_list_main` | Сторінка | Журнал документів автопарку | 📝 Planned | 2026-04-25 |
 | `page_docs_list_empty` | Сторінка | Стан "Документи відсутні" | 📝 Planned | 2026-04-25 |
-| `page_docs_list_mobile` | Сторінка | Мобільна версія списку документів | 📝 Planned | 2026-04-25 |
 | `page_docs_list_expired` | Сторінка | Візуалізація прострочених документів | 📝 Planned | 2026-04-25 |
 | `page_rep_reports_main` | Сторінка | Загальний вигляд розділу Звіти (Tabs) | 📝 Planned | 2026-04-25 |
 | `page_rep_reports_empty` | Сторінка | Стан "Звіти недоступні" (без авто) | 📝 Planned | 2026-04-25 |
-| `page_rep_reports_mobile` | Сторінка | Мобільна версія розділу Звіти | 📝 Planned | 2026-04-25 |
 | `tab_rep_reports_operational` | Вкладка | Звіт: Оперативна статистика | 📝 Planned | 2026-04-25 |
 | `tab_rep_reports_performance` | Вкладка | Звіт: Виконання нормативів (KPI) | 📝 Planned | 2026-04-25 |
 | `tab_rep_reports_maintenance` | Вкладка | Звіт: Технічне обслуговування | 📝 Planned | 2026-04-25 |
 | `page_settings_fleet_main` | Сторінка | Налаштування автопарку (Регламенти) | 📝 Planned | 2026-04-23 |
 | `page_drv_expenses_main` | Сторінка | Список витрат водіїв | 📝 Planned | 2026-04-24 |
 | `page_drv_expenses_empty` | Сторінка | Порожній стан витрат водіїв | 📝 Planned | 2026-04-24 |
-| `page_drv_expenses_mobile` | Сторінка | Мобільна версія витрат водіїв | 📝 Planned | 2026-04-24 |
-| `page_bonuses_penalties_main` | Сторінка | Таблиця премій та штрафів (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_bonuses_penalties_main` | Сторінка | Таблиця премій та штрафів | 📝 Planned | 2026-04-24 |
 | `page_bonuses_penalties_empty` | Сторінка | Порожній стан премій та штрафів | 📝 Planned | 2026-04-24 |
-| `page_bonuses_penalties_mobile` | Сторінка | Мобільна версія премій та штрафів | 📝 Planned | 2026-04-24 |
-| `page_debt_plans_main` | Сторінка | Таблиця боргів водіїв (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_debt_plans_main` | Сторінка | Таблиця боргів водіїв | 📝 Planned | 2026-04-24 |
 | `page_debt_plans_empty` | Сторінка | Порожній стан боргів | 📝 Planned | 2026-04-24 |
-| `page_debt_plans_mobile` | Сторінка | Мобільна версія боргів | 📝 Planned | 2026-04-24 |
-| `page_park_stats_main` | Сторінка | Сторінка статистики парку (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_park_stats_mobile` | Сторінка | Мобільна версія статистики парку | 📝 Planned | 2026-04-24 |
+| `page_park_stats_main` | Сторінка | Сторінка статистики парку | 📝 Planned | 2026-04-24 |
 | `page_park_users_main` | Сторінка | Список користувачів парку | 📝 Planned | 2026-04-24 |
 | `page_park_users_empty` | Сторінка | Порожній стан команди | 📝 Planned | 2026-04-24 |
-| `page_park_users_mobile` | Сторінка | Мобільна версія команди | 📝 Planned | 2026-04-24 |
 | `page_park_files_main` | Сторінка | Реєстр файлів парку | 📝 Planned | 2026-04-24 |
 | `page_park_files_empty` | Сторінка | Порожній реєстр файлів | 📝 Planned | 2026-04-24 |
 | `page_park_billing_main` | Сторінка | Головний вигляд сторінки білінгу | 📝 Planned | 2026-04-24 |
 | `page_park_billing_empty` | Сторінка | Порожній стан історії білінгу | 📝 Planned | 2026-04-24 |
-| `page_park_billing_mobile` | Сторінка | Мобільна версія сторінки білінгу | 📝 Planned | 2026-04-24 |
 | `page_park_landing_main` | Сторінка | Головний вигляд налаштувань лендінгу | 📝 Planned | 2026-04-24 |
 | `tab_park_landing_general` | Вкладка | Вкладка "Загальні налаштування" | 📝 Planned | 2026-04-24 |
 | `tab_park_landing_news` | Вкладка | Вкладка "Новини та акції" | 📝 Planned | 2026-04-24 |
 | `page_park_materials_main` | Сторінка | Основний вигляд сторінки матеріалів | 📝 Planned | 2026-04-24 |
 | `page_drv_list_main` | Сторінка | Список водіїв з таблицею та статусами | 📝 Planned | 2026-04-24 |
 | `page_drv_list_empty` | Сторінка | Порожній стан "Команда ще не сформована" | 📝 Planned | 2026-04-24 |
-| `page_drv_list_mobile` | Сторінка | Мобільна версія списку водіїв | 📝 Planned | 2026-04-24 |
 | `page_ops_assignments_main` | Сторінка | Таблиця журналу призначень | 📝 Planned | 2026-04-24 |
 | `page_ops_assignments_empty` | Сторінка | Порожній стан журналу призначень | 📝 Planned | 2026-04-24 |
-| `page_ops_assignments_mobile` | Сторінка | Мобільна версія журналу призначень | 📝 Planned | 2026-04-24 |
 | `page_drv_issue_reports_main` | Сторінка | Таблиця звітів про проблеми | 📝 Planned | 2026-04-24 |
 | `page_drv_issue_reports_empty` | Сторінка | Порожній стан звітів | 📝 Planned | 2026-04-24 |
-| `page_drv_schedule_main` | Сторінка | Основний вигляд графіку (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_drv_schedule_mobile` | Сторінка | Мобільна версія графіку | 📝 Planned | 2026-04-24 |
-| `page_txn_main` | Сторінка | Таблиця транзакцій (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_drv_schedule_main` | Сторінка | Основний вигляд графіку | 📝 Planned | 2026-04-24 |
+| `page_txn_main` | Сторінка | Таблиця транзакцій | 📝 Planned | 2026-04-24 |
 | `page_txn_empty` | Сторінка | Порожній стан списку транзакцій | 📝 Planned | 2026-04-24 |
-| `page_tasks_main` | Сторінка | Таблиця задач (Desktop) | 📝 Planned | 2026-04-24 |
+| `page_tasks_main` | Сторінка | Таблиця задач | 📝 Planned | 2026-04-24 |
 | `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-24 |
 | `page_manual_trips_main` | Сторінка | Таблиця ручних поїздок | 📝 Planned | 2026-04-24 |
 | `page_manual_trips_empty` | Сторінка | Порожній стан списку поїздок | 📝 Planned | 2026-04-24 |
 | `page_dash_main` | Сторінка | Головна панель з усіма увімкненими віджетами | 📝 Planned | 2026-04-24 |
 | `page_dash_empty` | Сторінка | Дашборд з онбордінгом (новий парк без даних) | 📝 Planned | 2026-04-24 |
-| `page_dash_mobile` | Сторінка | Мобільна версія головної панелі | 📝 Planned | 2026-04-24 |
-| `page_earnings_main` | Сторінка | Таблиця заробітку (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_earnings_mobile` | Сторінка | Мобільна версія заробітку | 📝 Planned | 2026-04-24 |
-| `page_vehicle_earnings_main` | Сторінка | Таблиця заробітку авто (Desktop) | 📝 Planned | 2026-04-24 |
-| `page_vehicle_earnings_mobile` | Сторінка | Мобільна версія заробітку авто | 📝 Planned | 2026-04-24 |
+| `page_earnings_main` | Сторінка | Таблиця заробітку | 📝 Planned | 2026-04-24 |
+| `page_vehicle_earnings_main` | Сторінка | Таблиця заробітку авто | 📝 Planned | 2026-04-24 |
 | `page_profile_main` | Сторінка | Основний вигляд профілю (General Tab) | 📝 Planned | 2026-04-24 |
 | `page_park_activity_logs_main` | Сторінка | Основний вигляд сторінки журналів | 📝 Planned | 2026-04-24 |
 | `tab_park_activity_logs_system` | Вкладка | Вкладка "Журнал подій" | 📝 Planned | 2026-04-24 |

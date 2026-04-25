@@ -4,10 +4,10 @@ const { screenshot } = require('./config');
 const SCREENSHOTS_PREFIX = 'screenshots/';
 
 class SeleniumAdapter {
-    constructor(page, baseUrl) {
+    constructor(page, baseUrl, forceMobile = false) {
         this.page = page;
         this.baseUrl = baseUrl;
-        this.isMobile = false;
+        this.isMobile = forceMobile;
     }
 
     /**
@@ -31,15 +31,15 @@ class SeleniumAdapter {
             case 'waitForElementVisible':
                 await this.waitFor(cleanTarget, value);
                 break;
-            case 'setWindowSize':
-                await this.setWindowSize(target);
-                break;
             case 'captureEntirePageScreenshot':
                 await this.captureScreenshot(target);
                 break;
             case 'pause':
                 await new Promise(r => setTimeout(r, parseInt(value) || 1000));
                 break;
+            case 'setWindowSize':
+            case 'maximizeWindow':
+                break; // розмір вікна керується з config.js
             default:
                 console.warn(`      ⚠️ Команда [${cmd}] ще не реалізована в адаптері.`);
         }
@@ -62,15 +62,9 @@ class SeleniumAdapter {
         });
     }
 
-    async setWindowSize(target) {
-        const [width, height] = target.split('x').map(Number);
-        await this.page.setViewport({ width, height });
-        this.isMobile = true;
-    }
-
     async captureScreenshot(targetPath) {
         const platform = this.isMobile ? 'mobile' : 'desktop';
-        const relativePath = targetPath.replace(SCREENSHOTS_PREFIX, `${platform}/`);
+        const relativePath = targetPath.replace(SCREENSHOTS_PREFIX, `${screenshot.theme}/${platform}/`);
         const fullPath = path.resolve(__dirname, screenshot.outputDir, relativePath);
         // Створюємо дерево папок, якщо воно відсутнє
         fs.mkdirSync(path.dirname(fullPath), { recursive: true });
