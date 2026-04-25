@@ -1,7 +1,7 @@
 Прочитай інструкції:
-- `workspace/user-docs/_prompts/AI_TASK.md`
-- `workspace/user-docs/_prompts/STYLE_GUIDE.md`
-- `workspace/user-docs/_prompts/PROJECT.md`
+- `workspace/user-docs/_prompts/doc-gen/AI_TASK.md`
+- `workspace/user-docs/_prompts/doc-gen/STYLE_GUIDE.md`
+- `workspace/user-docs/_prompts/doc-gen/PROJECT.md`
 
 Прочитай поточний стан реєстрів:
 - `workspace/user-docs/_meta/INDEX.md`

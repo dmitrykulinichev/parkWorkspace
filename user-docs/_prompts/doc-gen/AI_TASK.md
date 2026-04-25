@@ -1,7 +1,7 @@
 # Процедура створення документації (AI Workflow)
 
 > Цей файл описує **універсальний процес і структуру** документації.
-> Перед початком роботи прочитати всі три файли: `_prompts/PROJECT.md` (налаштування проєкту), `_prompts/STYLE_GUIDE.md` (конвенції іменування), цей файл (workflow).
+> Перед початком роботи прочитати всі три файли: `_prompts/doc-gen/PROJECT.md` (налаштування проєкту), `_prompts/doc-gen/STYLE_GUIDE.md` (конвенції іменування), цей файл (workflow).
 
 ---
 
@@ -63,7 +63,7 @@
 ## Фаза 2: Планування скріншотів (ОБОВ'ЯЗКОВО ДО НАПИСАННЯ)
 
 1. Скласти повний список скріншотів для цієї сторінки/модалки
-2. Іменувати за правилом: `[тип]_[модуль]_[об'єкт]_[стан]` (деталі — `_prompts/STYLE_GUIDE.md`)
+2. Іменувати за правилом: `[тип]_[модуль]_[об'єкт]_[стан]` (деталі — `_prompts/doc-gen/STYLE_GUIDE.md`)
 3. **Зареєструвати кожен** в `_meta/SCREENSHOTS.md` зі статусом `📝 Planned` і поточною датою
 4. **Одночасно** — заповнити інструкції захоплення в `_meta/RECORDER.md` (див. нижче)
 
@@ -94,105 +94,7 @@
 
 ### Генерація Katalon-скриптів
 
-Для **кожного** запланованого скріншота — створити файл `user-docs/katalon/[id].side`.
-
-Робити під час аналізу коду: CSS-селектори видно у JSX, `onClick` обробниках, умовних рендерах — пізніше цього контексту не буде.
-
-**Що витягати з коду:**
-
-| Що потрібно | Де шукати в коді |
-| :--- | :--- |
-| Головний контейнер сторінки | кореневий `<div>` компонента або `data-testid` |
-| Кнопка відкриття модалки | `onClick` → `setOpen(true)` або аналог |
-| Контейнер модалки | `[role="dialog"]` або з `PROJECT.md` |
-| Кнопка вкладки | `<Tab>` або `[role="tab"]` |
-| Контент вкладки | `[role="tabpanel"]` або з `PROJECT.md` |
-
-Якщо точний селектор невідомий — використовувати семантичні з `PROJECT.md` (розділ "Katalon — CSS-селектори рівня проєкту").
-
-**Шаблони команд по типах:**
-
-`page_*_main` / `page_*_empty`:
-```
-open                    → /[url]
-waitForElementPresent   → css=[main-container]   | 10000
-captureEntirePageScreenshot → [output-path]
-```
-
-`page_*_mobile`:
-```
-setWindowSize           → 375x812
-open                    → /[url]
-waitForElementPresent   → css=[main-container]   | 10000
-captureEntirePageScreenshot → [output-path]
-setWindowSize           → 1920x1080
-```
-
-`tab_*`:
-```
-open                    → /[url]
-waitForElementPresent   → css=[role="tablist"]   | 10000
-click                   → css=[tab-button]
-waitForElementPresent   → css=[role="tabpanel"]:not([hidden]) | 5000
-captureEntirePageScreenshot → [output-path]
-```
-
-`modal_*`:
-```
-open                    → /[url]
-waitForElementPresent   → css=[page-content]     | 10000
-click                   → css=[trigger-button]
-waitForElementPresent   → css=[role="dialog"]    | 5000
-captureEntirePageScreenshot → [output-path]
-```
-
-**Шляхи збереження (output-path):**
-
-| Тип | Шлях |
-| :--- | :--- |
-| `page_*` (не mobile) | `screenshots/pages/[id].png` |
-| `page_*_mobile` | `screenshots/mobile/[id].png` |
-| `tab_*` | `screenshots/tabs/[id].png` |
-| `modal_*` | `screenshots/modals/[id].png` |
-| `sec_*` | `screenshots/sections/[id].png` |
-
-**Повний формат `.side` файлу:**
-
-```json
-{
-  "id": "[id]",
-  "version": "2.0",
-  "name": "[id]",
-  "url": "[base_url з PROJECT.md]",
-  "tests": [{
-    "id": "[id]-test",
-    "name": "capture",
-    "commands": [
-      { "id": "1", "command": "open", "target": "/[url]", "value": "" },
-      { "id": "2", "command": "waitForElementPresent", "target": "css=[selector]", "value": "10000" },
-      { "id": "3", "command": "captureEntirePageScreenshot", "target": "[output-path]", "value": "" }
-    ]
-  }],
-  "suites": [{
-    "id": "[id]-suite",
-    "name": "default",
-    "persistSession": false,
-    "parallel": false,
-    "timeout": 300,
-    "tests": ["[id]-test"]
-  }],
-  "urls": [],
-  "plugins": []
-}
-```
-
-**Після створення `.side` файлу** — додати рядок в індекс `_meta/RECORDER.md`:
-
-```
-| `[id]` | `katalon/[id].side` | [нотатка або —] |
-```
-
-Нотатка потрібна лише якщо є умова що не автоматизується (наприклад: "⚠️ потребує порожньої БД").
+> Повні інструкції винесено в окремий файл: `_prompts/doc-gen/KATALON.md`
 
 ---
 
@@ -490,7 +392,7 @@ components:
 
 ## Довідка: Плейсхолдери медіа-ресурсів
 
-Повна таблиця плейсхолдерів та правила іменування — у `_prompts/STYLE_GUIDE.md`, розділ 3.
+Повна таблиця плейсхолдерів та правила іменування — у `_prompts/doc-gen/STYLE_GUIDE.md`, розділ 3.
 
 Короткий перелік для зручності: `{{SCRN:id}}` (будь-який скріншот), `{{MODAL:doc_id}}` (посилання на документацію модального вікна).
 
