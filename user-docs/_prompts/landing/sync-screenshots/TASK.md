@@ -5,21 +5,24 @@
 
 ---
 
-## Правила визначення папки-джерела
+## Структура папок-джерел
 
-| Префікс ID              | Папка-джерело                                             |
-| :---------------------- | :-------------------------------------------------------- |
-| `page_` (без `_mobile`) | `workspace/user-docs/screenshots/desktop/pages/`          |
-| `page_*_mobile`         | `workspace/user-docs/screenshots/mobile/pages/`           |
-| `tab_` (без `_mobile`)  | `workspace/user-docs/screenshots/desktop/tabs/`           |
-| `tab_*_mobile`          | `workspace/user-docs/screenshots/mobile/tabs/`            |
-| `modal_` (без `_mobile`)| `workspace/user-docs/screenshots/desktop/modals/`         |
-| `modal_*_mobile`        | `workspace/user-docs/screenshots/mobile/modals/`          |
-| `sec_` (без `_mobile`)  | `workspace/user-docs/screenshots/desktop/sections/`       |
-| `sec_*_mobile`          | `workspace/user-docs/screenshots/mobile/sections/`        |
-| **інший префікс**       | перевірити по черзі всі папки з таблиці вище, взяти перший збіг |
+Скріншоти зберігаються за схемою:
+`user-docs/screenshots/light/[platform]/[subfolder]/[id].png`
 
-Цільова папка: `landing/www/assets/img/docs/`.
+| Префікс ID | Підпапка |
+| :--------- | :------- |
+| `page_`    | `pages/` |
+| `tab_`     | `tabs/`  |
+| `modal_`   | `modals/`|
+| `sec_`     | `sections/`|
+
+Платформи: `desktop` та `mobile`.
+
+Цільові папки лендінгу:
+- Desktop → `landing/www/assets/img/docs/desktop/[id].png`
+- Mobile  → `landing/www/assets/img/docs/mobile/[id].png`
+
 Завжди перезаписувати — файл міг оновитись.
 
 ---
@@ -38,15 +41,17 @@
 
 ### Крок 2 — Скопіювати файли
 
-Для кожного ID:
-1. Визначити папку-джерело за таблицею вище
-2. Перевірити наявність `[папка-джерело]/[id].png`
-3. Якщо існує → скопіювати до `landing/www/assets/img/docs/[id].png` (завжди, навіть якщо вже є)
+Для кожного ID визначити підпапку за таблицею вище, потім:
+
+1. **Desktop:** `screenshots/light/desktop/[subfolder]/[id].png` → `assets/img/docs/desktop/[id].png`
+2. **Mobile:** `screenshots/light/mobile/[subfolder]/[id].png` → `assets/img/docs/mobile/[id].png`
+
+Кожен варіант копіювати незалежно — якщо файлу немає, просто пропустити цей варіант.
 
 ### Крок 3 — Звіт
 
-| ID | Папка-джерело | Файл знайдено | Дія |
-| :- | :------------ | :------------ | :-- |
-| …  | …             | так / ні      | скопійовано / відсутній |
+| ID | Desktop | Mobile | Дія |
+| :- | :------ | :----- | :-- |
+| …  | так / ні | так / ні | скопійовано / відсутній |
 
-Підсумок: скопійовано N, вже було N, досі відсутні: [список ID].
+Підсумок: скопійовано N desktop, N mobile, відсутні: [список ID].

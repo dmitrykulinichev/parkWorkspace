@@ -67,7 +67,7 @@
 **Формат запису без вкладок:**
 
 ```json
-{ "title": "[H1 заголовок]", "slug": "[ім'я файлу без .md]", "image": "[перший скріншот або порожній рядок]" }
+{ "title": "[H1 заголовок]", "slug": "[ім'я файлу без .md]", "image": "desktop/[перший id скріншота або порожній рядок]" }
 ```
 
 **Формат запису з вкладками:**
@@ -76,7 +76,7 @@
 {
   "title": "[H1 заголовок]",
   "slug": "[ім'я файлу без .md]",
-  "image": "[перший скріншот або порожній рядок]",
+  "image": "desktop/[перший id скріншота або порожній рядок]",
   "tabs": [
     { "title": "[Назва вкладки]", "slug": "[reports--maintenance]" },
     { "title": "[Назва вкладки]", "slug": "[reports--performance]" }
@@ -104,32 +104,32 @@
 
 ### 1. Визначити шлях до файлу
 
-| Префікс id | Папка в user-docs |
-| :--- | :--- |
-| `page_` (без `_mobile`)  | `user-docs/screenshots/desktop/pages/`   |
-| `page_*_mobile`          | `user-docs/screenshots/mobile/pages/`    |
-| `tab_` (без `_mobile`)   | `user-docs/screenshots/desktop/tabs/`    |
-| `tab_*_mobile`           | `user-docs/screenshots/mobile/tabs/`     |
-| `modal_` (без `_mobile`) | `user-docs/screenshots/desktop/modals/`  |
-| `modal_*_mobile`         | `user-docs/screenshots/mobile/modals/`   |
-| `sec_` (без `_mobile`)   | `user-docs/screenshots/desktop/sections/`|
-| `sec_*_mobile`           | `user-docs/screenshots/mobile/sections/` |
+| Префікс id | Підпапка  |
+| :--------- | :-------- |
+| `page_`    | `pages/`  |
+| `tab_`     | `tabs/`   |
+| `modal_`   | `modals/` |
+| `sec_`     | `sections/`|
 
-### 2. Перевірити наявність і скопіювати
+Шлях до файлу: `user-docs/screenshots/light/[platform]/[subfolder]/[id].png`
+де `[platform]` — `desktop` або `mobile`.
 
-**Файл існує** → скопіювати до `landing/www/assets/img/docs/[id].png`
-- Завжди перезаписувати — файл міг оновитись
+### 2. Скопіювати обидва варіанти
 
-**Файл не існує** → нічого не копіювати. Shortcode однаково вставляти (сайт покаже placeholder автоматично).
+Для кожного ID копіювати незалежно:
+- `light/desktop/.../[id].png` → `landing/www/assets/img/docs/desktop/[id].png`
+- `light/mobile/.../[id].png`  → `landing/www/assets/img/docs/mobile/[id].png`
+
+Якщо якийсь варіант відсутній — пропустити, решту скопіювати. Завжди перезаписувати.
 
 ### 3. Результат у тексті
 
-Завжди вставляти shortcode — незалежно від наявності файлу:
+Завжди вставляти shortcode — незалежно від наявності файлів:
 ```
 {{screenshot file="[id].png" title="[описовий заголовок українською]"}}
 ```
 
-Якщо файл відсутній — сайт відобразить заглушку «Скріншот не додано» до появи реального зображення.
+Сайт сам відображає desktop і mobile варіанти: на десктопі — в ряд, на мобільному — в стовпчик. Якщо якийсь варіант відсутній — показує тільки наявний. Якщо обидва відсутні — заглушка.
 
 **Скільки скріншотів вставляти:** обирай 1–3 найбільш показових. Кілька сильних ілюстрацій кращі за десяток формальних.
 
