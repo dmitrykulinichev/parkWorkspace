@@ -1,0 +1,27 @@
+{
+  "id": "page_rep_reports_mobile",
+  "version": "2.0",
+  "name": "page_rep_reports_mobile",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "page_rep_reports_mobile-test",
+    "name": "capture",
+    "commands": [
+      { "id": "1", "command": "setWindowSize", "target": "375x812", "value": "" },
+      { "id": "2", "command": "open", "target": "/reports", "value": "" },
+      { "id": "3", "command": "waitForElementPresent", "target": "css=[data-tour=\"reports-tabs\"]", "value": "10000" },
+      { "id": "4", "command": "captureEntirePageScreenshot", "target": "screenshots/mobile/page_rep_reports_mobile.png", "value": "" },
+      { "id": "5", "command": "setWindowSize", "target": "1920x1080", "value": "" }
+    ]
+  }],
+  "suites": [{
+    "id": "page_rep_reports_mobile-suite",
+    "name": "default",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["page_rep_reports_mobile-test"]
+  }],
+  "urls": ["http://localhost"],
+  "plugins": []
+}

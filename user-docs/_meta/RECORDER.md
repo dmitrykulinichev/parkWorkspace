@@ -49,3 +49,9 @@
 | `page_park_finance_settings_main` | `katalon/page_park_finance_settings_main.side` | ⚠️ .side не створено |
 | `page_intg_tele_settings_main` | `katalon/page_intg_tele_settings_main.side` | ⚠️ .side не створено |
 | `page_intg_tele_logs_main` | `katalon/page_intg_tele_logs_main.side` | ⚠️ .side не створено |
+| `page_rep_reports_main` | `katalon/page_rep_reports_main.side` | — |
+| `page_rep_reports_empty` | `katalon/page_rep_reports_empty.side` | ⚠️ потребує парку без автомобілів |
+| `page_rep_reports_mobile` | `katalon/page_rep_reports_mobile.side` | — |
+| `tab_rep_reports_operational` | `katalon/tab_rep_reports_operational.side` | — |
+| `tab_rep_reports_performance` | `katalon/tab_rep_reports_performance.side` | — |
+| `tab_rep_reports_maintenance` | `katalon/tab_rep_reports_maintenance.side` | — |

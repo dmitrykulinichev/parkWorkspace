@@ -16,9 +16,12 @@
 | `page_docs_list_empty` | Сторінка | Стан "Документи відсутні" | 📝 Planned | 2026-04-23 |
 | `page_docs_list_mobile` | Сторінка | Мобільна версія списку документів | 📝 Planned | 2026-04-23 |
 | `page_docs_list_expired` | Сторінка | Візуалізація прострочених документів | 📝 Planned | 2026-04-23 |
-| `page_reports_main` | Сторінка | Загальний вигляд розділу Звіти (Tabs) | 📝 Planned | 2026-04-23 |
-| `page_reports_maint_tab` | Сторінка | Звіт по регламентних роботах | 📝 Planned | 2026-04-23 |
-| `page_reports_perf_tab` | Сторінка | Звіт продуктивності автопарку | 📝 Planned | 2026-04-23 |
+| `page_rep_reports_main` | Сторінка | Загальний вигляд розділу Звіти (Tabs) | 📝 Planned | 2026-04-25 |
+| `page_rep_reports_empty` | Сторінка | Стан "Звіти недоступні" (без авто) | 📝 Planned | 2026-04-25 |
+| `page_rep_reports_mobile` | Сторінка | Мобільна версія розділу Звіти | 📝 Planned | 2026-04-25 |
+| `tab_rep_reports_operational` | Вкладка | Звіт: Оперативна статистика | 📝 Planned | 2026-04-25 |
+| `tab_rep_reports_performance` | Вкладка | Звіт: Виконання нормативів (KPI) | 📝 Planned | 2026-04-25 |
+| `tab_rep_reports_maintenance` | Вкладка | Звіт: Технічне обслуговування | 📝 Planned | 2026-04-25 |
 | `page_settings_fleet_main` | Сторінка | Налаштування автопарку (Регламенти) | 📝 Planned | 2026-04-23 |
 | `page_drv_expenses_main` | Сторінка | Список витрат водіїв | 📝 Planned | 2026-04-24 |
 | `page_drv_expenses_empty` | Сторінка | Порожній стан витрат водіїв | 📝 Planned | 2026-04-24 |

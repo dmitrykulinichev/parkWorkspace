@@ -10,7 +10,10 @@
 | - Тех. обслуговування | `/vehicle-maintenance` | [02-vehicles/02-maintenance.md](../data/02-vehicles/02-maintenance.md) | page | — | ✅ Completed | 2026-04-23 |
 | - Недоступності | `/vehicle-unavailabilities` | [02-vehicles/03-unavailabilities.md](../data/02-vehicles/03-unavailabilities.md) | page | — | ✅ Completed | 2026-04-23 |
 | - Документи | `/documents` | [02-vehicles/04-documents.md](../data/02-vehicles/04-documents.md) | page | — | ✅ Completed | 2026-04-23 |
-| - Звіти | `/reports` | [02-vehicles/05-reports.md](../data/02-vehicles/05-reports.md) | page | — | ✅ Completed | 2026-04-23 |
+| - Звіти | `/reports` | [02-vehicles/05-reports.md](../data/02-vehicles/05-reports.md) | page | — | ✅ Completed | 2026-04-25 |
+| └ Оперативна статистика | `/reports?tab=operational` | [05-reports--operational.md](../data/02-vehicles/05-reports--operational.md) | tab | [05-reports.md](../data/02-vehicles/05-reports.md) | ✅ Completed | 2026-04-25 |
+| └ Виконання нормативів | `/reports?tab=performance` | [05-reports--performance.md](../data/02-vehicles/05-reports--performance.md) | tab | [05-reports.md](../data/02-vehicles/05-reports.md) | ✅ Completed | 2026-04-25 |
+| └ Тех. обслуговування | `/reports?tab=maintenance` | [05-reports--maintenance.md](../data/02-vehicles/05-reports--maintenance.md) | tab | [05-reports.md](../data/02-vehicles/05-reports.md) | ✅ Completed | 2026-04-25 |
 | - Налаштування | `/fleet-settings` | [02-vehicles/06-settings.md](../data/02-vehicles/06-settings.md) | page | — | ✅ Completed | 2026-04-23 |
 | **Водії (Drivers Group)** | | | | | | |
 | - Список водіїв | `/drivers` | [03-drivers/01-list.md](../data/03-drivers/01-list.md) | page | — | ✅ Completed | 2026-04-24 |
