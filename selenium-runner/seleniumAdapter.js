@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { screenshot } = require('./config');
 const SCREENSHOTS_PREFIX = 'screenshots/';
+const LANDING_DOCS_DIR = path.resolve(__dirname, screenshot.landingDir);
 
 class SeleniumAdapter {
     constructor(page, baseUrl, forceMobile = false) {
@@ -73,6 +74,13 @@ class SeleniumAdapter {
         await new Promise(r => setTimeout(r, 800));
         const fullPage = this.isMobile ? screenshot.fullPageMobile : screenshot.fullPageDesktop;
         await this.page.screenshot({ path: fullPath, fullPage });
+
+        // Копіювання до лендінгу: landing/www/assets/img/docs/[platform]/[id].png
+        const id = path.basename(fullPath);
+        const landingDir = path.join(LANDING_DOCS_DIR, platform);
+        fs.mkdirSync(landingDir, { recursive: true });
+        fs.copyFileSync(fullPath, path.join(landingDir, id));
+        console.log(`      📋 → landing/assets/img/docs/${platform}/${id}`);
     }
 }
 
