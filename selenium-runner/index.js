@@ -21,10 +21,26 @@ async function processFiles(page, files, forceMobile = false) {
             await page.setViewport(null);
         }
 
-        const project = JSON.parse(fs.readFileSync(path.join(SCRIPTS_DIR, file), 'utf8'));
-        const adapter = new SeleniumAdapter(page, project.url || baseUrl, forceMobile);
+        let project;
+        try {
+            project = JSON.parse(fs.readFileSync(path.join(SCRIPTS_DIR, file), 'utf8'));
+        } catch (err) {
+            console.error(`      ❌ НЕВАЛІДНИЙ JSON: ${err.message}`);
+            continue;
+        }
+
+        if (!Array.isArray(project.tests)) {
+            console.error(`      ❌ НЕВАЛІДНА СТРУКТУРА: відсутнє поле tests[]`);
+            continue;
+        }
+
+        const adapter = new SeleniumAdapter(page, baseUrl, forceMobile);
 
         for (const test of project.tests) {
+            if (!Array.isArray(test.commands)) {
+                console.error(`      ❌ НЕВАЛІДНА СТРУКТУРА: відсутнє поле commands[] в тесті "${test.id || test.name}"`);
+                continue;
+            }
             for (const command of test.commands) {
                 try {
                     await adapter.execute(command);
