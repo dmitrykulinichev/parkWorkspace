@@ -16,6 +16,8 @@
 | `modal_maint_form_main` | `katalon/modal_maint_form_main.side` | — |
 | `modal_maint_details` | `katalon/modal_maint_details.side` | — |
 | `modal_maint_filters` | `katalon/modal_maint_filters.side` | — |
+| `page_dash_main` | `katalon/page_dash_main.side` | — |
+| `page_dash_empty` | `katalon/page_dash_empty.side` | ⚠️ потребує нового парку без даних |
 | `page_vehicle_earnings_main` | `katalon/page_vehicle_earnings_main.side` | ⚠️ .side не створено |
 | `modal_vehicle_earnings_details` | `katalon/modal_vehicle_earnings_details.side` | ⚠️ .side не створено |
 | `modal_vehicle_earnings_calc_info` | `katalon/modal_vehicle_earnings_calc_info.side` | ⚠️ .side не створено |

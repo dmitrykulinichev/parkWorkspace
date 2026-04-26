@@ -1,0 +1,25 @@
+{
+  "id": "page_dash_main",
+  "version": "2.0",
+  "name": "page_dash_main",
+  "url": "",
+  "tests": [{
+    "id": "page_dash_main-test",
+    "name": "capture",
+    "commands": [
+      { "id": "1", "command": "open", "target": "/", "value": "" },
+      { "id": "2", "command": "waitForElementPresent", "target": "css=[data-page-ready=\"true\"]", "value": "10000" },
+      { "id": "3", "command": "captureEntirePageScreenshot", "target": "screenshots/pages/page_dash_main.png", "value": "" }
+    ]
+  }],
+  "suites": [{
+    "id": "page_dash_main-suite",
+    "name": "default",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["page_dash_main-test"]
+  }],
+  "urls": [],
+  "plugins": []
+}

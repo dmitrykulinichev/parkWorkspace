@@ -3,6 +3,7 @@
   "version": "2.0",
   "name": "modal_maint_form_main",
   "url": "",
+  "locked": true,
   "tests": [{
     "id": "modal_maint_form_main-test",
     "name": "capture",

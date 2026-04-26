@@ -4,7 +4,7 @@
 
 | Розділ / Сторінка | Route | Файл документації | Тип | Батько | Статус | Дата оновлення |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Головна** | `/` | [01-home.md](../data/01-home.md) | page | — | ✅ Completed | 2026-04-24 |
+| **Головна** | `/` | [01-home.md](../data/01-home.md) | page | — | ✅ Completed | 2026-04-26 |
 | **Автопарк (Fleet)** | | | | | | |
 | - Список автомобілів | `/vehicles` | [02-vehicles/01-list.md](../data/02-vehicles/01-list.md) | page | — | ✅ Completed | 2026-04-25 |
 | - Тех. обслуговування | `/vehicle-maintenance` | [02-vehicles/02-maintenance.md](../data/02-vehicles/02-maintenance.md) | page | — | ✅ Completed | 2026-04-25 |
