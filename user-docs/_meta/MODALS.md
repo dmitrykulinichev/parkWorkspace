@@ -39,11 +39,13 @@
 | **drv_driver_copy** | Копіювати водія в інший парк | [drv_driver_copy.md](../data/shared/modals/drv_driver_copy.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_comments** | Коментарі до водія | [drv_comments.md](../data/shared/modals/drv_comments.md) | `03-drivers/01-list.md` | 2026-04-24 |
 | **drv_telegram** | Підключення Telegram | [drv_telegram.md](../data/shared/modals/drv_telegram.md) | `03-drivers/01-list.md` | 2026-04-24 |
-| **drv_schedule_slot_form** | Форма графіку роботи | [drv_schedule_slot_form.md](../data/shared/modals/drv_schedule_slot_form.md) | `/driver-schedule` | 2026-04-24 |
-| **drv_actual_shift_details** | Деталі фактичної зміни | [drv_actual_shift_details.md](../data/shared/modals/drv_actual_shift_details.md) | `/driver-schedule` | 2026-04-24 |
-| **drv_simple_driver_details** | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-24 |
-| **task_form** | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks`, `01-home.md` | 2026-04-24 |
-| **task_details** | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-24 |
+| **drv_schedule_slot_form** | Форма графіку роботи | [drv_schedule_slot_form.md](../data/shared/modals/drv_schedule_slot_form.md) | `/driver-schedule` | 2026-04-26 |
+| **drv_actual_shift_details** | Деталі фактичної зміни | [drv_actual_shift_details.md](../data/shared/modals/drv_actual_shift_details.md) | `/driver-schedule` | 2026-04-26 |
+| **drv_simple_driver_details** | Деталі водія (проста картка) | [drv_simple_driver_details.md](../data/shared/modals/drv_simple_driver_details.md) | `/driver-schedule` | 2026-04-26 |
+| **task_form** | Форма задачі | [task_form.md](../data/shared/modals/task_form.md) | `/tasks`, `01-home.md` | 2026-04-26 |
+| **task_details** | Деталі задачі | [task_details.md](../data/shared/modals/task_details.md) | `/tasks` | 2026-04-26 |
+| **task_filters** | Фільтри задач | [task_filters.md](../data/shared/modals/task_filters.md) | `/tasks` | 2026-04-26 |
+| **task_confirm_complete** | Завершення задачі | [task_confirm_complete.md](../data/shared/modals/task_confirm_complete.md) | `/tasks` | 2026-04-26 |
 | **manual_trip_form** | Форма ручної поїздки | [manual_trip_form.md](../data/shared/modals/manual_trip_form.md) | `/manual-trips` | 2026-04-24 |
 | **manual_trip_details** | Деталі ручної поїздки | [manual_trip_details.md](../data/shared/modals/manual_trip_details.md) | `/manual-trips` | 2026-04-24 |
 | **txn_form** | Форма транзакції | [txn_form.md](../data/shared/modals/txn_form.md) | `/transactions` | 2026-04-24 |

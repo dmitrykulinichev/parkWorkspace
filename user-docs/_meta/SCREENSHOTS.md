@@ -41,11 +41,13 @@
 | `page_ops_assignments_empty` | Сторінка | Порожній стан журналу призначень | 📝 Planned | 2026-04-24 |
 | `page_drv_issue_reports_main` | Сторінка | Таблиця звітів про проблеми | 📝 Planned | 2026-04-24 |
 | `page_drv_issue_reports_empty` | Сторінка | Порожній стан звітів | 📝 Planned | 2026-04-24 |
-| `page_drv_schedule_main` | Сторінка | Основний вигляд графіку | 📝 Planned | 2026-04-24 |
+| `page_drv_schedule_main` | Сторінка | Основний вигляд графіку | 📝 Planned | 2026-04-26 |
+| `page_drv_schedule_empty` | Сторінка | Порожній графік (без автомобілів) | 📝 Planned | 2026-04-26 |
+| `page_drv_schedule_mobile` | Сторінка | Мобільна версія графіку | 📝 Planned | 2026-04-26 |
 | `page_txn_main` | Сторінка | Таблиця транзакцій | 📝 Planned | 2026-04-24 |
 | `page_txn_empty` | Сторінка | Порожній стан списку транзакцій | 📝 Planned | 2026-04-24 |
-| `page_tasks_main` | Сторінка | Таблиця задач | 📝 Planned | 2026-04-24 |
-| `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-24 |
+| `page_tasks_main` | Сторінка | Таблиця задач | 📝 Planned | 2026-04-26 |
+| `page_tasks_empty` | Сторінка | Порожній стан списку задач | 📝 Planned | 2026-04-26 |
 | `page_manual_trips_main` | Сторінка | Таблиця ручних поїздок | 📝 Planned | 2026-04-24 |
 | `page_manual_trips_empty` | Сторінка | Порожній стан списку поїздок | 📝 Planned | 2026-04-24 |
 | `page_dash_main` | Сторінка | Головна панель з усіма увімкненими віджетами | 📝 Planned | 2026-04-24 |
@@ -71,7 +73,7 @@
 | `modal_fleet_veh_filters` | Модалка | Вікно розширеної фільтрації автопарку | 📝 Planned | 2026-04-23 |
 | `modal_fleet_mileage_upd` | Модалка | Вікно оновлення пробігу з історією | 📝 Planned | 2026-04-23 |
 | `modal_fleet_mileage_conf` | Модалка | Попередження про конфлікт пробігу | 📝 Planned | 2026-04-23 |
-| `modal_fleet_import_pre` | Модалка | Попередній перегляд перед імпортом | 📝 Planned | 2026-04-23 |
+| `modal_fleet_import_pre` | Модалка | Попередній перегляд перед імтортом | 📝 Planned | 2026-04-23 |
 | `modal_maint_form_main` | Модалка | Форма заїзду на сервіс (пакетна) | 📝 Planned | 2026-04-23 |
 | `modal_maint_form_valid` | Модалка | Помилки валідації у формі ТО | 📝 Planned | 2026-04-23 |
 | `modal_maint_details` | Модалка | Деталі заїзду (список робіт та файли) | 📝 Planned | 2026-04-23 |
@@ -106,8 +108,10 @@
 | `modal_drv_simple_driver_details` | Модалка | Деталі водія (проста картка) | 📝 Planned | 2026-04-24 |
 | `modal_txn_form` | Модалка | Форма створення/редагування транзакції | 📝 Planned | 2026-04-24 |
 | `modal_txn_details` | Модалка | Деталі транзакції | 📝 Planned | 2026-04-24 |
-| `modal_task_form` | Модалка | Форма створення/редагування задачі | 📝 Planned | 2026-04-24 |
-| `modal_task_details` | Модалка | Деталі задачі | 📝 Planned | 2026-04-24 |
+| `modal_task_form` | Модалка | Форма створення/редагування задачі | 📝 Planned | 2026-04-26 |
+| `modal_task_details` | Модалка | Деталі задачі | 📝 Planned | 2026-04-26 |
+| `modal_task_filters` | Модалка | Фільтри списку задач | 📝 Planned | 2026-04-26 |
+| `modal_task_confirm_complete` | Модалка | Підтвердження завершення задачі | 📝 Planned | 2026-04-26 |
 | `modal_manual_trip_form` | Модалка | Форма створення/редагування поїздки | 📝 Planned | 2026-04-24 |
 | `modal_manual_trip_details` | Модалка | Деталі поїздки | 📝 Planned | 2026-04-24 |
 | `modal_drv_exp_form` | Модалка | Форма витрат водія | 📝 Planned | 2026-04-24 |

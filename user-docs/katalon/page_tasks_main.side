@@ -1,0 +1,31 @@
+{
+  "id": "t1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+  "version": "2.0",
+  "name": "page_tasks_main",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "t1-test",
+    "name": "page_tasks_main",
+    "commands": [{
+      "command": "open",
+      "target": "/tasks",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "waitForElementPresent",
+      "target": "[data-page-ready='true']",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "t1-suite",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["t1-test"]
+  }],
+  "urls": ["http://localhost:8000"],
+  "plugins": []
+}

@@ -3,7 +3,7 @@
   "version": "2.0",
   "name": "tab_rep_reports_maintenance",
   "url": "",
-  "locked": true,
+  "locked": false,
   "tests": [{
     "id": "tab_rep_reports_maintenance-test",
     "name": "capture",

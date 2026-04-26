@@ -19,8 +19,8 @@
 | - Список водіїв | `/drivers` | [03-drivers/01-list.md](../data/03-drivers/01-list.md) | page | — | ✅ Completed | 2026-04-24 |
 | - Призначення | `/assignments` | [03-drivers/02-assignments.md](../data/03-drivers/02-assignments.md) | page | — | ✅ Completed | 2026-04-24 |
 | - Звернення (Issue Reports) | `/issue-reports` | [03-drivers/03-issue-reports.md](../data/03-drivers/03-issue-reports.md) | page | — | ✅ Completed | 2026-04-24 |
-| **Графік роботи** | `/driver-schedule` | [04-schedule.md](../data/04-schedule.md) | page | — | ✅ Completed | 2026-04-24 |
-| **Задачі** | `/tasks` | [05-tasks.md](../data/05-tasks.md) | page | — | ✅ Completed | 2026-04-24 |
+| **Графік роботи** | `/driver-schedule` | [04-schedule.md](../data/04-schedule.md) | page | — | ✅ Completed | 2026-04-26 |
+| **Задачі** | `/tasks` | [05-tasks.md](../data/05-tasks.md) | page | — | ✅ Completed | 2026-04-26 |
 | **Фінанси (Finance)** | | | | | | |
 | - Транзакції | `/transactions` | [06-finance/01-transactions.md](../data/06-finance/01-transactions.md) | page | — | ✅ Completed | 2026-04-24 |
 | - Ручні поїздки | `/manual-trips` | [06-finance/02-manual-trips.md](../data/06-finance/02-manual-trips.md) | page | — | ✅ Completed | 2026-04-24 |

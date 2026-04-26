@@ -1,0 +1,31 @@
+{
+  "id": "e7b1a2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  "version": "2.0",
+  "name": "page_drv_schedule_empty",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+    "name": "page_drv_schedule_empty",
+    "commands": [{
+      "command": "open",
+      "target": "/driver-schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "waitForElementPresent",
+      "target": "[data-page-ready='true']",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c"]
+  }],
+  "urls": ["http://localhost:8000"],
+  "plugins": []
+}

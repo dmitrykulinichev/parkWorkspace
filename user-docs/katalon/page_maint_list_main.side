@@ -3,7 +3,7 @@
   "version": "2.0",
   "name": "page_maint_list_main",
   "url": "",
-  "locked": true,
+  "locked": false,
   "tests": [{
     "id": "page_maint_list_main-test",
     "name": "capture",

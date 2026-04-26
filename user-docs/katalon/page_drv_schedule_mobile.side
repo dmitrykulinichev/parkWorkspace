@@ -1,0 +1,36 @@
+{
+  "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+  "version": "2.0",
+  "name": "page_drv_schedule_mobile",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+    "name": "page_drv_schedule_mobile",
+    "commands": [{
+      "command": "open",
+      "target": "/driver-schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "setWindowSize",
+      "target": "375x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "waitForElementPresent",
+      "target": "[data-page-ready='true']",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"]
+  }],
+  "urls": ["http://localhost:8000"],
+  "plugins": []
+}

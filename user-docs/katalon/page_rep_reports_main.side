@@ -3,7 +3,7 @@
   "version": "2.0",
   "name": "page_rep_reports_main",
   "url": "",
-  "locked": true,
+  "locked": false,
   "tests": [{
     "id": "page_rep_reports_main-test",
     "name": "capture",

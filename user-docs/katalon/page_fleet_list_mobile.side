@@ -3,7 +3,7 @@
   "version": "2.0",
   "name": "Vehicles List Mobile",
   "url": "",
-  "locked": true,
+  "locked": false,
   "tests": [
     {
       "id": "test_page_fleet_list_mobile",

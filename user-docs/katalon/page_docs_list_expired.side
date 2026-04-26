@@ -3,7 +3,7 @@
   "version": "2.0",
   "name": "page_docs_list_expired",
   "url": "",
-  "locked": true,
+  "locked": false,
   "tests": [{
     "id": "page_docs_list_expired-test",
     "name": "capture",

@@ -9,9 +9,9 @@
 - `workspace/user-docs/_meta/SCREENSHOTS.md`
 - `workspace/user-docs/_meta/RECORDER.md`
 
-Задача: задокументувати сторінку `/` (головна)
+Задача: задокументувати сторінку `/tasks`
 
-Результуючий файл: `/Users/dmytronovikov/Repository/park/workspace/user-docs/data/01-home.md`
+Результуючий файл: `/Users/dmytronovikov/Repository/park/workspace/user-docs/data/05-tasks.md`
 
 Вкладки на сторінці: немає
 

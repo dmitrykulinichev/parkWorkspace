@@ -1,0 +1,41 @@
+{
+  "id": "t3a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+  "version": "2.0",
+  "name": "modal_task_form",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "t3-test",
+    "name": "modal_task_form",
+    "commands": [{
+      "command": "open",
+      "target": "/tasks",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "waitForElementPresent",
+      "target": "[data-page-ready='true']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "command": "click",
+      "target": "css=button:contains('Додати задачу')",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "waitForElementPresent",
+      "target": "[data-modal-ready='true'][data-doc-id='modal_task_form']",
+      "targets": [],
+      "value": "10000"
+    }]
+  }],
+  "suites": [{
+    "id": "t3-suite",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["t3-test"]
+  }],
+  "urls": ["http://localhost:8000"],
+  "plugins": []
+}

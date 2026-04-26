@@ -1,0 +1,31 @@
+{
+  "id": "page_drv_schedule_main",
+  "name": "page_drv_schedule_main",
+  "url": "/driver-schedule",
+  "tests": [
+    {
+      "id": "1",
+      "comment": "Open Schedule Page",
+      "command": "open",
+      "target": "/driver-schedule",
+      "targets": [],
+      "value": ""
+    },
+    {
+      "id": "2",
+      "comment": "Wait for page load",
+      "command": "waitForElementPresent",
+      "target": "[data-page-ready='true']",
+      "targets": [],
+      "value": "30000"
+    },
+    {
+      "id": "3",
+      "comment": "Take screenshot",
+      "command": "takeScreenshot",
+      "target": "",
+      "targets": [],
+      "value": "screenshots/pages/page_drv_schedule_main.png"
+    }
+  ]
+}

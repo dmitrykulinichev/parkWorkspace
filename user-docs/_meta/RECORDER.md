@@ -20,14 +20,14 @@
 | `page_dash_empty` | `katalon/page_dash_empty.side` | ⚠️ потребує нового парку без даних |
 | `page_vehicle_earnings_main` | `katalon/page_vehicle_earnings_main.side` | ⚠️ .side не створено |
 | `modal_vehicle_earnings_details` | `katalon/modal_vehicle_earnings_details.side` | ⚠️ .side не створено |
-| `modal_vehicle_earnings_calc_info` | `katalon/modal_vehicle_earnings_calc_info.side` | ⚠️ .side не створено |
+| `modal_vehicle_earnings_calc_info` | `katalon/modal_vehicle_earnings_calc_info.side" | ⚠️ .side не створено |
 | `page_park_stats_main` | `katalon/page_park_stats_main.side` | ⚠️ .side не створено |
 | `page_park_users_main` | `katalon/page_park_users_main.side` | ⚠️ .side не створено |
 | `modal_park_user_form` | `katalon/modal_park_user_form.side` | ⚠️ .side не створено |
 | `modal_park_user_filters` | `katalon/modal_park_user_filters.side` | ⚠️ .side не створено |
 | `modal_park_user_permissions` | `katalon/modal_park_user_permissions.side` | ⚠️ .side не створено |
 | `modal_park_user_delete` | `katalon/modal_park_user_delete.side" | ⚠️ .side не створено |
-| `modal_park_user_reset_password` | `katalon/modal_park_user_reset_password.side` | ⚠️ .side не створено |
+| `modal_park_user_reset_password` | `katalon/modal_park_user_reset_password.side` | ⚠️ .side on створено |
 | `modal_park_user_activation` | `katalon/modal_park_user_activation.side` | ⚠️ .side не створено — відкривається автоматично після створення користувача |
 | `page_park_files_main` | `katalon/page_park_files_main.side` | ⚠️ .side не створено |
 | `page_park_files_empty` | `katalon/page_park_files_empty.side` | ⚠️ .side не створено — ⚠️ потребує порожньої БД |
@@ -57,3 +57,14 @@
 | `page_docs_list_main` | `katalon/page_docs_list_main.side` | — |
 | `page_docs_list_empty` | `katalon/page_docs_list_empty.side` | — |
 | `page_docs_list_expired` | `katalon/page_docs_list_expired.side` | — |
+| `page_drv_schedule_main` | `katalon/page_drv_schedule_main.side` | — |
+| `page_drv_schedule_empty` | `katalon/page_drv_schedule_empty.side` | ⚠️ потребує парку без автомобілів |
+| `page_drv_schedule_mobile` | `katalon/page_drv_schedule_mobile.side` | — |
+| `modal_drv_schedule_slot_form` | `katalon/modal_drv_schedule_slot_form.side` | — |
+| `modal_drv_actual_shift_details` | `katalon/modal_drv_actual_shift_details.side` | — |
+| `page_tasks_main` | `katalon/page_tasks_main.side` | — |
+| `page_tasks_empty` | `katalon/page_tasks_empty.side` | ⚠️ Потребує парку без задач |
+| `modal_task_form` | `katalon/modal_task_form.side` | — |
+| `modal_task_details` | `katalon/modal_task_details.side` | — |
+| `modal_task_filters` | `katalon/modal_task_filters.side` | — |
+| `modal_task_confirm_complete` | `katalon/modal_task_confirm_complete.side` | — |

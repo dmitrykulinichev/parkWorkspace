@@ -1,0 +1,46 @@
+{
+  "id": "t6a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+  "version": "2.0",
+  "name": "modal_task_confirm_complete",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "t6-test",
+    "name": "modal_task_confirm_complete",
+    "commands": [{
+      "command": "open",
+      "target": "/tasks",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "waitForElementPresent",
+      "target": "[data-page-ready='true']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "command": "click",
+      "target": "css=button[aria-label='more']",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "click",
+      "target": "css=li:contains('Завершити')",
+      "targets": [],
+      "value": ""
+    }, {
+      "command": "waitForElementPresent",
+      "target": "[data-modal-ready='true'][data-doc-id='modal_task_confirm_complete']",
+      "targets": [],
+      "value": "10000"
+    }]
+  }],
+  "suites": [{
+    "id": "t6-suite",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["t6-test"]
+  }],
+  "urls": ["http://localhost:8000"],
+  "plugins": []
+}
