@@ -33,10 +33,10 @@ _немає_
 | `modal:dashboard-settings` | `modal_dashboard_settings` | `data/modals/modal_dashboard_settings.md` | Налаштування дашборду: оберіть, які віджети відображати на г... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_dashboard_main` | `[data-i-doc="page:dashboard"]` | `/` | `katalon/page_dashboard_main.side` |
-| `modal_dashboard_settings` | `[data-i-doc="modal:dashboard-settings"]` | `/` | `katalon/modal_dashboard_settings.side` |
+| `page_dashboard_main` | page | `[data-i-doc="page:dashboard"]` | `/` |
+| `modal_dashboard_settings` | modal | `[data-i-doc="modal:dashboard-settings"]` | `/` |
 
 ---
 
@@ -77,24 +77,24 @@ _немає_
 | `modal:vehicle-close-unavailability` | `modal_vehicle_close_unavailability` | `data/modals/modal_vehicle_close_unavailability.md` | Підтвердіть повернення автомобіля в роботу. Авто знову стане... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_vehicles_main` | `[data-i-doc="page:vehicles"]` | `/vehicles` | `katalon/page_vehicles_main.side` |
-| `modal_vehicle_filters` | `[data-i-doc="modal:vehicle-filters"]` | `/vehicles` | `katalon/modal_vehicle_filters.side` |
-| `modal_vehicle_form` | `[data-i-doc="modal:vehicle-form"]` | `/vehicles` | `katalon/modal_vehicle_form.side` |
-| `modal_vehicle_details` | `[data-i-doc="modal:vehicle-details"]` | `/vehicles` | `katalon/modal_vehicle_details.side` |
-| `modal_vehicle_delete_confirm` | `[data-i-doc="modal:vehicle-delete-confirm"]` | `/vehicles` | `katalon/modal_vehicle_delete_confirm.side` |
-| `modal_vehicle_mileage_update` | `[data-i-doc="modal:vehicle-mileage-update"]` | `/vehicles` | `katalon/modal_vehicle_mileage_update.side` |
-| `modal_vehicle_maintenance_form` | `[data-i-doc="modal:vehicle-maintenance-form"]` | `/vehicles` | `katalon/modal_vehicle_maintenance_form.side` |
-| `modal_vehicle_assignment_form` | `[data-i-doc="modal:vehicle-assignment-form"]` | `/vehicles` | `katalon/modal_vehicle_assignment_form.side` |
-| `modal_vehicle_unassign_confirm` | `[data-i-doc="modal:vehicle-unassign-confirm"]` | `/vehicles` | `katalon/modal_vehicle_unassign_confirm.side` |
-| `modal_vehicle_issue_report_form` | `[data-i-doc="modal:vehicle-issue-report-form"]` | `/vehicles` | `katalon/modal_vehicle_issue_report_form.side` |
-| `modal_vehicle_qr` | `[data-i-doc="modal:vehicle-qr"]` | `/vehicles` | `katalon/modal_vehicle_qr.side` |
-| `modal_vehicle_import` | `[data-i-doc="modal:vehicle-import"]` | `/vehicles` | `katalon/modal_vehicle_import.side` |
-| `modal_vehicle_tag_settings` | `[data-i-doc="modal:vehicle-tag-settings"]` | `/vehicles` | `katalon/modal_vehicle_tag_settings.side` |
-| `modal_vehicle_transfer` | `[data-i-doc="modal:vehicle-transfer"]` | `/vehicles` | `katalon/modal_vehicle_transfer.side` |
-| `modal_vehicle_unavailability_form` | `[data-i-doc="modal:vehicle-unavailability-form"]` | `/vehicles` | `katalon/modal_vehicle_unavailability_form.side` |
-| `modal_vehicle_close_unavailability` | `[data-i-doc="modal:vehicle-close-unavailability"]` | `/vehicles` | `katalon/modal_vehicle_close_unavailability.side` |
+| `page_vehicles_main` | page | `[data-i-doc="page:vehicles"]` | `/vehicles` |
+| `modal_vehicle_filters` | modal | `[data-i-doc="modal:vehicle-filters"]` | `/vehicles` |
+| `modal_vehicle_form` | modal | `[data-i-doc="modal:vehicle-form"]` | `/vehicles` |
+| `modal_vehicle_details` | modal | `[data-i-doc="modal:vehicle-details"]` | `/vehicles` |
+| `modal_vehicle_delete_confirm` | modal | `[data-i-doc="modal:vehicle-delete-confirm"]` | `/vehicles` |
+| `modal_vehicle_mileage_update` | modal | `[data-i-doc="modal:vehicle-mileage-update"]` | `/vehicles` |
+| `modal_vehicle_maintenance_form` | modal | `[data-i-doc="modal:vehicle-maintenance-form"]` | `/vehicles` |
+| `modal_vehicle_assignment_form` | modal | `[data-i-doc="modal:vehicle-assignment-form"]` | `/vehicles` |
+| `modal_vehicle_unassign_confirm` | modal | `[data-i-doc="modal:vehicle-unassign-confirm"]` | `/vehicles` |
+| `modal_vehicle_issue_report_form` | modal | `[data-i-doc="modal:vehicle-issue-report-form"]` | `/vehicles` |
+| `modal_vehicle_qr` | modal | `[data-i-doc="modal:vehicle-qr"]` | `/vehicles` |
+| `modal_vehicle_import` | modal | `[data-i-doc="modal:vehicle-import"]` | `/vehicles` |
+| `modal_vehicle_tag_settings` | modal | `[data-i-doc="modal:vehicle-tag-settings"]` | `/vehicles` |
+| `modal_vehicle_transfer` | modal | `[data-i-doc="modal:vehicle-transfer"]` | `/vehicles` |
+| `modal_vehicle_unavailability_form` | modal | `[data-i-doc="modal:vehicle-unavailability-form"]` | `/vehicles` |
+| `modal_vehicle_close_unavailability` | modal | `[data-i-doc="modal:vehicle-close-unavailability"]` | `/vehicles` |
 
 ---
 
@@ -130,19 +130,19 @@ _немає_
 | `modal:driver-comments` | `modal_driver_comments` | `data/modals/modal_driver_comments.md` | Журнал коментарів: додавайте важливі замітки про роботу воді... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_drivers_main` | `[data-i-doc="page:drivers"]` | `/drivers` | `katalon/page_drivers_main.side` |
-| `modal_driver_filters` | `[data-i-doc="modal:driver-filters"]` | `/drivers` | `katalon/modal_driver_filters.side` |
-| `modal_driver_form` | `[data-i-doc="modal:driver-form"]` | `/drivers` | `katalon/modal_driver_form.side` |
-| `modal_driver_details` | `[data-i-doc="modal:driver-details"]` | `/drivers` | `katalon/modal_driver_details.side` |
-| `modal_driver_delete_confirm` | `[data-i-doc="modal:driver-delete-confirm"]` | `/drivers` | `katalon/modal_driver_delete_confirm.side` |
-| `modal_driver_assignment` | `[data-i-doc="modal:driver-assignment"]` | `/drivers` | `katalon/modal_driver_assignment.side` |
-| `modal_driver_telegram` | `[data-i-doc="modal:driver-telegram"]` | `/drivers` | `katalon/modal_driver_telegram.side` |
-| `modal_driver_import` | `[data-i-doc="modal:driver-import"]` | `/drivers` | `katalon/modal_driver_import.side` |
-| `modal_driver_copy` | `[data-i-doc="modal:driver-copy"]` | `/drivers` | `katalon/modal_driver_copy.side` |
-| `modal_driver_uklon_info` | `[data-i-doc="modal:driver-uklon-info"]` | `/drivers` | `katalon/modal_driver_uklon_info.side` |
-| `modal_driver_comments` | `[data-i-doc="modal:driver-comments"]` | `/drivers` | `katalon/modal_driver_comments.side` |
+| `page_drivers_main` | page | `[data-i-doc="page:drivers"]` | `/drivers` |
+| `modal_driver_filters` | modal | `[data-i-doc="modal:driver-filters"]` | `/drivers` |
+| `modal_driver_form` | modal | `[data-i-doc="modal:driver-form"]` | `/drivers` |
+| `modal_driver_details` | modal | `[data-i-doc="modal:driver-details"]` | `/drivers` |
+| `modal_driver_delete_confirm` | modal | `[data-i-doc="modal:driver-delete-confirm"]` | `/drivers` |
+| `modal_driver_assignment` | modal | `[data-i-doc="modal:driver-assignment"]` | `/drivers` |
+| `modal_driver_telegram` | modal | `[data-i-doc="modal:driver-telegram"]` | `/drivers` |
+| `modal_driver_import` | modal | `[data-i-doc="modal:driver-import"]` | `/drivers` |
+| `modal_driver_copy` | modal | `[data-i-doc="modal:driver-copy"]` | `/drivers` |
+| `modal_driver_uklon_info` | modal | `[data-i-doc="modal:driver-uklon-info"]` | `/drivers` |
+| `modal_driver_comments` | modal | `[data-i-doc="modal:driver-comments"]` | `/drivers` |
 
 ---
 
@@ -173,14 +173,14 @@ _немає_
 | `modal:task-complete-confirm` | `modal_task_complete_confirm` | `data/modals/modal_task_complete_confirm.md` | — | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_tasks_main` | `[data-i-doc="page:tasks"]` | `/tasks` | `katalon/page_tasks_main.side` |
-| `modal_task_filters` | `[data-i-doc="modal:task-filters"]` | `/tasks` | `katalon/modal_task_filters.side` |
-| `modal_task_form` | `[data-i-doc="modal:task-form"]` | `/tasks` | `katalon/modal_task_form.side` |
-| `modal_task_details` | `[data-i-doc="modal:task-details"]` | `/tasks` | `katalon/modal_task_details.side` |
-| `modal_task_delete_confirm` | `[data-i-doc="modal:task-delete-confirm"]` | `/tasks` | `katalon/modal_task_delete_confirm.side` |
-| `modal_task_complete_confirm` | `[data-i-doc="modal:task-complete-confirm"]` | `/tasks` | `katalon/modal_task_complete_confirm.side` |
+| `page_tasks_main` | page | `[data-i-doc="page:tasks"]` | `/tasks` |
+| `modal_task_filters` | modal | `[data-i-doc="modal:task-filters"]` | `/tasks` |
+| `modal_task_form` | modal | `[data-i-doc="modal:task-form"]` | `/tasks` |
+| `modal_task_details` | modal | `[data-i-doc="modal:task-details"]` | `/tasks` |
+| `modal_task_delete_confirm` | modal | `[data-i-doc="modal:task-delete-confirm"]` | `/tasks` |
+| `modal_task_complete_confirm` | modal | `[data-i-doc="modal:task-complete-confirm"]` | `/tasks` |
 
 ---
 
@@ -215,12 +215,12 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_reports_main` | `[data-i-doc="page:reports"]` | `/reports` | `katalon/page_reports_main.side` |
-| `tab_reports_operational_main` | `[data-i-doc="tab:reports-operational"]` | `/reports` | `katalon/tab_reports_operational_main.side` |
-| `tab_reports_performance_main` | `[data-i-doc="tab:reports-performance"]` | `/reports` | `katalon/tab_reports_performance_main.side` |
-| `tab_reports_maintenance_main` | `[data-i-doc="tab:reports-maintenance"]` | `/reports` | `katalon/tab_reports_maintenance_main.side` |
+| `page_reports_main` | page | `[data-i-doc="page:reports"]` | `/reports` |
+| `tab_reports_operational_main` | tab | `[data-i-doc="tab:reports-operational"]` | `/reports` |
+| `tab_reports_performance_main` | tab | `[data-i-doc="tab:reports-performance"]` | `/reports` |
+| `tab_reports_maintenance_main` | tab | `[data-i-doc="tab:reports-maintenance"]` | `/reports` |
 
 ---
 
@@ -243,9 +243,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_statistics_main` | `[data-i-doc="page:statistics"]` | `/statistics` | `katalon/page_statistics_main.side` |
+| `page_statistics_main` | page | `[data-i-doc="page:statistics"]` | `/statistics` |
 
 ---
 
@@ -270,10 +270,10 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_settings_main` | `[data-i-doc="page:settings"]` | `/settings` | `katalon/page_settings_main.side` |
-| `tab_settings_appearance_main` | `[data-i-doc="tab:settings-appearance"]` | `/settings` | `katalon/tab_settings_appearance_main.side` |
+| `page_settings_main` | page | `[data-i-doc="page:settings"]` | `/settings` |
+| `tab_settings_appearance_main` | tab | `[data-i-doc="tab:settings-appearance"]` | `/settings` |
 
 ---
 
@@ -302,14 +302,14 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_profile_main` | `[data-i-doc="page:profile"]` | `/profile` | `katalon/page_profile_main.side` |
-| `tab_profile_general_main` | `[data-i-doc="tab:profile-general"]` | `/profile` | `katalon/tab_profile_general_main.side` |
-| `tab_profile_password_main` | `[data-i-doc="tab:profile-password"]` | `/profile` | `katalon/tab_profile_password_main.side` |
-| `tab_profile_telegram_main` | `[data-i-doc="tab:profile-telegram"]` | `/profile` | `katalon/tab_profile_telegram_main.side` |
-| `tab_profile_notifications_main` | `[data-i-doc="tab:profile-notifications"]` | `/profile` | `katalon/tab_profile_notifications_main.side` |
-| `tab_profile_access_main` | `[data-i-doc="tab:profile-access"]` | `/profile` | `katalon/tab_profile_access_main.side` |
+| `page_profile_main` | page | `[data-i-doc="page:profile"]` | `/profile` |
+| `tab_profile_general_main` | tab | `[data-i-doc="tab:profile-general"]` | `/profile` |
+| `tab_profile_password_main` | tab | `[data-i-doc="tab:profile-password"]` | `/profile` |
+| `tab_profile_telegram_main` | tab | `[data-i-doc="tab:profile-telegram"]` | `/profile` |
+| `tab_profile_notifications_main` | tab | `[data-i-doc="tab:profile-notifications"]` | `/profile` |
+| `tab_profile_access_main` | tab | `[data-i-doc="tab:profile-access"]` | `/profile` |
 
 ---
 
@@ -335,9 +335,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_billing_main` | `[data-i-doc="page:billing"]` | `/billing` | `katalon/page_billing_main.side` |
+| `page_billing_main` | page | `[data-i-doc="page:billing"]` | `/billing` |
 
 ---
 
@@ -365,11 +365,11 @@ _немає_
 | `modal:document-delete-confirm` | `modal_document_delete_confirm` | `data/modals/modal_document_delete_confirm.md` | Ви впевнені, що хочете видалити цей документ? Це також видал... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_documents_main` | `[data-i-doc="page:documents"]` | `/documents` | `katalon/page_documents_main.side` |
-| `modal_documents_filters` | `[data-i-doc="modal:documents-filters"]` | `/documents` | `katalon/modal_documents_filters.side` |
-| `modal_document_delete_confirm` | `[data-i-doc="modal:document-delete-confirm"]` | `/documents` | `katalon/modal_document_delete_confirm.side` |
+| `page_documents_main` | page | `[data-i-doc="page:documents"]` | `/documents` |
+| `modal_documents_filters` | modal | `[data-i-doc="modal:documents-filters"]` | `/documents` |
+| `modal_document_delete_confirm` | modal | `[data-i-doc="modal:document-delete-confirm"]` | `/documents` |
 
 ---
 
@@ -377,7 +377,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/vehicle-maintenance` |
 | **Файл** | `data/pages/page_vehicle_maintenance.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал технічного обслуговування: історія всіх сервісних роб... |
@@ -398,12 +398,12 @@ _немає_
 | `modal:maintenance-delete-confirm` | `modal_maintenance_delete_confirm` | `data/modals/modal_maintenance_delete_confirm.md` | Ви впевнені, що хочете видалити цей запис? Дані про витрати ... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_vehicle_maintenance_main` | `[data-i-doc="page:vehicle-maintenance"]` | `—` | `katalon/page_vehicle_maintenance_main.side` |
-| `modal_maintenance_filters` | `[data-i-doc="modal:maintenance-filters"]` | `—` | `katalon/modal_maintenance_filters.side` |
-| `modal_maintenance_details` | `[data-i-doc="modal:maintenance-details"]` | `—` | `katalon/modal_maintenance_details.side` |
-| `modal_maintenance_delete_confirm` | `[data-i-doc="modal:maintenance-delete-confirm"]` | `—` | `katalon/modal_maintenance_delete_confirm.side` |
+| `page_vehicle_maintenance_main` | page | `[data-i-doc="page:vehicle-maintenance"]` | `/vehicle-maintenance` |
+| `modal_maintenance_filters` | modal | `[data-i-doc="modal:maintenance-filters"]` | `/vehicle-maintenance` |
+| `modal_maintenance_details` | modal | `[data-i-doc="modal:maintenance-details"]` | `/vehicle-maintenance` |
+| `modal_maintenance_delete_confirm` | modal | `[data-i-doc="modal:maintenance-delete-confirm"]` | `/vehicle-maintenance` |
 
 ---
 
@@ -411,7 +411,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/vehicle-unavailabilities` |
 | **Файл** | `data/pages/page_vehicle_unavailabilities.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал простоїв: відстежуйте періоди, коли автомобілі були н... |
@@ -422,7 +422,7 @@ _немає_
 ### Секції
 | i-doc ID | doc_id | Таб | Hint |
 |---|---|---|---|
-| `sec:unavailability-list` | `sec_unavailability_list` | — | Історія простоїв автомобілів. Помаранчевим кольором виділені... |
+| `sec:unavailability-list` | `sec_unavailability_list` | — | Історія простоїв автомобілів. Помаранчевим кольорв виділені ... |
 
 ### Модалки
 | i-doc ID | doc_id | Файл | Hint | Статус |
@@ -432,12 +432,12 @@ _немає_
 | `modal:unavailability-delete-confirm` | `modal_unavailability_delete_confirm` | `data/modals/modal_unavailability_delete_confirm.md` | Ви впевнені, що хочете видалити цей запис з історії? Це дія ... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_vehicle_unavailabilities_main` | `[data-i-doc="page:vehicle-unavailabilities"]` | `—` | `katalon/page_vehicle_unavailabilities_main.side` |
-| `modal_unavailability_filters` | `[data-i-doc="modal:unavailability-filters"]` | `—` | `katalon/modal_unavailability_filters.side` |
-| `modal_unavailability_details` | `[data-i-doc="modal:unavailability-details"]` | `—` | `katalon/modal_unavailability_details.side` |
-| `modal_unavailability_delete_confirm` | `[data-i-doc="modal:unavailability-delete-confirm"]` | `—` | `katalon/modal_unavailability_delete_confirm.side` |
+| `page_vehicle_unavailabilities_main` | page | `[data-i-doc="page:vehicle-unavailabilities"]` | `/vehicle-unavailabilities` |
+| `modal_unavailability_filters` | modal | `[data-i-doc="modal:unavailability-filters"]` | `/vehicle-unavailabilities` |
+| `modal_unavailability_details` | modal | `[data-i-doc="modal:unavailability-details"]` | `/vehicle-unavailabilities` |
+| `modal_unavailability_delete_confirm` | modal | `[data-i-doc="modal:unavailability-delete-confirm"]` | `/vehicle-unavailabilities` |
 
 ---
 
@@ -445,7 +445,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/fleet-settings` |
 | **Файл** | `data/pages/page_fleet_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Централізовані налаштування параметрів вашого автопарку: кер... |
@@ -462,10 +462,10 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_fleet_settings_main` | `[data-i-doc="page:fleet-settings"]` | `—` | `katalon/page_fleet_settings_main.side` |
-| `tab_fleet_settings_schedules_main` | `[data-i-doc="tab:fleet-settings-schedules"]` | `—` | `katalon/tab_fleet_settings_schedules_main.side` |
+| `page_fleet_settings_main` | page | `[data-i-doc="page:fleet-settings"]` | `/fleet-settings` |
+| `tab_fleet_settings_schedules_main` | tab | `[data-i-doc="tab:fleet-settings-schedules"]` | `/fleet-settings` |
 
 ---
 
@@ -473,7 +473,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/assignments` |
 | **Файл** | `data/pages/page_vehicle_assignments.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал призначень: відстежуйте історію закріплення автомобіл... |
@@ -495,13 +495,13 @@ _немає_
 | `modal:assignment-delete-confirm` | `modal_assignment_delete_confirm` | `data/modals/modal_assignment_delete_confirm.md` | Ви впевнені, що хочете видалити цей запис? Це призведе до ви... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_vehicle_assignments_main` | `[data-i-doc="page:vehicle-assignments"]` | `—` | `katalon/page_vehicle_assignments_main.side` |
-| `modal_assignment_filters` | `[data-i-doc="modal:assignment-filters"]` | `—` | `katalon/modal_assignment_filters.side` |
-| `modal_assignment_form` | `[data-i-doc="modal:assignment-form"]` | `—` | `katalon/modal_assignment_form.side` |
-| `modal_assignment_details` | `[data-i-doc="modal:assignment-details"]` | `—` | `katalon/modal_assignment_details.side` |
-| `modal_assignment_delete_confirm` | `[data-i-doc="modal:assignment-delete-confirm"]` | `—` | `katalon/modal_assignment_delete_confirm.side` |
+| `page_vehicle_assignments_main` | page | `[data-i-doc="page:vehicle-assignments"]` | `/assignments` |
+| `modal_assignment_filters` | modal | `[data-i-doc="modal:assignment-filters"]` | `/assignments` |
+| `modal_assignment_form` | modal | `[data-i-doc="modal:assignment-form"]` | `/assignments` |
+| `modal_assignment_details` | modal | `[data-i-doc="modal:assignment-details"]` | `/assignments` |
+| `modal_assignment_delete_confirm` | modal | `[data-i-doc="modal:assignment-delete-confirm"]` | `/assignments` |
 
 ---
 
@@ -509,7 +509,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/issue-reports` |
 | **Файл** | `data/pages/page_issue_reports.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал проблем та інцидентів: відстежуйте всі технічні та оп... |
@@ -532,14 +532,14 @@ _немає_
 | `modal:task-info` | `modal_task_info` | `data/modals/modal_task_info.md` | Додаткова інформація про задачу, прив'язану до інциденту, та... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_issue_reports_main` | `[data-i-doc="page:issue-reports"]` | `—` | `katalon/page_issue_reports_main.side` |
-| `modal_issue_reports_filters` | `[data-i-doc="modal:issue-reports-filters"]` | `—` | `katalon/modal_issue_reports_filters.side` |
-| `modal_issue_report_form` | `[data-i-doc="modal:issue-report-form"]` | `—` | `katalon/modal_issue_report_form.side` |
-| `modal_issue_report_actions` | `[data-i-doc="modal:issue-report-actions"]` | `—` | `katalon/modal_issue_report_actions.side` |
-| `modal_issue_report_details` | `[data-i-doc="modal:issue-report-details"]` | `—` | `katalon/modal_issue_report_details.side` |
-| `modal_task_info` | `[data-i-doc="modal:task-info"]` | `—` | `katalon/modal_task_info.side` |
+| `page_issue_reports_main` | page | `[data-i-doc="page:issue-reports"]` | `/issue-reports` |
+| `modal_issue_reports_filters` | modal | `[data-i-doc="modal:issue-reports-filters"]` | `/issue-reports` |
+| `modal_issue_report_form` | modal | `[data-i-doc="modal:issue-report-form"]` | `/issue-reports` |
+| `modal_issue_report_actions` | modal | `[data-i-doc="modal:issue-report-actions"]` | `/issue-reports` |
+| `modal_issue_report_details` | modal | `[data-i-doc="modal:issue-report-details"]` | `/issue-reports` |
+| `modal_task_info` | modal | `[data-i-doc="modal:task-info"]` | `/issue-reports` |
 
 ---
 
@@ -568,12 +568,12 @@ _немає_
 | `modal:transaction-delete-confirm` | `modal_transaction_delete_confirm` | `data/modals/modal_transaction_delete_confirm.md` | Ви впевнені, що хочете видалити цей запис? Видалення транзак... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_transactions_main` | `[data-i-doc="page:transactions"]` | `/transactions` | `katalon/page_transactions_main.side` |
-| `modal_transactions_filters` | `[data-i-doc="modal:transactions-filters"]` | `/transactions` | `katalon/modal_transactions_filters.side` |
-| `modal_transaction_form` | `[data-i-doc="modal:transaction-form"]` | `/transactions` | `katalon/modal_transaction_form.side` |
-| `modal_transaction_delete_confirm` | `[data-i-doc="modal:transaction-delete-confirm"]` | `/transactions` | `katalon/modal_transaction_delete_confirm.side` |
+| `page_transactions_main` | page | `[data-i-doc="page:transactions"]` | `/transactions` |
+| `modal_transactions_filters` | modal | `[data-i-doc="modal:transactions-filters"]` | `/transactions` |
+| `modal_transaction_form` | modal | `[data-i-doc="modal:transaction-form"]` | `/transactions` |
+| `modal_transaction_delete_confirm` | modal | `[data-i-doc="modal:transaction-delete-confirm"]` | `/transactions` |
 
 ---
 
@@ -600,10 +600,10 @@ _немає_
 | `modal:vehicle-integration` | `modal_vehicle_integration` | `data/modals/modal_vehicle_integration.md` | Зв'язок авто Uklon: виберіть автомобіль з бази парку для інт... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_uklon_vehicles_main` | `[data-i-doc="page:uklon-vehicles"]` | `/uklon-vehicles` | `katalon/page_uklon_vehicles_main.side` |
-| `modal_vehicle_integration` | `[data-i-doc="modal:vehicle-integration"]` | `/uklon-vehicles` | `katalon/modal_vehicle_integration.side` |
+| `page_uklon_vehicles_main` | page | `[data-i-doc="page:uklon-vehicles"]` | `/uklon-vehicles` |
+| `modal_vehicle_integration` | modal | `[data-i-doc="modal:vehicle-integration"]` | `/uklon-vehicles` |
 
 ---
 
@@ -630,10 +630,10 @@ _немає_
 | `modal:driver-integration` | `modal_driver_integration` | `data/modals/modal_driver_integration.md` | Зв'язок водія Uklon: виберіть водія з бази парку для інтегра... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_uklon_drivers_main` | `[data-i-doc="page:uklon-drivers"]` | `/uklon-drivers` | `katalon/page_uklon_drivers_main.side` |
-| `modal_driver_integration` | `[data-i-doc="modal:driver-integration"]` | `/uklon-drivers` | `katalon/modal_driver_integration.side` |
+| `page_uklon_drivers_main` | page | `[data-i-doc="page:uklon-drivers"]` | `/uklon-drivers` |
+| `modal_driver_integration` | modal | `[data-i-doc="modal:driver-integration"]` | `/uklon-drivers` |
 
 ---
 
@@ -662,12 +662,12 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_uklon_reports_main` | `[data-i-doc="page:uklon-reports"]` | `/uklon-reports` | `katalon/page_uklon_reports_main.side` |
-| `tab_uklon_reports_dashboard_main` | `[data-i-doc="tab:uklon-reports-dashboard"]` | `/uklon-reports` | `katalon/tab_uklon_reports_dashboard_main.side` |
-| `tab_uklon_reports_drivers_main` | `[data-i-doc="tab:uklon-reports-drivers"]` | `/uklon-reports` | `katalon/tab_uklon_reports_drivers_main.side` |
-| `tab_uklon_reports_vehicles_main` | `[data-i-doc="tab:uklon-reports-vehicles"]` | `/uklon-reports` | `katalon/tab_uklon_reports_vehicles_main.side` |
+| `page_uklon_reports_main` | page | `[data-i-doc="page:uklon-reports"]` | `/uklon-reports` |
+| `tab_uklon_reports_dashboard_main` | tab | `[data-i-doc="tab:uklon-reports-dashboard"]` | `/uklon-reports` |
+| `tab_uklon_reports_drivers_main` | tab | `[data-i-doc="tab:uklon-reports-drivers"]` | `/uklon-reports` |
+| `tab_uklon_reports_vehicles_main` | tab | `[data-i-doc="tab:uklon-reports-vehicles"]` | `/uklon-reports` |
 
 ---
 
@@ -692,9 +692,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_uklon_branding_main` | `[data-i-doc="page:uklon-branding"]` | `/uklon-branding` | `katalon/page_uklon_branding_main.side` |
+| `page_uklon_branding_main` | page | `[data-i-doc="page:uklon-branding"]` | `/uklon-branding` |
 
 ---
 
@@ -721,10 +721,10 @@ _немає_
 | `modal:uklon-log-details` | `modal_uklon_log_details` | `data/modals/modal_uklon_log_details.md` | Деталі логу Uklon: технічна інформація про запит до API та в... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_uklon_logs_main` | `[data-i-doc="page:uklon-logs"]` | `/uklon-logs` | `katalon/page_uklon_logs_main.side` |
-| `modal_uklon_log_details` | `[data-i-doc="modal:uklon-log-details"]` | `/uklon-logs` | `katalon/modal_uklon_log_details.side` |
+| `page_uklon_logs_main` | page | `[data-i-doc="page:uklon-logs"]` | `/uklon-logs` |
+| `modal_uklon_log_details` | modal | `[data-i-doc="modal:uklon-log-details"]` | `/uklon-logs` |
 
 ---
 
@@ -749,9 +749,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_uklon_settings_main` | `[data-i-doc="page:uklon-settings"]` | `/uklon-settings` | `katalon/page_uklon_settings_main.side` |
+| `page_uklon_settings_main` | page | `[data-i-doc="page:uklon-settings"]` | `/uklon-settings` |
 
 ---
 
@@ -776,9 +776,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_telegram_settings_main` | `[data-i-doc="page:telegram-settings"]` | `/telegram-settings` | `katalon/page_telegram_settings_main.side` |
+| `page_telegram_settings_main` | page | `[data-i-doc="page:telegram-settings"]` | `/telegram-settings` |
 
 ---
 
@@ -805,10 +805,38 @@ _немає_
 | `modal:telegram-log-details` | `modal_telegram_log_details` | `data/modals/modal_telegram_log_details.md` | Деталі логу Telegram: технічна інформація про запит до боту ... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_telegram_logs_main` | `[data-i-doc="page:telegram-logs"]` | `/telegram-logs` | `katalon/page_telegram_logs_main.side` |
-| `modal_telegram_log_details` | `[data-i-doc="modal:telegram-log-details"]` | `/telegram-logs` | `katalon/modal_telegram_log_details.side` |
+| `page_telegram_logs_main` | page | `[data-i-doc="page:telegram-logs"]` | `/telegram-logs` |
+| `modal_telegram_log_details` | modal | `[data-i-doc="modal:telegram-log-details"]` | `/telegram-logs` |
+
+---
+
+## page:driver-schedule
+
+| | |
+|---|---|
+| **URL** | `/driver-schedule` |
+| **Файл** | `data/pages/page_driver_schedule.md` |
+| **Статус** | 📝 TODO |
+| **Hint** | Графік роботи: планувальник змін водіїв, облік технічного об... |
+
+### Таби
+_немає_
+
+### Секції
+_немає_
+
+### Модалки
+| i-doc ID | doc_id | Файл | Hint | Статус |
+|---|---|---|---|---|
+| `modal:schedule-delete-confirm` | `modal_schedule_delete_confirm` | `data/modals/modal_schedule_delete_confirm.md` | Ви впевнені, що хочете видалити цей запис із графіку? Це дія... | 📝 TODO |
+
+### Скріншоти
+| Screenshot ID | Тип | Селектор | URL |
+|---|---|---|---|
+| `page_driver_schedule_main` | page | `[data-i-doc="page:driver-schedule"]` | `/driver-schedule` |
+| `modal_schedule_delete_confirm` | modal | `[data-i-doc="modal:schedule-delete-confirm"]` | `/driver-schedule` |
 
 ---
 
@@ -838,13 +866,13 @@ _немає_
 | `modal:manual-trip-delete-confirm` | `modal_manual_trip_delete_confirm` | `data/modals/modal_manual_trip_delete_confirm.md` | Ви впевнені, що хочете видалити запис про цю поїздку? Це змі... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_manual_trips_main` | `[data-i-doc="page:manual-trips"]` | `/manual-trips` | `katalon/page_manual_trips_main.side` |
-| `modal_manual_trip_form` | `[data-i-doc="modal:manual-trip-form"]` | `/manual-trips` | `katalon/modal_manual_trip_form.side` |
-| `modal_manual_trip_details` | `[data-i-doc="modal:manual-trip-details"]` | `/manual-trips` | `katalon/modal_manual_trip_details.side` |
-| `modal_manual_trip_filters` | `[data-i-doc="modal:manual-trip-filters"]` | `/manual-trips` | `katalon/modal_manual_trip_filters.side` |
-| `modal_manual_trip_delete_confirm` | `[data-i-doc="modal:manual-trip-delete-confirm"]` | `/manual-trips` | `katalon/modal_manual_trip_delete_confirm.side` |
+| `page_manual_trips_main` | page | `[data-i-doc="page:manual-trips"]` | `/manual-trips` |
+| `modal_manual_trip_form` | modal | `[data-i-doc="modal:manual-trip-form"]` | `/manual-trips` |
+| `modal_manual_trip_details` | modal | `[data-i-doc="modal:manual-trip-details"]` | `/manual-trips` |
+| `modal_manual_trip_filters` | modal | `[data-i-doc="modal:manual-trip-filters"]` | `/manual-trips` |
+| `modal_manual_trip_delete_confirm` | modal | `[data-i-doc="modal:manual-trip-delete-confirm"]` | `/manual-trips` |
 
 ---
 
@@ -874,13 +902,13 @@ _немає_
 | `modal:driver-expense-delete-confirm` | `modal_driver_expense_delete_confirm` | `data/modals/modal_driver_expense_delete_confirm.md` | Ви впевнені, що хочете видалити запис про цю витрату? Це дія... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_driver_expenses_main` | `[data-i-doc="page:driver-expenses"]` | `/driver-expenses` | `katalon/page_driver_expenses_main.side` |
-| `modal_driver_expense_form` | `[data-i-doc="modal:driver-expense-form"]` | `/driver-expenses` | `katalon/modal_driver_expense_form.side` |
-| `modal_driver_expense_details` | `[data-i-doc="modal:driver-expense-details"]` | `/driver-expenses` | `katalon/modal_driver_expense_details.side` |
-| `modal_driver_expense_filters` | `[data-i-doc="modal:driver-expense-filters"]` | `/driver-expenses` | `katalon/modal_driver_expense_filters.side` |
-| `modal_driver_expense_delete_confirm` | `[data-i-doc="modal:driver-expense-delete-confirm"]` | `/driver-expenses` | `katalon/modal_driver_expense_delete_confirm.side` |
+| `page_driver_expenses_main` | page | `[data-i-doc="page:driver-expenses"]` | `/driver-expenses` |
+| `modal_driver_expense_form` | modal | `[data-i-doc="modal:driver-expense-form"]` | `/driver-expenses` |
+| `modal_driver_expense_details` | modal | `[data-i-doc="modal:driver-expense-details"]` | `/driver-expenses` |
+| `modal_driver_expense_filters` | modal | `[data-i-doc="modal:driver-expense-filters"]` | `/driver-expenses` |
+| `modal_driver_expense_delete_confirm` | modal | `[data-i-doc="modal:driver-expense-delete-confirm"]` | `/driver-expenses` |
 
 ---
 
@@ -910,13 +938,13 @@ _немає_
 | `modal:bonus-penalty-delete-confirm` | `modal_bonus_penalty_delete_confirm` | `data/modals/modal_bonus_penalty_delete_confirm.md` | Ви впевнені, що хочете видалити цей запис? Це дія змінить фі... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_bonuses_penalties_main` | `[data-i-doc="page:bonuses-penalties"]` | `/bonuses-penalties` | `katalon/page_bonuses_penalties_main.side` |
-| `modal_bonus_penalty_form` | `[data-i-doc="modal:bonus-penalty-form"]` | `/bonuses-penalties` | `katalon/modal_bonus_penalty_form.side` |
-| `modal_bonus_penalty_details` | `[data-i-doc="modal:bonus-penalty-details"]` | `/bonuses-penalties` | `katalon/modal_bonus_penalty_details.side` |
-| `modal_bonus_penalty_filters` | `[data-i-doc="modal:bonus-penalty-filters"]` | `/bonuses-penalties` | `katalon/modal_bonus_penalty_filters.side` |
-| `modal_bonus_penalty_delete_confirm` | `[data-i-doc="modal:bonus-penalty-delete-confirm"]` | `/bonuses-penalties` | `katalon/modal_bonus_penalty_delete_confirm.side` |
+| `page_bonuses_penalties_main` | page | `[data-i-doc="page:bonuses-penalties"]` | `/bonuses-penalties` |
+| `modal_bonus_penalty_form` | modal | `[data-i-doc="modal:bonus-penalty-form"]` | `/bonuses-penalties` |
+| `modal_bonus_penalty_details` | modal | `[data-i-doc="modal:bonus-penalty-details"]` | `/bonuses-penalties` |
+| `modal_bonus_penalty_filters` | modal | `[data-i-doc="modal:bonus-penalty-filters"]` | `/bonuses-penalties` |
+| `modal_bonus_penalty_delete_confirm` | modal | `[data-i-doc="modal:bonus-penalty-delete-confirm"]` | `/bonuses-penalties` |
 
 ---
 
@@ -947,14 +975,14 @@ _немає_
 | `modal:driver-debt-plan-delete-confirm` | `modal_driver_debt_plan_delete_confirm` | `data/modals/modal_driver_debt_plan_delete_confirm.md` | Ви впевнені, що хочете видалити цей план? Історія вже провед... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_driver_debt_plans_main` | `[data-i-doc="page:driver-debt-plans"]` | `/driver-debt-plans` | `katalon/page_driver_debt_plans_main.side` |
-| `modal_driver_debt_plan_form` | `[data-i-doc="modal:driver-debt-plan-form"]` | `/driver-debt-plans` | `katalon/modal_driver_debt_plan_form.side` |
-| `modal_driver_debt_plan_details` | `[data-i-doc="modal:driver-debt-plan-details"]` | `/driver-debt-plans` | `katalon/modal_driver_debt_plan_details.side` |
-| `modal_manual_debt_payment_form` | `[data-i-doc="modal:manual-debt-payment-form"]` | `/driver-debt-plans` | `katalon/modal_manual_debt_payment_form.side` |
-| `modal_driver_debt_plan_filters` | `[data-i-doc="modal:driver-debt-plan-filters"]` | `/driver-debt-plans` | `katalon/modal_driver_debt_plan_filters.side` |
-| `modal_driver_debt_plan_delete_confirm` | `[data-i-doc="modal:driver-debt-plan-delete-confirm"]` | `/driver-debt-plans` | `katalon/modal_driver_debt_plan_delete_confirm.side` |
+| `page_driver_debt_plans_main` | page | `[data-i-doc="page:driver-debt-plans"]` | `/driver-debt-plans` |
+| `modal_driver_debt_plan_form` | modal | `[data-i-doc="modal:driver-debt-plan-form"]` | `/driver-debt-plans` |
+| `modal_driver_debt_plan_details` | modal | `[data-i-doc="modal:driver-debt-plan-details"]` | `/driver-debt-plans` |
+| `modal_manual_debt_payment_form` | modal | `[data-i-doc="modal:manual-debt-payment-form"]` | `/driver-debt-plans` |
+| `modal_driver_debt_plan_filters` | modal | `[data-i-doc="modal:driver-debt-plan-filters"]` | `/driver-debt-plans` |
+| `modal_driver_debt_plan_delete_confirm` | modal | `[data-i-doc="modal:driver-debt-plan-delete-confirm"]` | `/driver-debt-plans` |
 
 ---
 
@@ -983,12 +1011,12 @@ _немає_
 | `modal:driver-earnings-raw-data` | `modal_driver_earnings_raw_data` | `data/modals/modal_driver_earnings_raw_data.md` | Технічні дані: сирі дані звіту для діагностики розрахунків. | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_driver_earnings_main` | `[data-i-doc="page:driver-earnings"]` | `/driver-earnings-new` | `katalon/page_driver_earnings_main.side` |
-| `modal_driver_earnings_calc_info` | `[data-i-doc="modal:driver-earnings-calc-info"]` | `/driver-earnings-new` | `katalon/modal_driver_earnings_calc_info.side` |
-| `modal_driver_earnings_details` | `[data-i-doc="modal:driver-earnings-details"]` | `/driver-earnings-new` | `katalon/modal_driver_earnings_details.side` |
-| `modal_driver_earnings_raw_data` | `[data-i-doc="modal:driver-earnings-raw-data"]` | `/driver-earnings-new` | `katalon/modal_driver_earnings_raw_data.side` |
+| `page_driver_earnings_main` | page | `[data-i-doc="page:driver-earnings"]` | `/driver-earnings-new` |
+| `modal_driver_earnings_calc_info` | modal | `[data-i-doc="modal:driver-earnings-calc-info"]` | `/driver-earnings-new` |
+| `modal_driver_earnings_details` | modal | `[data-i-doc="modal:driver-earnings-details"]` | `/driver-earnings-new` |
+| `modal_driver_earnings_raw_data` | modal | `[data-i-doc="modal:driver-earnings-raw-data"]` | `/driver-earnings-new` |
 
 ---
 
@@ -1016,11 +1044,11 @@ _немає_
 | `modal:vehicle-earnings-calc-info` | `modal_vehicle_earnings_calc_info` | `data/modals/modal_vehicle_earnings_calc_info.md` | Методика розрахунку для авто: інформація про те, як враховую... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_vehicle_earnings_main` | `[data-i-doc="page:vehicle-earnings"]` | `/vehicle-earnings` | `katalon/page_vehicle_earnings_main.side` |
-| `modal_vehicle_earnings_details` | `[data-i-doc="modal:vehicle-earnings-details"]` | `/vehicle-earnings` | `katalon/modal_vehicle_earnings_details.side` |
-| `modal_vehicle_earnings_calc_info` | `[data-i-doc="modal:vehicle-earnings-calc-info"]` | `/vehicle-earnings` | `katalon/modal_vehicle_earnings_calc_info.side` |
+| `page_vehicle_earnings_main` | page | `[data-i-doc="page:vehicle-earnings"]` | `/vehicle-earnings` |
+| `modal_vehicle_earnings_details` | modal | `[data-i-doc="modal:vehicle-earnings-details"]` | `/vehicle-earnings` |
+| `modal_vehicle_earnings_calc_info` | modal | `[data-i-doc="modal:vehicle-earnings-calc-info"]` | `/vehicle-earnings` |
 
 ---
 
@@ -1047,9 +1075,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_park_statistics_main` | `[data-i-doc="page:park-statistics"]` | `/park-statistics` | `katalon/page_park_statistics_main.side` |
+| `page_park_statistics_main` | page | `[data-i-doc="page:park-statistics"]` | `/park-statistics` |
 
 ---
 
@@ -1081,15 +1109,15 @@ _немає_
 | `modal:user-filters` | `modal_user_filters` | `data/modals/modal_user_filters.md` | Пошук користувачів: фільтруйте команду за роллю або активніс... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_park_users_main` | `[data-i-doc="page:park-users"]` | `/park-users` | `katalon/page_park_users_main.side` |
-| `modal_user_form` | `[data-i-doc="modal:user-form"]` | `/park-users` | `katalon/modal_user_form.side` |
-| `modal_user_permissions` | `[data-i-doc="modal:user-permissions"]` | `/park-users` | `katalon/modal_user_permissions.side` |
-| `modal_user_delete_confirm` | `[data-i-doc="modal:user-delete-confirm"]` | `/park-users` | `katalon/modal_user_delete_confirm.side` |
-| `modal_user_reset_password` | `[data-i-doc="modal:user-reset-password"]` | `/park-users` | `katalon/modal_user_reset_password.side` |
-| `modal_user_activation_link` | `[data-i-doc="modal:user-activation-link"]` | `/park-users` | `katalon/modal_user_activation_link.side` |
-| `modal_user_filters` | `[data-i-doc="modal:user-filters"]` | `/park-users` | `katalon/modal_user_filters.side` |
+| `page_park_users_main` | page | `[data-i-doc="page:park-users"]` | `/park-users` |
+| `modal_user_form` | modal | `[data-i-doc="modal:user-form"]` | `/park-users` |
+| `modal_user_permissions` | modal | `[data-i-doc="modal:user-permissions"]` | `/park-users` |
+| `modal_user_delete_confirm` | modal | `[data-i-doc="modal:user-delete-confirm"]` | `/park-users` |
+| `modal_user_reset_password` | modal | `[data-i-doc="modal:user-reset-password"]` | `/park-users` |
+| `modal_user_activation_link` | modal | `[data-i-doc="modal:user-activation-link"]` | `/park-users` |
+| `modal_user_filters` | modal | `[data-i-doc="modal:user-filters"]` | `/park-users` |
 
 ---
 
@@ -1117,11 +1145,11 @@ _немає_
 | `modal:park-file-delete-confirm` | `modal_park_file_delete_confirm` | `data/modals/modal_park_file_delete_confirm.md` | Ви впевнені, що хочете видалити цей файл? Це дія незворотна. | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_park_files_main` | `[data-i-doc="page:park-files"]` | `/park-files` | `katalon/page_park_files_main.side` |
-| `modal_park_file_form` | `[data-i-doc="modal:park-file-form"]` | `/park-files` | `katalon/modal_park_file_form.side` |
-| `modal_park_file_delete_confirm` | `[data-i-doc="modal:park-file-delete-confirm"]` | `/park-files` | `katalon/modal_park_file_delete_confirm.side` |
+| `page_park_files_main` | page | `[data-i-doc="page:park-files"]` | `/park-files` |
+| `modal_park_file_form` | modal | `[data-i-doc="modal:park-file-form"]` | `/park-files` |
+| `modal_park_file_delete_confirm` | modal | `[data-i-doc="modal:park-file-delete-confirm"]` | `/park-files` |
 
 ---
 
@@ -1129,7 +1157,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/landing-settings` |
 | **Файл** | `data/pages/page_landing_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Налаштування лендінгу: керуйте контентом вашої посадкової ст... |
@@ -1156,12 +1184,12 @@ _немає_
 | `modal:landing-news-form` | `modal_landing_news_form` | `data/modals/modal_landing_news_form.md` | Додавання або редагування новини: заповніть заголовок, текст... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_landing_settings_main` | `[data-i-doc="page:landing-settings"]` | `—` | `katalon/page_landing_settings_main.side` |
-| `modal_landing_news_form` | `[data-i-doc="modal:landing-news-form"]` | `—` | `katalon/modal_landing_news_form.side` |
-| `tab_landing_general_main` | `[data-i-doc="tab:landing-general"]` | `—` | `katalon/tab_landing_general_main.side` |
-| `tab_landing_news_main` | `[data-i-doc="tab:landing-news"]` | `—` | `katalon/tab_landing_news_main.side` |
+| `page_landing_settings_main` | page | `[data-i-doc="page:landing-settings"]` | `/landing-settings` |
+| `tab_landing_general_main` | tab | `[data-i-doc="tab:landing-general"]` | `/landing-settings` |
+| `tab_landing_news_main` | tab | `[data-i-doc="tab:landing-news"]` | `/landing-settings` |
+| `modal_landing_news_form` | modal | `[data-i-doc="modal:landing-news-form"]` | `/landing-settings` |
 
 ---
 
@@ -1187,9 +1215,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_materials_main` | `[data-i-doc="page:materials"]` | `—` | `katalon/page_materials_main.side` |
+| `page_materials_main` | page | `[data-i-doc="page:materials"]` | `—` |
 
 ---
 
@@ -1197,7 +1225,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/finance-settings` |
 | **Файл** | `data/pages/page_finance_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Фінансові налаштування: керуйте відсотковими ставками комісі... |
@@ -1215,9 +1243,9 @@ _немає_
 _немає_
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_finance_settings_main` | `[data-i-doc="page:finance-settings"]` | `—` | `katalon/page_finance_settings_main.side` |
+| `page_finance_settings_main` | page | `[data-i-doc="page:finance-settings"]` | `/finance-settings` |
 
 ---
 
@@ -1228,7 +1256,7 @@ _немає_
 | **URL** | `/activity-logs` |
 | **Файл** | `data/pages/page_activity_logs.md` |
 | **Статус** | 📝 TODO |
-| **Hint** | Журнал подій: повна історія всіх дій у системі, включаючи си... |
+| **Hint** | Журнал подій: повна історія всіх дій у системи, включаючи си... |
 
 ### Таби
 | i-doc ID | doc_id | Файл | Hint | Статус |
@@ -1250,14 +1278,14 @@ _немає_
 | `modal:logs-details` | `modal_logs_details` | `data/modals/modal_logs_details.md` | Деталі події: повна технічна інформація про конкретну подію,... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_activity_logs_main` | `[data-i-doc="page:activity-logs"]` | `/activity-logs` | `katalon/page_activity_logs_main.side` |
-| `modal_logs_filters` | `[data-i-doc="modal:logs-filters"]` | `/activity-logs` | `katalon/modal_logs_filters.side` |
-| `modal_logs_statistics` | `[data-i-doc="modal:logs-statistics"]` | `/activity-logs` | `katalon/modal_logs_statistics.side` |
-| `modal_logs_details` | `[data-i-doc="modal:logs-details"]` | `/activity-logs` | `katalon/modal_logs_details.side` |
-| `tab_logs_system_main` | `[data-i-doc="tab:logs-system"]` | `/activity-logs` | `katalon/tab_logs_system_main.side` |
-| `tab_logs_subscription_main` | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs` | `katalon/tab_logs_subscription_main.side` |
+| `page_activity_logs_main` | page | `[data-i-doc="page:activity-logs"]` | `/activity-logs` |
+| `tab_logs_system_main` | tab | `[data-i-doc="tab:logs-system"]` | `/activity-logs` |
+| `tab_logs_subscription_main` | tab | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs` |
+| `modal_logs_filters` | modal | `[data-i-doc="modal:logs-filters"]` | `/activity-logs` |
+| `modal_logs_statistics` | modal | `[data-i-doc="modal:logs-statistics"]` | `/activity-logs` |
+| `modal_logs_details` | modal | `[data-i-doc="modal:logs-details"]` | `/activity-logs` |
 
 ---
 
@@ -1285,8 +1313,8 @@ _немає_
 | `modal:order-details` | `modal_order_details` | `data/modals/modal_order_details.md` | Деталі замовлення: перегляд повних даних поїздки, комісій, с... | 📝 TODO |
 
 ### Скріншоти
-| Screenshot ID | Селектор | URL | Katalon-файл |
+| Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_orders_main` | `[data-i-doc="page:orders"]` | `/orders` | `katalon/page_orders_main.side` |
-| `modal_order_filters` | `[data-i-doc="modal:order-filters"]` | `/orders` | `katalon/modal_order_filters.side` |
-| `modal_order_details` | `[data-i-doc="modal:order-details"]` | `/orders` | `katalon/modal_order_details.side` |
+| `page_orders_main` | page | `[data-i-doc="page:orders"]` | `/orders` |
+| `modal_order_filters` | modal | `[data-i-doc="modal:order-filters"]` | `/orders` |
+| `modal_order_details` | modal | `[data-i-doc="modal:order-details"]` | `/orders` |

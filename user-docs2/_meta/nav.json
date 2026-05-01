@@ -1,0 +1,1332 @@
+[
+  {
+    "path": "/",
+    "label": "Головна",
+    "idoc": "page:dashboard",
+    "hint": "Головна панель: огляд ключових показників вашого автопарку, стану ТО, задач та фінансової активності Uklon.",
+    "docFile": "data/dashboard.md",
+    "tabs": [],
+    "sections": [
+      {
+        "idoc": "sec:dashboard-stats",
+        "tab": null,
+        "hint": "Статистика: огляд ключових метрик парку."
+      },
+      {
+        "idoc": "sec:dashboard-uklon-pulse",
+        "tab": null,
+        "hint": "Пульс Uklon: активність інтеграції та останні дані Uklon."
+      },
+      {
+        "idoc": "sec:dashboard-vehicle-status",
+        "tab": null,
+        "hint": "Статус авто: поточний стан завантаженості та доступності вашого автопарку."
+      },
+      {
+        "idoc": "sec:dashboard-maintenance",
+        "tab": null,
+        "hint": "Критичне обслуговування: автомобілі, що потребують термінового ТО."
+      },
+      {
+        "idoc": "sec:dashboard-document-issues",
+        "tab": null,
+        "hint": "Проблеми з документами: сповіщення про документи, термін дії яких закінчується."
+      },
+      {
+        "idoc": "sec:dashboard-tasks",
+        "tab": null,
+        "hint": "Активні задачі: ваші поточні справи та пріоритетні завдання."
+      },
+      {
+        "idoc": "sec:dashboard-reports",
+        "tab": null,
+        "hint": "Відкриті звіти: технічні інциденти та проблеми, що потребують уваги."
+      }
+    ],
+    "modals": [
+      {
+        "idoc": "modal:dashboard-settings",
+        "docFile": "data/modals/modal_dashboard_settings.md",
+        "hint": "Налаштування дашборду: оберіть, які віджети відображати на головній панелі."
+      }
+    ]
+  },
+  {
+    "path": "/drivers-group",
+    "label": "Водії",
+    "children": [
+      {
+        "path": "/drivers",
+        "label": "Список водіїв",
+        "idoc": "page:drivers",
+        "hint": "Список водіїв: додавайте нових водіїв, закріплюйте їх за автомобілями та керуйте їхніми доступами до системи.",
+        "docFile": "data/drivers/drivers.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:driver-list",
+            "tab": null,
+            "hint": "Ваша команда водіїв. Ви можете швидко переглянути статус підключення до Telegram, поточний автомобіль та додати коментарі до кожного водія."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:driver-filters",
+            "docFile": "data/modals/modal_driver_filters.md",
+            "hint": "Гнучка фільтрація водіїв: знаходьте потрібних людей за статусом, наявністю автомобіля або активністю в Telegram."
+          },
+          {
+            "idoc": "modal:driver-form",
+            "docFile": "data/modals/modal_driver_form.md",
+            "hint": "Реєстрація водія: введіть персональні дані, контактну інформацію та номер посвідчення водія. Також можна додати фото."
+          },
+          {
+            "idoc": "modal:driver-details",
+            "docFile": "data/modals/modal_driver_details.md",
+            "hint": "Досьє водія: повна інформація про стаж, історію поїздок, контактні дані родичів та поточний статус у системі."
+          },
+          {
+            "idoc": "modal:driver-delete-confirm",
+            "docFile": "data/modals/modal_driver_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити водія? Це закриє всі його поточні зміни та архівовану історію."
+          },
+          {
+            "idoc": "modal:driver-assignment",
+            "docFile": "data/modals/modal_driver_assignment.md",
+            "hint": "Керування призначенням: оберіть автомобіль для водія, вкажіть дату та початковий пробіг для контролю заїздів на ТО."
+          },
+          {
+            "idoc": "modal:driver-telegram",
+            "docFile": "data/modals/modal_driver_telegram.md",
+            "hint": "Підключення Telegram: згенеруйте код або QR-код для водія, щоб він міг отримувати сповіщення та звітувати про пробіг."
+          },
+          {
+            "idoc": "modal:driver-import",
+            "docFile": "data/modals/modal_driver_import.md",
+            "hint": "Масовий імпорт водіїв: завантажте список водіїв з Excel-файлу. Система автоматично перевірить дані на дублікати."
+          },
+          {
+            "idoc": "modal:driver-copy",
+            "docFile": "data/modals/modal_driver_copy.md",
+            "hint": "Копіювання водія: дозволяє швидко перенести дані водія в інший ваш парк без повторного ручного введення."
+          },
+          {
+            "idoc": "modal:driver-uklon-info",
+            "docFile": "data/modals/modal_driver_uklon_info.md",
+            "hint": "Дані з Uklon: детальна статистика водія безпосередньо з агрегатора — рейтинг, карма, поточний баланс та блокування."
+          },
+          {
+            "idoc": "modal:driver-comments",
+            "docFile": "data/modals/modal_driver_comments.md",
+            "hint": "Журнал коментарів: додавайте важливі замітки про роботу водія, які будуть доступні всім адміністраторам парку."
+          }
+        ]
+      },
+      {
+        "path": "/assignments",
+        "label": "Призначення",
+        "idoc": "page:vehicle-assignments",
+        "hint": "Журнал призначень: відстежуйте історію закріплення автомобілів за водіями, переглядайте акти прийому-передачі та контролюйте пробіг на момент зміни водія.",
+        "docFile": "data/drivers/assignments.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:assignment-list",
+            "tab": null,
+            "hint": "Список всіх призначень. Використовуйте фільтри для пошуку активних або завершених періодів роботи водіїв."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:assignment-filters",
+            "docFile": "data/modals/modal_assignment_filters.md",
+            "hint": "Фільтрація призначень за водієм, автомобілем або статусом активності для швидкого пошуку потрібної історії."
+          },
+          {
+            "idoc": "modal:assignment-form",
+            "docFile": "data/modals/modal_assignment_form.md",
+            "hint": "Створення або редагування запису про призначення: оберіть водія та автомобіль, вкажіть дату та початковий пробіг."
+          },
+          {
+            "idoc": "modal:assignment-details",
+            "docFile": "data/modals/modal_assignment_details.md",
+            "hint": "Повна інформація про призначення, включаючи історію змін, коментарі та посилання на звіти в Telegram."
+          },
+          {
+            "idoc": "modal:assignment-delete-confirm",
+            "docFile": "data/modals/modal_assignment_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей запис? Це призведе до видалення історії роботи водія на цьому автомобілі."
+          }
+        ]
+      },
+      {
+        "path": "/issue-reports",
+        "label": "Звернення",
+        "idoc": "page:issue-reports",
+        "hint": "Журнал проблем та інцидентів: відстежуйте всі технічні та оперативні інциденти, що виникають під час роботи парку, та керуйте їх вирішенням.",
+        "docFile": "data/drivers/issue-reports.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:issue-reports-list",
+            "tab": null,
+            "hint": "Журнал проблем: огляд поточних технічних інцидентів та проблем з автомобілями. Керуйте статусом вирішення та призначайте відповідальних."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:issue-reports-filters",
+            "docFile": "data/modals/modal_issue_reports_filters.md",
+            "hint": "Фільтрація інцидентів за статусом, автомобілем, водієм або пріоритетом для швидкого аналізу проблем парку."
+          },
+          {
+            "idoc": "modal:issue-report-form",
+            "docFile": "data/modals/modal_issue_report_form.md",
+            "hint": "Створення звіту про інцидент: опишіть проблему, виберіть тип інциденту та прикріпіть фото для швидкого реагування."
+          },
+          {
+            "idoc": "modal:issue-report-actions",
+            "docFile": "data/modals/modal_issue_report_actions.md",
+            "hint": "Керування діями: додавайте коментарі, змінюйте статус інциденту або призначайте відповідальних за вирішення."
+          },
+          {
+            "idoc": "modal:issue-report-details",
+            "docFile": "data/modals/modal_issue_report_details.md",
+            "hint": "Повна інформація про інцидент: деталі проблеми, історія дій адміністраторів та обговорення з водієм."
+          },
+          {
+            "idoc": "modal:task-info",
+            "docFile": "data/modals/modal_task_info.md",
+            "hint": "Додаткова інформація про задачу, прив'язану до інциденту, та її поточний статус виконання."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/driver-schedule",
+    "label": "Графік роботи",
+    "idoc": "page:driver-schedule",
+    "hint": "Графік роботи: планувальник змін водіїв, облік технічного обслуговування та ремонтів у зручному матричному форматі.",
+    "docFile": "data/driver-schedule.md",
+    "tabs": [],
+    "sections": [],
+    "modals": [
+      {
+        "idoc": "modal:schedule-delete-confirm",
+        "docFile": "data/modals/modal_schedule_delete_confirm.md",
+        "hint": "Ви впевнені, що хочете видалити цей запис із графіку? Це дія не впливає на фактичні дані, лише на планувальник."
+      }
+    ]
+  },
+  {
+    "path": "/tasks",
+    "label": "Задачі",
+    "idoc": "page:tasks",
+    "hint": "Ваш список задач: тут ви можете створювати нові задачі, призначати відповідальних, прив'язувати їх до автомобілів та відстежувати статус виконання.",
+    "docFile": "data/tasks.md",
+    "tabs": [],
+    "sections": [
+      {
+        "idoc": "sec:task-list",
+        "tab": null,
+        "hint": "Ваш список задач: переглядайте поточні справи, відстежуйте їх статус та пріоритети для ефективного управління роботою."
+      }
+    ],
+    "modals": [
+      {
+        "idoc": "modal:task-filters",
+        "docFile": "data/modals/modal_task_filters.md",
+        "hint": null
+      },
+      {
+        "idoc": "modal:task-form",
+        "docFile": "data/modals/modal_task_form.md",
+        "hint": "Заповніть назву та виберіть пріоритет. Ви також можете одразу призначити виконавця та прив'язати задачу до конкретного авто."
+      },
+      {
+        "idoc": "modal:task-details",
+        "docFile": "data/modals/modal_task_details.md",
+        "hint": "Детальна інформація про задачу: опис, виконавець, терміни виконання та історія коментарів."
+      },
+      {
+        "idoc": "modal:task-delete-confirm",
+        "docFile": "data/modals/modal_task_delete_confirm.md",
+        "hint": null
+      },
+      {
+        "idoc": "modal:task-complete-confirm",
+        "docFile": "data/modals/modal_task_complete_confirm.md",
+        "hint": null
+      }
+    ]
+  },
+  {
+    "path": "/fleet",
+    "label": "Автомобілі",
+    "children": [
+      {
+        "path": "/vehicles",
+        "label": "Автомобілі",
+        "idoc": "page:vehicles",
+        "hint": "Управління автомобілями: реєструйте нові авто, слідкуйте за їх станом, пробігом та термінами технічного обслуговування.",
+        "docFile": "data/fleet/vehicles.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:vehicle-list",
+            "tab": null,
+            "hint": "Ваш активний автопарк. Використовуйте пошук або фільтри для швидкого знаходження потрібного авто. Клікніть на рядок для перегляду детальної інформації."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:vehicle-filters",
+            "docFile": "data/modals/modal_vehicle_filters.md",
+            "hint": "Налаштуйте фільтри за маркою, моделлю, статусом або типом палива для точного пошуку автомобілів."
+          },
+          {
+            "idoc": "modal:vehicle-form",
+            "docFile": "data/modals/modal_vehicle_form.md",
+            "hint": "Вкажіть основні дані автомобіля: держномер, VIN-код, марку та модель. Також можна додати колір та початковий пробіг."
+          },
+          {
+            "idoc": "modal:vehicle-details",
+            "docFile": "data/modals/modal_vehicle_details.md",
+            "hint": "Повна інформація про автомобіль: технічні характеристики, історія водіїв, записи про пробіг та активні документи."
+          },
+          {
+            "idoc": "modal:vehicle-delete-confirm",
+            "docFile": "data/modals/modal_vehicle_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей автомобіль? Вся пов'язана історія буде архівована."
+          },
+          {
+            "idoc": "modal:vehicle-mileage-update",
+            "docFile": "data/modals/modal_vehicle_mileage_update.md",
+            "hint": "Введіть поточне значення одометра. Система автоматично розрахує середньодобовий пробіг та спрогнозує наступне ТО."
+          },
+          {
+            "idoc": "modal:vehicle-maintenance-form",
+            "docFile": "data/modals/modal_vehicle_maintenance_form.md",
+            "hint": "Зафіксуйте проведене технічне обслуговування або ремонт: вкажіть тип робіт, вартість та пробіг на момент сервісу."
+          },
+          {
+            "idoc": "modal:vehicle-assignment-form",
+            "docFile": "data/modals/modal_vehicle_assignment_form.md",
+            "hint": "Закріпіть водія за автомобілем. Виберіть водія зі списку та вкажіть пробіг на момент передачі авто."
+          },
+          {
+            "idoc": "modal:vehicle-unassign-confirm",
+            "docFile": "data/modals/modal_vehicle_unassign_confirm.md",
+            "hint": "Завершити зміну водія? Переконайтеся, що вказано актуальний пробіг на момент повернення автомобіля."
+          },
+          {
+            "idoc": "modal:vehicle-issue-report-form",
+            "docFile": "data/modals/modal_vehicle_issue_report_form.md",
+            "hint": "Повідомте про несправність або пошкодження. Детальний опис допоможе швидше запланувати ремонт."
+          },
+          {
+            "idoc": "modal:vehicle-qr",
+            "docFile": "data/modals/modal_vehicle_qr.md",
+            "hint": "Персональний QR-код автомобіля. Водій може відсканувати його для швидкого звіту про пробіг або перегляду документів."
+          },
+          {
+            "idoc": "modal:vehicle-import",
+            "docFile": "data/modals/modal_vehicle_import.md",
+            "hint": "Масове додавання авто: завантажте файл у форматі Excel або CSV згідно з шаблоном для швидкого наповнення бази."
+          },
+          {
+            "idoc": "modal:vehicle-tag-settings",
+            "docFile": "data/modals/modal_vehicle_tag_settings.md",
+            "hint": "Керуйте мітками (тегами) для класифікації автомобілів та налаштовуйте кольорову індикацію для візуального виділення."
+          },
+          {
+            "idoc": "modal:vehicle-transfer",
+            "docFile": "data/modals/modal_vehicle_transfer.md",
+            "hint": "Передача автомобіля в інший підрозділ або парк зі збереженням основної історії."
+          },
+          {
+            "idoc": "modal:vehicle-unavailability-form",
+            "docFile": "data/modals/modal_vehicle_unavailability_form.md",
+            "hint": "Вкажіть причину виводу авто з експлуатації (ремонт, ДТП, очікування запчастин) та орієнтовний термін."
+          },
+          {
+            "idoc": "modal:vehicle-close-unavailability",
+            "docFile": "data/modals/modal_vehicle_close_unavailability.md",
+            "hint": "Підтвердіть повернення автомобіля в роботу. Авто знову стане доступним для призначення водіїв."
+          }
+        ]
+      },
+      {
+        "path": "/vehicle-maintenance",
+        "label": "Тех. обслуговування",
+        "idoc": "page:vehicle-maintenance",
+        "hint": "Журнал технічного обслуговування: історія всіх сервісних робіт та ремонтів вашого автопарку з деталізацією по вартості та запчастинах.",
+        "docFile": "data/fleet/vehicle-maintenance.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:maintenance-list",
+            "tab": null,
+            "hint": "Хронологія сервісних заїздів. Ви можете бачити, хто створював запис, які саме роботи були виконані та чи прикріплені підтверджуючі документи."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:maintenance-filters",
+            "docFile": "data/modals/modal_maintenance_filters.md",
+            "hint": "Фільтруйте записи за автомобілем, типом робіт (ТО/ремонт) або періодом часу для аналізу витрат."
+          },
+          {
+            "idoc": "modal:maintenance-details",
+            "docFile": "data/modals/modal_maintenance_details.md",
+            "hint": "Детальний звіт по сервісному заїзду: перелік усіх виконаних робіт, коментарі механіка та прикріплені чеки або акти виконаних робіт."
+          },
+          {
+            "idoc": "modal:maintenance-delete-confirm",
+            "docFile": "data/modals/modal_maintenance_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей запис? Дані про витрати та історію обслуговування будуть втрачені."
+          }
+        ]
+      },
+      {
+        "path": "/vehicle-unavailabilities",
+        "label": "Недоступності",
+        "idoc": "page:vehicle-unavailabilities",
+        "hint": "Журнал простоїв: відстежуйте періоди, коли автомобілі були недоступні для роботи через ремонт, ТО або інші причини.",
+        "docFile": "data/fleet/vehicle-unavailabilities.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:unavailability-list",
+            "tab": null,
+            "hint": "Історія простоїв автомобілів. Помаранчевим кольорв виділені активні записи, що означає, що авто зараз не може бути призначене водієві."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:unavailability-filters",
+            "docFile": "data/modals/modal_unavailability_filters.md",
+            "hint": "Пошук записів про недоступність за автомобілем, причиною або часовим інтервалом."
+          },
+          {
+            "idoc": "modal:unavailability-details",
+            "docFile": "data/modals/modal_unavailability_details.md",
+            "hint": "Повна інформація про причину та тривалість простою автомобіля, включаючи коментарі при відкритті та закритті запису."
+          },
+          {
+            "idoc": "modal:unavailability-delete-confirm",
+            "docFile": "data/modals/modal_unavailability_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей запис з історії? Це дія не впливає на поточний статус авто, лише очищує журнал."
+          }
+        ]
+      },
+      {
+        "path": "/documents",
+        "label": "Документи",
+        "idoc": "page:documents",
+        "hint": "Управління документами: реєструйте страхові поліси, договори оренди та інші документи. Система нагадає вам про закінчення терміну дії.",
+        "docFile": "data/fleet/documents.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:document-list",
+            "tab": null,
+            "hint": "Ваша база документів. Документи з терміном дії, що закінчується, будуть підсвічені червоним або жовтим кольорв для завчасного оновлення."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:documents-filters",
+            "docFile": "data/modals/modal_documents_filters.md",
+            "hint": "Гнучкий пошук: фільтруйте документи за автомобілем, типом, статусом активності або терміном дії."
+          },
+          {
+            "idoc": "modal:document-delete-confirm",
+            "docFile": "data/modals/modal_document_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей документ? Це також видалить всі пов'язані файли та записи про платежі."
+          }
+        ]
+      },
+      {
+        "path": "/reports",
+        "label": "Звіти",
+        "idoc": "page:reports",
+        "hint": null,
+        "docFile": "data/fleet/reports/index.md",
+        "tabs": [
+          {
+            "idoc": "tab:reports-operational",
+            "isDefault": true,
+            "hint": "Операційний звіт: детальний аналіз поїздок, палива та витрат по кожному автомобілю за обраний період.",
+            "docFile": "data/fleet/reports/operational.md"
+          },
+          {
+            "idoc": "tab:reports-performance",
+            "isDefault": false,
+            "hint": "Ефективність парку: порівняльна статистика доходів, пробігу та прибутковості автомобілів та водіїв.",
+            "docFile": "data/fleet/reports/performance.md"
+          },
+          {
+            "idoc": "tab:reports-maintenance",
+            "isDefault": false,
+            "hint": "Звіт по ТО: історія ремонтів, обслуговування та витрат на підтримку технічного стану автопарку.",
+            "docFile": "data/fleet/reports/maintenance.md"
+          }
+        ],
+        "sections": [
+          {
+            "idoc": "sec:reports-operational-controls",
+            "tab": "tab:reports-operational",
+            "hint": "Керування операційним звітом: обирайте період (день, тиждень, місяць), вмикайте детальну розбивку по днях або експортуйте дані в Excel."
+          },
+          {
+            "idoc": "sec:reports-operational-table",
+            "tab": "tab:reports-operational",
+            "hint": "Зведена таблиця операційних показників: порівняння фактичних доходів та поїздок із плановими та прогнозними значеннями для кожного авто."
+          },
+          {
+            "idoc": "sec:reports-performance-controls",
+            "tab": "tab:reports-performance",
+            "hint": "Фільтрація KPI: вибір довільного періоду часу для аналізу та налаштування деталізації звіту."
+          },
+          {
+            "idoc": "sec:reports-performance-table",
+            "tab": "tab:reports-performance",
+            "hint": "Таблиця виконання нормативів: детальний аналіз ефективності роботи кожного автомобіля відносно встановлених KPI."
+          },
+          {
+            "idoc": "sec:reports-maintenance-stats",
+            "tab": "tab:reports-maintenance",
+            "hint": "Статистика регламентних робіт: загальний огляд стану автопарку — кількість прострочених, критичних та планових сервісних робіт."
+          },
+          {
+            "idoc": "sec:reports-maintenance-filters",
+            "tab": "tab:reports-maintenance",
+            "hint": "Пошук та фільтрація ТО: швидкий пошук автомобіля за номером або фільтрація за статусом терміновості робіт."
+          },
+          {
+            "idoc": "sec:reports-maintenance-list",
+            "tab": "tab:reports-maintenance",
+            "hint": "Список регламентних робіт: детальна інформація про технічний стан кожного автомобіля та прогноз наступних сервісних заїзов."
+          }
+        ],
+        "modals": []
+      },
+      {
+        "path": "/fleet-settings",
+        "label": "Налаштування",
+        "idoc": "page:fleet-settings",
+        "hint": "Централізовані налаштування параметрів вашого автопарку: керування регламентами ТО, нормативними показниками та іншими системними правилами.",
+        "docFile": "data/fleet/fleet-settings/index.md",
+        "tabs": [
+          {
+            "idoc": "tab:fleet-settings-schedules",
+            "isDefault": true,
+            "hint": "Налаштування регламентів технічного обслуговування: визначення інтервалів за пробігом або часом для автоматичних нагадувань про сервіс.",
+            "docFile": "data/fleet/fleet-settings/schedules.md"
+          }
+        ],
+        "sections": [],
+        "modals": []
+      }
+    ]
+  },
+  {
+    "path": "/finance",
+    "label": "Фінанси",
+    "children": [
+      {
+        "path": "/transactions",
+        "label": "Транзакції",
+        "idoc": "page:transactions",
+        "hint": "Фінансова звітність: відстежуйте всі грошові потоки, доходи та витрати вашого автопарку. Використовуйте фільтри для детального аналізу фінансових показників.",
+        "docFile": "data/finance/transactions.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:transactions-list",
+            "tab": null,
+            "hint": "Фінансовий журнал: повна історія транзакцій. Відстежуйте грошові потоки, фільтруйте за категоріями та керуйте фінансовими записами."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:transactions-filters",
+            "docFile": "data/modals/modal_transactions_filters.md",
+            "hint": "Пошук транзакцій: фільтруйте за датою, типом, категорією або пов'язаним автомобілем/водієм."
+          },
+          {
+            "idoc": "modal:transaction-form",
+            "docFile": "data/modals/modal_transaction_form.md",
+            "hint": "Додавання або редагування запису: вкажіть тип операції, суму, дату та виберіть об'єкт (авто, водій), до якого відноситься транзакція."
+          },
+          {
+            "idoc": "modal:transaction-delete-confirm",
+            "docFile": "data/modals/modal_transaction_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей запис? Видалення транзакції змінить баланс і звітність парку."
+          }
+        ]
+      },
+      {
+        "path": "/manual-trips",
+        "label": "Ручні поїздки",
+        "idoc": "page:manual-trips",
+        "hint": "Облік ручних поїздок: реєструйте поїздки, виконані поза агрегаторами, контролюйте їх вартість та пробіг.",
+        "docFile": "data/finance/manual-trips.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:manual-trip-list",
+            "tab": null,
+            "hint": "Хронологія ручних поїздок. Використовуйте фільтри для аналізу фінансових показників за конкретними водіями чи авто."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:manual-trip-form",
+            "docFile": "data/modals/modal_manual_trip_form.md",
+            "hint": "Заповніть деталі поїздки: оберіть автомобіль, водія, вкажіть суму, пробіг та дату. Це дозволить врахувати дохід поза агрегаторами."
+          },
+          {
+            "idoc": "modal:manual-trip-details",
+            "docFile": "data/modals/modal_manual_trip_details.md",
+            "hint": "Перегляд повної інформації про поїздку: всі дані про водія, автомобіль та фінансові показники."
+          },
+          {
+            "idoc": "modal:manual-trip-filters",
+            "docFile": "data/modals/modal_manual_trip_filters.md",
+            "hint": "Фільтрація поїздок: шукайте за водієм, автомобілем або часовим проміжком для звітності."
+          },
+          {
+            "idoc": "modal:manual-trip-delete-confirm",
+            "docFile": "data/modals/modal_manual_trip_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити запис про цю поїздку? Це змінить фінансовий баланс за обраний період."
+          }
+        ]
+      },
+      {
+        "path": "/driver-expenses",
+        "label": "Витрати водія",
+        "idoc": "page:driver-expenses",
+        "hint": "Облік витрат водіїв: фіксуйте додаткові витрати водіїв, прив'язуйте їх до конкретних авто та завантажуйте підтверджуючі документи.",
+        "docFile": "data/finance/driver-expenses.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:driver-expense-list",
+            "tab": null,
+            "hint": "Хронологія витрат водіїв: переглядайте витрати, їх категорії, суми та прикріплені файли для звітності."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:driver-expense-form",
+            "docFile": "data/modals/modal_driver_expense_form.md",
+            "hint": "Реєстрація витрат: вкажіть водія, авто, суму витрат, категорію та додайте опис. Завантажте фото чека для підтвердження."
+          },
+          {
+            "idoc": "modal:driver-expense-details",
+            "docFile": "data/modals/modal_driver_expense_details.md",
+            "hint": "Детальна інформація про витрату: хто здійснив, коли, на яку суму та перегляд прикріплених файлів."
+          },
+          {
+            "idoc": "modal:driver-expense-filters",
+            "docFile": "data/modals/modal_driver_expense_filters.md",
+            "hint": "Фільтрація витрат: пошук по водію, авто або часовому періоду для контролю бюджету."
+          },
+          {
+            "idoc": "modal:driver-expense-delete-confirm",
+            "docFile": "data/modals/modal_driver_expense_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити запис про цю витрату? Це дія видалить дані з фінансового балансу водія."
+          }
+        ]
+      },
+      {
+        "path": "/bonuses-penalties",
+        "label": "Премії та Штрафи",
+        "idoc": "page:bonuses-penalties",
+        "hint": "Премії та штрафи: керуйте заохоченнями та стягненнями для водіїв, відстежуйте виконання планів по боргових зобов'язаннях.",
+        "docFile": "data/finance/bonuses-penalties.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:bonus-penalty-list",
+            "tab": null,
+            "hint": "Журнал заохочень та стягнень: відстежуйте премії та штрафи водіїв, а також планові списання боргів."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:bonus-penalty-form",
+            "docFile": "data/modals/modal_bonus_penalty_form.md",
+            "hint": "Керуйте фінансами водія: додавайте премії або штрафи, прив'язуйте їх до поїздок або специфічних інцидентів."
+          },
+          {
+            "idoc": "modal:bonus-penalty-details",
+            "docFile": "data/modals/modal_bonus_penalty_details.md",
+            "hint": "Перегляд детальної інформації про заохочення або стягнення, включаючи опис та обґрунтування."
+          },
+          {
+            "idoc": "modal:bonus-penalty-filters",
+            "docFile": "data/modals/modal_bonus_penalty_filters.md",
+            "hint": "Пошук по преміях та штрафах: фільтруйте за водієм, типом або часовим інтервалом для фінансового контролю."
+          },
+          {
+            "idoc": "modal:bonus-penalty-delete-confirm",
+            "docFile": "data/modals/modal_bonus_penalty_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей запис? Це дія змінить фінансовий підсумок водія за період."
+          }
+        ]
+      },
+      {
+        "path": "/driver-debt-plans",
+        "label": "Борги водіїв",
+        "idoc": "page:driver-debt-plans",
+        "hint": "Плани погашення боргів: створюйте графіки списання боргів водіїв, контролюйте залишки та фіксуйте платежі.",
+        "docFile": "data/finance/driver-debt-plans.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:driver-debt-plan-list",
+            "tab": null,
+            "hint": "Журнал планів погашення боргів: переглядайте статус прогресу кожного плану, залишки боргу та графіки наступних виплат."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:driver-debt-plan-form",
+            "docFile": "data/modals/modal_driver_debt_plan_form.md",
+            "hint": "Створення плану погашення: вкажіть водія, загальну суму боргу, частоту списань та суму платежу для автоматизації контролю."
+          },
+          {
+            "idoc": "modal:driver-debt-plan-details",
+            "docFile": "data/modals/modal_driver_debt_plan_details.md",
+            "hint": "Детальна інформація про план боргу: перегляд прогресу оплат, історії проведених платежів та статусу плану."
+          },
+          {
+            "idoc": "modal:manual-debt-payment-form",
+            "docFile": "data/modals/modal_manual_debt_payment_form.md",
+            "hint": "Списання боргу: зафіксуйте платіж водія вручну, якщо кошти надійшли поза автоматичним списанням."
+          },
+          {
+            "idoc": "modal:driver-debt-plan-filters",
+            "docFile": "data/modals/modal_driver_debt_plan_filters.md",
+            "hint": "Фільтрація планів: шукайте за водієм, статусом (активні/завершені) або сумою для зручного контролю заборгованостей."
+          },
+          {
+            "idoc": "modal:driver-debt-plan-delete-confirm",
+            "docFile": "data/modals/modal_driver_debt_plan_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей план? Історія вже проведених оплат залишиться."
+          }
+        ]
+      },
+      {
+        "path": "/driver-earnings-new",
+        "label": "Зароб. водіїв",
+        "idoc": "page:driver-earnings",
+        "hint": "Заробіток водіїв: фінансовий звіт по персоналу, де ви можете аналізувати доходи, витрати, ефективність та підсумкові виплати водіям.",
+        "docFile": "data/finance/driver-earnings-new.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:driver-earnings-list",
+            "tab": null,
+            "hint": "Підсумковий звіт заробітку водіїв: детальна аналітика поїздок, бонусів, витрат та фінальних виплат за вибраний період."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:driver-earnings-calc-info",
+            "docFile": "data/modals/modal_driver_earnings_calc_info.md",
+            "hint": "Інформація про розрахунки: пояснення методики нарахування доходу, бонусів та розрахунку ефективності водія."
+          },
+          {
+            "idoc": "modal:driver-earnings-details",
+            "docFile": "data/modals/modal_driver_earnings_details.md",
+            "hint": "Деталі заробітку водія: аналітика поїздок, нарахувань та списань за обраний період."
+          },
+          {
+            "idoc": "modal:driver-earnings-raw-data",
+            "docFile": "data/modals/modal_driver_earnings_raw_data.md",
+            "hint": "Технічні дані: сирі дані звіту для діагностики розрахунків."
+          }
+        ]
+      },
+      {
+        "path": "/vehicle-earnings",
+        "label": "Заробіток авто",
+        "idoc": "page:vehicle-earnings",
+        "hint": "Заробіток автомобілів: фінансова аналітика кожного авто у флоті. Аналізуйте доходи, витрати, ефективність роботи та чистий прибуток.",
+        "docFile": "data/finance/vehicle-earnings.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:vehicle-earnings-list",
+            "tab": null,
+            "hint": "Звіт по заробітку автомобілів: повна фінансова статистика кожного авто, включаючи доходи, витрати на обслуговування та чистий прибуток."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:vehicle-earnings-details",
+            "docFile": "data/modals/modal_vehicle_earnings_details.md",
+            "hint": "Деталі заробітку автомобіля: повний звіт про доходи, витрати та прибутковість конкретного авто."
+          },
+          {
+            "idoc": "modal:vehicle-earnings-calc-info",
+            "docFile": "data/modals/modal_vehicle_earnings_calc_info.md",
+            "hint": "Методика розрахунку для авто: інформація про те, як враховуються доходи, витрати на обслуговування та бонуси при аналізі авто."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/park",
+    "label": "Парк",
+    "children": [
+      {
+        "path": "/park-statistics",
+        "label": "Статистика",
+        "idoc": "page:park-statistics",
+        "hint": "Статистика парку: глобальна аналітика діяльності автопарку, візуалізація трендів поїздок та використання автомобілів.",
+        "docFile": "data/park/park-statistics.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:uklon-stats-widget",
+            "tab": null,
+            "hint": "Статистика замовлень Uklon: огляд поточних показників поїздок та доходів у системі Uklon."
+          },
+          {
+            "idoc": "sec:test-uklon-stats-widget",
+            "tab": null,
+            "hint": "Тестовий віджет статистики: розширений аналіз нових метрик Uklon."
+          },
+          {
+            "idoc": "sec:vehicle-mileage-chart-widget",
+            "tab": null,
+            "hint": "Графік пробігу: візуалізація динаміки використання автомобілів у розрізі часу."
+          }
+        ],
+        "modals": []
+      },
+      {
+        "path": "/park-users",
+        "label": "Команда",
+        "idoc": "page:park-users",
+        "hint": "Команда парку: управління доступом менеджерів, перегляд ролей, налаштування прав та активності користувачів системи.",
+        "docFile": "data/park/park-users.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:user-list",
+            "tab": null,
+            "hint": "Список користувачів системи: керуйте обліковими записами менеджерів, переглядайте ролі та статуси доступу."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:user-form",
+            "docFile": "data/modals/modal_user_form.md",
+            "hint": "Керування користувачем: додайте менеджера, встановіть роль та налаштуйте доступ до розділів системи."
+          },
+          {
+            "idoc": "modal:user-permissions",
+            "docFile": "data/modals/modal_user_permissions.md",
+            "hint": "Налаштування прав: керуйте доступом конкретного користувача до розділів та функцій системи."
+          },
+          {
+            "idoc": "modal:user-delete-confirm",
+            "docFile": "data/modals/modal_user_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити обліковий запис користувача? Це дія незворотна."
+          },
+          {
+            "idoc": "modal:user-reset-password",
+            "docFile": "data/modals/modal_user_reset_password.md",
+            "hint": "Скидання пароля: відправка листа з посиланням на встановлення нового пароля на пошту користувача."
+          },
+          {
+            "idoc": "modal:user-activation-link",
+            "docFile": "data/modals/modal_user_activation_link.md",
+            "hint": "Посилання на активацію: скопіюйте це посилання, щоб передати його користувачеві для першого входу."
+          },
+          {
+            "idoc": "modal:user-filters",
+            "docFile": "data/modals/modal_user_filters.md",
+            "hint": "Пошук користувачів: фільтруйте команду за роллю або активністю для швидкого керування доступом."
+          }
+        ]
+      },
+      {
+        "path": "/park-files",
+        "label": "Файли",
+        "idoc": "page:park-files",
+        "hint": "Файли парку: централізоване сховище документів та медіа-файлів автопарку. Використовуйте пошук та фільтри для швидкого доступу.",
+        "docFile": "data/park/park-files.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:file-list",
+            "tab": null,
+            "hint": "База файлів автопарку: керуйте завантаженням та організацією документів автопарку."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:park-file-form",
+            "docFile": "data/modals/modal_park_file_form.md",
+            "hint": "Керування файлом: завантажуйте новий файл або редагуйте існуючий документ парку."
+          },
+          {
+            "idoc": "modal:park-file-delete-confirm",
+            "docFile": "data/modals/modal_park_file_delete_confirm.md",
+            "hint": "Ви впевнені, що хочете видалити цей файл? Це дія незворотна."
+          }
+        ]
+      },
+      {
+        "path": "/billing",
+        "label": "Білінг",
+        "idoc": "page:billing",
+        "hint": "Білінг та тарифи: переглядайте історію оплат, поточний стан підписки та деталізацію нарахувань по кожному автомобілю за період.",
+        "docFile": "data/park/billing.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:billing-current-period",
+            "tab": null,
+            "hint": "Поточний розрахунковий період: огляд нарахувань, статусу підписки та прогнозована сума до оплати."
+          },
+          {
+            "idoc": "sec:billing-history-list",
+            "tab": null,
+            "hint": "Історія розрахунків: перегляд усіх попередніх періодів, статусів оплат та детальних даних по кожному закритому білінг-періоду."
+          }
+        ],
+        "modals": []
+      },
+      {
+        "path": "/landing-settings",
+        "label": "Лендінг",
+        "idoc": "page:landing-settings",
+        "hint": "Налаштування лендінгу: керуйте контентом вашої посадкової сторінки для водіїв, редагуйте акції, контакти та візуальні елементи.",
+        "docFile": "data/park/landing-settings/index.md",
+        "tabs": [
+          {
+            "idoc": "tab:landing-general",
+            "isDefault": true,
+            "hint": "Загальні налаштування: керуйте головним заголовком, описом, кольоровою схемою та зображеннями вашої сторінки для водіїв.",
+            "docFile": "data/park/landing-settings/landing-general.md"
+          },
+          {
+            "idoc": "tab:landing-news",
+            "isDefault": false,
+            "hint": "Новини та акції: додавайте та редагуйте новини, бонусні програми та спеціальні пропозиції, що будуть відображені на лендінгу.",
+            "docFile": "data/park/landing-settings/landing-news.md"
+          }
+        ],
+        "sections": [
+          {
+            "idoc": "sec:landing-general-settings",
+            "tab": null,
+            "hint": "Налаштування головної сторінки: керуйте брендингом, контентом та контактними даними для водіїв."
+          },
+          {
+            "idoc": "sec:landing-print-settings",
+            "tab": null,
+            "hint": "Налаштування матеріалів для друку: редагуйте текст на листівках з QR-кодами для залучення водіїв."
+          },
+          {
+            "idoc": "sec:landing-benefits",
+            "tab": null,
+            "hint": "Керування перевагами: редагуйте список бонусів та умов, які бачать кандидати на вашому лендінгу."
+          },
+          {
+            "idoc": "sec:landing-requirements",
+            "tab": null,
+            "hint": "Керування вимогами: список критеріїв для водіїв, що відображається на сторінці реєстрації."
+          },
+          {
+            "idoc": "sec:landing-faq",
+            "tab": null,
+            "hint": "Керування розділом FAQ: додавайте відповіді на поширені запитання для зменшення кількості звернень до адміністрації."
+          },
+          {
+            "idoc": "sec:landing-news-list",
+            "tab": null,
+            "hint": "Список новин та акцій: керуйте публікаціями, що відображаються на вашому лендінгу."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:landing-news-form",
+            "docFile": "data/modals/modal_landing_news_form.md",
+            "hint": "Додавання або редагування новини: заповніть заголовок, текст, налаштуйте обкладинку та статус відображення на лендінгу."
+          }
+        ]
+      },
+      {
+        "path": "/resources",
+        "label": "Матеріали",
+        "idoc": "page:materials",
+        "hint": "Матеріали для друку: завантажуйте та друкуйте рекламні листівки, QR-коди для авто та пам'ятки водіїв для залучення персоналу.",
+        "docFile": "data/park/resources.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:material-list",
+            "tab": null,
+            "hint": "Каталог матеріалів для друку: переглядайте та генеруйте необхідні рекламні матеріали для розвитку автопарку."
+          },
+          {
+            "idoc": "sec:material-item",
+            "tab": null,
+            "hint": "Матеріал: переглядайте опис та обирайте спосіб друку."
+          }
+        ],
+        "modals": []
+      },
+      {
+        "path": "/activity-logs",
+        "label": "Журнали",
+        "idoc": "page:activity-logs",
+        "hint": "Журнал подій: повна історія всіх дій у системи, включаючи системні операції та розсилки.",
+        "docFile": "data/park/activity-logs/index.md",
+        "tabs": [
+          {
+            "idoc": "tab:logs-system",
+            "isDefault": true,
+            "hint": "Системний журнал: історія технічних дій у системі.",
+            "docFile": "data/park/activity-logs/logs-system.md"
+          },
+          {
+            "idoc": "tab:logs-subscription",
+            "isDefault": false,
+            "hint": "Журнал розсилок: історія відправлених повідомлень водіям.",
+            "docFile": "data/park/activity-logs/logs-subscription.md"
+          }
+        ],
+        "sections": [
+          {
+            "idoc": "sec:logs-system-toolbar",
+            "tab": null,
+            "hint": "Панель інструментів системного журналу: пошук, фільтри, статистика та критичні події."
+          },
+          {
+            "idoc": "sec:logs-system-list",
+            "tab": null,
+            "hint": "Список системних подій: хронологія дій у системі."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:logs-filters",
+            "docFile": "data/modals/modal_logs_filters.md",
+            "hint": "Фільтри журналу: пошук подій за датою, користувачем, типом дії або конкретним об'єктом."
+          },
+          {
+            "idoc": "modal:logs-statistics",
+            "docFile": "data/modals/modal_logs_statistics.md",
+            "hint": "Статистика подій: аналітика активності користувачів та частоти виникнення подій у системі."
+          },
+          {
+            "idoc": "modal:logs-details",
+            "docFile": "data/modals/modal_logs_details.md",
+            "hint": "Деталі події: повна технічна інформація про конкретну подію, включаючи користувача, час та контекст."
+          }
+        ]
+      },
+      {
+        "path": "/finance-settings",
+        "label": "Налаштування",
+        "idoc": "page:finance-settings",
+        "hint": "Фінансові налаштування: керуйте відсотковими ставками комісій, нормами виробітку та іншими фінансовими правилами парку.",
+        "docFile": "data/park/finance-settings.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:finance-form-section",
+            "tab": null,
+            "hint": "Фінансові правила: налаштування відсотків, комісій та норм роботи парку."
+          },
+          {
+            "idoc": "sec:finance-history-section",
+            "tab": null,
+            "hint": "Історія змін: хронологія всіх фінансових налаштувань парку."
+          }
+        ],
+        "modals": []
+      }
+    ]
+  },
+  {
+    "path": "/uklon",
+    "label": "Інтеграція Uklon",
+    "children": [
+      {
+        "path": "/orders",
+        "label": "Замовлення",
+        "idoc": "page:orders",
+        "hint": "Замовлення Uklon: переглядайте всі замовлення, історію статусів, розрахунки комісій та дані водіїв.",
+        "docFile": "data/uklon/orders.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:orders-list",
+            "tab": null,
+            "hint": "Список замовлень: переглядайте історію, фільтруйте за водіями, статусами та датами."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:order-filters",
+            "docFile": "data/modals/modal_order_filters.md",
+            "hint": "Фільтри замовлень: шукайте за статусом, типом оплати, водієм або часовим проміжком."
+          },
+          {
+            "idoc": "modal:order-details",
+            "docFile": "data/modals/modal_order_details.md",
+            "hint": "Деталі замовлення: перегляд повних даних поїздки, комісій, статусу та інформації про водія."
+          }
+        ]
+      },
+      {
+        "path": "/uklon-vehicles",
+        "label": "Автомобілі",
+        "idoc": "page:uklon-vehicles",
+        "hint": "Інтеграція з Uklon: переглядайте та керуйте автомобілями, що працюють у системі Uklon, синхронізуйте статуси та бонуси.",
+        "docFile": "data/uklon/uklon-vehicles.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:uklon-vehicles-list",
+            "tab": null,
+            "hint": "Список авто Uklon: керуйте прив'язками та переглядайте статуси автомобілів у системі Uklon."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:vehicle-integration",
+            "docFile": "data/modals/modal_vehicle_integration.md",
+            "hint": "Зв'язок авто Uklon: виберіть автомобіль з бази парку для інтеграції з даними Uklon."
+          }
+        ]
+      },
+      {
+        "path": "/uklon-drivers",
+        "label": "Водії",
+        "idoc": "page:uklon-drivers",
+        "hint": "Інтеграція з Uklon: переглядайте та керуйте водіями, що працюють у системі Uklon, синхронізуйте статуси та баланси.",
+        "docFile": "data/uklon/uklon-drivers.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:uklon-drivers-list",
+            "tab": null,
+            "hint": "Список водіїв Uklon: керуйте прив'язками та переглядайте баланси водіїв у системі Uklon."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:driver-integration",
+            "docFile": "data/modals/modal_driver_integration.md",
+            "hint": "Зв'язок водія Uklon: виберіть водія з бази парку для інтеграції з даними Uklon."
+          }
+        ]
+      },
+      {
+        "path": "/uklon-reports",
+        "label": "Звіти",
+        "idoc": "page:uklon-reports",
+        "hint": "Звіти Uklon: детальна фінансова та операційна аналітика по роботі з Uklon.",
+        "docFile": "data/uklon/uklon-reports/index.md",
+        "tabs": [
+          {
+            "idoc": "tab:uklon-reports-dashboard",
+            "isDefault": true,
+            "hint": "Огляд: загальні фінансові показники роботи з Uklon.",
+            "docFile": "data/uklon/uklon-reports/dashboard.md"
+          },
+          {
+            "idoc": "tab:uklon-reports-drivers",
+            "isDefault": false,
+            "hint": "Водії: аналітика ефективності кожного водія в системі Uklon.",
+            "docFile": "data/uklon/uklon-reports/drivers.md"
+          },
+          {
+            "idoc": "tab:uklon-reports-vehicles",
+            "isDefault": false,
+            "hint": "Автомобілі: аналітика продуктивності кожного авто Uklon.",
+            "docFile": "data/uklon/uklon-reports/vehicles.md"
+          }
+        ],
+        "sections": [
+          {
+            "idoc": "sec:uklon-reports-controls",
+            "tab": "tab:uklon-reports-vehicles",
+            "hint": "Панель керування звітами: вибір діапазону дат та статусів замовлень для аналізу."
+          }
+        ],
+        "modals": []
+      },
+      {
+        "path": "/uklon-branding",
+        "label": "Бонуси (Брендування)",
+        "idoc": "page:uklon-branding",
+        "hint": "Бонуси за брендування: аналізуйте нарахування бонусів за розміщення бренду Uklon на автомобілях.",
+        "docFile": "data/uklon/uklon-branding.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:uklon-branding-list",
+            "tab": null,
+            "hint": "Список бонусів за брендування: перегляд нарахувань по автомобілях та періодах."
+          }
+        ],
+        "modals": []
+      },
+      {
+        "path": "/uklon-logs",
+        "label": "Логи",
+        "idoc": "page:uklon-logs",
+        "hint": "Логи інтеграції Uklon: технічний журнал запитів та відповідей до API Uklon для діагностики підключення.",
+        "docFile": "data/uklon/uklon-logs.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:uklon-logs-list",
+            "tab": null,
+            "hint": "Журнал запитів: перегляд історії API запитів та відповідей системи Uklon."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:uklon-log-details",
+            "docFile": "data/modals/modal_uklon_log_details.md",
+            "hint": "Деталі логу Uklon: технічна інформація про запит до API та відповідь системи."
+          }
+        ]
+      },
+      {
+        "path": "/uklon-settings",
+        "label": "Налаштування",
+        "idoc": "page:uklon-settings",
+        "hint": "Налаштування інтеграції Uklon: керуйте ключами API, налаштуваннями синхронізації та іншими параметрами підключення до системи Uklon.",
+        "docFile": "data/uklon/uklon-settings.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:uklon-settings-form",
+            "tab": null,
+            "hint": "Налаштування Uklon API: керуйте ключами інтеграції та параметрами синхронізації."
+          }
+        ],
+        "modals": []
+      }
+    ]
+  },
+  {
+    "path": "/telegram",
+    "label": "Інтеграція Telegram",
+    "children": [
+      {
+        "path": "/telegram-settings",
+        "label": "Налаштування",
+        "idoc": "page:telegram-settings",
+        "hint": "Налаштування Telegram: інтеграція з ботами для розсилки повідомлень, сповіщень та керування командою через месенджер.",
+        "docFile": "data/telegram/telegram-settings.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:telegram-settings-form",
+            "tab": null,
+            "hint": "Налаштування інтеграції Telegram: керуйте підключенням до бота та списком отримувачів повідомлень."
+          }
+        ],
+        "modals": []
+      },
+      {
+        "path": "/telegram-logs",
+        "label": "Логи",
+        "idoc": "page:telegram-logs",
+        "hint": "Логи Telegram: технічний журнал запитів та відповідей боту для відстеження статусу розсилок.",
+        "docFile": "data/telegram/telegram-logs.md",
+        "tabs": [],
+        "sections": [
+          {
+            "idoc": "sec:telegram-logs-list",
+            "tab": null,
+            "hint": "Логи Telegram: переглядайте історію взаємодії системи з ботом для діагностики."
+          }
+        ],
+        "modals": [
+          {
+            "idoc": "modal:telegram-log-details",
+            "docFile": "data/modals/modal_telegram_log_details.md",
+            "hint": "Деталі логу Telegram: технічна інформація про запит до боту та отримані дані."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/profile",
+    "label": "Профіль",
+    "idoc": "page:profile",
+    "hint": "Ваш персональний кабінет: керуйте особистими даними, налаштовуйте безпеку та підключення Telegram-бота.",
+    "docFile": "data/profile/index.md",
+    "tabs": [
+      {
+        "idoc": "tab:profile-general",
+        "isDefault": true,
+        "hint": "Тут ви можете змінити своє ім'я та контактний email.",
+        "docFile": "data/profile/general.md"
+      },
+      {
+        "idoc": "tab:profile-password",
+        "isDefault": false,
+        "hint": "Для зміни паролю введіть поточний пароль та новий пароль два рази для підтвердження.",
+        "docFile": "data/profile/password.md"
+      },
+      {
+        "idoc": "tab:profile-telegram",
+        "isDefault": false,
+        "hint": "Підключіть Telegram-бота для отримування миттєвих сповіщень про важливі події у вашому парку.",
+        "docFile": "data/profile/telegram.md"
+      },
+      {
+        "idoc": "tab:profile-notifications",
+        "isDefault": false,
+        "hint": "Налаштуйте, які саме сповіщення ви хочете отримувати на email та в Telegram.",
+        "docFile": "data/profile/notifications.md"
+      },
+      {
+        "idoc": "tab:profile-access",
+        "isDefault": false,
+        "hint": "Перегляд ваших поточних ролей та дозволів у системі. Також тут можна переключитися між доступними парками.",
+        "docFile": "data/profile/access.md"
+      }
+    ],
+    "sections": [],
+    "modals": []
+  },
+  {
+    "path": "/settings",
+    "label": "Налаштування",
+    "idoc": "page:settings",
+    "hint": "Налаштування системи: персоналізуйте інтерфейс, керуйте сповіщеннями та інтеграціями з іншими сервісами.",
+    "docFile": "data/settings/index.md",
+    "tabs": [
+      {
+        "idoc": "tab:settings-appearance",
+        "isDefault": true,
+        "hint": "Налашйте зовнішній вигляд системи: оберіть тему оформлення (світлу або темну) та керуйте інструментами розробника (UI Inspector).",
+        "docFile": "data/settings/appearance.md"
+      }
+    ],
+    "sections": [],
+    "modals": []
+  }
+]

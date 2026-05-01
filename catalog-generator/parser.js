@@ -76,4 +76,82 @@ function parseHints(text) {
   return hints;
 }
 
-module.exports = { parseIndexObject, parsePathMapping, parseHints };
+/**
+ * Parses NavigationItems.js (ES module syntax, plain JS).
+ * Returns a map: groupName → [ { path, label, children: [...] } ]
+ *
+ * Each item: { path: '/tasks', label: 'Задачі', children?: [...] }
+ */
+function parseNavGroups(text) {
+  const groups = {};
+
+  // Find each exported const block: export const NAME = [ ... ];
+  const groupRegex = /export const (\w+)\s*=\s*\[([\s\S]*?)\];/g;
+  let groupMatch;
+
+  while ((groupMatch = groupRegex.exec(text)) !== null) {
+    const groupName = groupMatch[1];
+    const body = groupMatch[2];
+    groups[groupName] = parseNavItems(body);
+  }
+
+  return groups;
+}
+
+/**
+ * Recursively extract { path, label, children } from a JS array body string.
+ */
+function parseNavItems(body) {
+  const items = [];
+
+  // Split into top-level objects by matching balanced braces
+  const objects = splitTopLevelObjects(body);
+
+  for (const obj of objects) {
+    const pathMatch  = obj.match(/path\s*:\s*'([^']+)'/);
+    const labelMatch = obj.match(/label\s*:\s*'([^']+)'/);
+    if (!pathMatch) continue;
+
+    const item = {
+      path:  pathMatch[1],
+      label: labelMatch ? labelMatch[1] : '',
+    };
+
+    // Check for children array
+    const childrenMatch = obj.match(/children\s*:\s*\[([\s\S]*?)\]\s*[,}]/);
+    if (childrenMatch) {
+      item.children = parseNavItems(childrenMatch[1]);
+    }
+
+    items.push(item);
+  }
+
+  return items;
+}
+
+/**
+ * Splits a string into top-level JS object literals { ... }.
+ * Handles nested braces correctly.
+ */
+function splitTopLevelObjects(text) {
+  const objects = [];
+  let depth = 0;
+  let start = -1;
+
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === '{') {
+      if (depth === 0) start = i;
+      depth++;
+    } else if (text[i] === '}') {
+      depth--;
+      if (depth === 0 && start !== -1) {
+        objects.push(text.slice(start, i + 1));
+        start = -1;
+      }
+    }
+  }
+
+  return objects;
+}
+
+module.exports = { parseIndexObject, parsePathMapping, parseHints, parseNavGroups };
