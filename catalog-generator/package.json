@@ -1,0 +1,9 @@
+{
+  "name": "catalog-generator",
+  "version": "1.0.0",
+  "description": "Generates CATALOG.md from i-doc registry",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
