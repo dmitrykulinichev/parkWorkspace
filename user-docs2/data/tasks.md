@@ -19,4 +19,10 @@
 | `modal:task-delete-confirm` | [modal_task_delete_confirm.md](modals/modal_task_delete_confirm.md) |
 | `modal:task-complete-confirm` | [modal_task_complete_confirm.md](modals/modal_task_complete_confirm.md) |
 
+## Скріншоти
+
+| ID | Селектор | URL |
+|---|---|---|
+| `page_tasks_main` | `[data-i-doc="page:tasks"]` | `/tasks` |
+
 <!-- TODO: детальний опис -->
