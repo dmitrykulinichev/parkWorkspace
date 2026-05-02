@@ -1,0 +1,15 @@
+{
+  "name": "screenshot-runner",
+  "version": "1.0.0",
+  "description": "Captures screenshots of all i-doc elements from catalog",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pages": "node index.js --type page",
+    "tabs":  "node index.js --type tab",
+    "auto":  "node index.js --type page,tab"
+  },
+  "dependencies": {
+    "puppeteer": "^24.42.0"
+  }
+}
