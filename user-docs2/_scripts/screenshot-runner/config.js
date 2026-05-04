@@ -49,9 +49,9 @@ if (!VALID_PLATFORMS.includes(platform)) {
 
 // ── Export ─────────────────────────────────────────────────────────────────────
 
-// Screenshots are saved to:  data/screenshots/<theme>/<platform>/<id>.png
-// e.g.  data/screenshots/light/desktop/sidebar-menu.png
-//        data/screenshots/dark/mobile/sidebar-menu.png
+// Screenshots are saved to:  publish/screenshots/<theme>/<platform>/<id>.png
+// e.g.  publish/screenshots/light/desktop/sidebar-menu.png
+//        publish/screenshots/dark/mobile/sidebar-menu.png
 //
 // This lets the landing page pick the right variant based on user preferences:
 //   theme:    light | dark   — matches the UI colour scheme the app was in
@@ -65,7 +65,7 @@ module.exports = {
   screenshotsJson: path.join(USER_DOCS2, '_meta/screenshots.json'),
 
   // Output root — actual files land in <outputDir>/<id>.png
-  outputDir: path.join(USER_DOCS2, 'data/screenshots', theme, platform),
+  outputDir: path.join(USER_DOCS2, 'publish/screenshots', theme, platform),
 
   // The two active dimensions for this run
   theme,
@@ -99,5 +99,5 @@ module.exports = {
   captureTypes: rawTypes.split(',').map(s => s.trim()),
 
   // Error screenshots and run log are saved here (not theme/platform-scoped)
-  errorsDir: path.join(USER_DOCS2, 'data/screenshots/errors'),
+  errorsDir: path.join(USER_DOCS2, 'publish/screenshots/errors'),
 };

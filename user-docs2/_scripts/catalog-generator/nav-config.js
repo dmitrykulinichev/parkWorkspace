@@ -37,6 +37,10 @@ module.exports.LEGACY_PAGES = new Set([
   'page:statistics',  // легасі-сторінка, не актуальна
 ]);
 
+// Назва групи в menu.json для сторінок що не мають груп-обгорток в навігації
+// (DASHBOARD_MENU_ITEM + MAIN_MENU_ITEMS → Головна, Графік, Задачі)
+module.exports.MAIN_GROUP_TITLE = 'Основний функціонал';
+
 // Маппінг virtual path → ім'я папки в data/.
 // Визначає структуру каталогу документації.
 module.exports.GROUP_FOLDER_NAMES = {

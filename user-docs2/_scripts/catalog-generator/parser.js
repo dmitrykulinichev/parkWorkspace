@@ -154,4 +154,76 @@ function splitTopLevelObjects(text) {
   return objects;
 }
 
-module.exports = { parseIndexObject, parsePathMapping, parseHints, parseNavGroups };
+/**
+ * Extracts the value on the same line as @doc-field (e.g. @doc-title, @doc-page).
+ */
+function extractInlineField(block, field) {
+  const m = block.match(new RegExp(`@doc-${field}\\s+([^\\n]+)`));
+  return m ? m[1].trim() : null;
+}
+
+/**
+ * Extracts multi-line prose text under @doc-field until the next @doc- tag.
+ * Strips leading ' * ' prefixes and joins lines into a single string.
+ * Used for @doc-human and similar free-text fields.
+ */
+function extractTextField(block, field) {
+  const startIdx = block.indexOf(`@doc-${field}`);
+  if (startIdx === -1) return null;
+  const afterField = block.slice(startIdx + `@doc-${field}`.length);
+  const nextTag = afterField.search(/@doc-/);
+  const section = nextTag !== -1 ? afterField.slice(0, nextTag) : afterField;
+  const lines = section.split('\n')
+    .map(l => l.replace(/^\s*\*\s?/, '').trim())
+    .filter(l => l.length > 0);
+  return lines.length ? lines.join('\n') : null;
+}
+
+/**
+ * Extracts bullet list items under @doc-field until the next @doc- tag.
+ * Handles lines like:  *   - item text
+ */
+function extractListField(block, field) {
+  const startIdx = block.indexOf(`@doc-${field}`);
+  if (startIdx === -1) return [];
+  const afterField = block.slice(startIdx + `@doc-${field}`.length);
+  const nextTag = afterField.search(/@doc-/);
+  const section = nextTag !== -1 ? afterField.slice(0, nextTag) : afterField;
+  const items = [];
+  for (const line of section.split('\n')) {
+    const m = line.match(/\*\s+-\s+(.+)/);
+    if (m) items.push(m[1].trim());
+  }
+  return items;
+}
+
+/**
+ * Scans a JSX/JS file text for JSDoc blocks tagged with @doc-page, @doc-modal, or @doc-tab.
+ * Returns an array of parsed doc block objects.
+ */
+function parseDocBlocks(text) {
+  const blocks = [];
+  const jsdocRegex = /\/\*\*([\s\S]*?)\*\//g;
+  let match;
+  while ((match = jsdocRegex.exec(text)) !== null) {
+    const block = match[1];
+    const typeMatch = block.match(/@doc-(page|modal|tab)\s+([\w_]+)/);
+    if (!typeMatch) continue;
+    blocks.push({
+      type:     typeMatch[1],
+      id:       typeMatch[2],
+      raw:      `/**${match[1]}*/`,
+      title:    extractInlineField(block, 'title'),
+      human:    extractTextField(block, 'human'),
+      features: extractListField(block, 'features'),
+      api:      extractListField(block, 'api'),
+      entities: extractListField(block, 'entities'),
+      notes:    extractListField(block, 'notes'),
+      tabs:     extractListField(block, 'tabs'),
+      modals:   extractListField(block, 'modals'),
+    });
+  }
+  return blocks;
+}
+
+module.exports = { parseIndexObject, parsePathMapping, parseHints, parseNavGroups, parseDocBlocks };

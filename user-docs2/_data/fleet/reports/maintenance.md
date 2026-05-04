@@ -1,0 +1,18 @@
+# reports-maintenance
+> `tab:reports-maintenance` · [`page:reports`](./index.md)
+
+Звіт по ТО: історія ремонтів, обслуговування та витрат на підтримку технічного стану автопарку.
+
+## Розділи
+
+| i-doc | Опис |
+|---|---|
+| `sec:reports-maintenance-stats` | Статистика регламентних робіт: загальний огляд стану автопарку — кількість прост |
+| `sec:reports-maintenance-filters` | Пошук та фільтрація ТО: швидкий пошук автомобіля за номером або фільтрація за ст |
+| `sec:reports-maintenance-list` | Список регламентних робіт: детальна інформація про технічний стан кожного автомо |
+
+## Скріншоти
+
+| ID | Селектор | URL |
+|---|---|---|
+| `tab_reports_maintenance_main` | `[data-i-doc="tab:reports-maintenance"]` | `/reports` |

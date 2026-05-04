@@ -2,8 +2,8 @@
 const fs   = require('fs');
 const path = require('path');
 const config = require('./config');
-const { parseIndexObject, parsePathMapping, parseHints, parseNavGroups } = require('./parser');
-const { NAV_GROUPS, PATH_OVERRIDES, VIRTUAL_PATHS, LEGACY_PAGES, GROUP_FOLDER_NAMES } = require('./nav-config');
+const { parseIndexObject, parsePathMapping, parseHints, parseNavGroups, parseDocBlocks } = require('./parser');
+const { NAV_GROUPS, PATH_OVERRIDES, VIRTUAL_PATHS, LEGACY_PAGES, GROUP_FOLDER_NAMES, MAIN_GROUP_TITLE } = require('./nav-config');
 const { scaffoldDocs } = require('./scaffold');
 const { collectWarnings } = require('./validate');
 
@@ -24,9 +24,45 @@ const urlMap   = parsePathMapping(mappingText, pages);
 const hints    = parseHints(hintsText);
 const navGroups = parseNavGroups(navItemsText);
 
+// ─── Scan JSX/JS files for @doc-* JSDoc blocks ───────────────────────────────
+
+function walkDir(dir, extensions, results = []) {
+  if (!fs.existsSync(dir)) return results;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) walkDir(full, extensions, results);
+    else if (extensions.some(e => entry.name.endsWith(e))) results.push(full);
+  }
+  return results;
+}
+
+const jsxFiles = [
+  ...walkDir(path.join(config.appJs, 'pages'),      ['.jsx', '.js']),
+  ...walkDir(path.join(config.appJs, 'components'), ['.jsx', '.js']),
+];
+
+// Keyed by @doc-* id exactly as written (e.g. 'page_dashboard_main', 'modal_task_form')
+const docBlocksMap = {};
+for (const file of jsxFiles) {
+  const text = fs.readFileSync(file, 'utf8');
+  for (const block of parseDocBlocks(text)) {
+    block.filePath = file;
+    docBlocksMap[block.id] = block;
+  }
+}
+console.log(`✅ @doc-* blocks: ${Object.keys(docBlocksMap).length} found in ${jsxFiles.length} files`);
+
 // ─── Registry helpers ─────────────────────────────────────────────────────────
 
 const toDocId = id => id.replace(':', '_').replace(/-/g, '_');
+
+// Convert idoc (page:x, tab:x, modal:x) to the key used in docBlocksMap.
+// Pages: screenshotId adds _main → matches @doc-page page_X_main convention.
+// Modals/tabs: plain toDocId → matches @doc-modal modal_X / @doc-tab tab_X.
+const toDocBlockId = id => {
+  if (id.startsWith('page:')) return `${toDocId(id)}_main`;
+  return toDocId(id);
+};
 
 // Reverse url map: 'page:tasks' → '/tasks'
 const pageUrl = {};
@@ -42,6 +78,19 @@ for (const p of pages) {
     if (m) commentToPage[m[1].replace(/\.[jt]sx?$/, '')] = p.value;
   }
 }
+
+// idoc value → doc block, matched via file path (reliable across @doc-page ID conventions)
+// For 'page:tasks' → looks for a page block whose file lives in pages/Tasks/
+const pagesDir = path.join(config.appJs, 'pages');
+const docBlocksByIdoc = {};
+for (const block of Object.values(docBlocksMap)) {
+  if (block.type !== 'page' || !block.filePath) continue;
+  const rel      = path.relative(pagesDir, block.filePath);
+  const topLevel = rel.split(path.sep)[0].replace(/\.[jt]sx?$/, '');
+  const idoc     = commentToPage[topLevel];
+  if (idoc) docBlocksByIdoc[idoc] = block;
+}
+console.log(`   Matched to pages: ${Object.keys(docBlocksByIdoc).length}`);
 
 // comment (full) → tab id
 const commentToTab = {};
@@ -79,9 +128,9 @@ const modalsByPage   = groupByPage(modals);
 
 function docFile(id) {
   const d = toDocId(id);
-  if (id.startsWith('page:'))  return `data/pages/${d}.md`;
-  if (id.startsWith('tab:'))   return `data/tabs/${d}.md`;
-  if (id.startsWith('modal:')) return `data/modals/${d}.md`;
+  if (id.startsWith('page:'))  return `_data/pages/${d}.md`;
+  if (id.startsWith('tab:'))   return `_data/tabs/${d}.md`;
+  if (id.startsWith('modal:')) return `_data/modals/${d}.md`;
   return null;
 }
 
@@ -197,24 +246,53 @@ function resolveIdoc(p) {
   return pathToIdoc[p] || null;
 }
 
+function mergeDocFields(doc) {
+  if (!doc) return {};
+  const result = {};
+  if (doc.raw)              result.docRaw   = doc.raw;
+  if (doc.title)            result.title    = doc.title;
+  if (doc.human)            result.human    = doc.human;
+  if (doc.features?.length) result.features = doc.features;
+  if (doc.api?.length)      result.api      = doc.api;
+  if (doc.entities?.length) result.entities = doc.entities;
+  if (doc.notes?.length)    result.notes    = doc.notes;
+  return result;
+}
+
 function enrichPage(idoc) {
-  const pageTabs = (tabsByPage[idoc] || []).map((t, i) => ({
-    idoc:      t.value,
-    isDefault: i === 0,
-    hint:      hints[t.value] || null,
-    docFile:   docFile(t.value),
-  }));
+  const pageDoc = docBlocksByIdoc[idoc] || docBlocksMap[toDocBlockId(idoc)] || null;
+
+  const pageTabs = (tabsByPage[idoc] || []).map((t, i) => {
+    const tabDoc = docBlocksMap[toDocBlockId(t.value)] || null;
+    return {
+      idoc:      t.value,
+      isDefault: i === 0,
+      hint:      hints[t.value] || null,
+      docFile:   docFile(t.value),
+      ...mergeDocFields(tabDoc),
+    };
+  });
   const pageSections = (sectionsByPage[idoc] || []).map(s => ({
     idoc: s.value,
     tab:  entryTab(s) || null,
     hint: hints[s.value] || null,
   }));
-  const pageModals = (modalsByPage[idoc] || []).map(m => ({
-    idoc:    m.value,
-    docFile: docFile(m.value),
-    hint:    hints[m.value] || null,
-  }));
-  return { tabs: pageTabs, sections: pageSections, modals: pageModals };
+  const pageModals = (modalsByPage[idoc] || []).map(m => {
+    const modalDoc = docBlocksMap[toDocBlockId(m.value)] || null;
+    return {
+      idoc:    m.value,
+      docFile: docFile(m.value),
+      hint:    hints[m.value] || null,
+      ...mergeDocFields(modalDoc),
+    };
+  });
+
+  return {
+    tabs: pageTabs,
+    sections: pageSections,
+    modals: pageModals,
+    ...mergeDocFields(pageDoc),
+  };
 }
 
 function buildNavItems(items) {
@@ -235,10 +313,11 @@ function buildNavItems(items) {
       node.idoc    = idoc;
       node.hint    = hints[idoc] || null;
       node.docFile = docFile(idoc);
-      const { tabs, sections, modals } = enrichPage(idoc);
+      const { tabs, sections, modals, ...docFields } = enrichPage(idoc);
       node.tabs     = tabs;
       node.sections = sections;
       node.modals   = modals;
+      Object.assign(node, docFields);
     }
     if (item.children) {
       const children = buildNavItems(item.children);
@@ -265,51 +344,90 @@ for (const s of screenshots) {
   screenshotsByIdoc[s.idoc].push(s);
 }
 
-const DATA_DIR = path.join(path.dirname(config.catalog), '..', 'data');
-const { created, skipped } = scaffoldDocs(nav, DATA_DIR, screenshotsByIdoc);
-console.log(`✅ Scaffold: ${created} created, ${skipped} skipped → ${DATA_DIR}`);
+const DATA_DIR = path.join(path.dirname(config.catalog), '..', '_data');
+const { created, updated, skipped } = scaffoldDocs(nav, DATA_DIR, screenshotsByIdoc);
+console.log(`✅ Scaffold: ${created} created, ${updated} updated, ${skipped} skipped → ${DATA_DIR}`);
 
 // ─── Write nav.json (docFile paths updated in-place by scaffoldDocs) ──────────
 
+function enrichNavWithScreenshots(navItems) {
+  for (const item of navItems) {
+    if (item.idoc) {
+      item.screenshots = screenshotsByIdoc[item.idoc] || [];
+      for (const t of item.tabs   || []) t.screenshots = screenshotsByIdoc[t.idoc]   || [];
+      for (const m of item.modals || []) m.screenshots = screenshotsByIdoc[m.idoc] || [];
+    }
+    if (item.children) enrichNavWithScreenshots(item.children);
+  }
+}
+
+enrichNavWithScreenshots(nav);
 fs.writeFileSync(config.nav, JSON.stringify(nav, null, 2), 'utf8');
 console.log(`✅ nav.json written → ${config.nav}`);
 
-// ─── Generate data/catalog.json ───────────────────────────────────────────────
+// ─── Generate publish/menu.json ───────────────────────────────────────────────
 
-function buildCatalogJson(navItems) {
-  return navItems.map(item => {
+function buildMenuJson(navItems) {
+  const ungrouped = [];
+
+  function toMenuItem(item) {
+    const slug = item.path === '/'
+      ? item.idoc.replace('page:', '')
+      : item.path.slice(1);
+    const pageShot = (screenshotsByIdoc[item.idoc] || []).find(s => s.type === 'page');
+
+    const entry = {
+      title: item.label,
+      slug,
+      image: pageShot ? `${pageShot.id}.png` : '',
+    };
+    if (item.hint)    entry.description = item.hint;
+    if (item.docFile) entry.docFile     = item.docFile;
+
+    const tabs = (item.tabs || []).map(t => {
+      const tabBase = t.idoc.replace('tab:', '');
+      const pgSlug  = slug.replace(/\//g, '-');
+      const prefix  = pgSlug + '-';
+      const suffix  = tabBase.startsWith(prefix) ? tabBase.slice(prefix.length) : tabBase;
+      const tab = { title: t.title || tabBase, slug: `${pgSlug}--${suffix}` };
+      if (t.docFile) tab.docFile = t.docFile;
+      const shots = screenshotsByIdoc[t.idoc] || [];
+      if (shots.length) tab.screenshots = shots;
+      return tab;
+    });
+    if (tabs.length) entry.tabs = tabs;
+
+    const modals = (item.modals || []).map(m => {
+      const modal = { slug: m.idoc.replace('modal:', '') };
+      if (m.docFile) modal.docFile = m.docFile;
+      const shots = screenshotsByIdoc[m.idoc] || [];
+      if (shots.length) modal.screenshots = shots;
+      return modal;
+    });
+    if (modals.length) entry.modals = modals;
+
+    const shots = screenshotsByIdoc[item.idoc] || [];
+    if (shots.length) entry.screenshots = shots;
+
+    return entry;
+  }
+
+  const groups = [];
+  for (const item of navItems) {
     if (item.children && !item.idoc) {
-      const folder = item.path
-        ? (GROUP_FOLDER_NAMES[item.path] || item.path.slice(1))
-        : null;
-      return {
-        label:    item.label,
-        folder,
-        children: buildCatalogJson(item.children),
-      };
+      const items = item.children.filter(c => c.idoc).map(toMenuItem);
+      if (items.length) groups.push({ title: item.label, items });
+    } else if (item.idoc) {
+      ungrouped.push(toMenuItem(item));
     }
-    if (item.idoc) {
-      const sc = screenshotsByIdoc[item.idoc] || [];
-      return {
-        ...item,
-        screenshots: sc,
-        tabs: (item.tabs || []).map(t => ({
-          ...t,
-          screenshots: screenshotsByIdoc[t.idoc] || [],
-        })),
-        modals: (item.modals || []).map(m => ({
-          ...m,
-          screenshots: screenshotsByIdoc[m.idoc] || [],
-        })),
-      };
-    }
-    return item;
-  });
+  }
+  if (ungrouped.length) groups.unshift({ title: MAIN_GROUP_TITLE, items: ungrouped });
+
+  return groups;
 }
 
-const catalogJson = { generated: now, nav: buildCatalogJson(nav) };
-fs.writeFileSync(config.catalogJson, JSON.stringify(catalogJson, null, 2), 'utf8');
-console.log(`✅ catalog.json written → ${config.catalogJson}`);
+fs.writeFileSync(config.menuJson, JSON.stringify(buildMenuJson(nav), null, 2), 'utf8');
+console.log(`✅ menu.json written → ${config.menuJson}`);
 
 // ─── Validation warnings ──────────────────────────────────────────────────────
 

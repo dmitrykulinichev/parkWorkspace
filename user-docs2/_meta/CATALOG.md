@@ -1,5 +1,5 @@
 # Каталог документації
-> Згенеровано автоматично з i-doc.registry.ts · 2026-05-02
+> Згенеровано автоматично з i-doc.registry.ts · 2026-05-04
 > Не редагувати вручну — запусти `node workspace/user-docs2/_scripts/catalog-generator/index.js`
 
 ---
@@ -9,7 +9,7 @@
 | | |
 |---|---|
 | **URL** | `/` |
-| **Файл** | `data/pages/page_dashboard.md` |
+| **Файл** | `_data/pages/page_dashboard.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Головна панель: огляд ключових показників вашого автопарку, ... |
 
@@ -45,7 +45,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/vehicles` |
-| **Файл** | `data/pages/page_vehicles.md` |
+| **Файл** | `_data/pages/page_vehicles.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Управління автомобілями: реєструйте нові авто, слідкуйте за ... |
 
@@ -103,7 +103,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/drivers` |
-| **Файл** | `data/pages/page_drivers.md` |
+| **Файл** | `_data/pages/page_drivers.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Список водіїв: додавайте нових водіїв, закріплюйте їх за авт... |
 
@@ -151,7 +151,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/tasks` |
-| **Файл** | `data/pages/page_tasks.md` |
+| **Файл** | `_data/pages/page_tasks.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Ваш список задач: тут ви можете створювати нові задачі, приз... |
 
@@ -189,7 +189,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/reports` |
-| **Файл** | `data/pages/page_reports.md` |
+| **Файл** | `_data/pages/page_reports.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | — |
 
@@ -229,7 +229,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/statistics` |
-| **Файл** | `data/pages/page_statistics.md` |
+| **Файл** | `_data/pages/page_statistics.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | — |
 
@@ -254,7 +254,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/settings` |
-| **Файл** | `data/pages/page_settings.md` |
+| **Файл** | `_data/pages/page_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Налаштування системи: персоналізуйте інтерфейс, керуйте спов... |
 
@@ -282,7 +282,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/profile` |
-| **Файл** | `data/pages/page_profile.md` |
+| **Файл** | `_data/pages/page_profile.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Ваш персональний кабінет: керуйте особистими даними, налашто... |
 
@@ -318,7 +318,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/billing` |
-| **Файл** | `data/pages/page_billing.md` |
+| **Файл** | `_data/pages/page_billing.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Білінг та тарифи: переглядайте історію оплат, поточний стан ... |
 
@@ -346,7 +346,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/documents` |
-| **Файл** | `data/pages/page_documents.md` |
+| **Файл** | `_data/pages/page_documents.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Управління документами: реєструйте страхові поліси, договори... |
 
@@ -378,7 +378,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/vehicle-maintenance` |
-| **Файл** | `data/pages/page_vehicle_maintenance.md` |
+| **Файл** | `_data/pages/page_vehicle_maintenance.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал технічного обслуговування: історія всіх сервісних роб... |
 
@@ -412,7 +412,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/vehicle-unavailabilities` |
-| **Файл** | `data/pages/page_vehicle_unavailabilities.md` |
+| **Файл** | `_data/pages/page_vehicle_unavailabilities.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал простоїв: відстежуйте періоди, коли автомобілі були н... |
 
@@ -446,7 +446,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/fleet-settings` |
-| **Файл** | `data/pages/page_fleet_settings.md` |
+| **Файл** | `_data/pages/page_fleet_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Централізовані налаштування параметрів вашого автопарку: кер... |
 
@@ -474,7 +474,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/assignments` |
-| **Файл** | `data/pages/page_vehicle_assignments.md` |
+| **Файл** | `_data/pages/page_vehicle_assignments.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал призначень: відстежуйте історію закріплення автомобіл... |
 
@@ -510,7 +510,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/issue-reports` |
-| **Файл** | `data/pages/page_issue_reports.md` |
+| **Файл** | `_data/pages/page_issue_reports.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал проблем та інцидентів: відстежуйте всі технічні та оп... |
 
@@ -548,7 +548,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/transactions` |
-| **Файл** | `data/pages/page_transactions.md` |
+| **Файл** | `_data/pages/page_transactions.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Фінансова звітність: відстежуйте всі грошові потоки, доходи ... |
 
@@ -582,7 +582,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/uklon-vehicles` |
-| **Файл** | `data/pages/page_uklon_vehicles.md` |
+| **Файл** | `_data/pages/page_uklon_vehicles.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Інтеграція з Uklon: переглядайте та керуйте автомобілями, що... |
 
@@ -612,7 +612,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/uklon-drivers` |
-| **Файл** | `data/pages/page_uklon_drivers.md` |
+| **Файл** | `_data/pages/page_uklon_drivers.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Інтеграція з Uklon: переглядайте та керуйте водіями, що прац... |
 
@@ -642,7 +642,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/uklon-reports` |
-| **Файл** | `data/pages/page_uklon_reports.md` |
+| **Файл** | `_data/pages/page_uklon_reports.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Звіти Uklon: детальна фінансова та операційна аналітика по р... |
 
@@ -676,7 +676,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/uklon-branding` |
-| **Файл** | `data/pages/page_uklon_branding.md` |
+| **Файл** | `_data/pages/page_uklon_branding.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Бонуси за брендування: аналізуйте нарахування бонусів за роз... |
 
@@ -703,7 +703,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/uklon-logs` |
-| **Файл** | `data/pages/page_uklon_logs.md` |
+| **Файл** | `_data/pages/page_uklon_logs.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Логи інтеграції Uklon: технічний журнал запитів та відповіде... |
 
@@ -733,7 +733,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/uklon-settings` |
-| **Файл** | `data/pages/page_uklon_settings.md` |
+| **Файл** | `_data/pages/page_uklon_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Налаштування інтеграції Uklon: керуйте ключами API, налаштув... |
 
@@ -760,7 +760,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/telegram-settings` |
-| **Файл** | `data/pages/page_telegram_settings.md` |
+| **Файл** | `_data/pages/page_telegram_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Налаштування Telegram: інтеграція з ботами для розсилки пові... |
 
@@ -787,7 +787,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/telegram-logs` |
-| **Файл** | `data/pages/page_telegram_logs.md` |
+| **Файл** | `_data/pages/page_telegram_logs.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Логи Telegram: технічний журнал запитів та відповідей боту д... |
 
@@ -817,7 +817,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/driver-schedule` |
-| **Файл** | `data/pages/page_driver_schedule.md` |
+| **Файл** | `_data/pages/page_driver_schedule.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Графік роботи: планувальник змін водіїв, облік технічного об... |
 
@@ -845,7 +845,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/manual-trips` |
-| **Файл** | `data/pages/page_manual_trips.md` |
+| **Файл** | `_data/pages/page_manual_trips.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Облік ручних поїздок: реєструйте поїздки, виконані поза агре... |
 
@@ -881,7 +881,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/driver-expenses` |
-| **Файл** | `data/pages/page_driver_expenses.md` |
+| **Файл** | `_data/pages/page_driver_expenses.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Облік витрат водіїв: фіксуйте додаткові витрати водіїв, прив... |
 
@@ -917,7 +917,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/bonuses-penalties` |
-| **Файл** | `data/pages/page_bonuses_penalties.md` |
+| **Файл** | `_data/pages/page_bonuses_penalties.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Премії та штрафи: керуйте заохоченнями та стягненнями для во... |
 
@@ -953,7 +953,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/driver-debt-plans` |
-| **Файл** | `data/pages/page_driver_debt_plans.md` |
+| **Файл** | `_data/pages/page_driver_debt_plans.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Плани погашення боргів: створюйте графіки списання боргів во... |
 
@@ -991,7 +991,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/driver-earnings-new` |
-| **Файл** | `data/pages/page_driver_earnings.md` |
+| **Файл** | `_data/pages/page_driver_earnings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Заробіток водіїв: фінансовий звіт по персоналу, де ви можете... |
 
@@ -1025,7 +1025,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/vehicle-earnings` |
-| **Файл** | `data/pages/page_vehicle_earnings.md` |
+| **Файл** | `_data/pages/page_vehicle_earnings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Заробіток автомобілів: фінансова аналітика кожного авто у фл... |
 
@@ -1057,7 +1057,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/park-statistics` |
-| **Файл** | `data/pages/page_park_statistics.md` |
+| **Файл** | `_data/pages/page_park_statistics.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Статистика парку: глобальна аналітика діяльності автопарку, ... |
 
@@ -1086,7 +1086,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/park-users` |
-| **Файл** | `data/pages/page_park_users.md` |
+| **Файл** | `_data/pages/page_park_users.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Команда парку: управління доступом менеджерів, перегляд роле... |
 
@@ -1126,7 +1126,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/park-files` |
-| **Файл** | `data/pages/page_park_files.md` |
+| **Файл** | `_data/pages/page_park_files.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Файли парку: централізоване сховище документів та медіа-файл... |
 
@@ -1158,7 +1158,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/landing-settings` |
-| **Файл** | `data/pages/page_landing_settings.md` |
+| **Файл** | `_data/pages/page_landing_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Налаштування лендінгу: керуйте контентом вашої посадкової ст... |
 
@@ -1198,7 +1198,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `—` |
-| **Файл** | `data/pages/page_materials.md` |
+| **Файл** | `_data/pages/page_materials.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Матеріали для друку: завантажуйте та друкуйте рекламні листі... |
 
@@ -1226,7 +1226,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/finance-settings` |
-| **Файл** | `data/pages/page_finance_settings.md` |
+| **Файл** | `_data/pages/page_finance_settings.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Фінансові налаштування: керуйте відсотковими ставками комісі... |
 
@@ -1254,7 +1254,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/activity-logs` |
-| **Файл** | `data/pages/page_activity_logs.md` |
+| **Файл** | `_data/pages/page_activity_logs.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Журнал подій: повна історія всіх дій у системи, включаючи си... |
 
@@ -1294,7 +1294,7 @@ _немає_
 | | |
 |---|---|
 | **URL** | `/orders` |
-| **Файл** | `data/pages/page_orders.md` |
+| **Файл** | `_data/pages/page_orders.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Замовлення Uklon: переглядайте всі замовлення, історію стату... |
 

@@ -4,6 +4,7 @@ const REPO   = path.resolve(__dirname, '../../../..');
 const APP_JS = path.join(REPO, 'app/park-react-spa/resources/js');
 
 module.exports = {
+  appJs: APP_JS,
   idoc: {
     registry: path.join(REPO, 'app/park-react-spa/resources/js/common/i-doc/i-doc.registry.ts'),
     mapping:  path.join(REPO, 'app/park-react-spa/resources/js/common/i-doc/i-doc.mapping.ts'),
@@ -14,5 +15,5 @@ module.exports = {
   screenshots:  path.join(REPO, 'workspace/user-docs2/_meta/screenshots.json'),
   nav:          path.join(REPO, 'workspace/user-docs2/_meta/nav.json'),
   warnings:     path.join(REPO, 'workspace/user-docs2/_meta/WARNINGS.md'),
-  catalogJson:  path.join(REPO, 'workspace/user-docs2/data/catalog.json'),
+  menuJson:     path.join(REPO, 'workspace/user-docs2/publish/menu.json'),
 };

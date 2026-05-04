@@ -1,0 +1,17 @@
+# reports-operational
+> `tab:reports-operational` · [`page:reports`](./index.md) · за замовчуванням
+
+Операційний звіт: детальний аналіз поїздок, палива та витрат по кожному автомобілю за обраний період.
+
+## Розділи
+
+| i-doc | Опис |
+|---|---|
+| `sec:reports-operational-controls` | Керування операційним звітом: обирайте період (день, тиждень, місяць), вмикайте  |
+| `sec:reports-operational-table` | Зведена таблиця операційних показників: порівняння фактичних доходів та поїздок  |
+
+## Скріншоти
+
+| ID | Селектор | URL |
+|---|---|---|
+| `tab_reports_operational_main` | `[data-i-doc="tab:reports-operational"]` | `/reports` |

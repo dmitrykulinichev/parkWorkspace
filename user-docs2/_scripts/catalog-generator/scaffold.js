@@ -11,23 +11,29 @@ function pageSlug(item) {
 }
 
 // 'tab:reports-operational', 'reports' → 'operational'
-// 'tab:fleet-settings-commission', 'fleet-settings' → 'commission'
 function tabFileSlug(tabIdoc, pgSlug) {
   const base = tabIdoc.replace('tab:', '');
   const prefix = pgSlug + '-';
   return base.startsWith(prefix) ? base.slice(prefix.length) : base;
 }
 
-// Relative prefix from a docFile path to data/modals/
-// 'data/tasks.md' → '../modals/'
-// 'data/fleet/vehicles.md' → '../modals/'
-// 'data/fleet/reports/index.md' → '../../modals/'
+// Relative prefix from a docFile path to _data/modals/
 function modalsPrefix(docFilePath) {
   const depth = docFilePath.split('/').length - 2;
   return '../'.repeat(depth) + 'modals/';
 }
 
 // ─── Stub generators ──────────────────────────────────────────────────────────
+
+function humanSection(human) {
+  if (!human) return [];
+  return ['', '## Опис', '', human, ''];
+}
+
+function docRawSection(raw) {
+  if (!raw) return [];
+  return ['', '## Функціональний опис', '', '```js', raw, '```', ''];
+}
 
 function screenshotRows(screenshotList) {
   if (!screenshotList || !screenshotList.length) return [];
@@ -48,7 +54,7 @@ function makePageStub(item, screenshotsByIdoc) {
     `# ${item.label}`,
     `> \`${item.idoc}\` · \`${item.path}\``,
     '',
-    item.hint || '<!-- TODO: загальний опис сторінки -->',
+    item.hint || '<!-- hint -->',
     '',
   ];
 
@@ -72,9 +78,11 @@ function makePageStub(item, screenshotsByIdoc) {
     lines.push('');
   }
 
+  lines.push(...humanSection(item.human));
   lines.push(...screenshotRows(screenshotsByIdoc[item.idoc]));
-  lines.push('', '<!-- TODO: детальний опис -->');
-  return lines.join('\n') + '\n';
+  lines.push(...docRawSection(item.docRaw));
+
+  return lines.join('\n').trimEnd() + '\n';
 }
 
 function makePageIndexStub(item, screenshotsByIdoc) {
@@ -82,7 +90,7 @@ function makePageIndexStub(item, screenshotsByIdoc) {
     `# ${item.label}`,
     `> \`${item.idoc}\` · \`${item.path}\``,
     '',
-    item.hint || '<!-- TODO: загальний опис сторінки -->',
+    item.hint || '<!-- hint -->',
     '',
     '## Вкладки', '',
     '| Вкладка | За замовчуванням | Опис |',
@@ -93,7 +101,10 @@ function makePageIndexStub(item, screenshotsByIdoc) {
     lines.push(`| [\`${t.idoc}\`](./${fname}) | ${t.isDefault ? '✓' : ''} | ${t.hint ? t.hint.slice(0, 80) : '—'} |`);
   }
   lines.push('', '> Детальна документація кожної вкладки — у відповідних файлах.');
-  return lines.join('\n') + '\n';
+  lines.push(...humanSection(item.human));
+  lines.push(...docRawSection(item.docRaw));
+
+  return lines.join('\n').trimEnd() + '\n';
 }
 
 function makeTabStub(tab, parentItem, screenshotsByIdoc) {
@@ -103,7 +114,7 @@ function makeTabStub(tab, parentItem, screenshotsByIdoc) {
     `# ${tab.idoc.replace('tab:', '')}`,
     `> \`${tab.idoc}\` · [\`${parentItem.idoc}\`](./index.md)${tab.isDefault ? ' · за замовчуванням' : ''}`,
     '',
-    tab.hint || '<!-- TODO: опис вкладки -->',
+    tab.hint || '<!-- hint -->',
     '',
   ];
 
@@ -126,9 +137,11 @@ function makeTabStub(tab, parentItem, screenshotsByIdoc) {
     lines.push('');
   }
 
+  lines.push(...humanSection(tab.human));
   lines.push(...screenshotRows(screenshotsByIdoc[tab.idoc]));
-  lines.push('', '<!-- TODO: детальний опис -->');
-  return lines.join('\n') + '\n';
+  lines.push(...docRawSection(tab.docRaw));
+
+  return lines.join('\n').trimEnd() + '\n';
 }
 
 function makeModalStub(modal, parentIdoc, screenshotsByIdoc) {
@@ -136,41 +149,41 @@ function makeModalStub(modal, parentIdoc, screenshotsByIdoc) {
     `# ${modal.idoc.replace('modal:', '')}`,
     `> \`${modal.idoc}\` · відкривається з: \`${parentIdoc}\``,
     '',
-    modal.hint || '<!-- TODO: опис -->',
+    modal.hint || '<!-- hint -->',
     '',
   ];
+  lines.push(...humanSection(modal.human));
   lines.push(...screenshotRows(screenshotsByIdoc[modal.idoc]));
-  lines.push(
-    '', '## Поля / Вміст', '',
-    '<!-- TODO: перелік полів -->',
-    '', '## Дії', '',
-    '<!-- TODO: кнопки та дії -->',
-  );
-  return lines.join('\n') + '\n';
+  lines.push(...docRawSection(modal.docRaw));
+
+  return lines.join('\n').trimEnd() + '\n';
 }
 
-// ─── Create file only if it does not already exist ────────────────────────────
+// ─── File write ───────────────────────────────────────────────────────────────
 
 function scaffoldFile(filePath, content) {
-  if (!fs.existsSync(filePath)) {
-    fs.mkdirSync(path.dirname(filePath), { recursive: true });
-    fs.writeFileSync(filePath, content, 'utf8');
-    return true;
-  }
-  return false;
+  const existing = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8') : null;
+  if (existing === content) return 'skipped';
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, content, 'utf8');
+  return existing === null ? 'created' : 'updated';
 }
 
 // ─── Main scaffold function ───────────────────────────────────────────────────
 
 /**
- * Walk nav tree, update docFile paths to nav-tree layout, create stub files.
+ * Walk nav tree, update docFile paths, create or update stub files.
  * Mutates nav in-place (updates docFile on page/tab nodes).
- * Returns { created, skipped } counts.
+ * Returns { created, updated, skipped } counts.
  */
 function scaffoldDocs(nav, dataDir, screenshotsByIdoc = {}) {
-  let created = 0, skipped = 0;
+  let created = 0, updated = 0, skipped = 0;
 
-  function tick(wasCreated) { if (wasCreated) created++; else skipped++; }
+  function tick(result) {
+    if (result === 'created') created++;
+    else if (result === 'updated') updated++;
+    else skipped++;
+  }
 
   function walk(navItems, parentFolder = '') {
     for (const item of navItems) {
@@ -190,10 +203,9 @@ function scaffoldDocs(nav, dataDir, screenshotsByIdoc = {}) {
           const pageFolder = parentFolder ? `${parentFolder}/${pgSlug}` : pgSlug;
           fs.mkdirSync(path.join(dataDir, pageFolder), { recursive: true });
 
-          // Update ALL docFile paths before generating stubs (links depend on them)
-          item.docFile = `data/${pageFolder}/index.md`;
+          item.docFile = `_data/${pageFolder}/index.md`;
           for (const tab of item.tabs) {
-            tab.docFile = `data/${pageFolder}/${tabFileSlug(tab.idoc, pgSlug)}.md`;
+            tab.docFile = `_data/${pageFolder}/${tabFileSlug(tab.idoc, pgSlug)}.md`;
           }
 
           tick(scaffoldFile(
@@ -210,7 +222,7 @@ function scaffoldDocs(nav, dataDir, screenshotsByIdoc = {}) {
         } else {
           const dir = parentFolder ? path.join(dataDir, parentFolder) : dataDir;
           fs.mkdirSync(dir, { recursive: true });
-          item.docFile = `data/${parentFolder ? parentFolder + '/' : ''}${pgSlug}.md`;
+          item.docFile = `_data/${parentFolder ? parentFolder + '/' : ''}${pgSlug}.md`;
           tick(scaffoldFile(
             path.join(dir, `${pgSlug}.md`),
             makePageStub(item, screenshotsByIdoc),
@@ -233,7 +245,7 @@ function scaffoldDocs(nav, dataDir, screenshotsByIdoc = {}) {
 
   fs.mkdirSync(path.join(dataDir, 'modals'), { recursive: true });
   walk(nav);
-  return { created, skipped };
+  return { created, updated, skipped };
 }
 
 module.exports = { scaffoldDocs, pageSlug, tabFileSlug };
