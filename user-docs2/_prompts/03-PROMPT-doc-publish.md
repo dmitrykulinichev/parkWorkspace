@@ -4,7 +4,7 @@
 
 ## Промпт
 
-Прочитай `C:\Repository\park\workspace\user-docs2\_data\tasks.md` — це технічний стаб документації.
+Прочитай `C:\Repository\park\workspace\user-docs2\_data\driver-schedule.md` — це технічний стаб документації.
 
 Згенеруй на його основі маркетинговий документ для потенційних покупців і клієнтів системи Garage24.
 Запиши результат у `C:\Repository\park\workspace\user-docs2\publish\` інструментом **Write** зберігаючи структуру файлів відносно `_data\` (якщо файл існує — перезаписуй).

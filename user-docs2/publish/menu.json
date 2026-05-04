@@ -1023,7 +1023,7 @@
         "docFile": "_data/fleet/reports/index.md",
         "tabs": [
           {
-            "title": "reports-operational",
+            "title": "Оперативна статистика",
             "slug": "reports--operational",
             "docFile": "_data/fleet/reports/operational.md",
             "screenshots": [
@@ -1038,7 +1038,7 @@
             ]
           },
           {
-            "title": "reports-performance",
+            "title": "Виконання нормативів",
             "slug": "reports--performance",
             "docFile": "_data/fleet/reports/performance.md",
             "screenshots": [
@@ -1053,7 +1053,7 @@
             ]
           },
           {
-            "title": "reports-maintenance",
+            "title": "Технічне обслуговування (Звіт)",
             "slug": "reports--maintenance",
             "docFile": "_data/fleet/reports/maintenance.md",
             "screenshots": [
@@ -1087,7 +1087,7 @@
         "docFile": "_data/fleet/fleet-settings/index.md",
         "tabs": [
           {
-            "title": "fleet-settings-schedules",
+            "title": "Регламенти ТО",
             "slug": "fleet-settings--schedules",
             "docFile": "_data/fleet/fleet-settings/schedules.md",
             "screenshots": [
