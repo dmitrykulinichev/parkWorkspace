@@ -10,8 +10,36 @@
 | `sec:finance-form-section` | Фінансові правила: налаштування відсотків, комісій та норм роботи парку. |
 | `sec:finance-history-section` | Історія змін: хронологія всіх фінансових налаштувань парку. |
 
+
+## Опис
+
+<!-- TODO: human description -->
+
 ## Скріншоти
 
 | ID | Селектор | URL |
 |---|---|---|
 | `page_finance_settings_main` | `[data-i-doc="page:finance-settings"]` | `/finance-settings` |
+
+## Функціональний опис
+
+```js
+/**
+ * @doc-page  page_finance_settings
+ * @doc-title Налаштування фінансів
+ * @doc-human
+ *   <!-- TODO: human description -->
+ * @doc-features
+ *   - Редагування фінансових параметрів парку
+ *   - Встановлення комісії Uklon (%)
+ *   - Встановлення базового відсотка водія (%)
+ *   - Встановлення цільових показників (мінімальний дохід парку, норма поїздок)
+ *   - Автоматичне створення історії при зміні налаштувань
+ *   - Перегляд історії змін фінансових налаштувань
+ * @doc-api
+ *   - useFinanceSettings (отримання та оновлення налаштувань)
+ * @doc-entities
+ *   - FinanceSettings
+ *   - FinanceHistory
+ */
+```

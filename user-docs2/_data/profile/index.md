@@ -14,3 +14,25 @@
 | [`tab:profile-access`](./access.md) |  | Перегляд ваших поточних ролей та дозволів у системі. Також тут можна переключити |
 
 > Детальна документація кожної вкладки — у відповідних файлах.
+
+## Опис
+
+<!-- TODO: human description -->
+
+
+## Функціональний опис
+
+```js
+/**
+ * @doc-page page_profile
+ * @doc-title Профіль користувача
+ * @doc-human
+ *   <!-- TODO: human description -->
+ * @doc-tabs
+ *   - tab_profile_general (Загальні дані)
+ *   - tab_profile_password (Зміна паролю)
+ *   - tab_profile_telegram (Telegram)
+ *   - tab_profile_notifications (Розсилки)
+ *   - tab_profile_access (Доступ та Безпека)
+ */
+```

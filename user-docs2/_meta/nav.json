@@ -617,6 +617,40 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_issue_reports\n * @doc-title Звіти про проблеми\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_issue_reports_filters (Фільтри звітів про проблеми)\n *   - modal_issue_report_form (Форма звіту)\n *   - modal_issue_report_actions (Дії над звітом)\n *   - modal_issue_report_details (Деталі звіту)\n *   - modal_task_info (Інформація про задачу)\n * @doc-features\n *   - Відображення списку звітів про проблеми у вигляді таблиці\n *   - Сортування звітів за різними колонками\n *   - Фільтрація звітів\n *   - Пошук за описом звіту\n *   - Пагінація списку\n *   - Відображення статусу звіту\n *   - Видалення звіту\n *   - Перегляд деталей звіту\n *   - Прийняття рішення по звіту (Resolve)\n *   - Перегляд інформації про пов'язану задачу\n * @doc-api\n *   - GET /api/issue-reports\n *   - GET /api/issue-reports/{id}\n *   - POST /api/issue-reports\n *   - PUT /api/issue-reports/{id}\n *   - DELETE /api/issue-reports/{id}\n *   - PATCH /api/issue-reports/{id}/status\n *   - PATCH /api/issue-reports/{id}/resolve-with-comment\n *   - GET /api/issue-reports/options\n *   - POST /api/issue-reports/{id}/reject\n *   - POST /api/issue-reports/{id}/request-info\n *   - POST /api/issue-reports/{id}/resolve-immediately\n *   - GET /api/issue-reports/{id}/available-tasks\n *   - POST /api/issue-reports/{id}/assign-to-task\n *   - POST /api/issue-reports/{id}/create-new-task\n * @doc-entities\n *   - IssueReport, Vehicle, Task, Driver\n */",
+        "title": "Звіти про проблеми",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку звітів про проблеми у вигляді таблиці",
+          "Сортування звітів за різними колонками",
+          "Фільтрація звітів",
+          "Пошук за описом звіту",
+          "Пагінація списку",
+          "Відображення статусу звіту",
+          "Видалення звіту",
+          "Перегляд деталей звіту",
+          "Прийняття рішення по звіту (Resolve)",
+          "Перегляд інформації про пов'язану задачу"
+        ],
+        "api": [
+          "GET /api/issue-reports",
+          "GET /api/issue-reports/{id}",
+          "POST /api/issue-reports",
+          "PUT /api/issue-reports/{id}",
+          "DELETE /api/issue-reports/{id}",
+          "PATCH /api/issue-reports/{id}/status",
+          "PATCH /api/issue-reports/{id}/resolve-with-comment",
+          "GET /api/issue-reports/options",
+          "POST /api/issue-reports/{id}/reject",
+          "POST /api/issue-reports/{id}/request-info",
+          "POST /api/issue-reports/{id}/resolve-immediately",
+          "GET /api/issue-reports/{id}/available-tasks",
+          "POST /api/issue-reports/{id}/assign-to-task",
+          "POST /api/issue-reports/{id}/create-new-task"
+        ],
+        "entities": [
+          "IssueReport, Vehicle, Task, Driver"
+        ],
         "screenshots": [
           {
             "id": "page_issue_reports_main",
@@ -1946,6 +1980,26 @@
             "idoc": "modal:transaction-form",
             "docFile": "_data/modals/modal_transaction_form.md",
             "hint": "Додавання або редагування запису: вкажіть тип операції, суму, дату та виберіть об'єкт (авто, водій), до якого відноситься транзакція.",
+            "docRaw": "/**\n * @doc-modal modal_transaction_form\n * @doc-title Форма транзакції\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Створення або редагування фінансової транзакції\n *   - Вибір типу операції (дохід/витрата)\n *   - Введення суми транзакції\n *   - Вибір категорії (наприклад, Автомобіль)\n *   - Прив'язка до конкретного об'єкта (наприклад, Автомобіль)\n *   - Вибір дати транзакції\n *   - Опис транзакції\n * @doc-api\n *   - POST /api/transactions\n *   - PUT /api/transactions/{id}\n *   - GET /api/transactions/{id}\n * @doc-entities\n *   - Transaction, Vehicle\n */",
+            "title": "Форма транзакції",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Створення або редагування фінансової транзакції",
+              "Вибір типу операції (дохід/витрата)",
+              "Введення суми транзакції",
+              "Вибір категорії (наприклад, Автомобіль)",
+              "Прив'язка до конкретного об'єкта (наприклад, Автомобіль)",
+              "Вибір дати транзакції",
+              "Опис транзакції"
+            ],
+            "api": [
+              "POST /api/transactions",
+              "PUT /api/transactions/{id}",
+              "GET /api/transactions/{id}"
+            ],
+            "entities": [
+              "Transaction, Vehicle"
+            ],
             "screenshots": [
               {
                 "id": "modal_transaction_form",
@@ -1972,6 +2026,28 @@
               }
             ]
           }
+        ],
+        "docRaw": "/**\n * @doc-page  page_transactions\n * @doc-title Фінанси\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_transactions_filters (Фільтри транзакцій)\n *   - modal_transaction_form (Форма транзакції)\n *   - modal_transaction_delete_confirm (Підтвердження видалення транзакції)\n * @doc-features\n *   - Перегляд списку транзакцій (табличний вигляд)\n *   - Фільтрація транзакцій за типом, категорією та датами\n *   - Пошук транзакцій\n *   - Пагінація списку\n *   - Створення нової транзакції\n *   - Редагування транзакції\n *   - Видалення транзакції\n * @doc-api\n *   - GET /api/transactions\n *   - POST /api/transactions\n *   - PUT /api/transactions/{id}\n *   - DELETE /api/transactions/{id}\n *   - GET /api/transactions/options\n * @doc-entities\n *   - Transaction\n */",
+        "title": "Фінанси",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Перегляд списку транзакцій (табличний вигляд)",
+          "Фільтрація транзакцій за типом, категорією та датами",
+          "Пошук транзакцій",
+          "Пагінація списку",
+          "Створення нової транзакції",
+          "Редагування транзакції",
+          "Видалення транзакції"
+        ],
+        "api": [
+          "GET /api/transactions",
+          "POST /api/transactions",
+          "PUT /api/transactions/{id}",
+          "DELETE /api/transactions/{id}",
+          "GET /api/transactions/options"
+        ],
+        "entities": [
+          "Transaction"
         ],
         "screenshots": [
           {
@@ -2003,6 +2079,25 @@
             "idoc": "modal:manual-trip-form",
             "docFile": "_data/modals/modal_manual_trip_form.md",
             "hint": "Заповніть деталі поїздки: оберіть автомобіль, водія, вкажіть суму, пробіг та дату. Це дозволить врахувати дохід поза агрегаторами.",
+            "docRaw": "/**\n * @doc-modal modal_manual_trip_form\n * @doc-title Форма поїздки\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Створення або редагування ручної поїздки\n *   - Вибір автомобіля та водія\n *   - Введення фінансових показників (сума, пробіг)\n *   - Введення дати та часу\n *   - Додавання коментарів\n *   - Динамічна валідація даних\n * @doc-api\n *   - POST /api/manual-trips\n *   - PUT /api/manual-trips/{id}\n *   - GET /api/manual-trips/options\n * @doc-entities\n *   - ManualTrip, Vehicle, Driver\n */",
+            "title": "Форма поїздки",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Створення або редагування ручної поїздки",
+              "Вибір автомобіля та водія",
+              "Введення фінансових показників (сума, пробіг)",
+              "Введення дати та часу",
+              "Додавання коментарів",
+              "Динамічна валідація даних"
+            ],
+            "api": [
+              "POST /api/manual-trips",
+              "PUT /api/manual-trips/{id}",
+              "GET /api/manual-trips/options"
+            ],
+            "entities": [
+              "ManualTrip, Vehicle, Driver"
+            ],
             "screenshots": [
               {
                 "id": "modal_manual_trip_form",
@@ -2060,6 +2155,29 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_manual_trips\n * @doc-title Ручні поїздки\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_manual_trip_form (Форма поїздки)\n *   - modal_manual_trip_details (Деталі поїздки)\n *   - modal_manual_trip_filters (Фільтри поїздок)\n *   - modal_manual_trip_delete_confirm (Підтвердження видалення)\n * @doc-features\n *   - Відображення списку ручних поїздок (таблиця)\n *   - Фільтрація поїздок за різними параметрами\n *   - Пошук поїздок\n *   - Пагінація списку\n *   - Створення нової ручної поїздки\n *   - Редагування існуючої поїздки\n *   - Перегляд деталей поїздки\n *   - Видалення поїздки\n * @doc-api\n *   - GET /api/manual-trips\n *   - POST /api/manual-trips\n *   - PUT /api/manual-trips/{id}\n *   - DELETE /api/manual-trips/{id}\n *   - GET /api/manual-trips/options\n * @doc-entities\n *   - ManualTrip, Vehicle, Driver, User\n */",
+        "title": "Ручні поїздки",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку ручних поїздок (таблиця)",
+          "Фільтрація поїздок за різними параметрами",
+          "Пошук поїздок",
+          "Пагінація списку",
+          "Створення нової ручної поїздки",
+          "Редагування існуючої поїздки",
+          "Перегляд деталей поїздки",
+          "Видалення поїздки"
+        ],
+        "api": [
+          "GET /api/manual-trips",
+          "POST /api/manual-trips",
+          "PUT /api/manual-trips/{id}",
+          "DELETE /api/manual-trips/{id}",
+          "GET /api/manual-trips/options"
+        ],
+        "entities": [
+          "ManualTrip, Vehicle, Driver, User"
+        ],
         "screenshots": [
           {
             "id": "page_manual_trips_main",
@@ -2090,6 +2208,27 @@
             "idoc": "modal:driver-expense-form",
             "docFile": "_data/modals/modal_driver_expense_form.md",
             "hint": "Реєстрація витрат: вкажіть водія, авто, суму витрат, категорію та додайте опис. Завантажте фото чека для підтвердження.",
+            "docRaw": "/**\n * @doc-modal modal_driver_expense_form\n * @doc-title Форма витрат\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Створення або редагування витрат водіїв\n *   - Вибір автомобіля та водія\n *   - Введення суми витрат\n *   - Вибір дати та часу\n *   - Опис витрат\n *   - Управління файлами (завантаження чеків, фото)\n *   - Валідація даних\n * @doc-api\n *   - POST /api/driver-expenses\n *   - PUT /api/driver-expenses/{id}\n *   - GET /api/driver-expenses/options\n *   - GET /api/driver-expenses/{id}\n * @doc-entities\n *   - DriverExpense, Vehicle, Driver\n */",
+            "title": "Форма витрат",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Створення або редагування витрат водіїв",
+              "Вибір автомобіля та водія",
+              "Введення суми витрат",
+              "Вибір дати та часу",
+              "Опис витрат",
+              "Управління файлами (завантаження чеків, фото)",
+              "Валідація даних"
+            ],
+            "api": [
+              "POST /api/driver-expenses",
+              "PUT /api/driver-expenses/{id}",
+              "GET /api/driver-expenses/options",
+              "GET /api/driver-expenses/{id}"
+            ],
+            "entities": [
+              "DriverExpense, Vehicle, Driver"
+            ],
             "screenshots": [
               {
                 "id": "modal_driver_expense_form",
@@ -2147,6 +2286,29 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_driver_expenses\n * @doc-title Витрати водіїв\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_driver_expense_form (Форма витрат)\n *   - modal_driver_expense_details (Деталі витрати)\n *   - modal_driver_expense_filters (Фільтри витрат)\n *   - modal_driver_expense_delete_confirm (Підтвердження видалення)\n * @doc-features\n *   - Відображення списку витрат водіїв (таблиця)\n *   - Фільтрація витрат за параметрами\n *   - Пошук витрат\n *   - Пагінація списку\n *   - Створення нової витрати\n *   - Редагування витрати\n *   - Перегляд деталей витрати (вкл. файли)\n *   - Видалення витрати\n * @doc-api\n *   - GET /api/driver-expenses\n *   - POST /api/driver-expenses\n *   - PUT /api/driver-expenses/{id}\n *   - DELETE /api/driver-expenses/{id}\n *   - GET /api/driver-expenses/options\n * @doc-entities\n *   - DriverExpense, Vehicle, Driver, User\n */",
+        "title": "Витрати водіїв",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку витрат водіїв (таблиця)",
+          "Фільтрація витрат за параметрами",
+          "Пошук витрат",
+          "Пагінація списку",
+          "Створення нової витрати",
+          "Редагування витрати",
+          "Перегляд деталей витрати (вкл. файли)",
+          "Видалення витрати"
+        ],
+        "api": [
+          "GET /api/driver-expenses",
+          "POST /api/driver-expenses",
+          "PUT /api/driver-expenses/{id}",
+          "DELETE /api/driver-expenses/{id}",
+          "GET /api/driver-expenses/options"
+        ],
+        "entities": [
+          "DriverExpense, Vehicle, Driver, User"
+        ],
         "screenshots": [
           {
             "id": "page_driver_expenses_main",
@@ -2177,6 +2339,26 @@
             "idoc": "modal:bonus-penalty-form",
             "docFile": "_data/modals/modal_bonus_penalty_form.md",
             "hint": "Керуйте фінансами водія: додавайте премії або штрафи, прив'язуйте їх до поїздок або специфічних інцидентів.",
+            "docRaw": "/**\n * @doc-modal modal_bonus_penalty_form\n * @doc-title Форма премії/штрафу\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Створення або редагування запису премії або штрафу\n *   - Вибір типу (Премія/Штраф)\n *   - Прив'язка до водія\n *   - Опціональна прив'язка до автомобіля\n *   - Введення суми та дати\n *   - Опис причини премії/штрафу\n *   - Валідація даних\n * @doc-api\n *   - POST /api/bonuses-penalties\n *   - PUT /api/bonuses-penalties/{id}\n *   - GET /api/bonuses-penalties/options\n * @doc-entities\n *   - BonusPenalty, Driver, Vehicle\n */",
+            "title": "Форма премії/штрафу",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Створення або редагування запису премії або штрафу",
+              "Вибір типу (Премія/Штраф)",
+              "Прив'язка до водія",
+              "Опціональна прив'язка до автомобіля",
+              "Введення суми та дати",
+              "Опис причини премії/штрафу",
+              "Валідація даних"
+            ],
+            "api": [
+              "POST /api/bonuses-penalties",
+              "PUT /api/bonuses-penalties/{id}",
+              "GET /api/bonuses-penalties/options"
+            ],
+            "entities": [
+              "BonusPenalty, Driver, Vehicle"
+            ],
             "screenshots": [
               {
                 "id": "modal_bonus_penalty_form",
@@ -2233,6 +2415,29 @@
               }
             ]
           }
+        ],
+        "docRaw": "/**\n * @doc-page  page_bonuses_penalties\n * @doc-title Премії та Штрафи\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_bonus_penalty_form (Форма премії/штрафу)\n *   - modal_bonus_penalty_details (Деталі премії/штрафу)\n *   - modal_bonus_penalty_filters (Фільтри премій/штрафів)\n *   - modal_bonus_penalty_delete_confirm (Підтвердження видалення)\n * @doc-features\n *   - Відображення списку премій та штрафів (таблиця)\n *   - Фільтрація записів за параметрами\n *   - Пошук записів\n *   - Пагінація списку\n *   - Створення нового запису\n *   - Редагування запису\n *   - Видалення запису\n *   - Відображення типу запису (Премія, Штраф, Списання боргу)\n * @doc-api\n *   - GET /api/bonuses-penalties\n *   - POST /api/bonuses-penalties\n *   - PUT /api/bonuses-penalties/{id}\n *   - DELETE /api/bonuses-penalties/{id}\n *   - GET /api/bonuses-penalties/options\n * @doc-entities\n *   - BonusPenalty, Driver, Vehicle, User\n */",
+        "title": "Премії та Штрафи",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку премій та штрафів (таблиця)",
+          "Фільтрація записів за параметрами",
+          "Пошук записів",
+          "Пагінація списку",
+          "Створення нового запису",
+          "Редагування запису",
+          "Видалення запису",
+          "Відображення типу запису (Премія, Штраф, Списання боргу)"
+        ],
+        "api": [
+          "GET /api/bonuses-penalties",
+          "POST /api/bonuses-penalties",
+          "PUT /api/bonuses-penalties/{id}",
+          "DELETE /api/bonuses-penalties/{id}",
+          "GET /api/bonuses-penalties/options"
+        ],
+        "entities": [
+          "BonusPenalty, Driver, Vehicle, User"
         ],
         "screenshots": [
           {
@@ -2336,6 +2541,29 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page page_driver_debt_plans_index\n * @doc-title Плани боргів водіїв\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_driver_debt_plan_form (Створення/редагування плану)\n *   - modal_manual_debt_payment_form (Ручне списання боргу)\n *   - modal_driver_debt_plan_details (Деталі плану)\n *   - modal_driver_debt_plan_filters (Фільтри плану)\n *   - modal_driver_debt_plan_delete_confirm (Підтвердження видалення)\n * @doc-features\n *   - Перегляд списку планів боргів водіїв\n *   - Фільтрація списку\n *   - Пошук за планами\n *   - Створення нового плану\n *   - Редагування плану\n *   - Ручне списання платежів\n *   - Зміна статусу плану (призупинення/відновлення)\n *   - Видалення плану\n *   - Відображення прогресу погашення боргу\n * @doc-api\n *   - GET /api/driver-debt-plans (через useDriverDebtPlans)\n *   - GET /api/driver-debt-plans/options (через useDriverDebtPlanOptions)\n *   - DELETE /api/driver-debt-plans/{id} (через useDeleteDriverDebtPlan)\n *   - POST /api/driver-debt-plans/{id}/toggle-status (через useToggleDriverDebtPlanStatus)\n * @doc-entities\n *   - DriverDebtPlan, Driver, Vehicle\n */",
+        "title": "Плани боргів водіїв",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Перегляд списку планів боргів водіїв",
+          "Фільтрація списку",
+          "Пошук за планами",
+          "Створення нового плану",
+          "Редагування плану",
+          "Ручне списання платежів",
+          "Зміна статусу плану (призупинення/відновлення)",
+          "Видалення плану",
+          "Відображення прогресу погашення боргу"
+        ],
+        "api": [
+          "GET /api/driver-debt-plans (через useDriverDebtPlans)",
+          "GET /api/driver-debt-plans/options (через useDriverDebtPlanOptions)",
+          "DELETE /api/driver-debt-plans/{id} (через useDeleteDriverDebtPlan)",
+          "POST /api/driver-debt-plans/{id}/toggle-status (через useToggleDriverDebtPlanStatus)"
+        ],
+        "entities": [
+          "DriverDebtPlan, Driver, Vehicle"
+        ],
         "screenshots": [
           {
             "id": "page_driver_debt_plans_main",
@@ -2408,6 +2636,30 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_driver_earnings_new\n * @doc-title Заробіток водіїв (Новий)\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_driver_earnings_calc_info (Інформація про розрахунок)\n *   - modal_driver_earnings_details (Деталі заробітку водія)\n *   - modal_raw_data (Сирі дані)\n * @doc-features\n *   - Відображення звіту по заробітку водіїв\n *   - Вибір часового діапазону\n *   - Експорт звіту в Excel\n *   - Перемикання в розширений режим (ефективність)\n *   - Сортування таблиці\n *   - Фільтрація водіїв за наявністю активності\n *   - Перегляд інформації про розрахунки\n *   - Перегляд детальної інформації по водію\n *   - Відображення необроблених даних (Raw Data)\n *   - Відображення статусу інтеграції з Uklon\n * @doc-api\n *   - GET /api/driver-earnings/uklon-report/export\n *   - useDriverEarningsOptions (отримання списку водіїв)\n *   - useUklonDriverEarningsReport (отримання звіту)\n * @doc-entities\n *   - Driver\n *   - EarningsReport\n */",
+        "title": "Заробіток водіїв (Новий)",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення звіту по заробітку водіїв",
+          "Вибір часового діапазону",
+          "Експорт звіту в Excel",
+          "Перемикання в розширений режим (ефективність)",
+          "Сортування таблиці",
+          "Фільтрація водіїв за наявністю активності",
+          "Перегляд інформації про розрахунки",
+          "Перегляд детальної інформації по водію",
+          "Відображення необроблених даних (Raw Data)",
+          "Відображення статусу інтеграції з Uklon"
+        ],
+        "api": [
+          "GET /api/driver-earnings/uklon-report/export",
+          "useDriverEarningsOptions (отримання списку водіїв)",
+          "useUklonDriverEarningsReport (отримання звіту)"
+        ],
+        "entities": [
+          "Driver",
+          "EarningsReport"
+        ],
         "screenshots": [
           {
             "id": "page_driver_earnings_main",
@@ -2465,6 +2717,26 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_vehicle_earnings\n * @doc-title Заробіток автомобілів\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_vehicle_earnings_details (Деталі заробітку автомобіля)\n *   - modal_earnings_calc_info (Інформація про розрахунок)\n * @doc-features\n *   - Відображення звіту по заробітку автомобілів\n *   - Вибір часового діапазону\n *   - Експорт звіту в Excel\n *   - Сортування таблиці за різними показниками\n *   - Перегляд детальної інформації по автомобілю\n *   - Перегляд інформації про розрахунки\n *   - Розрахунок підсумкових показників (пробіг, поїздки, доходи, витрати)\n * @doc-api\n *   - GET /api/vehicle-earnings/export\n *   - useVehicleEarningsReport (отримання звіту)\n * @doc-entities\n *   - Vehicle\n *   - EarningsReport\n */",
+        "title": "Заробіток автомобілів",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення звіту по заробітку автомобілів",
+          "Вибір часового діапазону",
+          "Експорт звіту в Excel",
+          "Сортування таблиці за різними показниками",
+          "Перегляд детальної інформації по автомобілю",
+          "Перегляд інформації про розрахунки",
+          "Розрахунок підсумкових показників (пробіг, поїздки, доходи, витрати)"
+        ],
+        "api": [
+          "GET /api/vehicle-earnings/export",
+          "useVehicleEarningsReport (отримання звіту)"
+        ],
+        "entities": [
+          "Vehicle",
+          "EarningsReport"
+        ],
         "screenshots": [
           {
             "id": "page_vehicle_earnings_main",
@@ -2507,6 +2779,18 @@
           }
         ],
         "modals": [],
+        "docRaw": "/**\n * @doc-page  page_park_statistics\n * @doc-title Статистика парку\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення віджета статистики замовлень Uklon (оригінальний)\n *   - Відображення тестового віджета статистики замовлень Uklon\n *   - Відображення графіка пробігу автопарку\n * @doc-entities\n *   - UklonOrder\n *   - Vehicle\n */",
+        "title": "Статистика парку",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення віджета статистики замовлень Uklon (оригінальний)",
+          "Відображення тестового віджета статистики замовлень Uklon",
+          "Відображення графіка пробігу автопарку"
+        ],
+        "entities": [
+          "UklonOrder",
+          "Vehicle"
+        ],
         "screenshots": [
           {
             "id": "page_park_statistics_main",
@@ -2624,6 +2908,29 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_park_users\n * @doc-title Керування користувачами (Команда)\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_user_filters (Фільтри користувачів)\n *   - modal_user_form (Форма додавання/редагування користувача)\n *   - modal_user_delete_confirm (Підтвердження видалення користувача)\n *   - modal_user_reset_password (Підтвердження скидання пароля)\n *   - modal_user_permissions (Налаштування прав доступу)\n *   - modal_user_activation_link (Посилання на активацію)\n * @doc-features\n *   - Перегляд списку користувачів парку\n *   - Пошук користувачів за ключовими словами\n *   - Фільтрація користувачів (ролі, статус)\n *   - Додавання нових користувачів\n *   - Редагування існуючих користувачів\n *   - Видалення користувачів\n *   - Скидання пароля користувача\n *   - Керування правами доступу\n *   - Генерація та копіювання посилання на активацію\n *   - Пагінація списку\n * @doc-api\n *   - useParkUsersPage (отримання списку та керування станом)\n * @doc-entities\n *   - User\n *   - Role\n *   - Permission\n */",
+        "title": "Керування користувачами (Команда)",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Перегляд списку користувачів парку",
+          "Пошук користувачів за ключовими словами",
+          "Фільтрація користувачів (ролі, статус)",
+          "Додавання нових користувачів",
+          "Редагування існуючих користувачів",
+          "Видалення користувачів",
+          "Скидання пароля користувача",
+          "Керування правами доступу",
+          "Генерація та копіювання посилання на активацію",
+          "Пагінація списку"
+        ],
+        "api": [
+          "useParkUsersPage (отримання списку та керування станом)"
+        ],
+        "entities": [
+          "User",
+          "Role",
+          "Permission"
+        ],
         "screenshots": [
           {
             "id": "page_park_users_main",
@@ -2681,6 +2988,24 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_park_files\n * @doc-title Файли парку\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_user_filters (Фільтри документів)\n *   - modal_park_file_form (Форма додавання/редагування документа)\n *   - modal_park_file_delete_confirm (Підтвердження видалення документа)\n * @doc-features\n *   - Перегляд списку документів парку\n *   - Пошук документів за назвою\n *   - Фільтрація документів\n *   - Завантаження (додавання) нових документів\n *   - Редагування існуючих документів\n *   - Видалення документів\n *   - Пагінація списку\n * @doc-api\n *   - useParkDocumentsPage (отримання списку та керування станом)\n * @doc-entities\n *   - ParkDocument\n */",
+        "title": "Файли парку",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Перегляд списку документів парку",
+          "Пошук документів за назвою",
+          "Фільтрація документів",
+          "Завантаження (додавання) нових документів",
+          "Редагування існуючих документів",
+          "Видалення документів",
+          "Пагінація списку"
+        ],
+        "api": [
+          "useParkDocumentsPage (отримання списку та керування станом)"
+        ],
+        "entities": [
+          "ParkDocument"
+        ],
         "screenshots": [
           {
             "id": "page_park_files_main",
@@ -2712,6 +3037,23 @@
           }
         ],
         "modals": [],
+        "docRaw": "/**\n * @doc-page  page_billing\n * @doc-title Білінг та Тарифи\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення поточного білінгового періоду\n *   - Відображення деталей тарифу (абонплата, вартість за авто)\n *   - Розрахунок очікуваної суми оплати\n *   - Відображення списку минулих білінгових періодів\n *   - Статуси періодів (Активний, Завершено, Оплачено)\n * @doc-api\n *   - GET /api/billing (отримання історії білінгу)\n * @doc-entities\n *   - BillingPeriod\n *   - SubscriptionPlan\n */",
+        "title": "Білінг та Тарифи",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення поточного білінгового періоду",
+          "Відображення деталей тарифу (абонплата, вартість за авто)",
+          "Розрахунок очікуваної суми оплати",
+          "Відображення списку минулих білінгових періодів",
+          "Статуси періодів (Активний, Завершено, Оплачено)"
+        ],
+        "api": [
+          "GET /api/billing (отримання історії білінгу)"
+        ],
+        "entities": [
+          "BillingPeriod",
+          "SubscriptionPlan"
+        ],
         "screenshots": [
           {
             "id": "page_billing_main",
@@ -2735,6 +3077,25 @@
             "isDefault": true,
             "hint": "Загальні налаштування: керуйте головним заголовком, описом, кольоровою схемою та зображеннями вашої сторінки для водіїв.",
             "docFile": "_data/park/landing-settings/landing-general.md",
+            "docRaw": "/**\n * @doc-tab tab_landing_general\n * @doc-title Загальні налаштування\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Керування активністю публічної сторінки лендінгу\n *   - Налаштування URL адреси сторінки (Slug)\n *   - Завантаження та керування логотипом парку\n *   - Завантаження та керування Hero зображенням (фон шапки)\n *   - Налаштування кольорової схеми (Primary/Secondary)\n *   - Редагування текстового контенту (заголовок, опис)\n *   - Редагування контактної інформації (телефон, Telegram)\n *   - Налаштування друкованих матеріалів (QR-листівка)\n *   - Управління списком переваг (benefits)\n *   - Управління списком вимог до водіїв\n *   - Управління FAQ секцією\n * @doc-notes\n *   - Всі зміни потребують натискання кнопки \"Зберегти зміни\" внизу сторінки.\n */",
+            "title": "Загальні налаштування",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Керування активністю публічної сторінки лендінгу",
+              "Налаштування URL адреси сторінки (Slug)",
+              "Завантаження та керування логотипом парку",
+              "Завантаження та керування Hero зображенням (фон шапки)",
+              "Налаштування кольорової схеми (Primary/Secondary)",
+              "Редагування текстового контенту (заголовок, опис)",
+              "Редагування контактної інформації (телефон, Telegram)",
+              "Налаштування друкованих матеріалів (QR-листівка)",
+              "Управління списком переваг (benefits)",
+              "Управління списком вимог до водіїв",
+              "Управління FAQ секцією"
+            ],
+            "notes": [
+              "Всі зміни потребують натискання кнопки \"Зберегти зміни\" внизу сторінки."
+            ],
             "screenshots": [
               {
                 "id": "tab_landing_general_main",
@@ -2751,6 +3112,20 @@
             "isDefault": false,
             "hint": "Новини та акції: додавайте та редагуйте новини, бонусні програми та спеціальні пропозиції, що будуть відображені на лендінгу.",
             "docFile": "_data/park/landing-settings/landing-news.md",
+            "docRaw": "/**\n * @doc-tab tab_landing_news\n * @doc-title Новини та акції\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_landing_news_form (Форма додавання/редагування новини)\n *   - modal_confirmation (Підтвердження видалення новини)\n * @doc-features\n *   - Відображення списку новин та акцій парку\n *   - Пошук новин за заголовком\n *   - Додавання нової новини/акції\n *   - Редагування існуючої новини\n *   - Видалення новини\n *   - Керування статусом публікації (Активна/Прихована)\n *   - Завантаження та видалення зображення-обкладинки\n *   - Генерація URL-слагу на основі заголовка\n *   - Пагінація списку\n */",
+            "title": "Новини та акції",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Відображення списку новин та акцій парку",
+              "Пошук новин за заголовком",
+              "Додавання нової новини/акції",
+              "Редагування існуючої новини",
+              "Видалення новини",
+              "Керування статусом публікації (Активна/Прихована)",
+              "Завантаження та видалення зображення-обкладинки",
+              "Генерація URL-слагу на основі заголовка",
+              "Пагінація списку"
+            ],
             "screenshots": [
               {
                 "id": "tab_landing_news_main",
@@ -2812,6 +3187,9 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_landing_settings\n * @doc-title Налаштування Лендінгу\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-tabs\n *   - tab_landing_general (Загальні налаштування)\n *   - tab_landing_news (Новини та акції)\n */",
+        "title": "Налаштування Лендінгу",
+        "human": "<!-- TODO: human description -->",
         "screenshots": [
           {
             "id": "page_landing_settings_main",
@@ -2843,6 +3221,21 @@
           }
         ],
         "modals": [],
+        "docRaw": "/**\n * @doc-page  page_materials\n * @doc-title Матеріали для друку\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення списку доступних друкованих матеріалів\n *   - Генерація PDF для листівки з QR-кодом лендінгу\n *   - Генерація PDF для наклейки A4 з QR-кодом\n *   - Генерація QR-кодів для всіх автомобілів парку\n *   - Генерація пам'ятки водія\n * @doc-entities\n *   - Material\n *   - Vehicle\n *   - PrintJob\n */",
+        "title": "Матеріали для друку",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку доступних друкованих матеріалів",
+          "Генерація PDF для листівки з QR-кодом лендінгу",
+          "Генерація PDF для наклейки A4 з QR-кодом",
+          "Генерація QR-кодів для всіх автомобілів парку",
+          "Генерація пам'ятки водія"
+        ],
+        "entities": [
+          "Material",
+          "Vehicle",
+          "PrintJob"
+        ],
         "screenshots": [
           {
             "id": "page_materials_main",
@@ -2866,6 +3259,18 @@
             "isDefault": true,
             "hint": "Системний журнал: історія технічних дій у системі.",
             "docFile": "_data/park/activity-logs/logs-system.md",
+            "docRaw": "/**\n * @doc-tab tab_logs_system\n * @doc-title Журнал подій\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_logs_filters (Фільтри журналу подій)\n *   - modal_logs_statistics (Статистика подій)\n *   - modal_logs_details (Деталі події)\n * @doc-features\n *   - Перегляд системного журналу подій\n *   - Пошук подій за текстом\n *   - Фільтрація подій за типом, рівнем та датою\n *   - Перегляд детальної інформації про подію\n *   - Відображення статистики подій у модальному вікні\n *   - Перегляд критичних подій (швидкий фільтр)\n *   - Пагінація журналу\n */",
+            "title": "Журнал подій",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Перегляд системного журналу подій",
+              "Пошук подій за текстом",
+              "Фільтрація подій за типом, рівнем та датою",
+              "Перегляд детальної інформації про подію",
+              "Відображення статистики подій у модальному вікні",
+              "Перегляд критичних подій (швидкий фільтр)",
+              "Пагінація журналу"
+            ],
             "screenshots": [
               {
                 "id": "tab_logs_system_main",
@@ -2882,8 +3287,21 @@
             "isDefault": false,
             "hint": "Журнал розсилок: історія відправлених повідомлень водіям.",
             "docFile": "_data/park/activity-logs/logs-subscription.md",
-            "docRaw": "/**\n * @doc-page tab_logs_subscription\n * @doc-title Журнал розсилок (таб)\n * @doc-screenshots tab_logs_subscription_main\n */",
-            "title": "Журнал розсилок (таб)",
+            "docRaw": "/**\n * @doc-tab tab_logs_subscription\n * @doc-title Журнал розсилок\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення журналу відправлених розсилок (Email, Telegram)\n *   - Пошук за користувачем\n *   - Фільтрація за типом звіту, каналом та статусом доставки\n *   - Відображення деталей доставки (дата, користувач, тип, призначення)\n *   - Відображення помилок доставки (якщо є)\n *   - Пагінація журналу\n * @doc-api\n *   - GET /api/subscription-logs\n *   - GET /api/subscription-logs/options\n */",
+            "title": "Журнал розсилок",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Відображення журналу відправлених розсилок (Email, Telegram)",
+              "Пошук за користувачем",
+              "Фільтрація за типом звіту, каналом та статусом доставки",
+              "Відображення деталей доставки (дата, користувач, тип, призначення)",
+              "Відображення помилок доставки (якщо є)",
+              "Пагінація журналу"
+            ],
+            "api": [
+              "GET /api/subscription-logs",
+              "GET /api/subscription-logs/options"
+            ],
             "screenshots": [
               {
                 "id": "tab_logs_subscription_main",
@@ -2955,8 +3373,9 @@
             ]
           }
         ],
-        "docRaw": "/**\n * @doc-page page_logs_list\n * @doc-title Журнали\n * @doc-screenshots page_logs_list_main\n */",
+        "docRaw": "/**\n * @doc-page page_logs_list\n * @doc-title Журнали\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-tabs\n *   - tab_logs_system (Журнал подій)\n *   - tab_logs_subscription (Журнал розсилок)\n * @doc-screenshots page_logs_list_main\n */",
         "title": "Журнали",
+        "human": "<!-- TODO: human description -->",
         "screenshots": [
           {
             "id": "page_activity_logs_main",
@@ -2988,6 +3407,24 @@
           }
         ],
         "modals": [],
+        "docRaw": "/**\n * @doc-page  page_finance_settings\n * @doc-title Налаштування фінансів\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Редагування фінансових параметрів парку\n *   - Встановлення комісії Uklon (%)\n *   - Встановлення базового відсотка водія (%)\n *   - Встановлення цільових показників (мінімальний дохід парку, норма поїздок)\n *   - Автоматичне створення історії при зміні налаштувань\n *   - Перегляд історії змін фінансових налаштувань\n * @doc-api\n *   - useFinanceSettings (отримання та оновлення налаштувань)\n * @doc-entities\n *   - FinanceSettings\n *   - FinanceHistory\n */",
+        "title": "Налаштування фінансів",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Редагування фінансових параметрів парку",
+          "Встановлення комісії Uklon (%)",
+          "Встановлення базового відсотка водія (%)",
+          "Встановлення цільових показників (мінімальний дохід парку, норма поїздок)",
+          "Автоматичне створення історії при зміні налаштувань",
+          "Перегляд історії змін фінансових налаштувань"
+        ],
+        "api": [
+          "useFinanceSettings (отримання та оновлення налаштувань)"
+        ],
+        "entities": [
+          "FinanceSettings",
+          "FinanceHistory"
+        ],
         "screenshots": [
           {
             "id": "page_finance_settings_main",
@@ -3093,6 +3530,25 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_uklon_vehicles_index\n * @doc-title Автомобілі Uklon\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_vehicle_integration (Інтеграція/зв'язування автомобіля)\n * @doc-features\n *   - Відображення списку автомобілів Uklon (таблиця або список)\n *   - Пошук автомобілів за ключовими полями (наприклад, номерний знак)\n *   - Синхронізація даних про автомобілі з Uklon\n *   - Сортування списку за полем\n *   - Пагінація з вибором кількості записів на сторінці\n *   - Відкриття модального вікна для зв'язування автомобілів\n *   - Відображення станів завантаження та порожнього списку\n * @doc-api\n *   - GET /uklon-vehicles\n *   - GET /uklon-vehicles/sync\n * @doc-entities\n *   - Vehicle (Uklon)\n */",
+        "title": "Автомобілі Uklon",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку автомобілів Uklon (таблиця або список)",
+          "Пошук автомобілів за ключовими полями (наприклад, номерний знак)",
+          "Синхронізація даних про автомобілі з Uklon",
+          "Сортування списку за полем",
+          "Пагінація з вибором кількості записів на сторінці",
+          "Відкриття модального вікна для зв'язування автомобілів",
+          "Відображення станів завантаження та порожнього списку"
+        ],
+        "api": [
+          "GET /uklon-vehicles",
+          "GET /uklon-vehicles/sync"
+        ],
+        "entities": [
+          "Vehicle (Uklon)"
+        ],
         "screenshots": [
           {
             "id": "page_uklon_vehicles_main",
@@ -3135,6 +3591,25 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_uklon_drivers_index\n * @doc-title Водії Uklon\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_driver_integration (Інтеграція/зв'язування водіїв)\n * @doc-features\n *   - Відображення списку водіїв Uklon (таблиця або список)\n *   - Пошук водіїв за ключовими полями (наприклад, ім'я, прізвище)\n *   - Синхронізація даних про водіїв з Uklon\n *   - Сортування списку за полем\n *   - Пагінація з вибором кількості записів на сторінці\n *   - Відкриття модального вікна для зв'язування водіїв\n *   - Відображення станів завантаження та порожнього списку\n * @doc-api\n *   - GET /uklon-drivers\n *   - GET /uklon-drivers/sync\n * @doc-entities\n *   - Driver (Uklon)\n */",
+        "title": "Водії Uklon",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку водіїв Uklon (таблиця або список)",
+          "Пошук водіїв за ключовими полями (наприклад, ім'я, прізвище)",
+          "Синхронізація даних про водіїв з Uklon",
+          "Сортування списку за полем",
+          "Пагінація з вибором кількості записів на сторінці",
+          "Відкриття модального вікна для зв'язування водіїв",
+          "Відображення станів завантаження та порожнього списку"
+        ],
+        "api": [
+          "GET /uklon-drivers",
+          "GET /uklon-drivers/sync"
+        ],
+        "entities": [
+          "Driver (Uklon)"
+        ],
         "screenshots": [
           {
             "id": "page_uklon_drivers_main",
@@ -3158,6 +3633,18 @@
             "isDefault": true,
             "hint": "Огляд: загальні фінансові показники роботи з Uklon.",
             "docFile": "_data/uklon/uklon-reports/dashboard.md",
+            "docRaw": "/**\n * @doc-tab  tab_uklon_reports_dashboard\n * @doc-title Огляд\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення ключових показників ефективності (KPI): дохід, к-сть поїздок, середній чек, пробіг\n *   - Графічна візуалізація динаміки доходів за вказаний період\n *   - Візуалізація розподілу статусів замовлень (кругова діаграма)\n *   - Отримання та відображення даних на основі переданих фільтрів (дати, статуси)\n * @doc-api\n *   - GET /uklon-reports/dashboard (через useUklonDashboard)\n */",
+            "title": "Огляд",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Відображення ключових показників ефективності (KPI): дохід, к-сть поїздок, середній чек, пробіг",
+              "Графічна візуалізація динаміки доходів за вказаний період",
+              "Візуалізація розподілу статусів замовлень (кругова діаграма)",
+              "Отримання та відображення даних на основі переданих фільтрів (дати, статуси)"
+            ],
+            "api": [
+              "GET /uklon-reports/dashboard (через useUklonDashboard)"
+            ],
             "screenshots": [
               {
                 "id": "tab_uklon_reports_dashboard_main",
@@ -3174,6 +3661,19 @@
             "isDefault": false,
             "hint": "Водії: аналітика ефективності кожного водія в системі Uklon.",
             "docFile": "_data/uklon/uklon-reports/drivers.md",
+            "docRaw": "/**\n * @doc-tab  tab_uklon_reports_drivers\n * @doc-title Водії\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення таблиці статистичних даних по водіях\n *   - Можливість сортування за колонками: кількість поїздок, дохід, середній чек, пробіг, Грн/км\n *   - Відображення детальних показників (поїздки, дохід, середній чек, пробіг, ефективність)\n *   - Відображення станів завантаження та порожнього списку\n *   - Отримання та відображення даних на основі переданих фільтрів (дати, статуси)\n * @doc-api\n *   - GET /uklon-reports/drivers (через useUklonDriversStats)\n */",
+            "title": "Водії",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Відображення таблиці статистичних даних по водіях",
+              "Можливість сортування за колонками: кількість поїздок, дохід, середній чек, пробіг, Грн/км",
+              "Відображення детальних показників (поїздки, дохід, середній чек, пробіг, ефективність)",
+              "Відображення станів завантаження та порожнього списку",
+              "Отримання та відображення даних на основі переданих фільтрів (дати, статуси)"
+            ],
+            "api": [
+              "GET /uklon-reports/drivers (через useUklonDriversStats)"
+            ],
             "screenshots": [
               {
                 "id": "tab_uklon_reports_drivers_main",
@@ -3190,6 +3690,19 @@
             "isDefault": false,
             "hint": "Автомобілі: аналітика продуктивності кожного авто Uklon.",
             "docFile": "_data/uklon/uklon-reports/vehicles.md",
+            "docRaw": "/**\n * @doc-tab  tab_uklon_reports_vehicles\n * @doc-title Автомобілі\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення таблиці статистичних даних по автомобілях\n *   - Можливість сортування за колонками: кількість поїздок, дохід, середній чек, пробіг, Грн/км\n *   - Відображення детальних показників (модель, номерний знак, поїздки, дохід, середній чек, пробіг, ефективність)\n *   - Відображення станів завантаження та порожнього списку\n *   - Отримання та відображення даних на основі переданих фільтрів (дати, статуси)\n * @doc-api\n *   - GET /uklon-reports/vehicles (через useUklonVehiclesStats)\n */",
+            "title": "Автомобілі",
+            "human": "<!-- TODO: human description -->",
+            "features": [
+              "Відображення таблиці статистичних даних по автомобілях",
+              "Можливість сортування за колонками: кількість поїздок, дохід, середній чек, пробіг, Грн/км",
+              "Відображення детальних показників (модель, номерний знак, поїздки, дохід, середній чек, пробіг, ефективність)",
+              "Відображення станів завантаження та порожнього списку",
+              "Отримання та відображення даних на основі переданих фільтрів (дати, статуси)"
+            ],
+            "api": [
+              "GET /uklon-reports/vehicles (через useUklonVehiclesStats)"
+            ],
             "screenshots": [
               {
                 "id": "tab_uklon_reports_vehicles_main",
@@ -3210,6 +3723,19 @@
           }
         ],
         "modals": [],
+        "docRaw": "/**\n * @doc-page  page_uklon_reports_index\n * @doc-title Звіти Uklon\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-tabs\n *   - tab_uklon_reports_dashboard (Огляд)\n *   - tab_uklon_reports_drivers (Водії)\n *   - tab_uklon_reports_vehicles (Автомобілі)\n * @doc-features\n *   - Відображення аналітичних звітів по сервісу Uklon\n *   - Вибір діапазону дат (ручний ввід або швидкі фільтри: сьогодні, вчора, тиждень, місяць, минулий місяць)\n *   - Фільтрація даних за статусами замовлень\n *   - Перемикання між табами звітів (Огляд, Водії, Автомобілі)\n *   - Передача спільних фільтрів (дати, статуси) у дочірні таби\n * @doc-api\n *   - GET /uklon-reports/options (через useUklonReportOptions)\n */",
+        "title": "Звіти Uklon",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення аналітичних звітів по сервісу Uklon",
+          "Вибір діапазону дат (ручний ввід або швидкі фільтри: сьогодні, вчора, тиждень, місяць, минулий місяць)",
+          "Фільтрація даних за статусами замовлень",
+          "Перемикання між табами звітів (Огляд, Водії, Автомобілі)",
+          "Передача спільних фільтрів (дати, статуси) у дочірні таби"
+        ],
+        "api": [
+          "GET /uklon-reports/options (через useUklonReportOptions)"
+        ],
         "screenshots": [
           {
             "id": "page_uklon_reports_main",
@@ -3278,6 +3804,23 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_uklon_logs_index\n * @doc-title Логи інтеграції Uklon\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_uklon_log_details (Деталі логу інтеграції Uklon)\n * @doc-features\n *   - Відображення списку логів інтеграції з Uklon\n *   - Пошук за логами (за endpoint, url, статус тощо)\n *   - Пагінація результатів\n *   - Оновлення списку логів\n *   - Перегляд детальної інформації про конкретний лог\n *   - Відображення станів завантаження та порожнього списку\n * @doc-api\n *   - GET /uklon/logs\n * @doc-entities\n *   - UklonLog\n */",
+        "title": "Логи інтеграції Uklon",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку логів інтеграції з Uklon",
+          "Пошук за логами (за endpoint, url, статус тощо)",
+          "Пагінація результатів",
+          "Оновлення списку логів",
+          "Перегляд детальної інформації про конкретний лог",
+          "Відображення станів завантаження та порожнього списку"
+        ],
+        "api": [
+          "GET /uklon/logs"
+        ],
+        "entities": [
+          "UklonLog"
+        ],
         "screenshots": [
           {
             "id": "page_uklon_logs_main",
@@ -3304,6 +3847,13 @@
           }
         ],
         "modals": [],
+        "docRaw": "/**\n * @doc-page  page_uklon_settings_index\n * @doc-title Налаштування Uklon\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення налаштувань інтеграції з сервісом Uklon\n *   - Збереження конфігураційних параметрів інтеграції (через UklonIntegrationSettings)\n */",
+        "title": "Налаштування Uklon",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення налаштувань інтеграції з сервісом Uklon",
+          "Збереження конфігураційних параметрів інтеграції (через UklonIntegrationSettings)"
+        ],
         "screenshots": [
           {
             "id": "page_uklon_settings_main",
@@ -3336,6 +3886,12 @@
           }
         ],
         "modals": [],
+        "docRaw": "/**\n * @doc-page  page_telegram_settings\n * @doc-title Налаштування Telegram\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення налаштувань інтеграції з Telegram\n */",
+        "title": "Налаштування Telegram",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення налаштувань інтеграції з Telegram"
+        ],
         "screenshots": [
           {
             "id": "page_telegram_settings_main",
@@ -3378,6 +3934,24 @@
             ]
           }
         ],
+        "docRaw": "/**\n * @doc-page  page_telegram_logs\n * @doc-title Логи Telegram\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-modals\n *   - modal_activity_log_details (Деталі логу Telegram)\n * @doc-features\n *   - Відображення списку логів Telegram\n *   - Фільтрація логів за пошуковим запитом, статусом, типом дії та діапазоном дат\n *   - Пагінація результатів\n *   - Оновлення списку логів\n *   - Перегляд детальної інформації про лог через модальне вікно\n *   - Відображення станів завантаження та порожнього списку\n * @doc-api\n *   - GET /telegram-logs/options\n *   - GET /telegram-logs\n * @doc-entities\n *   - TelegramLog\n */",
+        "title": "Логи Telegram",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення списку логів Telegram",
+          "Фільтрація логів за пошуковим запитом, статусом, типом дії та діапазоном дат",
+          "Пагінація результатів",
+          "Оновлення списку логів",
+          "Перегляд детальної інформації про лог через модальне вікно",
+          "Відображення станів завантаження та порожнього списку"
+        ],
+        "api": [
+          "GET /telegram-logs/options",
+          "GET /telegram-logs"
+        ],
+        "entities": [
+          "TelegramLog"
+        ],
         "screenshots": [
           {
             "id": "page_telegram_logs_main",
@@ -3403,6 +3977,13 @@
         "isDefault": true,
         "hint": "Тут ви можете змінити своє ім'я та контактний email.",
         "docFile": "_data/profile/general.md",
+        "docRaw": "/**\n * @doc-tab tab_profile_general\n * @doc-title Загальні дані\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення та редагування особистих даних користувача (Ім'я, Email)\n *   - Відображення дати реєстрації та останнього оновлення профілю\n */",
+        "title": "Загальні дані",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення та редагування особистих даних користувача (Ім'я, Email)",
+          "Відображення дати реєстрації та останнього оновлення профілю"
+        ],
         "screenshots": [
           {
             "id": "tab_profile_general_main",
@@ -3419,6 +4000,14 @@
         "isDefault": false,
         "hint": "Для зміни паролю введіть поточний пароль та новий пароль два рази для підтвердження.",
         "docFile": "_data/profile/password.md",
+        "docRaw": "/**\n * @doc-tab tab_profile_password\n * @doc-title Зміна паролю\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Зміна паролю користувача\n *   - Перевірка поточного паролю\n *   - Валідація нового паролю та його підтвердження\n */",
+        "title": "Зміна паролю",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Зміна паролю користувача",
+          "Перевірка поточного паролю",
+          "Валідація нового паролю та його підтвердження"
+        ],
         "screenshots": [
           {
             "id": "tab_profile_password_main",
@@ -3435,6 +4024,16 @@
         "isDefault": false,
         "hint": "Підключіть Telegram-бота для отримування миттєвих сповіщень про важливі події у вашому парку.",
         "docFile": "_data/profile/telegram.md",
+        "docRaw": "/**\n * @doc-tab tab_profile_telegram\n * @doc-title Telegram\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Перегляд статусу підключення до Telegram\n *   - Генерація коду для підключення\n *   - Підключення акаунта через QR-код або пряме посилання\n *   - Відключення Telegram-акаунта\n *   - Копіювання посилання для підключення\n */",
+        "title": "Telegram",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Перегляд статусу підключення до Telegram",
+          "Генерація коду для підключення",
+          "Підключення акаунта через QR-код або пряме посилання",
+          "Відключення Telegram-акаунта",
+          "Копіювання посилання для підключення"
+        ],
         "screenshots": [
           {
             "id": "tab_profile_telegram_main",
@@ -3451,6 +4050,15 @@
         "isDefault": false,
         "hint": "Налаштуйте, які саме сповіщення ви хочете отримувати на email та в Telegram.",
         "docFile": "_data/profile/notifications.md",
+        "docRaw": "/**\n * @doc-tab tab_profile_notifications\n * @doc-title Розсилки\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Керування підписками на звіти парку (Email, Telegram)\n *   - Відображення розкладу відправки для кожного типу звіту\n *   - Можливість примусової відправки звіту (\"Надіслати зараз\")\n *   - Збереження конфігурації розсилок\n */",
+        "title": "Розсилки",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Керування підписками на звіти парку (Email, Telegram)",
+          "Відображення розкладу відправки для кожного типу звіту",
+          "Можливість примусової відправки звіту (\"Надіслати зараз\")",
+          "Збереження конфігурації розсилок"
+        ],
         "screenshots": [
           {
             "id": "tab_profile_notifications_main",
@@ -3467,6 +4075,14 @@
         "isDefault": false,
         "hint": "Перегляд ваших поточних ролей та дозволів у системі. Також тут можна переключитися між доступними парками.",
         "docFile": "_data/profile/access.md",
+        "docRaw": "/**\n * @doc-tab tab_profile_access\n * @doc-title Доступ та Безпека\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-features\n *   - Відображення призначених ролей користувача\n *   - Відображення списку всіх дозволів\n *   - Перемикання між доступними парками (якщо доступно)\n */",
+        "title": "Доступ та Безпека",
+        "human": "<!-- TODO: human description -->",
+        "features": [
+          "Відображення призначених ролей користувача",
+          "Відображення списку всіх дозволів",
+          "Перемикання між доступними парками (якщо доступно)"
+        ],
         "screenshots": [
           {
             "id": "tab_profile_access_main",
@@ -3481,6 +4097,9 @@
     ],
     "sections": [],
     "modals": [],
+    "docRaw": "/**\n * @doc-page page_profile\n * @doc-title Профіль користувача\n * @doc-human\n *   <!-- TODO: human description -->\n * @doc-tabs\n *   - tab_profile_general (Загальні дані)\n *   - tab_profile_password (Зміна паролю)\n *   - tab_profile_telegram (Telegram)\n *   - tab_profile_notifications (Розсилки)\n *   - tab_profile_access (Доступ та Безпека)\n */",
+    "title": "Профіль користувача",
+    "human": "<!-- TODO: human description -->",
     "screenshots": [
       {
         "id": "page_profile_main",

@@ -11,3 +11,22 @@
 | [`tab:landing-news`](./landing-news.md) |  | Новини та акції: додавайте та редагуйте новини, бонусні програми та спеціальні п |
 
 > Детальна документація кожної вкладки — у відповідних файлах.
+
+## Опис
+
+<!-- TODO: human description -->
+
+
+## Функціональний опис
+
+```js
+/**
+ * @doc-page  page_landing_settings
+ * @doc-title Налаштування Лендінгу
+ * @doc-human
+ *   <!-- TODO: human description -->
+ * @doc-tabs
+ *   - tab_landing_general (Загальні налаштування)
+ *   - tab_landing_news (Новини та акції)
+ */
+```

@@ -12,12 +12,22 @@
 
 > Детальна документація кожної вкладки — у відповідних файлах.
 
+## Опис
+
+<!-- TODO: human description -->
+
+
 ## Функціональний опис
 
 ```js
 /**
  * @doc-page page_logs_list
  * @doc-title Журнали
+ * @doc-human
+ *   <!-- TODO: human description -->
+ * @doc-tabs
+ *   - tab_logs_system (Журнал подій)
+ *   - tab_logs_subscription (Журнал розсилок)
  * @doc-screenshots page_logs_list_main
  */
 ```

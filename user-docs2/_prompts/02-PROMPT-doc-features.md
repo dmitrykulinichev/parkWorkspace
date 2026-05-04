@@ -19,7 +19,7 @@ grep -rL "@doc-features" resources/js/pages/
 
 ## Промпт
 
-Прочитай `C:\Repository\park\app\park-react-spa\resources\js\pages\VehicleMaintenanceRecords\index.jsx` і сформуй JSDoc-блок для цього компонента.
+Прочитай `/Users/dmytronovikov/Repository/park/app/park-react-spa/resources/js/pages/TelegramLogs/index.jsx` і сформуй JSDoc-блок для цього компонента.
 Якщо потрібно — читай імпортовані сервіси щоб знайти API-ендпоінти.
 Якщо JSDoc-блок вже існує — **збагачуй, не перезаписуй**:
 - Наявні пункти в будь-якому полі — зберігай без змін

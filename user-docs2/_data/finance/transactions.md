@@ -17,8 +17,44 @@
 | `modal:transaction-form` | [modal_transaction_form.md](../modals/modal_transaction_form.md) |
 | `modal:transaction-delete-confirm` | [modal_transaction_delete_confirm.md](../modals/modal_transaction_delete_confirm.md) |
 
+
+## Опис
+
+<!-- TODO: human description -->
+
 ## Скріншоти
 
 | ID | Селектор | URL |
 |---|---|---|
 | `page_transactions_main` | `[data-i-doc="page:transactions"]` | `/transactions` |
+
+## Функціональний опис
+
+```js
+/**
+ * @doc-page  page_transactions
+ * @doc-title Фінанси
+ * @doc-human
+ *   <!-- TODO: human description -->
+ * @doc-modals
+ *   - modal_transactions_filters (Фільтри транзакцій)
+ *   - modal_transaction_form (Форма транзакції)
+ *   - modal_transaction_delete_confirm (Підтвердження видалення транзакції)
+ * @doc-features
+ *   - Перегляд списку транзакцій (табличний вигляд)
+ *   - Фільтрація транзакцій за типом, категорією та датами
+ *   - Пошук транзакцій
+ *   - Пагінація списку
+ *   - Створення нової транзакції
+ *   - Редагування транзакції
+ *   - Видалення транзакції
+ * @doc-api
+ *   - GET /api/transactions
+ *   - POST /api/transactions
+ *   - PUT /api/transactions/{id}
+ *   - DELETE /api/transactions/{id}
+ *   - GET /api/transactions/options
+ * @doc-entities
+ *   - Transaction
+ */
+```

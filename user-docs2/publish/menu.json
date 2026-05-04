@@ -165,7 +165,7 @@
         "docFile": "_data/profile/index.md",
         "tabs": [
           {
-            "title": "profile-general",
+            "title": "Загальні дані",
             "slug": "profile--general",
             "docFile": "_data/profile/general.md",
             "screenshots": [
@@ -180,7 +180,7 @@
             ]
           },
           {
-            "title": "profile-password",
+            "title": "Зміна паролю",
             "slug": "profile--password",
             "docFile": "_data/profile/password.md",
             "screenshots": [
@@ -195,7 +195,7 @@
             ]
           },
           {
-            "title": "profile-telegram",
+            "title": "Telegram",
             "slug": "profile--telegram",
             "docFile": "_data/profile/telegram.md",
             "screenshots": [
@@ -210,7 +210,7 @@
             ]
           },
           {
-            "title": "profile-notifications",
+            "title": "Розсилки",
             "slug": "profile--notifications",
             "docFile": "_data/profile/notifications.md",
             "screenshots": [
@@ -225,7 +225,7 @@
             ]
           },
           {
-            "title": "profile-access",
+            "title": "Доступ та Безпека",
             "slug": "profile--access",
             "docFile": "_data/profile/access.md",
             "screenshots": [
@@ -1798,7 +1798,7 @@
         "docFile": "_data/park/landing-settings/index.md",
         "tabs": [
           {
-            "title": "landing-general",
+            "title": "Загальні налаштування",
             "slug": "landing-settings--landing-general",
             "docFile": "_data/park/landing-settings/landing-general.md",
             "screenshots": [
@@ -1813,7 +1813,7 @@
             ]
           },
           {
-            "title": "landing-news",
+            "title": "Новини та акції",
             "slug": "landing-settings--landing-news",
             "docFile": "_data/park/landing-settings/landing-news.md",
             "screenshots": [
@@ -1880,7 +1880,7 @@
         "docFile": "_data/park/activity-logs/index.md",
         "tabs": [
           {
-            "title": "logs-system",
+            "title": "Журнал подій",
             "slug": "activity-logs--logs-system",
             "docFile": "_data/park/activity-logs/logs-system.md",
             "screenshots": [
@@ -1895,7 +1895,7 @@
             ]
           },
           {
-            "title": "Журнал розсилок (таб)",
+            "title": "Журнал розсилок",
             "slug": "activity-logs--logs-subscription",
             "docFile": "_data/park/activity-logs/logs-subscription.md",
             "screenshots": [
@@ -2108,7 +2108,7 @@
         "docFile": "_data/uklon/uklon-reports/index.md",
         "tabs": [
           {
-            "title": "uklon-reports-dashboard",
+            "title": "Огляд",
             "slug": "uklon-reports--dashboard",
             "docFile": "_data/uklon/uklon-reports/dashboard.md",
             "screenshots": [
@@ -2123,7 +2123,7 @@
             ]
           },
           {
-            "title": "uklon-reports-drivers",
+            "title": "Водії",
             "slug": "uklon-reports--drivers",
             "docFile": "_data/uklon/uklon-reports/drivers.md",
             "screenshots": [
@@ -2138,7 +2138,7 @@
             ]
           },
           {
-            "title": "uklon-reports-vehicles",
+            "title": "Автомобілі",
             "slug": "uklon-reports--vehicles",
             "docFile": "_data/uklon/uklon-reports/vehicles.md",
             "screenshots": [
