@@ -1867,7 +1867,7 @@
             "type": "page",
             "idoc": "page:materials",
             "selector": "[data-i-doc=\"page:materials\"]",
-            "url": "—",
+            "url": "/materials",
             "page": "page:materials"
           }
         ]

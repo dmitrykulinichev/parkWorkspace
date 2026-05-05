@@ -1197,7 +1197,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/materials` |
 | **Файл** | `_data/pages/page_materials.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Матеріали для друку: завантажуйте та друкуйте рекламні листі... |
@@ -1217,7 +1217,7 @@ _немає_
 ### Скріншоти
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_materials_main` | page | `[data-i-doc="page:materials"]` | `—` |
+| `page_materials_main` | page | `[data-i-doc="page:materials"]` | `/materials` |
 
 ---
 
