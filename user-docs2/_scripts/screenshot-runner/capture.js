@@ -39,6 +39,23 @@ async function saveErrorScreenshot(page, name) {
   }
 }
 
+/**
+ * Wait for all images on the page to be fully loaded.
+ */
+async function waitForImages(page) {
+  vlog(`  [${ts()}] чекаємо на завантаження зображень...`);
+  await page.evaluate(async () => {
+    const imgs = Array.from(document.querySelectorAll('img'));
+    await Promise.all(imgs.map(img => {
+      if (img.complete) return Promise.resolve();
+      return new Promise(resolve => {
+        img.addEventListener('load', resolve);
+        img.addEventListener('error', resolve); // resolve even on error to not block
+      });
+    }));
+  }).catch(err => vlog(`  [${ts()}] помилка очікування зображень: ${err.message}`));
+}
+
 // ─── Navigation ───────────────────────────────────────────────────────────────
 
 /**
@@ -93,6 +110,13 @@ async function navigateTo(page, url) {
     process.exit(1);
   }
 
+  // Step 3: Wait for images and extra stabilization
+  await waitForImages(page);
+  if (config.postSpinnerMs > 0) {
+    vlog(`  [${ts()}] додаткова пауза ${config.postSpinnerMs}мс ...`);
+    await delay(config.postSpinnerMs);
+  }
+
   // Sanity check: count i-doc elements found on this page
   if (config.verbose) {
     const idocCount = await page.$$eval('[data-i-doc]', els => els.length).catch(() => 0);
@@ -110,6 +134,7 @@ async function navigateTo(page, url) {
  */
 async function captureOne(page, entry) {
   const outPath = path.join(config.outputDir, `${entry.id}.png`);
+  const isPage  = entry.type === 'page';
 
   // Wait for element to become visible
   try {
@@ -149,16 +174,32 @@ async function captureOne(page, entry) {
              hint: `розмір елемента ${box ? `${box.width}×${box.height}` : 'null'} — можливо прихований через CSS`, errorFile };
   }
 
-  // page → full page scroll (sidebar is outside the data-i-doc element, in the layout wrapper)
-  // sec / tab / modal → clip to element bounding box
-  // --full flag overrides to full page for all types
-  const useFullPage = entry.type === 'page' || config.fullCapture;
+  // ── Capture ───────────────────────────────────────────────────────────────
+
+  // --full flag overrides to full page capture
+  const useFullPage = config.fullCapture;
+
+  if (config.verbose) {
+    const mode = isPage 
+      ? (useFullPage ? 'FULL PAGE' : 'VISIBLE VIEWPORT')
+      : 'ELEMENT CLIP';
+    vlog(`  [${ts()}] зйомка (${mode}): ${entry.id}`);
+  }
+
   try {
     fs.mkdirSync(config.outputDir, { recursive: true });
-    if (useFullPage) {
-      await page.screenshot({ path: outPath, fullPage: true });
+
+    if (isPage) {
+      // For pages: screenshot the whole viewport (standard) or the full scrollable page (if --full)
+      await page.screenshot({ path: outPath, fullPage: useFullPage });
     } else {
-      await page.screenshot({ path: outPath, clip: { x: box.x, y: box.y, width: box.width, height: box.height } });
+      // For tabs/sections: ALWAYS clip to the element bounding box.
+      // We NEVER use fullPage: true here, because that would include sidebar and header.
+      // The 'clip' ensures we only get the container of the tab/section.
+      await page.screenshot({ 
+        path: outPath, 
+        clip: { x: box.x, y: box.y, width: box.width, height: box.height }
+      });
     }
   } catch (err) {
     const { code, hint } = classifyError(err);
