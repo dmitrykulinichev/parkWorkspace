@@ -96,7 +96,7 @@ module.exports = {
   stabilizationMs: 600,
 
   // Extra pause after loading spinner disappears to ensure React finished rendering
-  postSpinnerMs: 3000,
+  postSpinnerMs: 10000,
 
   // Which screenshot types to capture in this run
   captureTypes: rawTypes.split(',').map(s => s.trim()),
