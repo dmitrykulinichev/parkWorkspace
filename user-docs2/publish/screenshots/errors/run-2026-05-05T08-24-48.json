@@ -1,0 +1,141 @@
+{
+  "run": "2026-05-05T08-24-48",
+  "duration": "395.9с",
+  "stats": {
+    "ok": 43,
+    "skipped": 12,
+    "errors": 1,
+    "total": 56
+  },
+  "entries": [
+    {
+      "id": "tab_reports_performance_main",
+      "type": "tab",
+      "url": "/reports",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_reports_performance_main.png",
+      "ts": "2026-05-05T08:25:48.835Z"
+    },
+    {
+      "id": "tab_reports_maintenance_main",
+      "type": "tab",
+      "url": "/reports",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_reports_maintenance_main.png",
+      "ts": "2026-05-05T08:26:10.282Z"
+    },
+    {
+      "id": "tab_profile_password_main",
+      "type": "tab",
+      "url": "/profile",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_profile_password_main.png",
+      "ts": "2026-05-05T08:26:43.042Z"
+    },
+    {
+      "id": "tab_profile_telegram_main",
+      "type": "tab",
+      "url": "/profile",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_profile_telegram_main.png",
+      "ts": "2026-05-05T08:27:04.497Z"
+    },
+    {
+      "id": "tab_profile_notifications_main",
+      "type": "tab",
+      "url": "/profile",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_profile_notifications_main.png",
+      "ts": "2026-05-05T08:27:26.021Z"
+    },
+    {
+      "id": "tab_profile_access_main",
+      "type": "tab",
+      "url": "/profile",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_profile_access_main.png",
+      "ts": "2026-05-05T08:27:47.549Z"
+    },
+    {
+      "id": "tab_uklon_reports_dashboard_main",
+      "type": "tab",
+      "url": "/uklon-reports",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_uklon_reports_dashboard_main.png",
+      "ts": "2026-05-05T08:28:39.655Z"
+    },
+    {
+      "id": "tab_uklon_reports_drivers_main",
+      "type": "tab",
+      "url": "/uklon-reports",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_uklon_reports_drivers_main.png",
+      "ts": "2026-05-05T08:29:01.138Z"
+    },
+    {
+      "id": "tab_uklon_reports_vehicles_main",
+      "type": "tab",
+      "url": "/uklon-reports",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_uklon_reports_vehicles_main.png",
+      "ts": "2026-05-05T08:29:22.603Z"
+    },
+    {
+      "id": "tab_landing_news_main",
+      "type": "tab",
+      "url": "/landing-settings",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_landing_news_main.png",
+      "ts": "2026-05-05T08:30:32.167Z"
+    },
+    {
+      "id": "page_materials_main",
+      "type": "page",
+      "url": "—",
+      "status": "error",
+      "code": "UNKNOWN",
+      "hint": "Protocol error (Page.navigate): Cannot navigate to invalid URL",
+      "errorFile": "nav_error_—.png"
+    },
+    {
+      "id": "tab_logs_system_main",
+      "type": "tab",
+      "url": "/activity-logs",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_logs_system_main.png",
+      "ts": "2026-05-05T08:30:59.548Z"
+    },
+    {
+      "id": "tab_logs_subscription_main",
+      "type": "tab",
+      "url": "/activity-logs",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_logs_subscription_main.png",
+      "ts": "2026-05-05T08:31:21.060Z"
+    }
+  ]
+}
