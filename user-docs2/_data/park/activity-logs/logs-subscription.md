@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_logs_subscription_main` | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs` |
+| `tab_logs_subscription_main` | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs?tab=subscription` |
 
 ## Функціональний опис
 

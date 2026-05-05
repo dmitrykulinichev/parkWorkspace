@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_uklon_reports_dashboard_main` | `[data-i-doc="tab:uklon-reports-dashboard"]` | `/uklon-reports` |
+| `tab_uklon_reports_dashboard_main` | `[data-i-doc="tab:uklon-reports-dashboard"]` | `/uklon-reports?tab=dashboard` |
 
 ## Функціональний опис
 

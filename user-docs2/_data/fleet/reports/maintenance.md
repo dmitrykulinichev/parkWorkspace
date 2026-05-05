@@ -20,7 +20,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_reports_maintenance_main` | `[data-i-doc="tab:reports-maintenance"]` | `/reports` |
+| `tab_reports_maintenance_main` | `[data-i-doc="tab:reports-maintenance"]` | `/reports?tab=maintenance` |
 
 ## Функціональний опис
 

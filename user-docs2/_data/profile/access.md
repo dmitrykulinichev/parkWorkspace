@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_profile_access_main` | `[data-i-doc="tab:profile-access"]` | `/profile` |
+| `tab_profile_access_main` | `[data-i-doc="tab:profile-access"]` | `/profile?tab=access` |
 
 ## Функціональний опис
 

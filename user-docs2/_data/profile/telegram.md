@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_profile_telegram_main` | `[data-i-doc="tab:profile-telegram"]` | `/profile` |
+| `tab_profile_telegram_main` | `[data-i-doc="tab:profile-telegram"]` | `/profile?tab=telegram` |
 
 ## Функціональний опис
 

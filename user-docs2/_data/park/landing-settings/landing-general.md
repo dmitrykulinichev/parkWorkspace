@@ -18,7 +18,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_landing_general_main` | `[data-i-doc="tab:landing-general"]` | `/landing-settings` |
+| `tab_landing_general_main` | `[data-i-doc="tab:landing-general"]` | `/landing-settings?tab=general` |
 
 ## Функціональний опис
 

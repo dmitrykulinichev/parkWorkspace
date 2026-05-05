@@ -20,7 +20,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_logs_system_main` | `[data-i-doc="tab:logs-system"]` | `/activity-logs` |
+| `tab_logs_system_main` | `[data-i-doc="tab:logs-system"]` | `/activity-logs?tab=system` |
 
 ## Функціональний опис
 

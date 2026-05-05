@@ -7,4 +7,4 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_settings_appearance_main` | `[data-i-doc="tab:settings-appearance"]` | `/settings` |
+| `tab_settings_appearance_main` | `[data-i-doc="tab:settings-appearance"]` | `/settings?tab=appearance` |

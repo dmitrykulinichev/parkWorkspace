@@ -18,7 +18,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_uklon_reports_vehicles_main` | `[data-i-doc="tab:uklon-reports-vehicles"]` | `/uklon-reports` |
+| `tab_uklon_reports_vehicles_main` | `[data-i-doc="tab:uklon-reports-vehicles"]` | `/uklon-reports?tab=vehicles` |
 
 ## Функціональний опис
 

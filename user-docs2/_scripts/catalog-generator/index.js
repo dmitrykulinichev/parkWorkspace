@@ -212,7 +212,20 @@ for (const page of pages) {
     { id: sc, type: 'page', idoc: id, selector: `[data-i-doc="${id}"]`, url, page: id },
   ];
   for (const t of pageTabs) {
-    pageScreenshots.push({ id: screenshotId(t.value), type: 'tab', idoc: t.value, selector: `[data-i-doc="${t.value}"]`, url, page: id });
+    // Calculate tab slug: 'tab:reports-operational' (page 'reports') -> 'operational'
+    const tabBase  = t.value.replace('tab:', '');
+    const parts    = tabBase.split('-');
+    const tabSlug  = parts[parts.length - 1]; 
+    const tabUrl   = `${url}${url.includes('?') ? '&' : '?'}tab=${tabSlug}`;
+
+    pageScreenshots.push({ 
+      id: screenshotId(t.value), 
+      type: 'tab', 
+      idoc: t.value, 
+      selector: `[data-i-doc="${t.value}"]`, 
+      url: tabUrl, 
+      page: id 
+    });
   }
   for (const m of pageModals) {
     pageScreenshots.push({ id: screenshotId(m.value), type: 'modal', idoc: m.value, selector: `[data-i-doc="${m.value}"]`, url, page: id });

@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_landing_news_main` | `[data-i-doc="tab:landing-news"]` | `/landing-settings` |
+| `tab_landing_news_main` | `[data-i-doc="tab:landing-news"]` | `/landing-settings?tab=news` |
 
 ## Функціональний опис
 

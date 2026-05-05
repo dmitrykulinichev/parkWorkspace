@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_fleet_settings_schedules_main` | `[data-i-doc="tab:fleet-settings-schedules"]` | `/fleet-settings` |
+| `tab_fleet_settings_schedules_main` | `[data-i-doc="tab:fleet-settings-schedules"]` | `/fleet-settings?tab=schedules` |
 
 ## Функціональний опис
 

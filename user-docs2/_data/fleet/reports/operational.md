@@ -19,7 +19,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_reports_operational_main` | `[data-i-doc="tab:reports-operational"]` | `/reports` |
+| `tab_reports_operational_main` | `[data-i-doc="tab:reports-operational"]` | `/reports?tab=operational` |
 
 ## Функціональний опис
 
