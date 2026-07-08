@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_profile_general_main` | `[data-i-doc="tab:profile-general"]` | `/profile` |
+| `tab_profile_general_main` | `[data-i-doc="tab:profile-general"]` | `/profile?tab=general` |
 
 ## Функціональний опис
 

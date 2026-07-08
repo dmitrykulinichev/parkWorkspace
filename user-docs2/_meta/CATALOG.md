@@ -1,5 +1,5 @@
 # Каталог документації
-> Згенеровано автоматично з i-doc.registry.ts · 2026-05-04
+> Згенеровано автоматично з i-doc.registry.ts · 2026-05-05
 > Не редагувати вручну — запусти `node workspace/user-docs2/_scripts/catalog-generator/index.js`
 
 ---
@@ -218,9 +218,9 @@ _немає_
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
 | `page_reports_main` | page | `[data-i-doc="page:reports"]` | `/reports` |
-| `tab_reports_operational_main` | tab | `[data-i-doc="tab:reports-operational"]` | `/reports` |
-| `tab_reports_performance_main` | tab | `[data-i-doc="tab:reports-performance"]` | `/reports` |
-| `tab_reports_maintenance_main` | tab | `[data-i-doc="tab:reports-maintenance"]` | `/reports` |
+| `tab_reports_operational_main` | tab | `[data-i-doc="tab:reports-operational"]` | `/reports?tab=operational` |
+| `tab_reports_performance_main` | tab | `[data-i-doc="tab:reports-performance"]` | `/reports?tab=performance` |
+| `tab_reports_maintenance_main` | tab | `[data-i-doc="tab:reports-maintenance"]` | `/reports?tab=maintenance` |
 
 ---
 
@@ -273,7 +273,7 @@ _немає_
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
 | `page_settings_main` | page | `[data-i-doc="page:settings"]` | `/settings` |
-| `tab_settings_appearance_main` | tab | `[data-i-doc="tab:settings-appearance"]` | `/settings` |
+| `tab_settings_appearance_main` | tab | `[data-i-doc="tab:settings-appearance"]` | `/settings?tab=appearance` |
 
 ---
 
@@ -305,11 +305,11 @@ _немає_
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
 | `page_profile_main` | page | `[data-i-doc="page:profile"]` | `/profile` |
-| `tab_profile_general_main` | tab | `[data-i-doc="tab:profile-general"]` | `/profile` |
-| `tab_profile_password_main` | tab | `[data-i-doc="tab:profile-password"]` | `/profile` |
-| `tab_profile_telegram_main` | tab | `[data-i-doc="tab:profile-telegram"]` | `/profile` |
-| `tab_profile_notifications_main` | tab | `[data-i-doc="tab:profile-notifications"]` | `/profile` |
-| `tab_profile_access_main` | tab | `[data-i-doc="tab:profile-access"]` | `/profile` |
+| `tab_profile_general_main` | tab | `[data-i-doc="tab:profile-general"]` | `/profile?tab=general` |
+| `tab_profile_password_main` | tab | `[data-i-doc="tab:profile-password"]` | `/profile?tab=password` |
+| `tab_profile_telegram_main` | tab | `[data-i-doc="tab:profile-telegram"]` | `/profile?tab=telegram` |
+| `tab_profile_notifications_main` | tab | `[data-i-doc="tab:profile-notifications"]` | `/profile?tab=notifications` |
+| `tab_profile_access_main` | tab | `[data-i-doc="tab:profile-access"]` | `/profile?tab=access` |
 
 ---
 
@@ -465,7 +465,7 @@ _немає_
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
 | `page_fleet_settings_main` | page | `[data-i-doc="page:fleet-settings"]` | `/fleet-settings` |
-| `tab_fleet_settings_schedules_main` | tab | `[data-i-doc="tab:fleet-settings-schedules"]` | `/fleet-settings` |
+| `tab_fleet_settings_schedules_main` | tab | `[data-i-doc="tab:fleet-settings-schedules"]` | `/fleet-settings?tab=schedules` |
 
 ---
 
@@ -665,9 +665,9 @@ _немає_
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
 | `page_uklon_reports_main` | page | `[data-i-doc="page:uklon-reports"]` | `/uklon-reports` |
-| `tab_uklon_reports_dashboard_main` | tab | `[data-i-doc="tab:uklon-reports-dashboard"]` | `/uklon-reports` |
-| `tab_uklon_reports_drivers_main` | tab | `[data-i-doc="tab:uklon-reports-drivers"]` | `/uklon-reports` |
-| `tab_uklon_reports_vehicles_main` | tab | `[data-i-doc="tab:uklon-reports-vehicles"]` | `/uklon-reports` |
+| `tab_uklon_reports_dashboard_main` | tab | `[data-i-doc="tab:uklon-reports-dashboard"]` | `/uklon-reports?tab=dashboard` |
+| `tab_uklon_reports_drivers_main` | tab | `[data-i-doc="tab:uklon-reports-drivers"]` | `/uklon-reports?tab=drivers` |
+| `tab_uklon_reports_vehicles_main` | tab | `[data-i-doc="tab:uklon-reports-vehicles"]` | `/uklon-reports?tab=vehicles` |
 
 ---
 
@@ -1187,8 +1187,8 @@ _немає_
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
 | `page_landing_settings_main` | page | `[data-i-doc="page:landing-settings"]` | `/landing-settings` |
-| `tab_landing_general_main` | tab | `[data-i-doc="tab:landing-general"]` | `/landing-settings` |
-| `tab_landing_news_main` | tab | `[data-i-doc="tab:landing-news"]` | `/landing-settings` |
+| `tab_landing_general_main` | tab | `[data-i-doc="tab:landing-general"]` | `/landing-settings?tab=general` |
+| `tab_landing_news_main` | tab | `[data-i-doc="tab:landing-news"]` | `/landing-settings?tab=news` |
 | `modal_landing_news_form` | modal | `[data-i-doc="modal:landing-news-form"]` | `/landing-settings` |
 
 ---
@@ -1197,7 +1197,7 @@ _немає_
 
 | | |
 |---|---|
-| **URL** | `—` |
+| **URL** | `/materials` |
 | **Файл** | `_data/pages/page_materials.md` |
 | **Статус** | 📝 TODO |
 | **Hint** | Матеріали для друку: завантажуйте та друкуйте рекламні листі... |
@@ -1217,7 +1217,7 @@ _немає_
 ### Скріншоти
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
-| `page_materials_main` | page | `[data-i-doc="page:materials"]` | `—` |
+| `page_materials_main` | page | `[data-i-doc="page:materials"]` | `/materials` |
 
 ---
 
@@ -1281,8 +1281,8 @@ _немає_
 | Screenshot ID | Тип | Селектор | URL |
 |---|---|---|---|
 | `page_activity_logs_main` | page | `[data-i-doc="page:activity-logs"]` | `/activity-logs` |
-| `tab_logs_system_main` | tab | `[data-i-doc="tab:logs-system"]` | `/activity-logs` |
-| `tab_logs_subscription_main` | tab | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs` |
+| `tab_logs_system_main` | tab | `[data-i-doc="tab:logs-system"]` | `/activity-logs?tab=system` |
+| `tab_logs_subscription_main` | tab | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs?tab=subscription` |
 | `modal_logs_filters` | modal | `[data-i-doc="modal:logs-filters"]` | `/activity-logs` |
 | `modal_logs_statistics` | modal | `[data-i-doc="modal:logs-statistics"]` | `/activity-logs` |
 | `modal_logs_details` | modal | `[data-i-doc="modal:logs-details"]` | `/activity-logs` |

@@ -174,7 +174,7 @@
                 "type": "tab",
                 "idoc": "tab:profile-general",
                 "selector": "[data-i-doc=\"tab:profile-general\"]",
-                "url": "/profile",
+                "url": "/profile?tab=general",
                 "page": "page:profile"
               }
             ]
@@ -189,7 +189,7 @@
                 "type": "tab",
                 "idoc": "tab:profile-password",
                 "selector": "[data-i-doc=\"tab:profile-password\"]",
-                "url": "/profile",
+                "url": "/profile?tab=password",
                 "page": "page:profile"
               }
             ]
@@ -204,7 +204,7 @@
                 "type": "tab",
                 "idoc": "tab:profile-telegram",
                 "selector": "[data-i-doc=\"tab:profile-telegram\"]",
-                "url": "/profile",
+                "url": "/profile?tab=telegram",
                 "page": "page:profile"
               }
             ]
@@ -219,7 +219,7 @@
                 "type": "tab",
                 "idoc": "tab:profile-notifications",
                 "selector": "[data-i-doc=\"tab:profile-notifications\"]",
-                "url": "/profile",
+                "url": "/profile?tab=notifications",
                 "page": "page:profile"
               }
             ]
@@ -234,7 +234,7 @@
                 "type": "tab",
                 "idoc": "tab:profile-access",
                 "selector": "[data-i-doc=\"tab:profile-access\"]",
-                "url": "/profile",
+                "url": "/profile?tab=access",
                 "page": "page:profile"
               }
             ]
@@ -268,7 +268,7 @@
                 "type": "tab",
                 "idoc": "tab:settings-appearance",
                 "selector": "[data-i-doc=\"tab:settings-appearance\"]",
-                "url": "/settings",
+                "url": "/settings?tab=appearance",
                 "page": "page:settings"
               }
             ]
@@ -1032,7 +1032,7 @@
                 "type": "tab",
                 "idoc": "tab:reports-operational",
                 "selector": "[data-i-doc=\"tab:reports-operational\"]",
-                "url": "/reports",
+                "url": "/reports?tab=operational",
                 "page": "page:reports"
               }
             ]
@@ -1047,7 +1047,7 @@
                 "type": "tab",
                 "idoc": "tab:reports-performance",
                 "selector": "[data-i-doc=\"tab:reports-performance\"]",
-                "url": "/reports",
+                "url": "/reports?tab=performance",
                 "page": "page:reports"
               }
             ]
@@ -1062,7 +1062,7 @@
                 "type": "tab",
                 "idoc": "tab:reports-maintenance",
                 "selector": "[data-i-doc=\"tab:reports-maintenance\"]",
-                "url": "/reports",
+                "url": "/reports?tab=maintenance",
                 "page": "page:reports"
               }
             ]
@@ -1096,7 +1096,7 @@
                 "type": "tab",
                 "idoc": "tab:fleet-settings-schedules",
                 "selector": "[data-i-doc=\"tab:fleet-settings-schedules\"]",
-                "url": "/fleet-settings",
+                "url": "/fleet-settings?tab=schedules",
                 "page": "page:fleet-settings"
               }
             ]
@@ -1807,7 +1807,7 @@
                 "type": "tab",
                 "idoc": "tab:landing-general",
                 "selector": "[data-i-doc=\"tab:landing-general\"]",
-                "url": "/landing-settings",
+                "url": "/landing-settings?tab=general",
                 "page": "page:landing-settings"
               }
             ]
@@ -1822,7 +1822,7 @@
                 "type": "tab",
                 "idoc": "tab:landing-news",
                 "selector": "[data-i-doc=\"tab:landing-news\"]",
-                "url": "/landing-settings",
+                "url": "/landing-settings?tab=news",
                 "page": "page:landing-settings"
               }
             ]
@@ -1867,7 +1867,7 @@
             "type": "page",
             "idoc": "page:materials",
             "selector": "[data-i-doc=\"page:materials\"]",
-            "url": "—",
+            "url": "/materials",
             "page": "page:materials"
           }
         ]
@@ -1889,7 +1889,7 @@
                 "type": "tab",
                 "idoc": "tab:logs-system",
                 "selector": "[data-i-doc=\"tab:logs-system\"]",
-                "url": "/activity-logs",
+                "url": "/activity-logs?tab=system",
                 "page": "page:activity-logs"
               }
             ]
@@ -1904,7 +1904,7 @@
                 "type": "tab",
                 "idoc": "tab:logs-subscription",
                 "selector": "[data-i-doc=\"tab:logs-subscription\"]",
-                "url": "/activity-logs",
+                "url": "/activity-logs?tab=subscription",
                 "page": "page:activity-logs"
               }
             ]
@@ -2117,7 +2117,7 @@
                 "type": "tab",
                 "idoc": "tab:uklon-reports-dashboard",
                 "selector": "[data-i-doc=\"tab:uklon-reports-dashboard\"]",
-                "url": "/uklon-reports",
+                "url": "/uklon-reports?tab=dashboard",
                 "page": "page:uklon-reports"
               }
             ]
@@ -2132,7 +2132,7 @@
                 "type": "tab",
                 "idoc": "tab:uklon-reports-drivers",
                 "selector": "[data-i-doc=\"tab:uklon-reports-drivers\"]",
-                "url": "/uklon-reports",
+                "url": "/uklon-reports?tab=drivers",
                 "page": "page:uklon-reports"
               }
             ]
@@ -2147,7 +2147,7 @@
                 "type": "tab",
                 "idoc": "tab:uklon-reports-vehicles",
                 "selector": "[data-i-doc=\"tab:uklon-reports-vehicles\"]",
-                "url": "/uklon-reports",
+                "url": "/uklon-reports?tab=vehicles",
                 "page": "page:uklon-reports"
               }
             ]

@@ -19,7 +19,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `page_materials_main` | `[data-i-doc="page:materials"]` | `—` |
+| `page_materials_main` | `[data-i-doc="page:materials"]` | `/materials` |
 
 ## Функціональний опис
 

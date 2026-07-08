@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_logs_subscription_main` | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs` |
+| `tab_logs_subscription_main` | `[data-i-doc="tab:logs-subscription"]` | `/activity-logs?tab=subscription` |
 
 ## Функціональний опис
 
@@ -23,12 +23,12 @@
  * @doc-human
  *   <!-- TODO: human description -->
  * @doc-features
- *   - Відображення журналу відправлених розсилок (Email, Telegram)
+ *   - Відображення Журналу відправлених розсилок (Email, Telegram)
  *   - Пошук за користувачем
  *   - Фільтрація за типом звіту, каналом та статусом доставки
  *   - Відображення деталей доставки (дата, користувач, тип, призначення)
  *   - Відображення помилок доставки (якщо є)
- *   - Пагінація журналу
+ *   - Навігація Журналу
  * @doc-api
  *   - GET /api/subscription-logs
  *   - GET /api/subscription-logs/options

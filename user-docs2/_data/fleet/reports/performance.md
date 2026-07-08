@@ -19,7 +19,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_reports_performance_main` | `[data-i-doc="tab:reports-performance"]` | `/reports` |
+| `tab_reports_performance_main` | `[data-i-doc="tab:reports-performance"]` | `/reports?tab=performance` |
 
 ## Функціональний опис
 

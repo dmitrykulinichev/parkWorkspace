@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_profile_notifications_main` | `[data-i-doc="tab:profile-notifications"]` | `/profile` |
+| `tab_profile_notifications_main` | `[data-i-doc="tab:profile-notifications"]` | `/profile?tab=notifications` |
 
 ## Функціональний опис
 

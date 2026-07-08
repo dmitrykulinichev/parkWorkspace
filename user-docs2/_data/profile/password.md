@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_profile_password_main` | `[data-i-doc="tab:profile-password"]` | `/profile` |
+| `tab_profile_password_main` | `[data-i-doc="tab:profile-password"]` | `/profile?tab=password` |
 
 ## Функціональний опис
 

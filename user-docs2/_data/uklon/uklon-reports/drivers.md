@@ -12,7 +12,7 @@
 
 | ID | Селектор | URL |
 |---|---|---|
-| `tab_uklon_reports_drivers_main` | `[data-i-doc="tab:uklon-reports-drivers"]` | `/uklon-reports` |
+| `tab_uklon_reports_drivers_main` | `[data-i-doc="tab:uklon-reports-drivers"]` | `/uklon-reports?tab=drivers` |
 
 ## Функціональний опис
 
