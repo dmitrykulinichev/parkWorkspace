@@ -1,0 +1,38 @@
+ Reviewer Apple  │ +380991112234 │ apple.reviewer@g24.com.ua  │ Password123 │ Toyota Camry 2022, KA9001AR  │
+  ├─────────────────┼───────────────┼────────────────────────────┼─────────────┼──────────────────────────────┤
+  │ Reviewer Google │ +380991112235 │ google.reviewer@g24.com.ua │ Password123 │ Skoda Octavia 2022, KA9002GR │
+
+
+
+
+---
+  Hello,
+
+  Thank you for your review and for the detailed feedback. We have addressed both issues:
+
+  1) Guideline 2.3.8 — App name mismatch
+  We updated the app's on-device display name to "Garage24" to match the name shown in the App Store listing.
+
+  2) Guideline 2.1(a) — Connection error
+  We investigated this and found the root cause: the demo account provided in the Sign-In Information had been deleted through the app's own account-deletion feature during an earlier testing
+  session, so the credentials on file were no longer valid at the time of your review — that is what produced the connection error. We're sorry for the inconvenience this caused.
+
+  To prevent this from happening again, we have:
+  - Created a new, dedicated demo account specifically reserved for App Review, populated with realistic data (vehicle, profile, etc.) so it's ready to evaluate immediately after sign-in.
+  - Protected this account from the in-app account-deletion feature, so it can no longer be removed by accident during testing.
+  - Updated the Sign-In Information with the new, verified working credentials below.
+
+  New Sign-In Information:
+  Username: +380991112234
+  Password: Password123
+
+  We manually signed in with these exact credentials right before submitting this build, on both web and mobile, to confirm they are currently active and working. This account is now permanently
+  protected from deletion, so it will remain valid for any follow-up review.
+
+  Please let us know if you run into any further issues — happy to assist.
+
+  Best regards,
+  Garage24 Team
+
+  ---
+  Файл оновлено. Не забудь: зібрати новий білд → залити → оновити Sign-In Information → тоді відправити цю відповідь.

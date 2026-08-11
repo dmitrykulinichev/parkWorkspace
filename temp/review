@@ -1,0 +1,67 @@
+Hello,
+
+Thank you for your resubmission. Upon further review, we identified additional issues that need your attention. See below for more information.
+
+If you have any questions, we are here to help. Reply to this message in App Store Connect and let us know.
+
+Review Environment
+Submission ID: f93ba380-569f-4c4a-a7a9-fd56dd7b4ef2
+Review date: August 11, 2026
+Review Device: iPad Air 11-inch (M3)
+Version reviewed: 1.0 (116)
+
+Guideline 2.3.8 - Performance - Accurate Metadata
+Issue Description
+
+The app name displayed on app marketplaces and the app name displayed on the device do not sufficiently match, which makes it difficult for users to find apps they have downloaded. These names do not need to match exactly, but they need to be similar to avoid confusion.
+
+Marketplace app name: Garage24
+
+Name displayed on the device: ParkDriver
+
+Next Steps
+
+Change one or both names so they are more similar and the user can easily locate the app they downloaded. Do not change the Bundle Identifier, which is used to uniquely identify the app.
+
+Resources
+
+- Learn how to view and edit app information.
+- Learn how to manage an app's information property list.
+Guideline 2.1(a) - Performance - App Completeness
+Issue Description
+
+The app exhibited one or more bugs that would negatively impact users.
+
+Bug description: The app produced connection error upon.
+
+Review device details:
+
+- Device type: iPad Air 11-inch (M3)
+- OS version: iPadOS 26.6
+- Internet Connection: Active
+
+Next Steps
+
+Test the app on supported devices to identify and resolve bugs and stability issues before submitting for review.
+
+If the bug cannot be reproduced, try the following:
+
+- For new apps, uninstall all previous versions of the app from a device, then install and follow the steps to reproduce.
+- For app updates, install the new version as an update to the previous version, then follow the steps to reproduce.
+
+Note that users expect apps they download to function on all the devices where they are available. For example, apps that may be downloaded onto iPad devices should function as expected for iPad users.
+
+Resources
+
+- For information about testing apps and preparing them for review, see Testing a Release Build.
+- To learn about troubleshooting networking issues, see Networking Overview.
+
+
+Support
+- Reply to this message in your preferred language if you need assistance. If you need additional support, use the Contact Us module.
+- Consult with fellow developers and Apple engineers on the Apple Developer Forums.
+- Request an App Review Appointment at Meet with Apple to discuss your app's review. Appointments subject to availability during your local business hours on Tuesdays and Thursdays.
+- Provide feedback on this message and your review experience by completing a short survey.
+
+Test on the latest betas
+Betas of iOS 27, iPadOS 27, macOS 27, tvOS 27 and visionOS 27 are now available. Download the latest betas to prepare your app for upcoming software releases. Learn more about installing and using Apple beta software.

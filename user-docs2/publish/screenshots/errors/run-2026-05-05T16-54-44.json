@@ -1,0 +1,52 @@
+{
+  "run": "2026-05-05T16-54-44",
+  "duration": "924.5с",
+  "stats": {
+    "ok": 52,
+    "skipped": 4,
+    "errors": 0,
+    "total": 56
+  },
+  "entries": [
+    {
+      "id": "tab_uklon_reports_dashboard_main",
+      "type": "tab",
+      "url": "/uklon-reports?tab=dashboard",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_uklon_reports_dashboard_main.png",
+      "ts": "2026-05-05T17:03:10.712Z"
+    },
+    {
+      "id": "tab_uklon_reports_drivers_main",
+      "type": "tab",
+      "url": "/uklon-reports?tab=drivers",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_uklon_reports_drivers_main.png",
+      "ts": "2026-05-05T17:03:43.943Z"
+    },
+    {
+      "id": "tab_uklon_reports_vehicles_main",
+      "type": "tab",
+      "url": "/uklon-reports?tab=vehicles",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_tab_uklon_reports_vehicles_main.png",
+      "ts": "2026-05-05T17:04:16.909Z"
+    },
+    {
+      "id": "page_materials_main",
+      "type": "page",
+      "url": "/materials",
+      "status": "skip",
+      "code": "TIMEOUT",
+      "hint": "елемент не з'явився за 20000мс",
+      "errorFile": "elem_error_page_materials_main.png",
+      "ts": "2026-05-05T17:09:01.324Z"
+    }
+  ]
+}
