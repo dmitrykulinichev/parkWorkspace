@@ -7,3 +7,4 @@
 | `email_onboarding` | `OnboardingWelcomeNotification` | Власник парку | Поради щодо перших кроків у системі. |
 | `email_report_daily` | `ReportMail` | Власник / Бухгалтер | PDF/HTML версія денного звіту. |
 | `email_system_alert` | `SystemNotification` | Super Admin | Важливі системні сповіщення (білінг, помилки). |
+| `email_register_verify_code` | `EmailVerificationCodeMail` | Водій (самостійна реєстрація) | Код підтвердження email при реєстрації в моб. додатку. |
