@@ -1,0 +1,7 @@
+{
+  "name": "video-tools",
+  "private": true,
+  "type": "module",
+  "description": "Ролики застосунку водія: сценарій → Maestro, запис, хронометраж (workspace/video/README.md)",
+  "dependencies": { "yaml": "2.8.1" }
+}
