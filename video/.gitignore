@@ -1,0 +1,5 @@
+raw/
+*/raw/
+tools/node_modules/
+*/out/.marks.json
+*/out/.trim

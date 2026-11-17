@@ -55,3 +55,4 @@
 - `/app/park-react-spa/app/Models/` — Моделі бази даних.
 - `/app/park-react-spa/resources/js/` — Вихідний код фронтенду.
 - `/workspace/TIMELINE_IMPLEMENTATION_PLAN.md` — Поточний план розвитку.
+- `/workspace/blog/PROCESS.md` — як готуємо статті блогу (дані, скріни, виправлення по ходу); стан — `/workspace/plans/blog-autumn-plan.md`.
