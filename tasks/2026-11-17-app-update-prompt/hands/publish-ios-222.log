@@ -1,0 +1,15 @@
+Що нового (2.0.33, 222):
+Нова версія застосунку.
+Коли виходить нова версія, на головному екрані з'являється картка «Доступна нова версія» з кнопкою «Оновити»
+Версію застосунку видно внизу «Налаштувань»
+
+file:///Users/dmytro/Rep/park/kmp/scripts/publish-ios.mjs:91
+      throw new Error('409: попередня версія на рев\'ю чи чекає випуску — дочекайтесь рішення або скасуйте відправку в App Store Connect.');
+            ^
+
+Error: 409: попередня версія на рев'ю чи чекає випуску — дочекайтесь рішення або скасуйте відправку в App Store Connect.
+    at findOrCreateVersion (file:///Users/dmytro/Rep/park/kmp/scripts/publish-ios.mjs:91:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///Users/dmytro/Rep/park/kmp/scripts/publish-ios.mjs:39:25
+
+Node.js v24.21.0

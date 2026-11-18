@@ -1,0 +1,582 @@
+
+   PASS  Tests\Unit\EnumLabelsLocaleTest
+  ✓ labels follow request locale                                         0.19s  
+  ✓ every case has a label in every locale                               0.03s  
+  ✓ driver enums have labels in every locale                             0.03s  
+  ✓ every activity log type has a label in every locale                  0.03s  
+  ✓ dashboard legends have the same keys in every locale                 0.04s  
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true                                                    0.04s  
+
+   PASS  Tests\Unit\ManualTripServiceTest
+  ✓ creates trip when driver is assigned                                 2.57s  
+  ✓ rejects when driver not in park                                      0.04s  
+  ✓ rejects when no vehicle available                                    0.04s  
+  ✓ throws assignment warning when not assigned                          0.04s  
+  ✓ force saves trip with warning when not assigned                      0.05s  
+  ✓ resolves vehicle from historic assignment                            0.05s  
+  ✓ saves null distance when zero passed                                 0.04s  
+  ✓ web bot force true saves with warning when not assigned              0.04s  
+  ✓ bot saves with extra telegram fields                                 0.06s  
+  ✓ update throws warning when date has no assignment                    0.05s  
+  ✓ update force saves with warning                                      0.05s  
+
+   PASS  Tests\Unit\UklonFinancialServiceTest
+  ✓ completed cashless revenue and expenses                              0.04s  
+  ✓ completed cashless without total has zero expenses                   0.02s  
+  ✓ canceled with compensation                                           0.03s  
+  ✓ unmatched rule falls back to default income                          0.03s  
+
+   PASS  Tests\Unit\VehicleAssignmentServiceTest
+  ✓ it successfully assigns driver to active vehicle                     0.07s  
+  ✓ it fails to assign driver to inactive vehicle                        0.04s  
+  ✓ it corrects a closed assignment                                      0.04s  
+  ✓ it successfully deletes an active assignment                         0.07s  
+  ✓ it closes an active assignment                                       0.07s  
+  ✓ it fails to update driver on existing assignment                     0.04s  
+
+   PASS  Tests\Feature\BlogPostTranslationsTest
+  ✓ translation is upserted by locale without duplicates                 0.12s  
+  ✓ only en and ru and required fields                                   0.05s  
+  ✓ cover belongs to its language                                        0.07s  
+  ✓ landing feed contains translations                                   0.04s  
+  ✓ deleting translation or post removes their files                     0.10s  
+
+   PASS  Tests\Feature\BlogPublishApiTest
+  ✓ requires key                                                         0.04s  
+  ✓ put creates then updates by slug                                     0.05s  
+  ✓ validates fields                                                     0.03s  
+  ✓ cover and images                                                     0.05s  
+  ✓ sync calls landing                                                   0.06s  
+
+   PASS  Tests\Feature\ClearCacheRouteAccessTest
+  ✓ guest is rejected                                                    0.03s  
+  ✓ staff of regular park is rejected                                    0.03s  
+
+   PASS  Tests\Feature\DriverAdminCreationTest
+  ✓ admin can create driver via react app                                0.08s  
+  ✓ admin creating driver with existing phone links to same identity     0.06s  
+  ✓ admin cannot create duplicate driver in same park                    0.06s  
+  ✓ admin can update driver without conflict                             0.07s  
+  ✓ admin cannot update driver phone to one used by different identity   0.08s  
+  ✓ admin cannot update driver email to one used by different identity   0.07s  
+
+   PASS  Tests\Feature\DriverApp\DriverAppApiTest
+  ✓ login returns token and memberships                                  0.05s  
+  ✓ logout returns 200                                                   0.05s  
+  ✓ me returns success and data                                          0.05s  
+  ✓ me current vehicle has static details                                0.05s  
+  ✓ me requires auth                                                     0.04s  
+  ✓ me requires park role                                                0.04s  
+  ✓ get vehicles returns collection                                      0.05s  
+  ✓ accept vehicle returns vehicle in data                               0.10s  
+  ✓ handover vehicle returns success                                     0.09s  
+  ✓ update mileage returns mileage in data                               0.05s  
+  ✓ get mileage history returns array                                    0.05s  
+  ✓ update mileage record returns success                                0.05s  
+  ✓ delete mileage record returns success                                0.04s  
+  ✓ get vehicle documents returns array                                  0.06s  
+  ✓ get vehicle assignments returns collection                           0.05s  
+  ✓ get vehicle by token returns vehicle data                            0.06s  
+  ✓ get vehicle issues returns collection                                0.07s  
+  ✓ create vehicle issue returns 201 with data                           0.05s  
+  ✓ upcoming schedule returns array                                      0.05s  
+  ✓ get manual trips returns paginated collection                        0.05s  
+  ✓ create manual trip returns 201 with trip                             0.05s  
+  ✓ update manual trip returns trip                                      0.05s  
+  ✓ delete manual trip returns success                                   0.05s  
+  ✓ get expenses returns collection                                      0.05s  
+  ✓ create expense returns 201 with data                                 0.05s  
+  ✓ update expense returns data                                          0.04s  
+  ✓ delete expense returns success                                       0.04s  
+  ✓ register push token returns success                                  0.06s  
+  ✓ register push token keeps app version                                0.06s  
+  ✓ unregister push token returns success                                0.05s  
+  ✓ trigger sos returns alert                                            0.05s  
+  ✓ get my active sos returns alert key                                  0.05s  
+  ✓ resolve sos returns alert                                            0.04s  
+  ✓ get news returns paginated collection                                0.05s  
+  ✓ get park info returns contacts and sections                          0.05s  
+
+   PASS  Tests\Feature\DriverApp\DriverConditionReportApiTest
+  ✓ list returns success and paginated meta                              0.06s  
+  ✓ list requires auth                                                   0.04s  
+  ✓ list returns only own reports                                        0.05s  
+  ✓ create with photo returns 201 with contract                          0.05s  
+  ✓ create without files returns 422                                     0.05s  
+  ✓ create for vehicle from another park is blocked                      0.07s  
+  ✓ delete own submitted report returns success                          0.04s  
+  ✓ delete reviewed report returns 403                                   0.05s  
+  ✓ delete someone elses report returns 403                              0.05s  
+
+   PASS  Tests\Feature\DriverApp\DriverConditionReportSyncTest
+  ✓ report via queue then photos one by one with telegram album          0.12s  
+  ✓ photo for someone elses report and foreign vehicle are rejected      0.07s  
+
+   PASS  Tests\Feature\DriverApp\DriverConditionReportVideoTest
+  ✓ video arrives in chunks with resume and goes to telegram             0.16s  
+  ✓ photos and video in one report go as one album                       0.12s  
+  ✓ video chunk rules                                                    0.11s  
+  ✓ driver edits comment and deletes report with telegram posts          0.09s  
+  ✓ driver cannot change reviewed or old report                          0.06s  
+  ✓ deleting report mid upload discards partial video                    0.07s  
+
+   PASS  Tests\Feature\DriverApp\DriverExpenseFuelSyncApiTest
+  ✓ expenses first sync returns own expenses only                        0.05s  
+  ✓ approved expense is not editable                                     0.04s  
+  ✓ expense deleted through driver api is reported                       0.05s  
+  ✓ fuel first sync returns own refuelings with edit window              0.05s  
+  ✓ refueling deleted through driver api is reported                     0.05s  
+  ✓ expense edit window matches service rule                             0.04s  
+  ✓ refueling mileage must be plausible                                  0.07s  
+  ✓ refueling volume over tank is rejected with readable message         0.04s  
+
+   PASS  Tests\Feature\DriverApp\DriverIssueSyncApiTest
+  ✓ requires vehicle id                                                  0.05s  
+  ✓ rejects vehicle that is not current                                  0.05s  
+  ✓ first sync returns own and staff issues of current vehicle only      0.05s  
+  ✓ soft deleted issue is reported as deleted                            0.05s  
+  ✓ restored issue leaves journal and comes back as change               0.07s  
+  ✓ delete and restore through driver api update journal                 0.06s  
+  ✓ editable until is null once staff takes the issue                    0.05s  
+
+   PASS  Tests\Feature\DriverApp\DriverStaffMaintenanceApiTest
+  ✓ options returns schedules and work types                             0.05s  
+  ✓ list returns success and data                                        0.04s  
+  ✓ list filters by vehicle and date range                               0.09s  
+  ✓ list requires auth                                                   0.04s  
+  ✓ create group with two records sums total cost                        0.05s  
+  ✓ options include part work type                                       0.05s  
+  ✓ create part record creates part entry separate from repair           0.06s  
+  ✓ part record requires name                                            0.05s  
+  ✓ quick set search separates parts from repairs                        0.08s  
+  ✓ update group replaces records                                        0.08s  
+  ✓ delete group removes it                                              0.07s  
+  ✓ mutations blocked in demo mode                                       0.03s  
+  ✓ create uses real user even when person is also a driver              0.05s  
+
+   PASS  Tests\Feature\DriverApp\DriverSyncApiTest
+  ✓ first sync is full and returns recent trips only                     0.05s  
+  ✓ sync is delivered in chunks without loss or duplicates               0.07s  
+  ✓ next sync returns only changes after cursor                          0.06s  
+  ✓ trip older than initial depth is synced when changed later           0.09s  
+  ✓ deleted trip is reported once cursor passes it                       0.07s  
+  ✓ delete through driver api is recorded                                0.05s  
+  ✓ other drivers trips and deletions are not returned                   0.06s  
+  ✓ cursor older than deletion log forces full sync                      0.05s  
+  ✓ broken cursor forces full sync                                       0.05s  
+  ✓ unknown entity returns 404                                           0.04s  
+  ✓ requires auth                                                        0.05s  
+
+   PASS  Tests\Feature\DriverApp\DriverSyncPushApiTest
+  ✓ accepted action returns record in sync shape                         0.05s  
+  ✓ repeated key returns same record without duplicate                   0.07s  
+  ✓ actions are independent and keep order                               0.05s  
+  ✓ action for another vehicle is rejected                               0.05s  
+  ✓ manual trip needs confirmation then accepted when confirmed          0.06s  
+  ✓ mileage record is found in vehicle scope                             0.05s  
+  ✓ unknown entity fails so app retries later                            0.04s  
+  ✓ delete action removes own record and repeat is accepted              0.06s  
+  ✓ delete of already deleted record is accepted                         0.05s  
+  ✓ delete window counts from moment driver pressed delete               0.06s  
+  ✓ delete time from future is capped to now                             0.05s  
+  ✓ vehicle entity delete needs current vehicle                          0.06s  
+  ✓ update action changes record and returns it                          0.06s  
+  ✓ update of record changed in cabinet is rejected with current versio… 0.06s  
+  ✓ update window counts from moment driver saved                        0.06s  
+  ✓ update of deleted record is rejected                                 0.05s  
+
+   PASS  Tests\Feature\DriverApp\DriverSyncSignalTest
+  ✓ server side changes give one silent push with entities               0.05s  
+  ✓ vehicle entity goes to current driver of vehicle                     0.04s  
+  ✓ own change from driver app does not signal own device                0.05s  
+
+   PASS  Tests\Feature\DriverApp\DriverTelegramConnectionLinkTest
+  ✓ park without own bot has no link and no button                       0.06s  
+  ✓ link leads to bot of active park                                     0.06s  
+  ✓ disabled integration means no bot                                    0.04s  
+
+   PASS  Tests\Feature\DriverApp\DriverVehicleAssignmentFlowTest
+  ✓ handover records mileage and closes shift with distance              0.09s  
+  ✓ forced accept closes previous drivers shift with mileage             0.11s  
+  ✓ handover rejects implausible mileage jump                            0.07s  
+  ✓ accept requires handing over current vehicle first                   0.07s  
+
+   PASS  Tests\Feature\DriverConnectionsTest
+  ✓ release script records release once and version check uses it        0.05s  
+  ✓ app headers are stored on login token                                0.09s  
+  ✓ report groups telegram and app states                                0.09s  
+
+   PASS  Tests\Feature\DriverForReportingTest
+  ✓ creates inactive driver linked to uklon history                      0.05s  
+
+   PASS  Tests\Feature\DriverLandingRegistrationTest
+  ✓ driver can self register via park landing page                       0.06s  
+  ✓ landing registration is optional fields friendly                     0.06s  
+  ✓ same driver registering via landing in second park links to existin… 0.07s  
+  ✓ landing registration for inactive park returns 404                   0.05s  
+
+   PASS  Tests\Feature\DriverLineStatusTest
+  ✓ drivers list shows who is on line                                    0.08s  
+  ✓ failing source does not break the list                               0.04s  
+
+   PASS  Tests\Feature\DriverMobileLoginTest
+  ✓ login with phone and password succeeds                               0.10s  
+  ✓ login with email and password succeeds                               0.06s  
+  ✓ login with wrong password is rejected                                0.08s  
+  ✓ login for unknown login is rejected                                  0.31s  
+  ✓ login fails when user has no roles in any park                       0.05s  
+  ✓ logout revokes the current token                                     0.08s  
+  ✓ forgot password sends reset notification for known email             0.05s  
+  ✓ forgot password returns generic message for unknown login            0.04s  
+
+   PASS  Tests\Feature\DriverPhoneLoginTest
+  ✓ driver added by park signs in without password                       0.08s  
+  ✓ new phone goes to registration without session                       0.04s  
+  ✓ person without parks signs in and app asks for park code             0.04s  
+  ✓ unconfirmed phone is rejected                                        0.04s  
+  ✓ code goes to park telegram bot and signs in                          0.05s  
+  ✓ without telegram code goes to email masked                           0.05s  
+  ✓ unknown phone or no channel falls back to sms                        0.05s  
+  ✓ code burns after five wrong attempts                                 0.05s  
+  ✓ earlier unexpired code still works after resend                      0.04s  
+  ✓ code expires after 15 minutes                                        0.04s  
+  ✓ code message uses app language from request                          0.05s  
+  ✓ email mask keeps first letter and domain                             0.04s  
+
+   PASS  Tests\Feature\DriverSelfRegistrationTest
+  ✓ driver can self register via blade park page                         0.05s  
+  ✓ same driver registering in second park links to existing identity    0.06s  
+  ✓ registering again in same park is rejected                           0.06s  
+
+   PASS  Tests\Feature\ExampleTest
+  ✓ the application returns a successful response                        0.04s  
+
+   PASS  Tests\Feature\ParkEconomicsBrandingTest
+  ✓ branding bonus counts in month of accrual by kyiv time               0.07s  
+
+   PASS  Tests\Feature\ParkEconomicsDriverSettlementsTest
+  ✓ driver earnings come from reference per month                        0.07s  
+
+   PASS  Tests\Feature\ParkEconomicsKyivMonthTest
+  ✓ monthly table groups by kyiv month like month details                0.05s  
+
+   PASS  Tests\Feature\ParkEconomicsUklonReportTest
+  ✓ uklon income comes from uklon report with archive fallback           0.04s  
+
+   PASS  Tests\Feature\ParkUsersListTest
+  ✓ lists staff and drivers with staff role only                         0.05s  
+
+   PASS  Tests\Feature\RemoveDuplicateSeededGpsTest
+  ✓ keeps payment of park where vehicle was                              0.04s  
+
+   PASS  Tests\Feature\RoutesPointToExistingActionsTest
+  ✓ every controller route points to an existing method                  0.09s  
+
+   PASS  Tests\Feature\StaffCabinetAccessTest
+  ✓ driver gets 403 on cabinet api                                       0.05s  
+  ✓ staff passes                                                         0.04s  
+  ✓ user without any park role gets 403                                  0.04s  
+  ✓ driver cannot log into cabinet                                       0.04s  
+  ✓ driver park is not offered or switchable in cabinet                  0.06s  
+
+   PASS  Tests\Feature\SystemAppReleasesTest
+  ✓ lists releases with active devices per build                         0.83s  
+
+   PASS  Tests\Feature\SystemAppUpdatePushTest
+  ✓ counts devices of all parks and sends to chosen platform             0.20s  
+  ✓ regular park has no access                                           0.09s  
+
+   PASS  Tests\Feature\SystemBlogPostImageTest
+  ✓ uploads several images with public urls                              0.13s  
+  ✓ rejects non image                                                    0.07s  
+  ✓ deleting post removes its images                                     0.08s  
+
+   PASS  Tests\Feature\SystemParkImpersonateTest
+  ✓ enters two parks with one support user                               0.15s  
+  ✓ session keeps support password hash                                  0.07s  
+
+   PASS  Tests\Feature\SystemUsersRoleFilterTest
+  ✓ filters by role staff and without role                               0.09s  
+  ✓ park filter uses role park                                           0.07s  
+
+   PASS  Tests\Feature\TelegramDriverMessageTest
+  ✓ driver can report mileage via telegram                               0.09s  
+  ✓ driver can hand over vehicle via telegram                            0.10s  
+  ✓ driver can report issue via telegram                                 0.07s  
+  ✓ driver telegram id is scoped to park membership                      0.05s  
+
+   PASS  Tests\Feature\TelegramDriverMistakesTest
+  ✓ action word glued to number with mileage on new line is handover     0.09s  
+  ✓ action word before dashed number and zero padded mileage is handove… 0.12s  
+  ✓ extra word between number and misspelled action is handover          0.09s  
+  ✓ misspelled action word is handover and unknown word stays issue      0.11s  
+  ✓ parts separated by dots is assignment                                0.08s  
+  ✓ action word glued to number with dot before mileage is handover      0.09s  
+  ✓ disabled adapter falls back to standard rules                        0.07s  
+  ✓ amount with currency without keyword is manual trip                  0.07s  
+  ✓ correct message gets no hint                                         0.06s  
+  ✓ edited message gets no repeated hint                                 0.13s  
+
+   PASS  Tests\Feature\TelegramGroupMessageTest
+  ✓ sends plain text to park group and logs it                           0.06s  
+  ✓ history lists park messages newest first                             0.11s  
+  ✓ failed send is not in history but logged as failure                  0.06s  
+  ✓ deletes message from group and keeps it marked in history            0.08s  
+  ✓ cannot delete after 48 hours or other park message                   0.06s  
+  ✓ inactive group is allowed                                            0.06s  
+  ✓ rejects chat that is not a park group                                0.06s  
+  ✓ rejects empty or too long text                                       0.06s  
+  ✓ integration off or telegram refusal is a clear error                 0.06s  
+
+   PASS  Tests\Feature\TelegramGroupUnknownDriverTest
+  ✓ unknown driver gets reply in group once a day                        0.06s  
+  ✓ park staff gets no reply                                             0.05s  
+  ✓ bots and anonymous admins get no reply                               0.05s  
+
+   PASS  Tests\Feature\UklonBrandingBonusSyncTest
+  ✓ only closed period is stored with accrual date                       0.04s  
+  ✓ recalculated period replaces previous accrual                        0.05s  
+  ✓ vehicle added later is linked on next sync                           0.06s  
+  ✓ migration removes interim rows and dates accruals                    0.06s  
+
+   PASS  Tests\Feature\UklonDemoTest
+  ✓ orders are moved to demo driver masked and shifted to fresh week     0.05s  
+  ✓ live source is not shifted and shifted copies have own ids           0.05s  
+  ✓ vehicle added to demo fleet later is linked in stored orders         0.05s  
+  ✓ no orders from the future                                            0.04s  
+  ✓ drivers report sums completed orders in kopecks                      0.05s  
+  ✓ fleet always has drivers not yet added                               0.05s  
+  ✓ park resource does not expose source mapping                         0.04s  
+  ✓ system page shows status and preview                                 0.07s  
+  ✓ system page backfills unlinked orders                                0.06s  
+  ✓ system page loads order history only for demo park                   0.09s  
+  ✓ demo orders are not market data for taxi                             0.04s  
+  ✓ system page refuses real uklon park and foreign drivers              0.05s  
+  ✓ payload ids in old and new uklon format                              0.04s  
+  ✓ backfill restores driver and vehicle from new format                 0.05s  
+  ✓ driver removed from demo is unlinked                                 0.05s  
+  ✓ real park still calls uklon                                          0.05s  
+
+   PASS  Tests\Feature\UklonIncomeCanceledOrdersTest
+  ✓ park economics counts only real money from canceled                  0.06s  
+  ✓ vehicle economics counts only trips and real money                   0.06s  
+  ✓ order model canceled income is compensation and paid cancellation    0.04s  
+
+   PASS  Tests\Feature\UklonOrderFleetParkTest
+  ✓ orders belong to park of their uklon fleet                           0.04s  
+
+   PASS  Tests\Feature\UklonSchemaMonitorTest
+  ✓ shape has no values merges lists and masks dynamic keys              0.04s  
+  ✓ diff sees new field and respects alternatives and empty lists        0.04s  
+  ✓ new version only when knowledge changes                              0.04s  
+  ✓ missing critical field and its return are versions                   0.03s  
+  ✓ numbers empty arrays and optional fields do not create noise         0.03s  
+  ✓ api service records structure after response                         0.03s  
+  ✓ system page lists versions                                           0.06s  
+
+   PASS  Tests\Feature\UklonUnlinkedReportTest
+  ✓ unlinked after sync with matches                                     0.06s  
+
+   PASS  Tests\Feature\VehicleAssignmentReportTest
+  ✓ sessions are split by kyiv days with empty days and totals           0.05s  
+  ✓ each day shows its last mileage reading or nothing                   0.05s  
+  ✓ day of clock change lasts 25 hours                                   0.05s  
+  ✓ disposed vehicle is listed and reported                              0.05s  
+  ✓ period is limited                                                    0.05s  
+  ✓ vehicle of another park is not found                                 0.06s  
+
+   PASS  Tests\Feature\VehicleDisposalTest
+  ✓ sold vehicle frees plate and vin for new vehicle                     0.09s  
+  ✓ second live vehicle with same plate is rejected by database          0.05s  
+  ✓ disposal keeps history                                               0.06s  
+  ✓ disposal date is a kyiv business date not in the future              0.06s  
+  ✓ backdated disposal removes only future schedule slots                0.06s  
+  ✓ new records cannot reference disposed vehicle                        0.08s  
+  ✓ cannot dispose vehicle with active driver assignment                 0.07s  
+  ✓ update does not conflict with disposed vehicle plate                 0.11s  
+  ✓ duplicate merger ignores disposed vehicles                           0.08s  
+  ✓ uklon link does not pull orders of disposed vehicle                  0.08s  
+  ✓ park economics lists expenses of disposed vehicle                    0.08s  
+
+   PASS  Tests\Feature\VehicleEconomicsFleetSummaryTest
+  ✓ fleet summary follows drivers and vehicles                           0.08s  
+
+   PASS  Tests\Feature\VehicleTransferHistoryTest
+  ✓ sync resolves vehicle transferred out later                          0.04s  
+  ✓ backfill and economics keep each park its own trips                  0.06s  
+
+   PASS  Tests\Taxi\Feature\AdminOrdersTest
+  ✓ only system park admin                                               0.06s  
+  ✓ list filters and counts                                              0.10s  
+  ✓ details have client offers and ratings                               0.05s  
+  ✓ options are labelled dictionaries                                    0.05s  
+
+   PASS  Tests\Taxi\Feature\AdminPricingTest
+  ✓ only system park admin                                               0.06s  
+  ✓ market tariff in effect with examples and history newest first       0.05s  
+  ✓ stale market tariff means fallback                                   0.05s  
+  ✓ no market tariff yet                                                 0.05s  
+
+   PASS  Tests\Taxi\Feature\ClientAuthTest
+  ✓ first login creates client                                           0.05s  
+  ✓ second login returns same client with new token                      0.04s  
+  ✓ login prunes this clients stale tokens                               0.04s  
+  ✓ invalid firebase token is rejected                                   0.03s  
+  ✓ auth unavailable is 503 with code                                    0.03s  
+  ✓ patch without name does not erase it                                 0.04s  
+  ✓ rate limit is per client after authentication                        0.17s  
+  ✓ me requires token                                                    0.03s  
+  ✓ messages follow x locale                                             0.03s  
+  ✓ update name                                                          0.03s  
+  ✓ logout revokes only this token                                       0.04s  
+  ✓ delete account anonymizes and next login is new client               0.05s  
+  ✓ driver app token does not open client routes                         0.04s  
+  ✓ client token does not open driver app or cabinet                     0.04s  
+
+   PASS  Tests\Taxi\Feature\DriverHistoryTest
+  ✓ history has only my finished orders newest first with filter         0.06s  
+  ✓ details show my rating and only my orders                            0.04s  
+  ✓ summary counts window                                                0.04s  
+  ✓ options are localized                                                0.04s  
+
+   PASS  Tests\Taxi\Feature\DriverPresenceTest
+  ✓ goes online and offline                                              0.08s  
+  ✓ goes offline by itself after silence but requests keep it online     0.05s  
+  ✓ cannot go offline with active order                                  0.05s  
+  ✓ driver outside taxi parks is 403 and bad token 401                   0.04s  
+  ✓ inactive driver in taxi park gets explaining 403                     0.03s  
+  ✓ client token does not open driver routes                             0.03s  
+
+   PASS  Tests\Taxi\Feature\LocalParkGatewayTest
+  ✓ authenticates driver app token and lists only active drivers in tax… 0.04s  
+  ✓ inactive records in taxi parks come with park name and status        0.03s  
+  ✓ expired token is rejected                                            0.02s  
+  ✓ one offer per person prefers park with current vehicle               0.04s  
+  ✓ driver card has short name phone and vehicle                         0.03s  
+  ✓ notify sends to all devices of given people                          0.06s  
+  ✓ line status reaches park system for the registered driver record     0.04s  
+
+   PASS  Tests\Taxi\Feature\MarketTariffTest
+  ✓ sync recalculates and keeps history                                  0.05s  
+  ✓ same sample from next park sync only refreshes time                  0.03s  
+  ✓ short and old trips are ignored and too few keep previous            0.03s  
+
+   PASS  Tests\Taxi\Feature\OrderFlowTest
+  ✓ order is offered only to online drivers with push                    0.08s  
+  ✓ order is offered only to parks of pickup city                        0.07s  
+  ✓ first accept wins and others are closed                              0.14s  
+  ✓ driver without vehicle cannot go online                              0.06s  
+  ✓ full trip and transition rules                                       0.12s  
+  ✓ dispatch uses presence registry and records snapshot                 0.11s  
+  ✓ driver marks payment method after completion                         0.13s  
+  ✓ busy driver gets no new offers                                       0.11s  
+  ✓ search times out to no drivers                                       0.10s  
+  ✓ client cancels searching and accepted orders                         0.13s  
+  ✓ driver cancel is shown to client                                     0.10s  
+  ✓ quote rules and one active order                                     0.09s  
+  ✓ history and foreign orders                                           0.08s  
+  ✓ driver state in one request                                          0.11s  
+  ✓ client gets push on each step in own language                        0.13s  
+  ✓ client push for no drivers and dead token is dropped                 0.09s  
+  ✓ device moves to the last account that registered it                  0.06s  
+  ✓ both sides rate once and see each others rating                      0.14s  
+  ✓ rating rules                                                         0.14s  
+
+   PASS  Tests\Taxi\Feature\ParkSettingsTest
+  ✓ new park does not accept orders until it turns them on               0.05s  
+  ✓ cities are looked up added changed and removed                       0.06s  
+  ✓ other park city is not found and radius is validated                 0.05s  
+  ✓ driver without staff role is 403                                     0.04s  
+
+   PASS  Tests\Taxi\Feature\PlacesTest
+  ✓ autocomplete maps suggestions and restricts search to service area   0.04s  
+  ✓ autocomplete validates query and session                             0.05s  
+  ✓ place returns point and is cached                                    0.05s  
+  ✓ unknown place is 404                                                 0.04s  
+  ✓ reverse builds short address keeps pin coordinates and caches nearb… 0.04s  
+  ✓ reverse prefers street address over establishment                    0.04s  
+  ✓ reverse with nothing nearby returns null point and is cached         0.05s  
+  ✓ reverse outside service area is 422 without google                   0.04s  
+  ✓ google failure is 503 maps unavailable                               0.04s  
+  ✓ geocode error status is 503                                          0.04s  
+  ✓ missing key is 503 without calling google                            0.04s  
+  ✓ places require client token                                          0.04s  
+  ✓ language follows x locale                                            0.04s  
+
+   PASS  Tests\Taxi\Feature\PruneClientTokensTest
+  ✓ removes only long unused tokens                                      0.04s  
+
+   PASS  Tests\Taxi\Feature\QuoteTest
+  ✓ quote returns route and price from tariff                            0.04s  
+  ✓ price follows fresh market tariff minus discount                     0.04s  
+  ✓ short trip costs market minimum minus discount                       0.04s  
+  ✓ stale market tariff falls back to fixed tariff                       0.04s  
+  ✓ quote is stored for its client and expires                           0.04s  
+  ✓ same route is cached                                                 0.05s  
+  ✓ point outside park cities is 422 without google                      0.04s  
+  ✓ park that does not accept orders gives no coverage                   0.04s  
+  ✓ whole trip must be in one park coverage                              0.05s  
+  ✓ without market price follows tariffs of parks covering pickup        0.05s  
+  ✓ no route is 422                                                      0.04s  
+  ✓ validates points                                                     0.05s  
+  ✓ google failure is 503                                                0.05s  
+
+   PASS  Tests\Taxi\Feature\RealtimeTest
+  ✓ new order signals client offered drivers and search deadline         0.07s  
+  ✓ accept signals client winner and closed offers                       0.09s  
+  ✓ going offline signals the driver                                     0.09s  
+  ✓ nothing is sent when service is not configured                       0.07s  
+  ✓ identify maps tokens to recipient keys                               0.05s  
+  ✓ internal routes require signature                                    0.05s  
+  ✓ tick closes expired search and timers list active ones               0.10s  
+
+   PASS  Tests\Taxi\Feature\TaxiDisabledTest
+  ✓ module registers nothing                                             0.04s  
+
+   PASS  Tests\Taxi\Feature\TimestampColumnsTest
+  ✓ taxi timestamps are nullable and never auto updated                  0.05s  
+
+   PASS  Tests\Taxi\Unit\BoundaryTest
+  ✓ taxi uses only allowed app classes                                   0.06s  
+  ✓ rest of backend does not know taxi                                   0.29s  
+  ✓ texts live in taxi lang                                              0.04s  
+  ✓ models use taxi connection and tables
+  ✓ migrations touch only taxi tables on taxi connection                 0.01s  
+
+   PASS  Tests\Taxi\Unit\FareCalculatorTest
+  ✓ base plus distance plus time
+  ✓ short trip costs minimum
+  ✓ rounds to whole hryvnia
+
+   PASS  Tests\Taxi\Unit\LocationTicketTest
+  ✓ same vector as the service                                           0.03s  
+  ✓ only while driver is on the way or driving and only with secret      0.03s  
+
+   PASS  Tests\Taxi\Unit\MarketTariffFitTest
+  ✓ recovers base and per km
+  ✓ too few trips give no tariff
+  ✓ absurd rate is rejected
+  ✓ same distance everywhere gives no tariff
+
+   PASS  Tests\Taxi\Unit\PhoneTokenVerifierTest
+  ✓ valid token gives phone                                              0.06s  
+  ✓ rejects other project                                                0.10s  
+  ✓ rejects expired or garbage                                           0.06s  
+  ✓ tolerates clock skew and restores global leeway                      0.06s  
+  ✓ unavailable keys are not an invalid code                             0.11s  
+  ✓ missing project id is unavailable                                    0.08s  
+  ✓ rejects non phone sign in                                            0.06s  
+
+   PASS  Tests\Taxi\Unit\RealtimeSignatureTest
+  ✓ same vector as the service
+  ✓ verify rejects wrong secret body and stale timestamp
+
+   PASS  Tests\Taxi\Unit\ServiceAreaTest
+  ✓ contains city and suburbs but not other cities
+  ✓ bounding box encloses the circle
+
+  Tests:    422 passed (3583 assertions)
+  Duration: 28.53s
+

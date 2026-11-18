@@ -1,0 +1,43 @@
+{
+    "total_trips": 8435,
+    "uklon_trips": 8314,
+    "manual_trips": 121,
+    "active_vehicles": 13,
+    "uklon_gross": 1384406,
+    "uklon_net": 1080975.41,
+    "manual_income": 33400,
+    "tx_income": 0,
+    "branding_bonus": 28000,
+    "total_income": 1142375.41,
+    "vehicle_expenses": 32250,
+    "staff_payments": 0,
+    "driver_earnings": 784140.67,
+    "driver_earnings_complete": true,
+    "driver_payouts": 200634,
+    "total_expenses": 816390.67,
+    "park_result": 325984.74,
+    "deposits_balance": 57500,
+    "deposits_taken": 53500,
+    "deposits_returned": 0,
+    "deposits_compensated": 0
+}
+[{"month":"2026-08","label":"серпень 2026","total_income":1142375.41,"branding_bonus":28000,"driver_earnings":784140.67,"total_expenses":816390.67,"park_result":325984.74}]
+{"Техобслуговування":[19,32250]}
+{
+    "manual_trips_count": 121,
+    "manual_trips_amount": 33400,
+    "uklon_trips_count": 8252,
+    "uklon_trips_amount": 1380948,
+    "uklon_profit_total": 1167574.72,
+    "uklon_cash_amount": 593746,
+    "uklon_tips_amount": 6306,
+    "uklon_compensation_amount": 6122.16,
+    "bonuses_amount": 1300,
+    "penalties_amount": 0,
+    "expenses_amount": 0,
+    "driver_earnings": 776534.6680000001,
+    "driver_income": 784140.6680000001,
+    "total_cash_amount": 627146,
+    "payout_amount": 141994.66800000003
+}
+uklon_status success source live

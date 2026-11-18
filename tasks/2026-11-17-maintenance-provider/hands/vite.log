@@ -1,0 +1,124 @@
+vite v4.5.14 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 16 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 21805 modules transformed.
+rendering chunks...
+computing gzip size...
+public/build/manifest.json                                                                                               34.99 kB │ gzip:   3.29 kB
+public/build/assets/landing-f8b6d3ea.css                                                                                107.52 kB │ gzip:  15.83 kB
+public/build/assets/app-ffad78e3.css                                                                                    107.80 kB │ gzip:  15.93 kB
+public/build/assets/VehicleConditionReports/VehicleConditionReportsList/ReportMediaBadge-b53daf4c.js                      0.78 kB │ gzip:   0.45 kB
+public/build/assets/Statistics-c0b2cd86.js                                                                                0.82 kB │ gzip:   0.50 kB
+public/build/assets/Settings-19b4d313.js                                                                                  0.85 kB │ gzip:   0.50 kB
+public/build/assets/DriverSchedule/ScheduleViews/DriverScheduleMobile-1e61b045.js                                         0.95 kB │ gzip:   0.49 kB
+public/build/assets/MobileSettings-ca92088a.js                                                                            0.96 kB │ gzip:   0.63 kB
+public/build/assets/FleetSettings-de4b6809.js                                                                             1.56 kB │ gzip:   0.81 kB
+public/build/assets/Reports-191fbcd6.js                                                                                   1.80 kB │ gzip:   1.08 kB
+public/build/assets/ActivityLogs/ActivityLogList/ActivityLogListMobile-9133b525.js                                        1.86 kB │ gzip:   0.81 kB
+public/build/assets/Transactions/TransactionsList/TransactionsListMobile-ae04448a.js                                      2.07 kB │ gzip:   0.87 kB
+public/build/assets/Profile/PasswordTab-503da94e.js                                                                       2.11 kB │ gzip:   0.98 kB
+public/build/assets/Debug/EmailTester-c6117717.js                                                                         2.16 kB │ gzip:   1.14 kB
+public/build/assets/VehicleConditionReports/VehicleConditionReportsList/VehicleConditionReportsListMobile-af0b02af.js     2.18 kB │ gzip:   1.01 kB
+public/build/assets/Profile/GeneralTab-a5aae454.js                                                                        2.44 kB │ gzip:   1.08 kB
+public/build/assets/Profile/AccessTab-1dc5c9fe.js                                                                         2.58 kB │ gzip:   1.14 kB
+public/build/assets/InsurancePolicies/InsurancePolicyList/InsurancePolicyListMobile-3fb25874.js                           2.61 kB │ gzip:   1.05 kB
+public/build/assets/Transactions/TransactionsList/TransactionsListDesktop-b522be15.js                                     2.70 kB │ gzip:   1.13 kB
+public/build/assets/Vehicles/TransferredVehiclesList-11f6cf83.js                                                          2.78 kB │ gzip:   0.99 kB
+public/build/assets/ParkDocuments/ParkDocumentsList/ParkDocumentsListDesktop-d6450b17.js                                  2.86 kB │ gzip:   1.19 kB
+public/build/assets/TelegramLogs/TelegramLogsTable-76a6987e.js                                                            2.95 kB │ gzip:   1.17 kB
+public/build/assets/Profile/TelegramTab-7722d789.js                                                                       2.95 kB │ gzip:   1.47 kB
+public/build/assets/UklonLogs/UklonLogsTable-2baa6e7d.js                                                                  3.00 kB │ gzip:   1.17 kB
+public/build/assets/UklonReports/Tab/DriversTab-634a90d8.js                                                               3.06 kB │ gzip:   1.09 kB
+public/build/assets/Profile/Profile-8fb87671.js                                                                           3.23 kB │ gzip:   1.47 kB
+public/build/assets/Documents/DocumentsList/DocumentsListMobile-d78aa12f.js                                               3.24 kB │ gzip:   1.31 kB
+public/build/assets/Debug/XataStorageTab-af291198.js                                                                      3.28 kB │ gzip:   1.51 kB
+public/build/assets/UklonReports/Tab/DashboardTab-83e5a037.js                                                             3.31 kB │ gzip:   1.37 kB
+public/build/assets/UklonReports/Tab/VehiclesTab-cd213d0b.js                                                              3.33 kB │ gzip:   1.16 kB
+public/build/assets/VehicleConditionReports/VehicleConditionReportsList/VehicleConditionReportsListDesktop-f25f9cbc.js    3.46 kB │ gzip:   1.32 kB
+public/build/assets/Tasks/TaskList/TaskListMobile-6e56fc69.js                                                             3.56 kB │ gzip:   1.44 kB
+public/build/assets/InsurancePolicies/InsurancePolicyList/InsurancePolicyListDesktop-70187fa5.js                          3.61 kB │ gzip:   1.54 kB
+public/build/assets/DriverDeposits/BalancesTab-f86a9941.js                                                                3.67 kB │ gzip:   1.53 kB
+public/build/assets/UklonDrivers-9714cec0.js                                                                              3.71 kB │ gzip:   1.93 kB
+public/build/assets/UklonVehicles-a1c18a42.js                                                                             3.74 kB │ gzip:   1.95 kB
+public/build/assets/UklonVehicles/UklonVehiclesList-cf813488.js                                                           3.97 kB │ gzip:   1.29 kB
+public/build/assets/Materials-da889cca.js                                                                                 4.00 kB │ gzip:   1.86 kB
+public/build/assets/Billing-46202bb9.js                                                                                   4.25 kB │ gzip:   1.82 kB
+public/build/assets/UklonDrivers/UklonDriversList-27e03b56.js                                                             4.46 kB │ gzip:   1.35 kB
+public/build/assets/Vehicles/VehicleList/VehicleListMobile-2ffe5520.js                                                    4.53 kB │ gzip:   1.71 kB
+public/build/assets/LandingSettings/tabs/ContactsTab-f3f33146.js                                                          4.69 kB │ gzip:   1.85 kB
+public/build/assets/Drivers/DriverList/DriverListMobile-22765bb5.js                                                       4.79 kB │ gzip:   1.79 kB
+public/build/assets/ParkUsers/ParkUserList/ParkUserListMobile-be786eb8.js                                                 4.79 kB │ gzip:   1.69 kB
+public/build/assets/Documents/DocumentsList/DocumentsListDesktop-9fdcc7c1.js                                              4.79 kB │ gzip:   1.69 kB
+public/build/assets/ParkUsers/ParkUserList/ParkUserListDesktop-9d9d1594.js                                                5.05 kB │ gzip:   1.95 kB
+public/build/assets/Settings/AppearanceTab-ad4dda1c.js                                                                    5.17 kB │ gzip:   1.34 kB
+public/build/assets/Tasks/TaskList/TaskListDesktop-730067cb.js                                                            5.32 kB │ gzip:   2.13 kB
+public/build/assets/UklonReports-dc056be9.js                                                                              5.74 kB │ gzip:   2.28 kB
+public/build/assets/UklonLogs-80f3facf.js                                                                                 5.95 kB │ gzip:   2.28 kB
+public/build/assets/Documents-8c2f947d.js                                                                                 6.06 kB │ gzip:   2.84 kB
+public/build/assets/UklonBrandingBonuses-78d1ebbc.js                                                                      6.14 kB │ gzip:   2.75 kB
+public/build/assets/TelegramGroupMessage-d5747e67.js                                                                      6.39 kB │ gzip:   2.36 kB
+public/build/assets/Debug/DevicesTab-e6178b35.js                                                                          7.02 kB │ gzip:   2.53 kB
+public/build/assets/TelegramLogs-b23b494e.js                                                                              7.11 kB │ gzip:   2.74 kB
+public/build/assets/Profile/NotificationsTab-596c76f2.js                                                                  7.16 kB │ gzip:   2.64 kB
+public/build/assets/ActivityLogs/ActivityLogList/ActivityLogListDesktop-8f3332bb.js                                       7.48 kB │ gzip:   3.03 kB
+public/build/assets/MobileSettings/tabs/InfoSectionsTab-13d1b887.js                                                       7.53 kB │ gzip:   2.80 kB
+public/build/assets/LandingSettings/tabs/NewsAndPromotionsTab-514085ac.js                                                 7.92 kB │ gzip:   3.38 kB
+public/build/assets/Tasks-8c30c98f.js                                                                                     8.57 kB │ gzip:   3.60 kB
+public/build/assets/ParkDocuments-5880adf1.js                                                                             8.60 kB │ gzip:   3.86 kB
+public/build/assets/VehicleMileage-fc4fd736.js                                                                            8.99 kB │ gzip:   3.60 kB
+public/build/assets/Transactions-15b1fae4.js                                                                              9.80 kB │ gzip:   4.17 kB
+public/build/assets/InsurancePolicies-e38156a4.js                                                                        10.68 kB │ gzip:   4.46 kB
+public/build/assets/Reports/PerformanceReportTab-6d2fe36a.js                                                             11.51 kB │ gzip:   3.26 kB
+public/build/assets/LandingSettings-68fc73d7.js                                                                          11.94 kB │ gzip:   4.22 kB
+public/build/assets/FinanceSettings-f83ff26a.js                                                                          11.97 kB │ gzip:   3.71 kB
+public/build/assets/ParkStatistics-28ada294.js                                                                           12.14 kB │ gzip:   3.10 kB
+public/build/assets/VehicleConditionReports-c1e4b022.js                                                                  13.18 kB │ gzip:   5.36 kB
+public/build/assets/VehicleUnavailabilities-210e5a25.js                                                                  13.93 kB │ gzip:   5.18 kB
+public/build/assets/ManualTrips-a5d5cd37.js                                                                              14.36 kB │ gzip:   5.36 kB
+public/build/assets/DriverExpenses-873568c2.js                                                                           15.22 kB │ gzip:   5.50 kB
+public/build/assets/StaffPayments-4ba35bb6.js                                                                            15.31 kB │ gzip:   6.10 kB
+public/build/assets/Vehicles/VehicleList/VehicleListDesktop-a413dc4c.js                                                  15.46 kB │ gzip:   4.77 kB
+public/build/assets/ActivityLogs/SystemLogsTab-97db8ec3.js                                                               15.67 kB │ gzip:   5.42 kB
+public/build/assets/Reports/OperationalReportTab-521d44b0.js                                                             15.97 kB │ gzip:   4.42 kB
+public/build/assets/UklonSettings-9c888054.js                                                                            16.01 kB │ gzip:   5.13 kB
+public/build/assets/UklonOrders/OrdersList-52061e58.js                                                                   16.24 kB │ gzip:   3.27 kB
+public/build/assets/UklonOrders-e2d6f7e6.js                                                                              16.75 kB │ gzip:   4.79 kB
+public/build/assets/DriverDeposits-5ea4aab6.js                                                                           17.43 kB │ gzip:   5.92 kB
+public/build/assets/LandingSettings/tabs/GeneralSettingsTab-a9f69c23.js                                                  18.52 kB │ gzip:   4.12 kB
+public/build/assets/Reports/MaintenanceReportTab-5d23d679.js                                                             18.67 kB │ gzip:   5.14 kB
+public/build/assets/VehicleEconomics2-eabc0874.js                                                                        18.96 kB │ gzip:   6.24 kB
+public/build/assets/DriverPayouts-ad845a4b.js                                                                            18.97 kB │ gzip:   5.49 kB
+public/build/assets/IssueReports-11b0cbe8.js                                                                             19.34 kB │ gzip:   6.76 kB
+public/build/assets/BonusesPenalties-cc13a694.js                                                                         19.72 kB │ gzip:   6.75 kB
+public/build/assets/Drivers/DriverList/DriverListDesktop-48569bfc.js                                                     19.85 kB │ gzip:   6.42 kB
+public/build/assets/VehicleAssignments-1c80144a.js                                                                       20.01 kB │ gzip:   7.23 kB
+public/build/assets/ParkUsers-ea60447f.js                                                                                20.48 kB │ gzip:   7.65 kB
+public/build/assets/DriverDebtPlans-e0a6d754.js                                                                          21.10 kB │ gzip:   6.43 kB
+public/build/assets/VehicleMaintenanceRecords-03115b7a.js                                                                22.16 kB │ gzip:   7.50 kB
+public/build/assets/MaintenanceSchedules-2ddf714a.js                                                                     22.54 kB │ gzip:   6.98 kB
+public/build/assets/VehicleEconomics-89eb3aac.js                                                                         23.23 kB │ gzip:   6.37 kB
+public/build/assets/ParkEconomics-31a221ab.js                                                                            23.25 kB │ gzip:   6.77 kB
+public/build/assets/Debug-67cfede5.js                                                                                    26.94 kB │ gzip:   7.05 kB
+public/build/assets/VehicleEarnings-8ec980e5.js                                                                          28.02 kB │ gzip:   8.79 kB
+public/build/assets/TelegramSettings-ffa21126.js                                                                         29.16 kB │ gzip:   7.93 kB
+public/build/assets/DriverSchedule/ScheduleViews/DriverScheduleDesktop-85b0efb7.js                                       29.27 kB │ gzip:   9.84 kB
+public/build/assets/Vehicles-f044f8a1.js                                                                                 30.01 kB │ gzip:   8.84 kB
+public/build/assets/DriverSchedule-fa1b7281.js                                                                           34.14 kB │ gzip:  11.52 kB
+public/build/assets/DriverEarningsNew-992d734b.js                                                                        40.39 kB │ gzip:   9.98 kB
+public/build/assets/Drivers-a999d771.js                                                                                  50.16 kB │ gzip:  14.30 kB
+public/build/assets/ActivityLogs/SubscriptionLogsTab-ea10b178.js                                                        109.35 kB │ gzip:  27.47 kB
+public/build/assets/ActivityLogs-d6a23bcd.js                                                                            229.25 kB │ gzip:  73.42 kB
+public/build/assets/recharts-c16fe8e8.js                                                                                237.84 kB │ gzip:  62.44 kB
+public/build/assets/Dashboard-2d8137c6.js                                                                               276.28 kB │ gzip:  71.16 kB
+public/build/assets/app-f5e05815.js                                                                                     283.69 kB │ gzip:  68.88 kB
+public/build/assets/xlsx-f5126985.js                                                                                    284.67 kB │ gzip:  95.50 kB
+public/build/assets/mui-8836a5cc.js                                                                                     348.83 kB │ gzip: 101.96 kB
+public/build/assets/vendor-0ec55068.js                                                                                  655.53 kB │ gzip: 218.54 kB
+
+(!) Some chunks are larger than 500 kBs after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 15.58s

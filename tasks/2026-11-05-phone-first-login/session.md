@@ -95,3 +95,9 @@ Andrii Tkachenko (+380791112299, «Київ»; пароль увів корис�
 - Причина: `WindowInsets.isImeVisible` (фікс «Назад при клавіатурі», 2.0.28) є лише в Android-частині Compose → `compileKotlinIosArm64` падав. Android збирався, тому помітили тільки на iOS.
 - Рішення: спільний `imeVisible()` у `ui/auth/AuthStepScaffold.kt` (`WindowInsets.ime.getBottom(density) > 0`), використано в scaffold і `LoginScreen`. Перевірено компіляцію iOS + Android.
 - Урок: перед релізом збирати `:shared:compileKotlinIosArm64`, а не лише Android.
+
+## 10.11.2026
+- Користувач: усе реалізовано (бекенд залитий, коди перевірено). Задачу закрито; оновлення сторінки «Як почати» — у `docs-v2-driver`. Запис у `changelog/2026-11-06/`.
+
+### Коміт
+Вхід у застосунок водія за номером телефону: код через Telegram-бот парку, email або SMS, без вибору сценарію.
