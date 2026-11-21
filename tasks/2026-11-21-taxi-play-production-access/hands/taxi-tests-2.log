@@ -1,0 +1,190 @@
+
+   PASS  Tests\Taxi\Feature\AdminClientsTest
+  ✓ requests mark one row per day                                        3.41s  
+  ✓ day follows kyiv time not utc                                        0.04s  
+  ✓ only system park admin                                               0.23s  
+  ✓ list with activity and orders                                        0.12s  
+  ✓ daily counts with empty days                                         0.06s  
+  ✓ admin marks tester                                                   0.11s  
+
+   PASS  Tests\Taxi\Feature\AdminOrdersTest
+  ✓ only system park admin                                               0.13s  
+  ✓ list filters and counts                                              0.20s  
+  ✓ details have client offers and ratings                               0.07s  
+  ✓ options are labelled dictionaries                                    0.08s  
+
+   PASS  Tests\Taxi\Feature\AdminPricingTest
+  ✓ only system park admin                                               0.07s  
+  ✓ market tariff in effect with examples and history newest first       0.06s  
+  ✓ stale market tariff means fallback                                   0.06s  
+  ✓ no market tariff yet                                                 0.07s  
+
+   PASS  Tests\Taxi\Feature\ClientAuthTest
+  ✓ first login creates client                                           0.05s  
+  ✓ second login returns same client with new token                      0.05s  
+  ✓ login prunes this clients stale tokens                               0.05s  
+  ✓ invalid firebase token is rejected                                   0.03s  
+  ✓ auth unavailable is 503 with code                                    0.04s  
+  ✓ patch without name does not erase it                                 0.05s  
+  ✓ rate limit is per client after authentication                        0.30s  
+  ✓ me requires token                                                    0.04s  
+  ✓ messages follow x locale                                             0.04s  
+  ✓ update name                                                          0.05s  
+  ✓ logout revokes only this token                                       0.05s  
+  ✓ delete account anonymizes and next login is new client               0.06s  
+  ✓ driver app token does not open client routes                         0.06s  
+  ✓ client token does not open driver app or cabinet                     0.06s  
+
+   PASS  Tests\Taxi\Feature\DemoDriversTest
+  ✓ tester order goes to a bot and is driven to completion               0.21s  
+  ✓ real client order never goes to bots                                 0.08s  
+  ✓ bot that went online gets no real orders                             0.09s  
+  ✓ busy bot is skipped and client can cancel                            0.16s  
+  ✓ disabled module changes nothing                                      0.07s  
+  ✓ tick advances bots and timers include next step                      0.08s  
+
+   PASS  Tests\Taxi\Feature\DriverHistoryTest
+  ✓ history has only my finished orders newest first with filter         0.08s  
+  ✓ details show my rating and only my orders                            0.05s  
+  ✓ summary counts window                                                0.06s  
+  ✓ options are localized                                                0.05s  
+
+   PASS  Tests\Taxi\Feature\DriverPresenceTest
+  ✓ goes online and offline                                              0.07s  
+  ✓ goes offline by itself after silence but requests keep it online     0.05s  
+  ✓ cannot go offline with active order                                  0.06s  
+  ✓ driver outside taxi parks is 403 and bad token 401                   0.05s  
+  ✓ inactive driver in taxi park gets explaining 403                     0.05s  
+  ✓ client token does not open driver routes                             0.04s  
+
+   PASS  Tests\Taxi\Feature\LocalParkGatewayTest
+  ✓ authenticates driver app token and lists only active drivers in tax… 0.24s  
+  ✓ inactive records in taxi parks come with park name and status        0.10s  
+  ✓ expired token is rejected                                            0.04s  
+  ✓ one offer per person prefers park with current vehicle               0.07s  
+  ✓ driver card has short name phone and vehicle                         0.09s  
+  ✓ notify sends to all devices of given people                          0.06s  
+  ✓ line status reaches park system for the registered driver record     0.05s  
+
+   PASS  Tests\Taxi\Feature\MarketTariffTest
+  ✓ sync recalculates and keeps history                                  0.05s  
+  ✓ same sample from next park sync only refreshes time                  0.04s  
+  ✓ short and old trips are ignored and too few keep previous            0.04s  
+
+   PASS  Tests\Taxi\Feature\OrderFlowTest
+  ✓ order is offered only to online drivers with push                    0.12s  
+  ✓ order is offered only to parks of pickup city                        0.10s  
+  ✓ first accept wins and others are closed                              0.44s  
+  ✓ driver without vehicle cannot go online                              0.29s  
+  ✓ full trip and transition rules                                       0.39s  
+  ✓ dispatch uses presence registry and records snapshot                 0.17s  
+  ✓ driver marks payment method after completion                         0.18s  
+  ✓ busy driver gets no new offers                                       0.15s  
+  ✓ search times out to no drivers                                       0.15s  
+  ✓ client cancels searching and accepted orders                         0.18s  
+  ✓ driver cancel is shown to client                                     0.19s  
+  ✓ quote rules and one active order                                     0.15s  
+  ✓ history and foreign orders                                           0.10s  
+  ✓ driver state in one request                                          0.12s  
+  ✓ client gets push on each step in own language                        0.14s  
+  ✓ client push for no drivers and dead token is dropped                 0.09s  
+  ✓ device moves to the last account that registered it                  0.08s  
+  ✓ both sides rate once and see each others rating                      0.18s  
+  ✓ rating rules                                                         0.20s  
+
+   PASS  Tests\Taxi\Feature\ParkSettingsTest
+  ✓ new park does not accept orders until it turns them on               0.08s  
+  ✓ cities are looked up added changed and removed                       0.09s  
+  ✓ other park city is not found and radius is validated                 0.08s  
+  ✓ driver without staff role is 403                                     0.05s  
+
+   PASS  Tests\Taxi\Feature\PlacesTest
+  ✓ autocomplete maps suggestions and restricts search to service area   0.06s  
+  ✓ autocomplete validates query and session                             0.06s  
+  ✓ place returns point and is cached                                    0.06s  
+  ✓ unknown place is 404                                                 0.06s  
+  ✓ reverse builds short address keeps pin coordinates and caches nearb… 0.05s  
+  ✓ reverse prefers street address over establishment                    0.08s  
+  ✓ reverse with nothing nearby returns null point and is cached         0.13s  
+  ✓ reverse outside service area is 422 without google                   0.05s  
+  ✓ google failure is 503 maps unavailable                               0.04s  
+  ✓ geocode error status is 503                                          0.05s  
+  ✓ missing key is 503 without calling google                            0.05s  
+  ✓ places require client token                                          0.04s  
+  ✓ language follows x locale                                            0.06s  
+
+   PASS  Tests\Taxi\Feature\PruneClientTokensTest
+  ✓ removes only long unused tokens                                      0.04s  
+
+   PASS  Tests\Taxi\Feature\QuoteTest
+  ✓ quote returns route and price from tariff                            0.06s  
+  ✓ price follows fresh market tariff minus discount                     0.05s  
+  ✓ short trip costs market minimum minus discount                       0.05s  
+  ✓ stale market tariff falls back to fixed tariff                       0.05s  
+  ✓ quote is stored for its client and expires                           0.05s  
+  ✓ same route is cached                                                 0.05s  
+  ✓ point outside park cities is 422 without google                      0.05s  
+  ✓ park that does not accept orders gives no coverage                   0.05s  
+  ✓ whole trip must be in one park coverage                              0.05s  
+  ✓ without market price follows tariffs of parks covering pickup        0.05s  
+  ✓ no route is 422                                                      0.04s  
+  ✓ validates points                                                     0.04s  
+  ✓ google failure is 503                                                0.04s  
+
+   PASS  Tests\Taxi\Feature\RealtimeTest
+  ✓ new order signals client offered drivers and search deadline         0.08s  
+  ✓ accept signals client winner and closed offers                       0.06s  
+  ✓ going offline signals the driver                                     0.04s  
+  ✓ nothing is sent when service is not configured                       0.05s  
+  ✓ identify maps tokens to recipient keys                               0.05s  
+  ✓ internal routes require signature                                    0.04s  
+  ✓ tick closes expired search and timers list active ones               0.07s  
+
+   PASS  Tests\Taxi\Feature\TaxiDisabledTest
+  ✓ module registers nothing                                             0.04s  
+
+   PASS  Tests\Taxi\Feature\TimestampColumnsTest
+  ✓ taxi timestamps are nullable and never auto updated                  0.04s  
+
+   PASS  Tests\Taxi\Unit\BoundaryTest
+  ✓ taxi uses only allowed app classes                                   0.03s  
+  ✓ rest of backend does not know taxi                                   0.25s  
+  ✓ texts live in taxi lang                                              0.02s  
+  ✓ models use taxi connection and tables
+  ✓ migrations touch only taxi tables on taxi connection                 0.01s  
+
+   PASS  Tests\Taxi\Unit\FareCalculatorTest
+  ✓ base plus distance plus time
+  ✓ short trip costs minimum
+  ✓ rounds to whole hryvnia
+
+   PASS  Tests\Taxi\Unit\LocationTicketTest
+  ✓ same vector as the service                                           0.03s  
+  ✓ only while driver is on the way or driving and only with secret      0.03s  
+
+   PASS  Tests\Taxi\Unit\MarketTariffFitTest
+  ✓ recovers base and per km
+  ✓ too few trips give no tariff
+  ✓ absurd rate is rejected
+  ✓ same distance everywhere gives no tariff
+
+   PASS  Tests\Taxi\Unit\PhoneTokenVerifierTest
+  ✓ valid token gives phone                                              0.07s  
+  ✓ rejects other project                                                0.06s  
+  ✓ rejects expired or garbage                                           0.05s  
+  ✓ tolerates clock skew and restores global leeway                      0.14s  
+  ✓ unavailable keys are not an invalid code                             0.11s  
+  ✓ missing project id is unavailable                                    0.09s  
+  ✓ rejects non phone sign in                                            0.06s  
+
+   PASS  Tests\Taxi\Unit\RealtimeSignatureTest
+  ✓ same vector as the service
+  ✓ verify rejects wrong secret body and stale timestamp
+
+   PASS  Tests\Taxi\Unit\ServiceAreaTest
+  ✓ contains city and suburbs but not other cities
+  ✓ bounding box encloses the circle
+
+  Tests:    138 passed (2007 assertions)
+  Duration: 14.39s
+

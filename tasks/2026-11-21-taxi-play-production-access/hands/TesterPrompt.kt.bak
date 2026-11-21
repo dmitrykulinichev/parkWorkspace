@@ -1,0 +1,40 @@
+package ua.g24.taxi.client.shared.data.feedback
+
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.datetime.Clock
+import kotlinx.datetime.Instant
+import ua.g24.taxi.client.shared.config.AppConfig
+import ua.g24.taxi.client.shared.platform.SecureStorage
+import ua.g24.taxi.client.shared.platform.isIos
+import kotlin.time.Duration.Companion.days
+
+private const val HIDDEN_UNTIL_KEY = "testerCardHiddenUntil"
+
+/**
+ * Картка "Ви тестуєте — залиште відгук у Google Play" на головній: лише Android і лише в закритому
+ * тестуванні (`tester.mode` у brand.properties). "Закрити" ховає її на [HIDE_DAYS] днів, потім вона
+ * з'являється знову — відгук Google бачить, лише якщо його залишили в Play.
+ */
+class TesterPrompt(private val storage: SecureStorage) {
+    private val _visible = MutableStateFlow(false)
+    val visible: StateFlow<Boolean> = _visible.asStateFlow()
+
+    val enabled: Boolean get() = AppConfig.TESTER_MODE && !isIos
+
+    suspend fun load() {
+        if (!enabled) return
+        val hiddenUntil = storage.getString(HIDDEN_UNTIL_KEY)?.let { runCatching { Instant.parse(it) }.getOrNull() }
+        _visible.value = hiddenUntil == null || hiddenUntil < Clock.System.now()
+    }
+
+    suspend fun hide() {
+        _visible.value = false
+        storage.putString(HIDDEN_UNTIL_KEY, (Clock.System.now() + HIDE_DAYS.days).toString())
+    }
+
+    companion object {
+        const val HIDE_DAYS = 7
+    }
+}
