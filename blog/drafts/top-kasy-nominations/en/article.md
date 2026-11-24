@@ -32,7 +32,7 @@ One person often wins several nominations at once, and a list repeating their na
 🧾 Найбільший середній чек
 ```
 
-The nominations deliberately have no numbers, only names. We decided this way nobody gets upset: the winner is visible, and how far behind the others are doesn't need to be discussed in the group. Price per kilometer and average fare only count drivers with at least 10 trips, so a single lucky expensive ride can't take the nomination. If several drivers have the same result, all of them get the nomination.
+The nominations deliberately have no numbers, only names. We decided this way nobody gets upset: the winner is visible, and how far behind the others are doesn't need to be discussed in the group. Price per kilometer and average fare only count drivers with at least 10 trips, so a single lucky expensive ride can't take the nomination. If several drivers have the same result, the nomination is shown once, with the names of everyone who shares it above it.
 
 Two nominations are marked "based on Uklon data". Tips only come with Uklon orders, and we calculate the price per kilometer from Uklon kilometers and Uklon cash only: distance is often left out of cash-in-hand trips, and mixing the data would inflate the price for drivers who do many of them. The mark says honestly where the number comes from, so a driver with lots of cash-in-hand trips doesn't feel shortchanged.
 
